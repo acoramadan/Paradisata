@@ -1,0 +1,6 @@
+<resources>
+    <attr name="colorSuccessColor" format="color" />
+    <attr name="colorOnSuccessColor" format="color" />
+    <attr name="colorSuccessColorContainer" format="color" />
+    <attr name="colorOnSuccessColorContainer" format="color" />
+</resources>
