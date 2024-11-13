@@ -1,4 +1,11 @@
 <resources>
     <string name="app_name">Paradisata</string>
     <string name="splash">splashing</string>
+    <string name="welcome_back">Welcome Back</string>
+    <string name="username">Username</string>
+    <string name="gambar_login">gambar login</string>
+    <string name="belum_punya_akun">Belum punya Akun ?</string>
+    <string name="register">Register</string>
+    <string name="login_dengan_menggunakan_google">Login dengan menggunakan Google</string>
+    <string name="or">or</string>
 </resources>
