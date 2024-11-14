@@ -8,4 +8,16 @@
     <string name="register">Register</string>
     <string name="login_dengan_menggunakan_google">Login dengan menggunakan Google</string>
     <string name="or">or</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="gambar_register">gambar register</string>
+    <string name="sign_up_as_a">Sign Up As A</string>
+    <string name="tourist">Tourist</string>
+    <string name="tour_guide">Tour guide</string>
+    <string name="login">Login</string>
+    <string name="sudah_punya_akun">Sudah punya akun?</string>
+    <string name="sign_up_as_a_tour_guide">Sign Up As a Tour Guide!</string>
+    <string name="back_icon">back icon</string>
+    <string name="back">Back</string>
+    <string name="no_telephone">No Telephone</string>
+    <string name="email">Email</string>
 </resources>

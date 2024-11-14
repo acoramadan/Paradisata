@@ -50,6 +50,7 @@
             android:id="@+id/edtTxt_username"
             android:fontFamily="@font/poppins"
             android:drawableStart="@drawable/user_login_icon"
+            android:hint="@string/username"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="45dp"

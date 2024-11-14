@@ -12,7 +12,7 @@ import androidx.appcompat.widget.AppCompatEditText
 import androidx.core.content.ContextCompat
 import com.muflidevs.paradisata.R
 
-class CustomUsernameEditText @JvmOverloads constructor(
+class CustomNoTelephoneEditText @JvmOverloads constructor(
     context: Context, attrs: AttributeSet? = null
 ) : AppCompatEditText(context, attrs), View.OnTouchListener {
     private var clearButtonImage: Drawable
@@ -20,7 +20,7 @@ class CustomUsernameEditText @JvmOverloads constructor(
 
     init {
         clearButtonImage = ContextCompat.getDrawable(context, R.drawable.close_icon) as Drawable
-        iconUserImage = ContextCompat.getDrawable(context, R.drawable.user_login_icon) as Drawable
+        iconUserImage = ContextCompat.getDrawable(context, R.drawable.phone_icon) as Drawable
         setOnTouchListener(this)
 
         addTextChangedListener(object: TextWatcher {
