@@ -1,4 +1,4 @@
-package com.muflidevs.paradisata.view.customView
+package com.muflidevs.paradisata.ui.view.customView
 
 import android.content.Context
 import android.graphics.Canvas
@@ -12,7 +12,7 @@ import androidx.appcompat.widget.AppCompatEditText
 import androidx.core.content.ContextCompat
 import com.muflidevs.paradisata.R
 
-class CustomEmailEditText @JvmOverloads constructor(
+class CustomNoTelephoneEditText @JvmOverloads constructor(
     context: Context, attrs: AttributeSet? = null
 ) : AppCompatEditText(context, attrs), View.OnTouchListener {
     private var clearButtonImage: Drawable
@@ -20,7 +20,7 @@ class CustomEmailEditText @JvmOverloads constructor(
 
     init {
         clearButtonImage = ContextCompat.getDrawable(context, R.drawable.close_icon) as Drawable
-        iconUserImage = ContextCompat.getDrawable(context, R.drawable.mail_icon) as Drawable
+        iconUserImage = ContextCompat.getDrawable(context, R.drawable.phone_icon) as Drawable
         setOnTouchListener(this)
 
         addTextChangedListener(object: TextWatcher {

@@ -1,4 +1,4 @@
-package com.muflidevs.paradisata.view
+package com.muflidevs.paradisata.ui.view
 
 import android.content.Intent
 import android.os.Bundle
@@ -34,7 +34,7 @@ class RegisterActivity : AppCompatActivity(),View.OnClickListener {
         when(view?.id) {
 
             R.id.tv_login -> {
-                val intent = Intent(this@RegisterActivity,LoginActivity::class.java)
+                val intent = Intent(this@RegisterActivity, LoginActivity::class.java)
                 startActivity(intent)
                 finish()
             }
@@ -45,7 +45,7 @@ class RegisterActivity : AppCompatActivity(),View.OnClickListener {
             }
 
             R.id.tourGuideBtn -> {
-                val intent = Intent(this@RegisterActivity,TourGuideRegisterActivity::class.java)
+                val intent = Intent(this@RegisterActivity, TourGuideRegisterActivity::class.java)
                 startActivity(intent)
             }
 

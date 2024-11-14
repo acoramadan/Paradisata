@@ -1,4 +1,4 @@
-package com.muflidevs.paradisata.view
+package com.muflidevs.paradisata.ui.view
 
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge

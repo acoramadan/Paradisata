@@ -1,4 +1,4 @@
-package com.muflidevs.paradisata.view
+package com.muflidevs.paradisata.ui.view
 
 import android.content.Intent
 import android.os.Bundle
@@ -9,9 +9,9 @@ import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import com.muflidevs.paradisata.R
 import com.muflidevs.paradisata.databinding.ActivityLoginBinding
-import com.muflidevs.paradisata.view.customView.CustomButton
-import com.muflidevs.paradisata.view.customView.CustomPasswordEditText
-import com.muflidevs.paradisata.view.customView.CustomUsernameEditText
+import com.muflidevs.paradisata.ui.view.customView.CustomButton
+import com.muflidevs.paradisata.ui.view.customView.CustomPasswordEditText
+import com.muflidevs.paradisata.ui.view.customView.CustomUsernameEditText
 
 class LoginActivity : AppCompatActivity(),View.OnClickListener{
     private lateinit var binding: ActivityLoginBinding
@@ -75,7 +75,7 @@ class LoginActivity : AppCompatActivity(),View.OnClickListener{
     override fun onClick(view: View?) {
         when(view?.id) {
             R.id.tv_register -> {
-                val intent = Intent(this@LoginActivity,RegisterActivity::class.java)
+                val intent = Intent(this@LoginActivity, RegisterActivity::class.java)
                 startActivity(intent)
                 finish()
             }

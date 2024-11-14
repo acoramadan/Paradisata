@@ -6,12 +6,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/gradient_bg"
-    tools:context=".view.TourGuideRegisterActivity">
+    tools:context=".ui.view.TourGuideRegisterActivity">
 
     <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
         android:id="@+id/btn_back"
-        android:layout_width="111dp"
-        android:layout_height="44dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_gravity="bottom|end"
         android:layout_margin="16dp"
         android:layout_marginBottom="8dp"
@@ -26,27 +26,27 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.007" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
         android:fontFamily="@font/poppins_bold"
         android:text="@string/sign_up_as_a_tour_guide"
         android:textColor="@color/md_theme_onPrimary"
         android:textSize="30sp"
-        android:layout_marginTop="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.19"
+        app:layout_constraintHorizontal_bias="0.186"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.09"/>
+        app:layout_constraintVertical_bias="0.182" />
 
     <LinearLayout
         android:id="@+id/login_linear1"
         android:layout_width="match_parent"
-        android:layout_height="550dp"
+        android:layout_height="500dp"
         android:background="@drawable/login_container_shape"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -54,7 +54,7 @@
         app:layout_constraintVertical_bias="1.0"
         tools:layout_editor_absoluteX="0dp">
 
-        <com.muflidevs.paradisata.view.customView.CustomUsernameEditText
+        <com.muflidevs.paradisata.ui.view.customView.CustomUsernameEditText
             android:id="@+id/edtTxt_username"
             android:fontFamily="@font/poppins"
             android:drawableStart="@drawable/user_login_icon"
@@ -66,7 +66,7 @@
             android:layout_marginTop="45dp"
             android:layout_marginBottom="10dp"/>
 
-        <com.muflidevs.paradisata.view.customView.CustomPasswordEditText
+        <com.muflidevs.paradisata.ui.view.customView.CustomPasswordEditText
             android:id="@+id/edtTxt_password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -77,7 +77,7 @@
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"/>
 
-        <com.muflidevs.paradisata.view.customView.CustomEmailEditText
+        <com.muflidevs.paradisata.ui.view.customView.CustomEmailEditText
             android:id="@+id/edtTxt_email"
             android:fontFamily="@font/poppins"
             android:drawableStart="@drawable/mail_icon"
@@ -90,7 +90,7 @@
             android:layout_marginTop="15dp"
             android:layout_marginBottom="10dp"/>
 
-        <com.muflidevs.paradisata.view.customView.CustomNoTelephoneEditText
+        <com.muflidevs.paradisata.ui.view.customView.CustomNoTelephoneEditText
             android:id="@+id/edtTxt_noTelp"
             android:fontFamily="@font/poppins"
             android:drawableStart="@drawable/phone_icon"
@@ -103,7 +103,7 @@
             android:layout_marginBottom="10dp"/>
     </LinearLayout>
 
-    <com.muflidevs.paradisata.view.customView.CustomButton
+    <com.muflidevs.paradisata.ui.view.customView.CustomButton
         android:id="@+id/btn_submit"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

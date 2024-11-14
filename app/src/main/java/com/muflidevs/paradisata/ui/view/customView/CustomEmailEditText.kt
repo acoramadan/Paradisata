@@ -1,4 +1,4 @@
-package com.muflidevs.paradisata.view.customView
+package com.muflidevs.paradisata.ui.view.customView
 
 import android.content.Context
 import android.graphics.Canvas
@@ -12,7 +12,7 @@ import androidx.appcompat.widget.AppCompatEditText
 import androidx.core.content.ContextCompat
 import com.muflidevs.paradisata.R
 
-class CustomPasswordEditText @JvmOverloads constructor(
+class CustomEmailEditText @JvmOverloads constructor(
     context: Context, attrs: AttributeSet? = null
 ) : AppCompatEditText(context, attrs), View.OnTouchListener {
     private var clearButtonImage: Drawable
@@ -20,7 +20,7 @@ class CustomPasswordEditText @JvmOverloads constructor(
 
     init {
         clearButtonImage = ContextCompat.getDrawable(context, R.drawable.close_icon) as Drawable
-        iconUserImage = ContextCompat.getDrawable(context, R.drawable.user_login_password_icon) as Drawable
+        iconUserImage = ContextCompat.getDrawable(context, R.drawable.mail_icon) as Drawable
         setOnTouchListener(this)
 
         addTextChangedListener(object: TextWatcher {
@@ -64,7 +64,7 @@ class CustomPasswordEditText @JvmOverloads constructor(
                     }
                     MotionEvent.ACTION_UP -> {
                         clearButtonImage = ContextCompat.getDrawable(context, R.drawable.close_icon) as Drawable
-                        iconUserImage = ContextCompat.getDrawable(context, R.drawable.user_login_password_icon) as Drawable
+                        iconUserImage = ContextCompat.getDrawable(context, R.drawable.user_login_icon) as Drawable
                         when {
                             (text != null) -> text?.clear()
                         }
@@ -81,7 +81,6 @@ class CustomPasswordEditText @JvmOverloads constructor(
 
     override fun onDraw(canvas: Canvas) {
         super.onDraw(canvas)
-        hint = "password"
         textAlignment = View.TEXT_ALIGNMENT_VIEW_START
         textSize = 20f
     }
