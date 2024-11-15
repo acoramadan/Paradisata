@@ -23,5 +23,7 @@
     <string name="email">Email</string>
     <string name="sign_up_as_a_tourism">Daftar Sebagai Wisatawan</string>
     <string name="please_fill_out_the_form_below">Mohon isi form dibawah ini</string>
-
+    <string name="profile">Profil</string>
+    <string name="search">Cari</string>
+    <string name="home">Beranda</string>
 </resources>

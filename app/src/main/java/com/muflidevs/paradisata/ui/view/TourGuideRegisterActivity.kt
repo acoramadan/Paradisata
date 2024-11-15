@@ -61,6 +61,7 @@ class TourGuideRegisterActivity : AppCompatActivity(),View.OnClickListener{
     }
 
     private fun checkUserInput() {
+
         usernameEdtTxt.addTextChangedListener(object: TextWatcher {
             override fun beforeTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {
             }
@@ -73,6 +74,7 @@ class TourGuideRegisterActivity : AppCompatActivity(),View.OnClickListener{
             }
 
         })
+
         passwordEdtTxt.addTextChangedListener(object: TextWatcher {
             override fun beforeTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {
             }
@@ -85,6 +87,7 @@ class TourGuideRegisterActivity : AppCompatActivity(),View.OnClickListener{
             }
 
         })
+
         emailEdtTxt.addTextChangedListener(object: TextWatcher {
             override fun beforeTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {
             }
