@@ -1,6 +1,8 @@
 package com.muflidevs.paradisata.ui.view
 
 import android.os.Bundle
+import android.text.Editable
+import android.text.TextWatcher
 import android.view.View
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
@@ -32,6 +34,10 @@ class TourGuideRegisterActivity : AppCompatActivity(),View.OnClickListener{
         submitBtn = binding.btnSubmit
         backBtn = binding.btnBack
 
+        //buttonOnOff
+        setEnabledButton()
+        checkUserInput()
+
         //navigation
         backBtn.setOnClickListener(this)
         submitBtn.setOnClickListener(this)
@@ -41,8 +47,66 @@ class TourGuideRegisterActivity : AppCompatActivity(),View.OnClickListener{
         when(view?.id) {
             R.id.btn_back -> finish()
             R.id.btn_submit -> {
-
             }
         }
+    }
+
+    private fun setEnabledButton() {
+        val checkUsernameInput = usernameEdtTxt.text != null && usernameEdtTxt.toString().isNotEmpty()
+        val checkPasswordInput = passwordEdtTxt.text != null && passwordEdtTxt.toString().isNotEmpty()
+        val checkEmailInput = emailEdtTxt.text != null && emailEdtTxt.toString().isNotEmpty()
+        val checkNoTelpInput = noTelpEdtTxt.text != null && noTelpEdtTxt.toString().isNotEmpty()
+
+        submitBtn.isEnabled = checkUsernameInput && checkPasswordInput && checkEmailInput && checkNoTelpInput
+    }
+
+    private fun checkUserInput() {
+        usernameEdtTxt.addTextChangedListener(object: TextWatcher {
+            override fun beforeTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {
+            }
+
+            override fun onTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {
+                setEnabledButton()
+            }
+
+            override fun afterTextChanged(p0: Editable?) {
+            }
+
+        })
+        passwordEdtTxt.addTextChangedListener(object: TextWatcher {
+            override fun beforeTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {
+            }
+
+            override fun onTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {
+                setEnabledButton()
+            }
+
+            override fun afterTextChanged(p0: Editable?) {
+            }
+
+        })
+        emailEdtTxt.addTextChangedListener(object: TextWatcher {
+            override fun beforeTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {
+            }
+
+            override fun onTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {
+                setEnabledButton()
+            }
+
+            override fun afterTextChanged(p0: Editable?) {
+            }
+
+        })
+        noTelpEdtTxt.addTextChangedListener(object: TextWatcher {
+            override fun beforeTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {
+            }
+
+            override fun onTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {
+                setEnabledButton()
+            }
+
+            override fun afterTextChanged(p0: Editable?) {
+            }
+        })
     }
 }

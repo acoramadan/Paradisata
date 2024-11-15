@@ -9,7 +9,7 @@
     tools:context=".ui.view.TourGuideRegisterActivity">
 
     <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
-        android:id="@+id/btn_back"
+        android:id="@+id/btn_back_tourist"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|end"
@@ -54,6 +54,15 @@
         app:layout_constraintVertical_bias="1.0"
         tools:layout_editor_absoluteX="0dp">
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/please_fill_out_the_form_below"
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="@color/md_theme_secondary"
+            android:layout_marginTop="20dp"
+            android:textSize="20sp"
+            android:gravity="center"/>
         <com.muflidevs.paradisata.ui.view.customView.CustomUsernameEditText
             android:id="@+id/edtTxt_username"
             android:fontFamily="@font/poppins"
@@ -63,7 +72,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="45dp"
             android:layout_marginEnd="45dp"
-            android:layout_marginTop="45dp"
+            android:layout_marginTop="35dp"
             android:layout_marginBottom="10dp"/>
 
         <com.muflidevs.paradisata.ui.view.customView.CustomPasswordEditText
@@ -104,7 +113,7 @@
     </LinearLayout>
 
     <com.muflidevs.paradisata.ui.view.customView.CustomButton
-        android:id="@+id/btn_submit"
+        android:id="@+id/btn_submit_tourist"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"

@@ -21,6 +21,7 @@
     <string name="back">Kembali</string>
     <string name="no_telephone">No Telepon</string>
     <string name="email">Email</string>
-    <string name="sign_up_as_a_tourism">Daftar Sebagai Turis</string>
+    <string name="sign_up_as_a_tourism">Daftar Sebagai Wisatawan</string>
+    <string name="please_fill_out_the_form_below">Mohon isi form dibawah ini</string>
 
 </resources>

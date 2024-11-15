@@ -5,7 +5,7 @@
     <string name="username">Username</string>
     <string name="gambar_login">gambar login</string>
     <string name="belum_punya_akun">Doesn\'t have an account yet?</string>
-    <string name="register">Daftar</string>
+    <string name="register">Register</string>
     <string name="login_dengan_menggunakan_google">Login by using Google</string>
     <string name="or">Or</string>
     <string name="sign_up">One Step Away to Your Dream Destination!</string>
@@ -21,4 +21,5 @@
     <string name="no_telephone">No Telephone</string>
     <string name="email">Email</string>
     <string name="sign_up_as_a_tourism">Sign Up As a Tourism</string>
+    <string name="please_fill_out_the_form_below">Please fill out the form below</string>
 </resources>

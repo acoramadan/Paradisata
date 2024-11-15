@@ -64,7 +64,7 @@ class CustomEmailEditText @JvmOverloads constructor(
                     }
                     MotionEvent.ACTION_UP -> {
                         clearButtonImage = ContextCompat.getDrawable(context, R.drawable.close_icon) as Drawable
-                        iconUserImage = ContextCompat.getDrawable(context, R.drawable.user_login_icon) as Drawable
+                        iconUserImage = ContextCompat.getDrawable(context, R.drawable.mail_icon) as Drawable
                         when {
                             (text != null) -> text?.clear()
                         }

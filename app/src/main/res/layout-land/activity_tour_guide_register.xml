@@ -29,8 +29,8 @@
         app:layout_constraintVertical_bias="0.007" />
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="264dp"
+        android:layout_height="117dp"
         android:layout_marginStart="8dp"
         android:fontFamily="@font/poppins_bold"
         android:text="@string/sign_up_as_a_tour_guide"
@@ -38,87 +38,87 @@
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.186"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.182" />
+        app:layout_constraintVertical_bias="0.551" />
 
     <LinearLayout
         android:id="@+id/login_linear1"
-        android:layout_width="match_parent"
-        android:layout_height="500dp"
-        android:background="@drawable/login_container_shape"
+        android:layout_width="450dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/login_container_shape_horizontal"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
-        tools:layout_editor_absoluteX="0dp">
+        app:layout_constraintVertical_bias="1.0">
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/please_fill_out_the_form_below"
-            android:fontFamily="@font/poppins_medium"
-            android:textColor="@color/md_theme_secondary"
             android:layout_marginTop="20dp"
-            android:textSize="20sp"
-            android:gravity="center"/>
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="center"
+            android:text="@string/please_fill_out_the_form_below"
+            android:textColor="@color/md_theme_secondary"
+            android:textSize="20sp" />
 
         <com.muflidevs.paradisata.ui.view.customView.CustomUsernameEditText
             android:id="@+id/edtTxt_username"
-            android:fontFamily="@font/poppins"
-            android:drawableStart="@drawable/user_login_icon"
-            android:hint="@string/username"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="45dp"
+            android:layout_marginTop="8dp"
             android:layout_marginEnd="45dp"
-            android:layout_marginTop="35dp"
-            android:layout_marginBottom="10dp"/>
+            android:layout_marginBottom="10dp"
+            android:drawableStart="@drawable/user_login_icon"
+            android:fontFamily="@font/poppins"
+            android:hint="@string/username" />
 
         <com.muflidevs.paradisata.ui.view.customView.CustomPasswordEditText
             android:id="@+id/edtTxt_password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:drawableStart="@drawable/user_login_password_icon"
-            android:fontFamily="@font/poppins"
             android:layout_marginStart="45dp"
-            android:layout_marginEnd="45dp"
             android:layout_marginTop="10dp"
-            android:layout_marginBottom="10dp"/>
+            android:layout_marginEnd="45dp"
+            android:layout_marginBottom="10dp"
+            android:drawableStart="@drawable/user_login_password_icon"
+            android:fontFamily="@font/poppins" />
 
         <com.muflidevs.paradisata.ui.view.customView.CustomEmailEditText
             android:id="@+id/edtTxt_email"
-            android:fontFamily="@font/poppins"
-            android:drawableStart="@drawable/mail_icon"
-            android:drawablePadding="4dp"
-            android:hint="@string/email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="45dp"
-            android:layout_marginEnd="45dp"
             android:layout_marginTop="15dp"
-            android:layout_marginBottom="10dp"/>
+            android:layout_marginEnd="45dp"
+            android:layout_marginBottom="10dp"
+            android:drawableStart="@drawable/mail_icon"
+            android:drawablePadding="4dp"
+            android:fontFamily="@font/poppins"
+            android:hint="@string/email" />
 
         <com.muflidevs.paradisata.ui.view.customView.CustomNoTelephoneEditText
             android:id="@+id/edtTxt_noTelp"
-            android:fontFamily="@font/poppins"
-            android:drawableStart="@drawable/phone_icon"
-            android:hint="@string/no_telephone"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="45dp"
-            android:layout_marginEnd="45dp"
             android:layout_marginTop="15dp"
-            android:layout_marginBottom="10dp"/>
+            android:layout_marginEnd="45dp"
+            android:layout_marginBottom="10dp"
+            android:drawableStart="@drawable/phone_icon"
+            android:fontFamily="@font/poppins"
+            android:hint="@string/no_telephone" />
+
+        <com.muflidevs.paradisata.ui.view.customView.CustomButton
+            android:id="@+id/btn_submit"
+            android:layout_width="380dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="37dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="35dp"/>
     </LinearLayout>
 
-    <com.muflidevs.paradisata.ui.view.customView.CustomButton
-        android:id="@+id/btn_submit"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginEnd="10dp"
-        app:layout_constraintBottom_toBottomOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
