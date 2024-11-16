@@ -16,6 +16,9 @@
         android:theme="@style/Theme.Paradisata"
         tools:targetApi="31">
         <activity
+            android:name=".ui.view.OrderActivity"
+            android:exported="false" />
+        <activity
             android:name=".ui.view.TourGuideRegisterActivity"
             android:exported="false" />
         <activity
