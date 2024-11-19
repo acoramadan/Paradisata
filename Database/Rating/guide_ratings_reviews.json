@@ -1,0 +1,1202 @@
+[
+    {
+        "UserID": 45,
+        "GuideID": 1,
+        "Rating": 3.6,
+        "Ulasan": "The transportation was smooth and efficient."
+    },
+    {
+        "UserID": 23,
+        "GuideID": 1,
+        "Rating": 3.1,
+        "Ulasan": "An unforgettable journey with great insights."
+    },
+    {
+        "UserID": 3,
+        "GuideID": 1,
+        "Rating": 4.6,
+        "Ulasan": "The guide was very friendly and helpful."
+    },
+    {
+        "UserID": 44,
+        "GuideID": 1,
+        "Rating": 3.5,
+        "Ulasan": "An unforgettable journey with great insights."
+    },
+    {
+        "UserID": 67,
+        "GuideID": 1,
+        "Rating": 4.5,
+        "Ulasan": "A professional and well-prepared guide."
+    },
+    {
+        "UserID": 2,
+        "GuideID": 1,
+        "Rating": 3.1,
+        "Ulasan": "The guide was very friendly and helpful."
+    },
+    {
+        "UserID": 72,
+        "GuideID": 1,
+        "Rating": 4.0,
+        "Ulasan": "The facilities were clean and comfortable."
+    },
+    {
+        "UserID": 18,
+        "GuideID": 1,
+        "Rating": 4.9,
+        "Ulasan": "Loved the energy and enthusiasm of the guide."
+    },
+    {
+        "UserID": 58,
+        "GuideID": 1,
+        "Rating": 4.5,
+        "Ulasan": "The guide ensured our comfort throughout."
+    },
+    {
+        "UserID": 95,
+        "GuideID": 1,
+        "Rating": 3.4,
+        "Ulasan": "Loved the experience, it was fantastic."
+    },
+    {
+        "UserID": 64,
+        "GuideID": 2,
+        "Rating": 3.3,
+        "Ulasan": "An unforgettable journey with great insights."
+    },
+    {
+        "UserID": 57,
+        "GuideID": 2,
+        "Rating": 3.3,
+        "Ulasan": "Amazing guide, highly recommended!"
+    },
+    {
+        "UserID": 69,
+        "GuideID": 2,
+        "Rating": 3.9,
+        "Ulasan": "Amazing guide, highly recommended!"
+    },
+    {
+        "UserID": 91,
+        "GuideID": 2,
+        "Rating": 4.4,
+        "Ulasan": "Loved the energy and enthusiasm of the guide."
+    },
+    {
+        "UserID": 86,
+        "GuideID": 2,
+        "Rating": 3.2,
+        "Ulasan": "The guide was very friendly and helpful."
+    },
+    {
+        "UserID": 6,
+        "GuideID": 2,
+        "Rating": 5.0,
+        "Ulasan": "A great tour with excellent planning."
+    },
+    {
+        "UserID": 31,
+        "GuideID": 2,
+        "Rating": 3.9,
+        "Ulasan": "An unforgettable journey with great insights."
+    },
+    {
+        "UserID": 82,
+        "GuideID": 2,
+        "Rating": 3.9,
+        "Ulasan": "The guide ensured our comfort throughout."
+    },
+    {
+        "UserID": 70,
+        "GuideID": 2,
+        "Rating": 4.4,
+        "Ulasan": "Amazing guide, highly recommended!"
+    },
+    {
+        "UserID": 97,
+        "GuideID": 2,
+        "Rating": 3.9,
+        "Ulasan": "Loved the energy and enthusiasm of the guide."
+    },
+    {
+        "UserID": 1,
+        "GuideID": 3,
+        "Rating": 3.8,
+        "Ulasan": "The facilities were clean and comfortable."
+    },
+    {
+        "UserID": 4,
+        "GuideID": 3,
+        "Rating": 3.1,
+        "Ulasan": "The facilities were clean and comfortable."
+    },
+    {
+        "UserID": 35,
+        "GuideID": 3,
+        "Rating": 3.9,
+        "Ulasan": "Loved the experience, it was fantastic."
+    },
+    {
+        "UserID": 47,
+        "GuideID": 3,
+        "Rating": 3.7,
+        "Ulasan": "The guide ensured our comfort throughout."
+    },
+    {
+        "UserID": 21,
+        "GuideID": 3,
+        "Rating": 3.3,
+        "Ulasan": "A great tour with excellent planning."
+    },
+    {
+        "UserID": 40,
+        "GuideID": 3,
+        "Rating": 4.4,
+        "Ulasan": "The transportation was smooth and efficient."
+    },
+    {
+        "UserID": 7,
+        "GuideID": 3,
+        "Rating": 3.9,
+        "Ulasan": "The transportation was smooth and efficient."
+    },
+    {
+        "UserID": 67,
+        "GuideID": 3,
+        "Rating": 3.6,
+        "Ulasan": "The guide ensured our comfort throughout."
+    },
+    {
+        "UserID": 10,
+        "GuideID": 3,
+        "Rating": 3.9,
+        "Ulasan": "The guide was very friendly and helpful."
+    },
+    {
+        "UserID": 63,
+        "GuideID": 3,
+        "Rating": 4.4,
+        "Ulasan": "Loved the experience, it was fantastic."
+    },
+    {
+        "UserID": 83,
+        "GuideID": 4,
+        "Rating": 4.5,
+        "Ulasan": "The transportation was smooth and efficient."
+    },
+    {
+        "UserID": 57,
+        "GuideID": 4,
+        "Rating": 4.7,
+        "Ulasan": "An unforgettable journey with great insights."
+    },
+    {
+        "UserID": 89,
+        "GuideID": 4,
+        "Rating": 4.6,
+        "Ulasan": "The transportation was smooth and efficient."
+    },
+    {
+        "UserID": 54,
+        "GuideID": 4,
+        "Rating": 4.0,
+        "Ulasan": "The guide ensured our comfort throughout."
+    },
+    {
+        "UserID": 15,
+        "GuideID": 4,
+        "Rating": 4.4,
+        "Ulasan": "A great tour with excellent planning."
+    },
+    {
+        "UserID": 95,
+        "GuideID": 4,
+        "Rating": 3.4,
+        "Ulasan": "A great tour with excellent planning."
+    },
+    {
+        "UserID": 23,
+        "GuideID": 4,
+        "Rating": 4.6,
+        "Ulasan": "The guide ensured our comfort throughout."
+    },
+    {
+        "UserID": 11,
+        "GuideID": 4,
+        "Rating": 3.5,
+        "Ulasan": "A great tour with excellent planning."
+    },
+    {
+        "UserID": 10,
+        "GuideID": 4,
+        "Rating": 3.8,
+        "Ulasan": "Amazing guide, highly recommended!"
+    },
+    {
+        "UserID": 81,
+        "GuideID": 4,
+        "Rating": 4.2,
+        "Ulasan": "The transportation was smooth and efficient."
+    },
+    {
+        "UserID": 83,
+        "GuideID": 5,
+        "Rating": 4.2,
+        "Ulasan": "The facilities were clean and comfortable."
+    },
+    {
+        "UserID": 98,
+        "GuideID": 5,
+        "Rating": 3.5,
+        "Ulasan": "Loved the energy and enthusiasm of the guide."
+    },
+    {
+        "UserID": 56,
+        "GuideID": 5,
+        "Rating": 3.1,
+        "Ulasan": "An unforgettable journey with great insights."
+    },
+    {
+        "UserID": 5,
+        "GuideID": 5,
+        "Rating": 4.8,
+        "Ulasan": "A professional and well-prepared guide."
+    },
+    {
+        "UserID": 14,
+        "GuideID": 5,
+        "Rating": 3.1,
+        "Ulasan": "Loved the energy and enthusiasm of the guide."
+    },
+    {
+        "UserID": 37,
+        "GuideID": 5,
+        "Rating": 3.0,
+        "Ulasan": "Loved the energy and enthusiasm of the guide."
+    },
+    {
+        "UserID": 33,
+        "GuideID": 5,
+        "Rating": 3.8,
+        "Ulasan": "Loved the energy and enthusiasm of the guide."
+    },
+    {
+        "UserID": 55,
+        "GuideID": 5,
+        "Rating": 3.9,
+        "Ulasan": "Amazing guide, highly recommended!"
+    },
+    {
+        "UserID": 22,
+        "GuideID": 5,
+        "Rating": 3.9,
+        "Ulasan": "A great tour with excellent planning."
+    },
+    {
+        "UserID": 76,
+        "GuideID": 5,
+        "Rating": 3.4,
+        "Ulasan": "Loved the experience, it was fantastic."
+    },
+    {
+        "UserID": 21,
+        "GuideID": 6,
+        "Rating": 4.8,
+        "Ulasan": "A professional and well-prepared guide."
+    },
+    {
+        "UserID": 24,
+        "GuideID": 6,
+        "Rating": 3.4,
+        "Ulasan": "An unforgettable journey with great insights."
+    },
+    {
+        "UserID": 18,
+        "GuideID": 6,
+        "Rating": 4.2,
+        "Ulasan": "Amazing guide, highly recommended!"
+    },
+    {
+        "UserID": 77,
+        "GuideID": 6,
+        "Rating": 3.2,
+        "Ulasan": "Loved the experience, it was fantastic."
+    },
+    {
+        "UserID": 66,
+        "GuideID": 6,
+        "Rating": 5.0,
+        "Ulasan": "The guide was very friendly and helpful."
+    },
+    {
+        "UserID": 5,
+        "GuideID": 6,
+        "Rating": 3.6,
+        "Ulasan": "A great tour with excellent planning."
+    },
+    {
+        "UserID": 39,
+        "GuideID": 6,
+        "Rating": 4.2,
+        "Ulasan": "The guide was very friendly and helpful."
+    },
+    {
+        "UserID": 78,
+        "GuideID": 6,
+        "Rating": 4.1,
+        "Ulasan": "The guide was very friendly and helpful."
+    },
+    {
+        "UserID": 58,
+        "GuideID": 6,
+        "Rating": 3.7,
+        "Ulasan": "The transportation was smooth and efficient."
+    },
+    {
+        "UserID": 92,
+        "GuideID": 6,
+        "Rating": 3.1,
+        "Ulasan": "Amazing guide, highly recommended!"
+    },
+    {
+        "UserID": 35,
+        "GuideID": 7,
+        "Rating": 3.5,
+        "Ulasan": "A great tour with excellent planning."
+    },
+    {
+        "UserID": 4,
+        "GuideID": 7,
+        "Rating": 4.2,
+        "Ulasan": "The guide was very friendly and helpful."
+    },
+    {
+        "UserID": 26,
+        "GuideID": 7,
+        "Rating": 4.5,
+        "Ulasan": "Amazing guide, highly recommended!"
+    },
+    {
+        "UserID": 2,
+        "GuideID": 7,
+        "Rating": 4.5,
+        "Ulasan": "A professional and well-prepared guide."
+    },
+    {
+        "UserID": 81,
+        "GuideID": 7,
+        "Rating": 3.3,
+        "Ulasan": "Amazing guide, highly recommended!"
+    },
+    {
+        "UserID": 92,
+        "GuideID": 7,
+        "Rating": 4.1,
+        "Ulasan": "Amazing guide, highly recommended!"
+    },
+    {
+        "UserID": 66,
+        "GuideID": 7,
+        "Rating": 4.0,
+        "Ulasan": "The guide ensured our comfort throughout."
+    },
+    {
+        "UserID": 80,
+        "GuideID": 7,
+        "Rating": 3.1,
+        "Ulasan": "Loved the experience, it was fantastic."
+    },
+    {
+        "UserID": 46,
+        "GuideID": 7,
+        "Rating": 4.0,
+        "Ulasan": "An unforgettable journey with great insights."
+    },
+    {
+        "UserID": 60,
+        "GuideID": 7,
+        "Rating": 3.1,
+        "Ulasan": "Loved the energy and enthusiasm of the guide."
+    },
+    {
+        "UserID": 84,
+        "GuideID": 8,
+        "Rating": 4.1,
+        "Ulasan": "Loved the experience, it was fantastic."
+    },
+    {
+        "UserID": 94,
+        "GuideID": 8,
+        "Rating": 4.7,
+        "Ulasan": "An unforgettable journey with great insights."
+    },
+    {
+        "UserID": 83,
+        "GuideID": 8,
+        "Rating": 3.7,
+        "Ulasan": "The guide was very friendly and helpful."
+    },
+    {
+        "UserID": 36,
+        "GuideID": 8,
+        "Rating": 4.1,
+        "Ulasan": "The transportation was smooth and efficient."
+    },
+    {
+        "UserID": 95,
+        "GuideID": 8,
+        "Rating": 4.2,
+        "Ulasan": "The transportation was smooth and efficient."
+    },
+    {
+        "UserID": 56,
+        "GuideID": 8,
+        "Rating": 3.6,
+        "Ulasan": "The guide was very friendly and helpful."
+    },
+    {
+        "UserID": 38,
+        "GuideID": 8,
+        "Rating": 4.1,
+        "Ulasan": "An unforgettable journey with great insights."
+    },
+    {
+        "UserID": 39,
+        "GuideID": 8,
+        "Rating": 3.8,
+        "Ulasan": "The transportation was smooth and efficient."
+    },
+    {
+        "UserID": 69,
+        "GuideID": 8,
+        "Rating": 4.2,
+        "Ulasan": "An unforgettable journey with great insights."
+    },
+    {
+        "UserID": 6,
+        "GuideID": 8,
+        "Rating": 4.1,
+        "Ulasan": "The transportation was smooth and efficient."
+    },
+    {
+        "UserID": 73,
+        "GuideID": 9,
+        "Rating": 4.2,
+        "Ulasan": "The facilities were clean and comfortable."
+    },
+    {
+        "UserID": 67,
+        "GuideID": 9,
+        "Rating": 4.4,
+        "Ulasan": "A great tour with excellent planning."
+    },
+    {
+        "UserID": 6,
+        "GuideID": 9,
+        "Rating": 4.0,
+        "Ulasan": "The transportation was smooth and efficient."
+    },
+    {
+        "UserID": 92,
+        "GuideID": 9,
+        "Rating": 3.8,
+        "Ulasan": "The guide ensured our comfort throughout."
+    },
+    {
+        "UserID": 71,
+        "GuideID": 9,
+        "Rating": 3.2,
+        "Ulasan": "Loved the energy and enthusiasm of the guide."
+    },
+    {
+        "UserID": 65,
+        "GuideID": 9,
+        "Rating": 4.5,
+        "Ulasan": "A great tour with excellent planning."
+    },
+    {
+        "UserID": 14,
+        "GuideID": 9,
+        "Rating": 3.7,
+        "Ulasan": "The guide was very friendly and helpful."
+    },
+    {
+        "UserID": 69,
+        "GuideID": 9,
+        "Rating": 4.1,
+        "Ulasan": "Loved the experience, it was fantastic."
+    },
+    {
+        "UserID": 51,
+        "GuideID": 9,
+        "Rating": 3.1,
+        "Ulasan": "A great tour with excellent planning."
+    },
+    {
+        "UserID": 27,
+        "GuideID": 9,
+        "Rating": 4.7,
+        "Ulasan": "Loved the energy and enthusiasm of the guide."
+    },
+    {
+        "UserID": 80,
+        "GuideID": 10,
+        "Rating": 3.3,
+        "Ulasan": "Amazing guide, highly recommended!"
+    },
+    {
+        "UserID": 25,
+        "GuideID": 10,
+        "Rating": 4.5,
+        "Ulasan": "A great tour with excellent planning."
+    },
+    {
+        "UserID": 65,
+        "GuideID": 10,
+        "Rating": 3.1,
+        "Ulasan": "The guide ensured our comfort throughout."
+    },
+    {
+        "UserID": 34,
+        "GuideID": 10,
+        "Rating": 3.1,
+        "Ulasan": "A professional and well-prepared guide."
+    },
+    {
+        "UserID": 47,
+        "GuideID": 10,
+        "Rating": 4.0,
+        "Ulasan": "The guide ensured our comfort throughout."
+    },
+    {
+        "UserID": 60,
+        "GuideID": 10,
+        "Rating": 4.1,
+        "Ulasan": "Loved the energy and enthusiasm of the guide."
+    },
+    {
+        "UserID": 53,
+        "GuideID": 10,
+        "Rating": 3.0,
+        "Ulasan": "A great tour with excellent planning."
+    },
+    {
+        "UserID": 49,
+        "GuideID": 10,
+        "Rating": 3.3,
+        "Ulasan": "The guide was very friendly and helpful."
+    },
+    {
+        "UserID": 32,
+        "GuideID": 10,
+        "Rating": 3.4,
+        "Ulasan": "Amazing guide, highly recommended!"
+    },
+    {
+        "UserID": 18,
+        "GuideID": 10,
+        "Rating": 3.4,
+        "Ulasan": "A great tour with excellent planning."
+    },
+    {
+        "UserID": 32,
+        "GuideID": 11,
+        "Rating": 3.5,
+        "Ulasan": "A professional and well-prepared guide."
+    },
+    {
+        "UserID": 82,
+        "GuideID": 11,
+        "Rating": 4.6,
+        "Ulasan": "The transportation was smooth and efficient."
+    },
+    {
+        "UserID": 99,
+        "GuideID": 11,
+        "Rating": 4.5,
+        "Ulasan": "A professional and well-prepared guide."
+    },
+    {
+        "UserID": 50,
+        "GuideID": 11,
+        "Rating": 4.3,
+        "Ulasan": "An unforgettable journey with great insights."
+    },
+    {
+        "UserID": 93,
+        "GuideID": 11,
+        "Rating": 3.2,
+        "Ulasan": "The transportation was smooth and efficient."
+    },
+    {
+        "UserID": 61,
+        "GuideID": 11,
+        "Rating": 3.5,
+        "Ulasan": "An unforgettable journey with great insights."
+    },
+    {
+        "UserID": 2,
+        "GuideID": 11,
+        "Rating": 4.8,
+        "Ulasan": "Loved the energy and enthusiasm of the guide."
+    },
+    {
+        "UserID": 86,
+        "GuideID": 11,
+        "Rating": 4.2,
+        "Ulasan": "The guide was very friendly and helpful."
+    },
+    {
+        "UserID": 78,
+        "GuideID": 11,
+        "Rating": 3.4,
+        "Ulasan": "A great tour with excellent planning."
+    },
+    {
+        "UserID": 37,
+        "GuideID": 11,
+        "Rating": 3.9,
+        "Ulasan": "Loved the experience, it was fantastic."
+    },
+    {
+        "UserID": 23,
+        "GuideID": 12,
+        "Rating": 4.5,
+        "Ulasan": "The guide ensured our comfort throughout."
+    },
+    {
+        "UserID": 73,
+        "GuideID": 12,
+        "Rating": 4.4,
+        "Ulasan": "A professional and well-prepared guide."
+    },
+    {
+        "UserID": 70,
+        "GuideID": 12,
+        "Rating": 3.9,
+        "Ulasan": "A great tour with excellent planning."
+    },
+    {
+        "UserID": 74,
+        "GuideID": 12,
+        "Rating": 4.5,
+        "Ulasan": "A professional and well-prepared guide."
+    },
+    {
+        "UserID": 33,
+        "GuideID": 12,
+        "Rating": 4.7,
+        "Ulasan": "The guide was very friendly and helpful."
+    },
+    {
+        "UserID": 78,
+        "GuideID": 12,
+        "Rating": 3.3,
+        "Ulasan": "The transportation was smooth and efficient."
+    },
+    {
+        "UserID": 90,
+        "GuideID": 12,
+        "Rating": 4.3,
+        "Ulasan": "A great tour with excellent planning."
+    },
+    {
+        "UserID": 64,
+        "GuideID": 12,
+        "Rating": 4.4,
+        "Ulasan": "The facilities were clean and comfortable."
+    },
+    {
+        "UserID": 20,
+        "GuideID": 12,
+        "Rating": 3.8,
+        "Ulasan": "A professional and well-prepared guide."
+    },
+    {
+        "UserID": 2,
+        "GuideID": 12,
+        "Rating": 3.3,
+        "Ulasan": "Loved the experience, it was fantastic."
+    },
+    {
+        "UserID": 79,
+        "GuideID": 13,
+        "Rating": 3.2,
+        "Ulasan": "The facilities were clean and comfortable."
+    },
+    {
+        "UserID": 23,
+        "GuideID": 13,
+        "Rating": 3.4,
+        "Ulasan": "The guide was very friendly and helpful."
+    },
+    {
+        "UserID": 14,
+        "GuideID": 13,
+        "Rating": 4.0,
+        "Ulasan": "The guide ensured our comfort throughout."
+    },
+    {
+        "UserID": 44,
+        "GuideID": 13,
+        "Rating": 3.6,
+        "Ulasan": "The facilities were clean and comfortable."
+    },
+    {
+        "UserID": 94,
+        "GuideID": 13,
+        "Rating": 4.9,
+        "Ulasan": "The facilities were clean and comfortable."
+    },
+    {
+        "UserID": 66,
+        "GuideID": 13,
+        "Rating": 3.2,
+        "Ulasan": "A professional and well-prepared guide."
+    },
+    {
+        "UserID": 64,
+        "GuideID": 13,
+        "Rating": 3.8,
+        "Ulasan": "The guide ensured our comfort throughout."
+    },
+    {
+        "UserID": 40,
+        "GuideID": 13,
+        "Rating": 3.1,
+        "Ulasan": "The facilities were clean and comfortable."
+    },
+    {
+        "UserID": 18,
+        "GuideID": 13,
+        "Rating": 4.4,
+        "Ulasan": "The facilities were clean and comfortable."
+    },
+    {
+        "UserID": 15,
+        "GuideID": 13,
+        "Rating": 3.6,
+        "Ulasan": "The facilities were clean and comfortable."
+    },
+    {
+        "UserID": 94,
+        "GuideID": 14,
+        "Rating": 3.9,
+        "Ulasan": "Amazing guide, highly recommended!"
+    },
+    {
+        "UserID": 8,
+        "GuideID": 14,
+        "Rating": 4.6,
+        "Ulasan": "Loved the experience, it was fantastic."
+    },
+    {
+        "UserID": 22,
+        "GuideID": 14,
+        "Rating": 3.2,
+        "Ulasan": "Amazing guide, highly recommended!"
+    },
+    {
+        "UserID": 43,
+        "GuideID": 14,
+        "Rating": 3.5,
+        "Ulasan": "Amazing guide, highly recommended!"
+    },
+    {
+        "UserID": 47,
+        "GuideID": 14,
+        "Rating": 4.2,
+        "Ulasan": "The guide ensured our comfort throughout."
+    },
+    {
+        "UserID": 2,
+        "GuideID": 14,
+        "Rating": 3.9,
+        "Ulasan": "The guide ensured our comfort throughout."
+    },
+    {
+        "UserID": 27,
+        "GuideID": 14,
+        "Rating": 4.4,
+        "Ulasan": "The guide was very friendly and helpful."
+    },
+    {
+        "UserID": 63,
+        "GuideID": 14,
+        "Rating": 4.6,
+        "Ulasan": "The guide was very friendly and helpful."
+    },
+    {
+        "UserID": 100,
+        "GuideID": 14,
+        "Rating": 3.7,
+        "Ulasan": "Loved the energy and enthusiasm of the guide."
+    },
+    {
+        "UserID": 17,
+        "GuideID": 14,
+        "Rating": 3.6,
+        "Ulasan": "A great tour with excellent planning."
+    },
+    {
+        "UserID": 38,
+        "GuideID": 15,
+        "Rating": 4.7,
+        "Ulasan": "A professional and well-prepared guide."
+    },
+    {
+        "UserID": 72,
+        "GuideID": 15,
+        "Rating": 3.4,
+        "Ulasan": "The facilities were clean and comfortable."
+    },
+    {
+        "UserID": 32,
+        "GuideID": 15,
+        "Rating": 3.8,
+        "Ulasan": "A professional and well-prepared guide."
+    },
+    {
+        "UserID": 76,
+        "GuideID": 15,
+        "Rating": 4.6,
+        "Ulasan": "The guide was very friendly and helpful."
+    },
+    {
+        "UserID": 27,
+        "GuideID": 15,
+        "Rating": 3.8,
+        "Ulasan": "Amazing guide, highly recommended!"
+    },
+    {
+        "UserID": 4,
+        "GuideID": 15,
+        "Rating": 3.6,
+        "Ulasan": "Loved the energy and enthusiasm of the guide."
+    },
+    {
+        "UserID": 47,
+        "GuideID": 15,
+        "Rating": 3.6,
+        "Ulasan": "The facilities were clean and comfortable."
+    },
+    {
+        "UserID": 26,
+        "GuideID": 15,
+        "Rating": 3.9,
+        "Ulasan": "Amazing guide, highly recommended!"
+    },
+    {
+        "UserID": 86,
+        "GuideID": 15,
+        "Rating": 4.2,
+        "Ulasan": "The transportation was smooth and efficient."
+    },
+    {
+        "UserID": 58,
+        "GuideID": 15,
+        "Rating": 3.6,
+        "Ulasan": "The transportation was smooth and efficient."
+    },
+    {
+        "UserID": 78,
+        "GuideID": 16,
+        "Rating": 3.8,
+        "Ulasan": "Loved the energy and enthusiasm of the guide."
+    },
+    {
+        "UserID": 17,
+        "GuideID": 16,
+        "Rating": 4.8,
+        "Ulasan": "Amazing guide, highly recommended!"
+    },
+    {
+        "UserID": 97,
+        "GuideID": 16,
+        "Rating": 3.5,
+        "Ulasan": "Loved the experience, it was fantastic."
+    },
+    {
+        "UserID": 83,
+        "GuideID": 16,
+        "Rating": 3.3,
+        "Ulasan": "An unforgettable journey with great insights."
+    },
+    {
+        "UserID": 47,
+        "GuideID": 16,
+        "Rating": 3.7,
+        "Ulasan": "The facilities were clean and comfortable."
+    },
+    {
+        "UserID": 1,
+        "GuideID": 16,
+        "Rating": 3.1,
+        "Ulasan": "Loved the energy and enthusiasm of the guide."
+    },
+    {
+        "UserID": 10,
+        "GuideID": 16,
+        "Rating": 3.8,
+        "Ulasan": "Loved the experience, it was fantastic."
+    },
+    {
+        "UserID": 99,
+        "GuideID": 16,
+        "Rating": 3.9,
+        "Ulasan": "Loved the experience, it was fantastic."
+    },
+    {
+        "UserID": 46,
+        "GuideID": 16,
+        "Rating": 3.2,
+        "Ulasan": "The facilities were clean and comfortable."
+    },
+    {
+        "UserID": 69,
+        "GuideID": 16,
+        "Rating": 4.7,
+        "Ulasan": "The transportation was smooth and efficient."
+    },
+    {
+        "UserID": 43,
+        "GuideID": 17,
+        "Rating": 4.8,
+        "Ulasan": "The guide ensured our comfort throughout."
+    },
+    {
+        "UserID": 35,
+        "GuideID": 17,
+        "Rating": 3.5,
+        "Ulasan": "A professional and well-prepared guide."
+    },
+    {
+        "UserID": 70,
+        "GuideID": 17,
+        "Rating": 4.0,
+        "Ulasan": "A great tour with excellent planning."
+    },
+    {
+        "UserID": 92,
+        "GuideID": 17,
+        "Rating": 4.6,
+        "Ulasan": "The guide ensured our comfort throughout."
+    },
+    {
+        "UserID": 73,
+        "GuideID": 17,
+        "Rating": 3.1,
+        "Ulasan": "Loved the experience, it was fantastic."
+    },
+    {
+        "UserID": 7,
+        "GuideID": 17,
+        "Rating": 3.3,
+        "Ulasan": "Loved the energy and enthusiasm of the guide."
+    },
+    {
+        "UserID": 78,
+        "GuideID": 17,
+        "Rating": 4.2,
+        "Ulasan": "Loved the energy and enthusiasm of the guide."
+    },
+    {
+        "UserID": 72,
+        "GuideID": 17,
+        "Rating": 4.3,
+        "Ulasan": "Loved the energy and enthusiasm of the guide."
+    },
+    {
+        "UserID": 62,
+        "GuideID": 17,
+        "Rating": 3.5,
+        "Ulasan": "The guide was very friendly and helpful."
+    },
+    {
+        "UserID": 89,
+        "GuideID": 17,
+        "Rating": 3.2,
+        "Ulasan": "Amazing guide, highly recommended!"
+    },
+    {
+        "UserID": 51,
+        "GuideID": 18,
+        "Rating": 4.9,
+        "Ulasan": "The transportation was smooth and efficient."
+    },
+    {
+        "UserID": 57,
+        "GuideID": 18,
+        "Rating": 4.5,
+        "Ulasan": "The guide ensured our comfort throughout."
+    },
+    {
+        "UserID": 37,
+        "GuideID": 18,
+        "Rating": 3.6,
+        "Ulasan": "The transportation was smooth and efficient."
+    },
+    {
+        "UserID": 26,
+        "GuideID": 18,
+        "Rating": 3.8,
+        "Ulasan": "The transportation was smooth and efficient."
+    },
+    {
+        "UserID": 21,
+        "GuideID": 18,
+        "Rating": 3.6,
+        "Ulasan": "The facilities were clean and comfortable."
+    },
+    {
+        "UserID": 53,
+        "GuideID": 18,
+        "Rating": 4.7,
+        "Ulasan": "Loved the energy and enthusiasm of the guide."
+    },
+    {
+        "UserID": 62,
+        "GuideID": 18,
+        "Rating": 3.5,
+        "Ulasan": "The facilities were clean and comfortable."
+    },
+    {
+        "UserID": 67,
+        "GuideID": 18,
+        "Rating": 4.7,
+        "Ulasan": "The guide was very friendly and helpful."
+    },
+    {
+        "UserID": 70,
+        "GuideID": 18,
+        "Rating": 3.2,
+        "Ulasan": "A great tour with excellent planning."
+    },
+    {
+        "UserID": 80,
+        "GuideID": 18,
+        "Rating": 3.0,
+        "Ulasan": "Amazing guide, highly recommended!"
+    },
+    {
+        "UserID": 14,
+        "GuideID": 19,
+        "Rating": 4.6,
+        "Ulasan": "The guide was very friendly and helpful."
+    },
+    {
+        "UserID": 67,
+        "GuideID": 19,
+        "Rating": 3.6,
+        "Ulasan": "The transportation was smooth and efficient."
+    },
+    {
+        "UserID": 18,
+        "GuideID": 19,
+        "Rating": 4.0,
+        "Ulasan": "The facilities were clean and comfortable."
+    },
+    {
+        "UserID": 43,
+        "GuideID": 19,
+        "Rating": 3.4,
+        "Ulasan": "The guide was very friendly and helpful."
+    },
+    {
+        "UserID": 65,
+        "GuideID": 19,
+        "Rating": 3.7,
+        "Ulasan": "Loved the energy and enthusiasm of the guide."
+    },
+    {
+        "UserID": 52,
+        "GuideID": 19,
+        "Rating": 3.3,
+        "Ulasan": "Loved the energy and enthusiasm of the guide."
+    },
+    {
+        "UserID": 87,
+        "GuideID": 19,
+        "Rating": 4.4,
+        "Ulasan": "A professional and well-prepared guide."
+    },
+    {
+        "UserID": 24,
+        "GuideID": 19,
+        "Rating": 3.3,
+        "Ulasan": "A great tour with excellent planning."
+    },
+    {
+        "UserID": 86,
+        "GuideID": 19,
+        "Rating": 4.1,
+        "Ulasan": "A great tour with excellent planning."
+    },
+    {
+        "UserID": 78,
+        "GuideID": 19,
+        "Rating": 3.7,
+        "Ulasan": "Loved the energy and enthusiasm of the guide."
+    },
+    {
+        "UserID": 3,
+        "GuideID": 20,
+        "Rating": 4.9,
+        "Ulasan": "Loved the energy and enthusiasm of the guide."
+    },
+    {
+        "UserID": 14,
+        "GuideID": 20,
+        "Rating": 3.4,
+        "Ulasan": "The guide ensured our comfort throughout."
+    },
+    {
+        "UserID": 69,
+        "GuideID": 20,
+        "Rating": 4.0,
+        "Ulasan": "Loved the energy and enthusiasm of the guide."
+    },
+    {
+        "UserID": 67,
+        "GuideID": 20,
+        "Rating": 3.3,
+        "Ulasan": "An unforgettable journey with great insights."
+    },
+    {
+        "UserID": 54,
+        "GuideID": 20,
+        "Rating": 3.0,
+        "Ulasan": "Amazing guide, highly recommended!"
+    },
+    {
+        "UserID": 4,
+        "GuideID": 20,
+        "Rating": 4.0,
+        "Ulasan": "The guide was very friendly and helpful."
+    },
+    {
+        "UserID": 72,
+        "GuideID": 20,
+        "Rating": 4.1,
+        "Ulasan": "The guide ensured our comfort throughout."
+    },
+    {
+        "UserID": 16,
+        "GuideID": 20,
+        "Rating": 4.4,
+        "Ulasan": "A great tour with excellent planning."
+    },
+    {
+        "UserID": 36,
+        "GuideID": 20,
+        "Rating": 3.9,
+        "Ulasan": "The transportation was smooth and efficient."
+    },
+    {
+        "UserID": 83,
+        "GuideID": 20,
+        "Rating": 4.9,
+        "Ulasan": "A professional and well-prepared guide."
+    }
+]
