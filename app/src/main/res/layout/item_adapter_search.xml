@@ -12,7 +12,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <!-- Gambar Latar -->
         <ImageView
             android:id="@+id/image_background"
             android:layout_width="match_parent"
@@ -20,7 +19,6 @@
             android:scaleType="centerCrop"
             tools:src="@tools:sample/avatars" />
 
-        <!-- Overlay Gelap untuk Informasi -->
         <LinearLayout
             android:id="@+id/overlay"
             android:layout_width="match_parent"
@@ -31,7 +29,6 @@
             android:padding="16dp"
             android:gravity="center_vertical">
 
-            <!-- Foto Profil -->
             <de.hdodenhof.circleimageview.CircleImageView
                 android:id="@+id/profile_image"
                 android:layout_width="75dp"
@@ -49,12 +46,11 @@
                     android:id="@+id/home_stay_name"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Putra's Home Stay"
+                    tools:text="tes"
                     android:textColor="#FFFFFF"
                     android:textSize="16sp"
                     android:textStyle="bold" />
 
-                <!-- Rating -->
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -75,7 +71,7 @@
                         android:id="@+id/rating_text"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="4.5"
+                        tools:text="tes"
                         android:textColor="#FFFFFF"
                         android:textSize="14sp" />
                 </LinearLayout>

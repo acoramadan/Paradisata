@@ -43,4 +43,18 @@
     <string name="vehicle">Vehicle</string>
     <string name="lodging">Lodging</string>
     <string name="logout">Logout</string>
+    <string name="prices">Prices</string>
+    <string name="details">Details</string>
+    <string name="reviews">Reviews</string>
+    <string name="icon_kembali">icon_kembali</string>
+    <string name="full_name">Full Name</string>
+    <string name="gender">Gender</string>
+    <string name="female">Female</string>
+    <string name="male">Male</string>
+    <string name="i_am_here_as_tourist">I am here as ... tourist</string>
+    <string name="domestic">Domestic</string>
+    <string name="foreign">Foreign</string>
+    <string name="identity_authentication">Identity Authentication</string>
+    <string name="date_of_birth">Date Of Birth</string>
+    <string name="package_information">Package Information</string>
 </resources>
