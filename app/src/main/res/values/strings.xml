@@ -12,7 +12,7 @@
     <string name="gambar_register">gambar register</string>
     <string name="sign_up_as_a">Sign Up As</string>
     <string name="tourist">Tourism</string>
-    <string name="tour_guide">Tour Guide</string>
+    <string name="tour_guide">Guide</string>
     <string name="login">Login</string>
     <string name="sudah_punya_akun">Already Have an Account?</string>
     <string name="sign_up_as_a_tour_guide">Sign up as a Tour Guide</string>
@@ -26,7 +26,7 @@
     <string name="search">Search</string>
     <string name="home">Home</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="do_you_know_about">Do You Know About ?</string>
+    <string name="do_you_know_about">Start your journey</string>
     <string name="hi_user">Hi user</string>
     <string name="notification">notification</string>
     <string name="popular_destination">Popular Destination</string>
@@ -39,4 +39,8 @@
     <string name="my_rating">My Rating</string>
     <string name="my_bookmark">My Bookmark</string>
     <string name="my_refund">My Refund</string>
+    <string name="location">Location</string>
+    <string name="vehicle">Vehicle</string>
+    <string name="lodging">Lodging</string>
+    <string name="logout">Logout</string>
 </resources>

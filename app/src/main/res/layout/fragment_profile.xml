@@ -21,7 +21,6 @@
 
             <de.hdodenhof.circleimageview.CircleImageView
                 android:id="@+id/profile_image"
-
                 android:layout_width="92dp"
                 android:layout_height="92dp"
                 android:src="@drawable/dummy_profile"
@@ -127,22 +126,7 @@
             app:layout_constraintVertical_bias="0.129"
             tools:layout_editor_absoluteX="0dp">
 
-            <Button
-                android:id="@+id/history"
-                style="?attr/materialButtonOutlinedStyle"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
-                android:layout_marginEnd="8dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginBottom="8dp"
-                android:textAlignment="textStart"
-                app:icon="@drawable/history"
-                app:iconPadding="20dp"
-                app:iconSize="25dp"
-                android:text="@string/my_history"
-                android:textSize="18sp"
-                android:fontFamily="@font/poppins_medium"/>
+
             <Button
                 android:id="@+id/rating"
                 style="?attr/materialButtonOutlinedStyle"
@@ -189,6 +173,23 @@
                 app:iconPadding="20dp"
                 app:iconSize="25dp"
                 android:text="@string/my_bookmark"
+                android:textSize="18sp"
+                android:fontFamily="@font/poppins_medium"/>
+
+            <Button
+                android:id="@+id/history"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:textAlignment="textStart"
+                app:icon="@drawable/logout"
+                app:iconPadding="20dp"
+                app:iconSize="25dp"
+                android:text="@string/logout"
                 android:textSize="18sp"
                 android:fontFamily="@font/poppins_medium"/>
         </LinearLayout>
