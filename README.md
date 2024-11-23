@@ -1,8 +1,8 @@
 # PARADISATA
-![download](https://github.com/darkswan12/Metabook-Indonesia/blob/main/assets/wellcome_assets.png)
-## Bangkit Capstone Project 2022
+![download]()
+## Capstone Project Product Track Bangkit Batch 2 2024
 
-Bangkit Capstone Team ID : C241-PS464 <br>
+Bangkit Capstone Team ID : : C242-PS227	<br>
 Here is our repository for Bangkit 2024 Capstone project. Our team consist of 3 Machine Learning, 2 Mobile Development, and 2 Cloud Computing.
 
 ## Our Warriors
@@ -34,9 +34,9 @@ Youtube Video Presentation : [METABOOK ID](https://youtu.be/CmFLvnpOfhM)
 
 |    Branch Name     |                                      Branch Link                                         |
 | :----------------: | :--------------------------------------------------------------------------------------: |
-| Mobile Development | [MD Branch](https://github.com/darkswan12/Metabook-Indonesia/tree/md-dev) |
-|  Cloud Computing   | [CC Branch](https://github.com/darkswan12/Metabook-Indonesia/tree/cc-dev)      |
-|  Machine Learning  | [ML Branch](https://github.com/darkswan12/Metabook-Indonesia/tree/ml-dev)       |
+| Mobile Development | [MD Branch](https://github.com/acoramadan/Paradisata/tree/MD) |
+|  Cloud Computing   | [CC Branch]((https://github.com/acoramadan/Paradisata/tree/CC))      |
+|  Machine Learning  | [ML Branch](https://github.com/acoramadan/Paradisata/tree/ML)       |
 
 ## API Documentations
 
