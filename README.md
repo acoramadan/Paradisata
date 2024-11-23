@@ -35,7 +35,7 @@ Youtube Video Presentation : [METABOOK ID](https://youtu.be/CmFLvnpOfhM)
 |    Branch Name     |                                      Branch Link                                         |
 | :----------------: | :--------------------------------------------------------------------------------------: |
 | Mobile Development | [MD Branch](https://github.com/acoramadan/Paradisata/tree/MD) |
-|  Cloud Computing   | [CC Branch]((https://github.com/acoramadan/Paradisata/tree/CC))      |
+|  Cloud Computing   | [CC Branch](https://github.com/acoramadan/Paradisata/tree/CC)      |
 |  Machine Learning  | [ML Branch](https://github.com/acoramadan/Paradisata/tree/ML)       |
 
 ## API Documentations
