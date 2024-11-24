@@ -8,13 +8,15 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:background="@color/md_theme_onSecondary"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="@color/md_theme_onSecondary">
+
         <LinearLayout
             android:layout_width="match_parent"
+            android:layout_height="250dp"
             android:background="@drawable/header_home_container_bg"
-            app:layout_constraintTop_toTopOf="parent"
-            android:layout_height="250dp"/>
+            app:layout_constraintTop_toTopOf="parent" />
+
         <androidx.coordinatorlayout.widget.CoordinatorLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
@@ -23,12 +25,12 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
-                app:layout_behavior="@string/searchbar_scrolling_view_behavior">
-            </androidx.core.widget.NestedScrollView>
+                app:layout_behavior="@string/searchbar_scrolling_view_behavior"></androidx.core.widget.NestedScrollView>
 
             <com.google.android.material.appbar.AppBarLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
+
                 <com.google.android.material.search.SearchBar
                     android:id="@+id/search_bar"
                     android:layout_width="250dp"
@@ -42,14 +44,15 @@
                 android:layout_gravity="end"
                 android:layout_marginTop="24dp"
                 android:layout_marginEnd="12dp">
+
                 <ImageView
                     android:id="@+id/notification"
                     android:layout_width="42dp"
                     android:layout_height="42dp"
-                    android:contentDescription="@string/notification"
-                    android:src="@drawable/notification"
                     android:layout_marginStart="4dp"
                     android:layout_marginEnd="4dp"
+                    android:contentDescription="@string/notification"
+                    android:src="@drawable/notification"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.815"
@@ -62,14 +65,14 @@
                     android:layout_marginStart="4dp"
                     android:layout_marginEnd="4dp"
                     android:contentDescription="@string/notification"
-                    android:src="@drawable/chat"/>
+                    android:src="@drawable/chat" />
             </LinearLayout>
+
             <com.google.android.material.search.SearchView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:hint="@string/search_package_name"
-                app:layout_anchor="@id/search_bar">
-            </com.google.android.material.search.SearchView>
+                app:layout_anchor="@id/search_bar"></com.google.android.material.search.SearchView>
         </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
         <LinearLayout
@@ -87,62 +90,61 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="12dp"
                 android:layout_marginEnd="20sp"
-                android:textColor="@color/md_theme_onSecondary"
                 android:fontFamily="@font/poppins_bold"
                 android:text="@string/do_you_know_about"
+                android:textColor="@color/md_theme_onSecondary"
                 android:textSize="18sp" />
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="150dp"
+                android:layout_height="120dp"
                 android:layout_marginStart="8dp"
                 android:layout_marginEnd="8dp"
-                android:gravity="center"
-                android:background="@drawable/icon_home_container">
+                android:background="@drawable/icon_home_container"
+                android:gravity="center">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/location"
-                    android:textSize="15sp"
                     android:layout_marginStart="12dp"
                     android:layout_marginEnd="12dp"
                     android:fontFamily="@font/poppins_medium"
+                    android:text="@string/location"
+                    android:textSize="15sp"
                     app:drawableTopCompat="@drawable/island" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginEnd="12dp"
+                    android:fontFamily="@font/poppins_medium"
                     android:text="@string/vehicle"
                     android:textSize="15sp"
-                    android:layout_marginEnd="12dp"
-                    android:layout_marginStart="12dp"
-                    android:fontFamily="@font/poppins_medium"
                     app:drawableTopCompat="@drawable/car" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginEnd="12dp"
                     android:layout_marginStart="12dp"
+                    android:layout_marginEnd="12dp"
+                    android:fontFamily="@font/poppins_medium"
                     android:text="@string/lodging"
                     android:textSize="15sp"
-                    android:fontFamily="@font/poppins_medium"
                     app:drawableTopCompat="@drawable/house" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginEnd="12dp"
                     android:layout_marginStart="12dp"
+                    android:layout_marginEnd="12dp"
+                    android:fontFamily="@font/poppins_medium"
                     android:text="@string/tour_guide"
                     android:textSize="15sp"
-                    android:fontFamily="@font/poppins_medium"
                     app:drawableTopCompat="@drawable/tour_guide" />
 
 
             </LinearLayout>
-
         </LinearLayout>
 
         <LinearLayout
