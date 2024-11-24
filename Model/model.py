@@ -39,17 +39,17 @@ test_matrix = matrix.iloc[-1:]  # Gunakan baris terakhir untuk testing
 print(f'Train matrix shape: {train_matrix.shape}')
 print(f'Test matrix shape: {test_matrix.shape}')
 
-# Matrix Factorization dengan SVD
+# Step 4: Matrix Factorization dengan SVD
 svd = TruncatedSVD(n_components=2, random_state=42)  # Tentukan komponen yang sesuai
 svd.fit(train_matrix)  # Latih dengan data pelatihan
 
-# Prediksi hasil pada data uji
+# Step 5: Prediksi hasil pada data uji
 predicted_matrix = svd.transform(test_matrix)  # Transformasi data uji menggunakan model yang sudah dilatih
 
 # Mengembalikan hasil prediksi ke bentuk semula
 predicted_matrix_full = svd.inverse_transform(predicted_matrix)  # Mengembalikan hasil ke bentuk semula
 
-# Flatten data dan hasil prediksi untuk perhitungan RMSE
+# Step 6: Flatten data dan hasil prediksi untuk perhitungan RMSE
 test_matrix_flat = test_matrix.values.flatten()  # Rata-rata test matrix
 predicted_matrix_flat = predicted_matrix_full.flatten()  # Rata-rata prediksi matrix
 
