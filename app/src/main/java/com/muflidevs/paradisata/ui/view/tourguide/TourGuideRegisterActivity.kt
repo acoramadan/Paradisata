@@ -1,4 +1,4 @@
-package com.muflidevs.paradisata.ui.view
+package com.muflidevs.paradisata.ui.view.tourguide
 
 import android.os.Bundle
 import android.text.Editable

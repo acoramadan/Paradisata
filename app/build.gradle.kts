@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
+    id("kotlin-parcelize")
 }
 
 android {
@@ -41,8 +42,17 @@ android {
 
 dependencies {
     //circle image
-    implementation (libs.circleimageview)
+    implementation(libs.circleimageview)
 
+    //json
+    implementation(libs.gson)
+
+    //glide
+    implementation(libs.glide)
+
+    implementation(libs.androidx.fragment.ktx)
+    implementation(libs.androidx.lifecycle.livedata.ktx)
+    implementation(libs.androidx.lifecycle.viewmodel.ktx)
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)

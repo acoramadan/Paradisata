@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/gradient_bg"
-    tools:context=".ui.view.TourGuideRegisterActivity">
+    tools:context=".ui.view.tourguide.TourGuideRegisterActivity">
 
     <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
         android:id="@+id/btn_back_tourist"

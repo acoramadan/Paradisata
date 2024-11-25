@@ -8,6 +8,8 @@ import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import com.muflidevs.paradisata.R
 import com.muflidevs.paradisata.databinding.ActivityRegisterBinding
+import com.muflidevs.paradisata.ui.view.tourguide.TourGuideRegisterActivity
+import com.muflidevs.paradisata.ui.view.tourist.TouristRegisterActivity
 
 class RegisterActivity : AppCompatActivity(),View.OnClickListener {
     private lateinit var binding: ActivityRegisterBinding

@@ -16,10 +16,22 @@
         android:theme="@style/Theme.Paradisata"
         tools:targetApi="31">
         <activity
+            android:name=".ui.view.category.CategoryCulinaryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.view.category.CategoryHistoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.view.category.CategoryNatureActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.view.category.CategoryReligionActivity"
+            android:exported="false" />
+        <activity
             android:name=".ui.view.PackageInsertActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.view.TouristIdentityAuthActivity"
+            android:name=".ui.view.tourist.TouristIdentityAuthActivity"
             android:exported="false" />
         <activity
             android:name=".ui.view.DetailActivity"
@@ -28,10 +40,10 @@
             android:name=".ui.view.OrderActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.view.TourGuideRegisterActivity"
+            android:name=".ui.view.tourguide.TourGuideRegisterActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.view.TouristRegisterActivity"
+            android:name=".ui.view.tourist.TouristRegisterActivity"
             android:exported="false" />
         <activity
             android:name=".ui.view.RegisterActivity"

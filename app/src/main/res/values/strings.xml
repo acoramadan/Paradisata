@@ -29,16 +29,16 @@
     <string name="do_you_know_about">Start your journey</string>
     <string name="hi_user">Hi user</string>
     <string name="notification">notification</string>
-    <string name="popular_destination">Popular Destination</string>
+    <string name="category_destination">Category Destination</string>
     <string name="search_package_name">search package name</string>
     <string name="order_status">Order Status</string>
     <string name="to_accept">To Accept</string>
     <string name="in_process">In process</string>
     <string name="to_rate">To rate</string>
-    <string name="my_history">My History</string>
+    <string name="my_history">History</string>
     <string name="my_rating">My Rating</string>
     <string name="my_bookmark">My Bookmark</string>
-    <string name="my_refund">My Refund</string>
+    <string name="edit_profile">Edit Profile</string>
     <string name="location">Location</string>
     <string name="vehicle">Vehicle</string>
     <string name="lodging">Lodging</string>
@@ -57,4 +57,5 @@
     <string name="identity_authentication">Identity Authentication</string>
     <string name="date_of_birth">Date Of Birth</string>
     <string name="package_information">Package Information</string>
+    <string name="image_category">image category</string>
 </resources>

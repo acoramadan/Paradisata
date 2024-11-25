@@ -17,7 +17,9 @@
             android:id="@+id/imageView"
             android:layout_width="match_parent"
             android:layout_height="200dp"
+            android:contentDescription="@string/image_category"
             android:scaleType="centerCrop"
+            android:layout_margin="8dp"
             tools:src="@tools:sample/avatars" />
 
         <LinearLayout
@@ -27,6 +29,8 @@
             android:layout_alignBottom="@id/imageView"
             android:orientation="horizontal"
             android:padding="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
             android:background="#88000000">
 
             <TextView
@@ -34,19 +38,11 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Way Kambas"
+
+                tools:text="Kategori"
                 android:textColor="#FFFFFF"
                 android:textSize="16sp"
                 android:textStyle="bold" />
-
-            <RatingBar
-                android:id="@+id/ratingBar"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:numStars="5"
-                android:stepSize="0.5"
-                android:isIndicator="true"
-                android:progressTint="#FFC107" />
 
         </LinearLayout>
     </RelativeLayout>
