@@ -2363,7 +2363,11 @@
      {
         "kategori": "Wisata Alam",
         "nama": "Pantai Sindangkerta",
-        "foto": "https://example.com/pantai-sindangkerta.jpg",
+        "foto": [
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/tasikmalaya/pantai_sindangkerta/1.jpg",
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/tasikmalaya/pantai_sindangkerta/2.jpg",
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/tasikmalaya/pantai_sindangkerta/3.jpg"
+        ],
         "tentang": "Pantai Sindangkerta adalah pantai yang menawarkan pemandangan indah dan suasana yang tenang. Dengan pasir putih dan air laut yang jernih, pantai ini cocok untuk bersantai dan berenang.",
         "alamat": "Sindangkerta, Kecamatan Cipatujah, Tasikmalaya, Jawa Barat",
         "fasilitas": ["Tempat parkir", "Toilet", "Area bermain"],
@@ -2382,9 +2386,13 @@
     {
         "kategori": "Wisata Sejarah",
         "nama": "Makam Sunan Gunung Jati",
-        "foto": "https://example.com/makam-sunan-gunung-jati.jpg",
+        "foto": [
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/tasikmalaya/museum_sunan_gunung_jati/1.jpg",
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/tasikmalaya/museum_sunan_gunung_jati/2.jpg",
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/tasikmalaya/museum_sunan_gunung_jati/3.jpg"
+        ],
         "tentang": "Makam Sunan Gunung Jati adalah situs religi yang sangat penting bagi masyarakat Tasikmalaya dan sekitarnya. Makam ini menjadi tujuan ziarah bagi umat Islam yang ingin berdoa dan mengenang perjuangan Sunan Gunung Jati.",
-        "alamat": "Gunung Jati, Kecamatan Cigalontang, Tasikmalaya, Jawa Barat",
+        "alamat": "Jl. Makam Jl. Sunan Gn. Jati, Astana, Kec. Gunungjati, Kabupaten Cirebon, Jawa Barat",
         "fasilitas": ["Area parkir", "Toilet", "Tempat doa"],
         "aktivitas": ["Berziarah", "Berdoa", "Menelusuri sejarah"],
         "rating": 4.8,
@@ -2400,10 +2408,14 @@
     },
     {
         "kategori": "Wisata Kuliner",
-        "nama": "Sate Maranggi Cikurubuk",
-        "foto": "https://example.com/sate-maranggi-cikurubuk.jpg",
-        "tentang": "Sate Maranggi Cikurubuk terkenal dengan rasa daging yang empuk dan bumbu kacangnya yang kaya rasa. Tempat ini sudah menjadi salah satu kuliner khas yang sangat terkenal di Tasikmalaya.",
-        "alamat": "Jl. Raya Cikurubuk, Tasikmalaya, Jawa Barat",
+        "nama": "Sate Maranggi AA",
+        "foto": [
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/tasikmalaya/sate_maranggi_aa/1.png",
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/tasikmalaya/sate_maranggi_aa/2.jpg",
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/tasikmalaya/sate_maranggi_aa/3.jpg"
+        ],
+        "tentang": "Sate Maranggi AA terkenal dengan rasa daging yang empuk dan bumbu kacangnya yang kaya rasa. Tempat ini sudah menjadi salah satu kuliner khas yang sangat terkenal di Tasikmalaya.",
+        "alamat": "Jl. Garut - Tasikmalaya, Cipari, Kec. Mangkubumi, Kab. Tasikmalaya, Jawa Barat",
         "fasilitas": ["Restoran", "Tempat makan", "Area parkir"],
         "aktivitas": ["Mencicipi sate maranggi", "Makan bersama keluarga", "Menikmati kuliner lokal"],
         "rating": 4.7,
@@ -2420,9 +2432,14 @@
     {
         "kategori": "Wisata Religi",
         "nama": "Masjid Agung Tasikmalaya",
-        "foto": "https://example.com/masjid-agung.jpg",
+        "foto": [
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/tasikmalaya/masjid_agung_tasikmalaya/1.jpg",
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/tasikmalaya/masjid_agung_tasikmalaya/2.jpg",
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/tasikmalaya/masjid_agung_tasikmalaya/3.jpg",
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/tasikmalaya/masjid_agung_tasikmalaya/4.jpg"
+        ],
         "tentang": "Masjid Agung Tasikmalaya adalah salah satu masjid terbesar dan terindah di Tasikmalaya, dengan arsitektur yang megah dan fasilitas yang lengkap. Masjid ini sering digunakan untuk kegiatan keagamaan dan juga sebagai tempat ziarah.",
-        "alamat": "Jl. Raya No.11, Tasikmalaya, Jawa Barat",
+        "alamat": "Jl. Mesjid Agung No.01, Yudanagara, Kec. Tawang, Kab. Tasikmalaya, Jawa Barat",
         "fasilitas": ["Toilet", "Tempat sholat", "Area parkir", "Tempat doa"],
         "aktivitas": ["Sholat berjamaah", "Berziarah", "Menikmati arsitektur masjid"],
         "rating": 4.8,
@@ -2438,10 +2455,14 @@
     },
     {
         "kategori": "Wisata Budaya",
-        "nama": "Pusat Kerajinan Tasikmalaya",
-        "foto": "https://example.com/pusat-kerajinan.jpg",
-        "tentang": "Pusat Kerajinan Tasikmalaya adalah tempat di mana pengunjung bisa melihat dan membeli berbagai kerajinan tangan khas Tasikmalaya, mulai dari batik, tenun, hingga anyaman bambu yang indah.",
-        "alamat": "Jl. Raya Kerajinan, Tasikmalaya, Jawa Barat",
+        "nama": "Pusat Kerajinan Rajapolah",
+        "foto": [
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/tasikmalaya/pusat_kerajinan_rajapolah/1.jpg",
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/tasikmalaya/pusat_kerajinan_rajapolah/2.jpg",
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/tasikmalaya/pusat_kerajinan_rajapolah/3.jpg"
+        ],
+        "tentang": "Pusat Kerajinan Rajapolah adalah tempat di mana pengunjung bisa melihat dan membeli berbagai kerajinan tangan khas Tasikmalaya, mulai dari batik, tenun, hingga anyaman bambu yang indah.",
+        "alamat": "Jl. Raya Rajapolah - Tasikmalaya No.183, Rajapolah, Kec. Rajapolah, Kabupaten Tasikmalaya, Jawa Barat",
         "fasilitas": ["Toko kerajinan", "Area parkir", "Tempat duduk"],
         "aktivitas": ["Berbelanja kerajinan", "Melihat proses pembuatan kerajinan", "Mencicipi makanan tradisional"],
         "rating": 4.6,
@@ -2461,9 +2482,13 @@
     {
         "kategori": "Wisata Alam",
         "nama": "Cisolok Hot Spring",
-        "foto": "https://example.com/cisolok-hot-spring.jpg",
-        "tentang": "Cisolok Hot Spring is a natural hot spring located in the Sukabumi region, known for its warm and therapeutic mineral water. It’s a perfect spot to relax and enjoy the scenic views of the surrounding hills.",
-        "alamat": "Cisolok, Sukabumi, Jawa Barat",
+        "foto": [
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/sukabumi/cisolok_hot_spring/1.jpg",
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/sukabumi/cisolok_hot_spring/2.jpg",
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/sukabumi/cisolok_hot_spring/3.jpg"  
+        ],
+        "tentang": "Pemandian Air Panas Cisolok terkenal dengan air mineralnya yang hangat dan menyembuhkan. Ini adalah tempat yang sempurna untuk bersantai dan menikmati pemandangan indah perbukitan di sekitarnya.",
+        "alamat": "Cikahuripan, Kec. Cisolok, Kabupaten Sukabumi, Jawa Barat",
         "fasilitas": ["Toilet", "Tempat parkir", "Kolam air panas", "Restoran"],
         "aktivitas": ["Berendam di air panas", "Bersantai", "Fotografi alam"],
         "rating": 4.5,
@@ -2480,9 +2505,13 @@
     {
         "kategori": "Wisata Sejarah",
         "nama": "Makam Syekh Abdul Muhyi",
-        "foto": "https://example.com/makam-syekh-abdul-muhyi.jpg",
-        "tentang": "Makam Syekh Abdul Muhyi is a historical and religious site located in Sukabumi. This tomb is a popular ziarah destination for those who want to pay respects to the revered Islamic scholar.",
-        "alamat": "Jl. Raya Sukabumi, Sukabumi, Jawa Barat",
+        "foto": [
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/sukabumi/makam_syekh_abdul_muhyi/1.jpg",
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/sukabumi/makam_syekh_abdul_muhyi/2.jpg",
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/sukabumi/makam_syekh_abdul_muhyi/3.jpg"
+        ],
+        "tentang": "Makam Syekh Abdul Muhyi merupakan sebuah situs sejarah dan religi yang terletak di Sukabumi. Makam ini merupakan tujuan ziarah populer bagi mereka yang ingin memberikan penghormatan kepada ulama Islam yang dihormati.",
+        "alamat": "Pamijahan, Kec. Bantarkalong, Kabupaten Tasikmalaya, Jawa Barat",
         "fasilitas": ["Area parkir", "Toilet", "Tempat doa"],
         "aktivitas": ["Berziarah", "Berdoa", "Menelusuri sejarah"],
         "rating": 4.8,
@@ -2498,10 +2527,14 @@
     },
     {
         "kategori": "Wisata Kuliner",
-        "nama": "Sate Maranggi Sukabumi",
-        "foto": "https://example.com/sate-maranggi-sukabumi.jpg",
-        "tentang": "Sate Maranggi Sukabumi is one of the best places to enjoy the delicious Maranggi skewers. The sate is served with a rich peanut sauce, making it a must-try delicacy in Sukabumi.",
-        "alamat": "Jl. Raya Sukabumi, Sukabumi, Jawa Barat",
+        "nama": "Sate Maranggi Hj Nani",
+        "foto": [
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/sukabumi/sate_maranggi_hj_nani/1.jpg",
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/sukabumi/sate_maranggi_hj_nani/2.jpg",
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/sukabumi/sate_maranggi_hj_nani/3.jpg"
+        ],
+        "tentang": "Sate Maranggi Hj Nani menjadi salah satu tempat terbaik untuk menikmati lezatnya sate Maranggi. Satenya yang disajikan dengan bumbu kacang yang kental menjadikannya salah satu kuliner yang wajib dicoba di Sukabumi.",
+        "alamat": "Komplek Ruko King Raos, Jl. Lkr. Sel. Jl. Raya Cibolang Cisaat - Sukabhumi, Cibatu, Kec. Cisaat, Kabupaten Sukabumi, Jawa Barat",
         "fasilitas": ["Restoran", "Tempat duduk", "Area parkir"],
         "aktivitas": ["Mencicipi sate maranggi", "Menikmati kuliner lokal", "Bersantai dengan keluarga"],
         "rating": 4.7,
@@ -2518,9 +2551,14 @@
     {
         "kategori": "Wisata Religi",
         "nama": "Masjid Agung Sukabumi",
-        "foto": "https://example.com/masjid-agung-sukabumi.jpg",
-        "tentang": "Masjid Agung Sukabumi is one of the most prominent mosques in the city, known for its impressive architecture. The mosque is not only a place of worship but also a cultural landmark.",
-        "alamat": "Jl. Raya Sukabumi, Sukabumi, Jawa Barat",
+        "foto": [
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/sukabumi/masjid_agung_sukabumi/1.jpg",
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/sukabumi/masjid_agung_sukabumi/2.jpg",
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/sukabumi/masjid_agung_sukabumi/3.jpg",
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/sukabumi/masjid_agung_sukabumi/4.jpg"
+        ],
+        "tentang": "Masjid Agung Sukabumi adalah salah satu masjid paling terkemuka di kota ini, yang terkenal dengan arsitekturnya yang mengesankan. Masjid tidak hanya menjadi tempat ibadah tetapi juga landmark budaya.",
+        "alamat": "Jl. Alun-Alun Utara No.4B, Gunungparang, Kec. Cikole, Kota Sukabumi, Jawa Barat",
         "fasilitas": ["Toilet", "Area sholat", "Tempat parkir", "Tempat doa"],
         "aktivitas": ["Sholat berjamaah", "Berdoa", "Menikmati arsitektur masjid"],
         "rating": 4.8,
@@ -2536,10 +2574,14 @@
     },
     {
         "kategori": "Wisata Budaya",
-        "nama": "Pusat Kerajinan Sukabumi",
-        "foto": "https://example.com/kerajinan-sukabumi.jpg",
-        "tentang": "Pusat Kerajinan Sukabumi is a cultural spot where visitors can see and buy local handmade crafts such as batik, wood carvings, and traditional Sukabumi woven fabrics.",
-        "alamat": "Jl. Raya Kerajinan, Sukabumi, Jawa Barat",
+        "nama": "Sukabumi Craft Center",
+        "foto": [
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/sukabumi/sukabumi_craft_center/1.jpg",
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/sukabumi/sukabumi_craft_center/2.jpg",
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/sukabumi/sukabumi_craft_center/3.jpg"
+        ],
+        "tentang": "Sukabumi Craft Center adalah pusat kerajinan khas Sukabumi yang menawarkan berbagai produk unik hasil karya pengrajin lokal dengan kualitas tinggi.",
+        "alamat": "Jl. Cikiray Kidul, Sukamanah, Kec. Cisaat, Kabupaten Sukabumi, Jawa Barat",
         "fasilitas": ["Toko kerajinan", "Area parkir", "Tempat duduk"],
         "aktivitas": ["Membeli kerajinan", "Melihat pembuatan kerajinan", "Mencicipi makanan tradisional"],
         "rating": 4.6,
@@ -2557,9 +2599,15 @@
     {
         "kategori": "Wisata Alam",
         "nama": "Taman Nasional Gunung Halimun Salak",
-        "foto": "https://example.com/halimun-salak.jpg",
-        "tentang": "Taman Nasional Gunung Halimun Salak is a protected national park, known for its rich biodiversity, hiking trails, and stunning waterfalls. It is ideal for nature lovers and adventure seekers.",
-        "alamat": "Jalan Raya Halimun, Sukabumi, Jawa Barat",
+        "foto": [
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/sukabumi/tn_gn_halimun_salak/1.jpg",
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/sukabumi/tn_gn_halimun_salak/2.jpg",
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/sukabumi/tn_gn_halimun_salak/3.jpg",
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/sukabumi/tn_gn_halimun_salak/4.jpg",
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/sukabumi/tn_gn_halimun_salak/5.jpg"
+        ],
+        "tentang": "Taman Nasional Gunung Halimun Salak adalah taman nasional yang dilindungi, terkenal dengan kekayaan keanekaragaman hayati, jalur pendakian, dan air terjun yang menakjubkan. Ini sangat ideal untuk pecinta alam dan pencari petualangan.",
+        "alamat": "Jl. Raya Cipanas, Malasari, Kec. Kabandungan, Kabupaten Sukabumi, Jawa Barat",
         "fasilitas": ["Trekking", "Area perkemahan", "Toilet", "Tempat parkir"],
         "aktivitas": ["Mendaki gunung", "Fotografi alam", "Melihat flora dan fauna", "Berkemah"],
         "rating": 4.7,
@@ -2576,9 +2624,14 @@
     {
         "kategori": "Wisata Edukasi",
         "nama": "Kebun Raya Cibodas",
-        "foto": "https://example.com/kebun-raya-cibodas.jpg",
-        "tentang": "Kebun Raya Cibodas is a botanical garden that offers educational experiences with a wide collection of tropical plants. It’s an excellent place for learning about conservation and the importance of biodiversity.",
-        "alamat": "Jl. Raya Cibodas, Sukabumi, Jawa Barat",
+        "foto": [
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cianjur/kebun_raya_cibodas/1.jpg",
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cianjur/kebun_raya_cibodas/2.jpg",
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cianjur/kebun_raya_cibodas/3.jpg",
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cianjur/kebun_raya_cibodas/4.jpg"
+        ],
+        "tentang": "Kebun Raya Cibodas merupakan kebun raya yang menawarkan pengalaman edukasi dengan beragam koleksi tanaman tropis. Ini adalah tempat yang sangat baik untuk belajar tentang konservasi dan pentingnya keanekaragaman hayati.",
+        "alamat": "Jl. Kebun Raya Cibodas, Sindangjaya, Kec. Cipanas, Kabupaten Cianjur, Jawa Barat",
         "fasilitas": ["Toilet", "Kafe", "Tempat parkir", "Jalur pejalan kaki"],
         "aktivitas": ["Menjelajahi kebun raya", "Edukasi tentang konservasi tanaman", "Bersantai di alam terbuka"],
         "rating": 4.6,
@@ -2595,9 +2648,13 @@
     {
         "kategori": "Wisata Alam",
         "nama": "Air Terjun Cibereum",
-        "foto": "https://example.com/air-terjun-cibereum.jpg",
-        "tentang": "Air Terjun Cibereum is a beautiful waterfall located in the midst of lush green forests. It’s a popular destination for nature lovers who enjoy scenic walks and taking in the fresh, cool air.",
-        "alamat": "Jalan Raya Cibereum, Sukabumi, Jawa Barat",
+        "foto": [
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cianjur/air_terjun_cirebeum/1.jpg",
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cianjur/air_terjun_cirebeum/2.jpg",
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cianjur/air_terjun_cirebeum/3.jpg"
+        ],
+        "tentang": "Air Terjun Cibereum merupakan air terjun indah yang terletak di tengah hutan hijau subur. Ini adalah tujuan populer bagi pecinta alam yang menikmati jalan-jalan indah dan menikmati udara segar dan sejuk.",
+        "alamat": "JL. Cisarua Puncak KM. 10, Desa Cilember, Kec. Cisarua, Puncak, Cimacan, Kec. Cipanas, Kabupaten Cianjur, Jawa Barat",
         "fasilitas": ["Tempat parkir", "Toilet", "Area perkemahan"],
         "aktivitas": ["Berenang di bawah air terjun", "Fotografi alam", "Jalan-jalan santai di alam terbuka"],
         "rating": 4.7,
@@ -2614,9 +2671,13 @@
     {
         "kategori": "Wisata Sejarah",
         "nama": "Benteng Pendem",
-        "foto": "https://example.com/benteng-pendem.jpg",
-        "tentang": "Benteng Pendem is a historical fort that was built during the Dutch colonial period. It’s an important historical site where visitors can learn about Indonesia’s colonial history.",
-        "alamat": "Jl. Raya Sukabumi, Sukabumi, Jawa Barat",
+        "foto": [
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cianjur/benteng_pendem/1.jpg",
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cianjur/benteng_pendem/2.jpg",
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cianjur/benteng_pendem/3.jpg"
+        ],
+        "tentang": "Benteng Pendem merupakan benteng bersejarah yang dibangun pada masa penjajahan Belanda. Ini adalah situs bersejarah yang penting di mana pengunjung dapat belajar tentang sejarah kolonial Indonesia.",
+        "alamat": "Jl. Benteng, Sentolokawat, Cilacap, Kec. Cilacap Sel., Kabupaten Cianjur, Jawa Barat",
         "fasilitas": ["Area parkir", "Toilet", "Pemandu wisata"],
         "aktivitas": ["Berziarah sejarah", "Melihat peninggalan kolonial", "Fotografi sejarah"],
         "rating": 4.6,
@@ -2633,9 +2694,14 @@
     {
         "kategori": "Wisata Alam",
         "nama": "Pantai Ujung Genteng",
-        "foto": "https://example.com/pantai-ujung-genteng.jpg",
-        "tentang": "Pantai Ujung Genteng is one of the most beautiful and pristine beaches in Sukabumi. It is famous for its white sandy shores and clear blue water, perfect for swimming, snorkeling, and relaxing.",
-        "alamat": "Ujung Genteng, Sukabumi, Jawa Barat",
+        "foto": [
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/sukabumi/pantai_ujung_genteng/1.jpg",
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/sukabumi/pantai_ujung_genteng/2.jpg",
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/sukabumi/pantai_ujung_genteng/3.jpg",
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/sukabumi/pantai_ujung_genteng/4.jpg"
+        ],
+        "tentang": "Pantai Ujung Genteng merupakan salah satu pantai terindah dan masih alami di Sukabumi. Terkenal dengan pantainya yang berpasir putih dan airnya yang biru jernih, cocok untuk berenang, snorkeling, dan bersantai.",
+        "alamat": "Desa Gunung Batu, Kecamatan Ciracap, Kabupaten Sukabumi, Jawa Barat",
         "fasilitas": ["Toilet", "Tempat parkir", "Kafe", "Area bermain"],
         "aktivitas": ["Berenang", "Snorkeling", "Bermain pasir", "Fotografi pantai"],
         "rating": 4.8,
@@ -2653,9 +2719,13 @@
     {
         "kategori": "Wisata Alam",
         "nama": "Curug Cikaso",
-        "foto": "https://example.com/curug-cikaso.jpg",
-        "tentang": "Curug Cikaso is a beautiful waterfall located in the village of Cibadak. It's a stunning natural wonder surrounded by lush green forest, perfect for trekking and photography.",
-        "alamat": "Cikaso, Sukabumi, Jawa Barat",
+        "foto": [
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/sukabumi/curug_cikaso/1.jpg",
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/sukabumi/curug_cikaso/2.jpg",
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/sukabumi/curug_cikaso/3.jpg"
+        ],
+        "tentang": "Curug Cikaso merupakan sebuah air terjun indah yang terletak di Desa Cibadak. Ini adalah keajaiban alam menakjubkan yang dikelilingi oleh hutan hijau subur, cocok untuk trekking dan fotografi.",
+        "alamat": "Desa Ciniti, Cibitung, Sukabumi, Jawa Barat",
         "fasilitas": ["Jalur pejalan kaki", "Tempat parkir", "Toilet"],
         "aktivitas": ["Trekking", "Fotografi alam", "Berenang di bawah air terjun"],
         "rating": 4.7,
@@ -2672,9 +2742,13 @@
     {
         "kategori": "Wisata Budaya",
         "nama": "Museum Siliwangi",
-        "foto": "https://example.com/museum-siliwangi.jpg",
-        "tentang": "Museum Siliwangi is dedicated to preserving the history and culture of the Siliwangi warriors. The museum offers a glimpse into the ancient civilization and their heroic acts.",
-        "alamat": "Jl. Raya Siliwangi, Sukabumi, Jawa Barat",
+        "foto": [
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/bandung/museum_siliwangi/1.jpg",
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/bandung/museum_siliwangi/2.jpg",
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/bandung/museum_siliwangi/3.jpg"
+        ],
+        "tentang": "Museum Siliwangi didedikasikan untuk melestarikan sejarah dan budaya para pejuang Siliwangi. Museum ini menawarkan gambaran sekilas tentang peradaban kuno dan tindakan heroik mereka.",
+        "alamat": "Jl. Lembong No.38, Braga, Kec. Sumur Bandung, Kota Bandung, Jawa Barat",
         "fasilitas": ["Area parkir", "Pemandu wisata", "Toilet"],
         "aktivitas": ["Berziarah sejarah", "Melihat koleksi artefak budaya", "Fotografi"],
         "rating": 4.6,
@@ -2691,9 +2765,13 @@
     {
         "kategori": "Wisata Kuliner",
         "nama": "Warung Makan Cibiuk",
-        "foto": "https://example.com/warung-makan-cibiuk.jpg",
-        "tentang": "Warung Makan Cibiuk is a local restaurant famous for its traditional Sundanese cuisine. Visitors can enjoy various authentic dishes including nasi liwet, ayam goreng, and sambal.",
-        "alamat": "Jl. Raya Cibiuk, Sukabumi, Jawa Barat",
+        "foto": [
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/bandung/warung_makan_cibiuk/1.jpg",
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/bandung/warung_makan_cibiuk/2.jpg",
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/bandung/warung_makan_cibiuk/3.jpg"
+        ],
+        "tentang": "Warung Makan Cibiuk merupakan restoran lokal yang terkenal dengan masakan tradisional Sunda. Pengunjung dapat menikmati berbagai hidangan otentik termasuk nasi liwet, ayam goreng, dan sambal.",
+        "alamat": "Jl. Soekarno-Hatta No.508, Batununggal, Kec. Bandung Kidul, Kota Bandung, Jawa Barat",
         "fasilitas": ["Tempat duduk", "Toilet", "Area parkir"],
         "aktivitas": ["Mencicipi makanan khas Sunda", "Berkumpul dengan keluarga", "Makan siang santai"],
         "rating": 4.5,
@@ -2709,17 +2787,21 @@
     },
     {
         "kategori": "Wisata Religi",
-        "nama": "Masjid Agung Sukabumi",
-        "foto": "https://example.com/masjid-agung-sukabumi.jpg",
-        "tentang": "Masjid Agung Sukabumi is one of the largest mosques in the region. It offers a peaceful environment for prayer and reflection, with beautiful architecture that blends modern and traditional Islamic styles.",
-        "alamat": "Jl. Raya Masjid Agung, Sukabumi, Jawa Barat",
+        "nama": "Masjid Agung Trans Studio Bandung",
+        "foto": [
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/bandung/masjid_agung_ts_bandung/1.jpg",
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/bandung/masjid_agung_ts_bandung/2.jpg",
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/bandung/masjid_agung_ts_bandung/3.jpg"
+        ],
+        "tentang": "Masjid Agung Trans Studio Bandung adalah masjid megah dengan desain modern yang terletak di kawasan Trans Studio Bandung, menawarkan tempat ibadah yang nyaman dan fasilitas lengkap bagi pengunjung.",
+        "alamat": " Jl. Gatot Subroto No.289, Cibangkong, Kec. Batununggal, Kota Bandung, Jawa Barat",
         "fasilitas": ["Toilet", "Tempat parkir", "Area wudhu", "Kafetaria"],
         "aktivitas": ["Sholat berjamaah", "Kegiatan keagamaan", "Mendengarkan ceramah"],
         "rating": 4.8,
         "ulasan": [
             {"user": "Siti", "komentar": "Masjid ini sangat luas dan nyaman untuk beribadah.", "rating": 4.9},
             {"user": "Ayu", "komentar": "Tempat yang sangat damai untuk melakukan ibadah, arsitekturnya sangat indah.", "rating": 4.8},
-            {"user": "Budi", "komentar": "Masjid Agung Sukabumi adalah tempat yang luar biasa untuk berdoa dan merenung.", "rating": 4.7},
+            {"user": "Budi", "komentar": "Masjid Agung ini adalah tempat yang luar biasa untuk berdoa dan merenung.", "rating": 4.7},
             {"user": "Tio", "komentar": "Sangat mengagumkan, fasilitasnya lengkap dan pelayanan sangat baik.", "rating": 4.8},
             {"user": "Rina", "komentar": "Sangat tenang, cocok untuk refleksi pribadi dan ibadah.", "rating": 4.9}
         ],
@@ -2729,9 +2811,13 @@
     {
         "kategori": "Wisata Alam",
         "nama": "Pantai Cikao",
-        "foto": "https://example.com/pantai-cikao.jpg",
-        "tentang": "Pantai Cikao is a hidden gem in Sukabumi. With its calm waters, it is an excellent spot for swimming and beach sports. The beach also offers a scenic view perfect for relaxing.",
-        "alamat": "Cikao, Sukabumi, Jawa Barat",
+        "foto": [
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/purwakarta/pantai_cikao/1.jpg",
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/purwakarta/pantai_cikao/2.jpg",
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/purwakarta/pantai_cikao/3.jpg"
+        ],
+        "tentang": "Pantai Cikao adalah permata tersembunyi di Sukabumi. Dengan perairannya yang tenang, tempat ini sangat cocok untuk berenang dan olahraga pantai. Pantai ini juga menawarkan pemandangan indah yang cocok untuk bersantai.",
+        "alamat": "Jalan Raya Sukatani, Cisalada, Kecamatan Jatiluhur, Kabupaten Purwakarta, Jawa Barat",
         "fasilitas": ["Tempat parkir", "Toilet", "Warung makanan", "Area bermain"],
         "aktivitas": ["Berenang", "Bermain voli pantai", "Fotografi pantai", "Bersantai"],
         "rating": 4.7,
@@ -2748,10 +2834,15 @@
     
         {
             "kategori": "Wisata Alam",
-            "nama": "Curug Cikaso",
-            "foto": "https://example.com/curug-cikaso.jpg",
-            "tentang": "Curug Cikaso is a beautiful waterfall located in the village of Cibadak. It's a stunning natural wonder surrounded by lush green forest, perfect for trekking and photography.",
-            "alamat": "Cikaso, Sukabumi, Jawa Barat",
+            "nama": "Curug Sawer",
+            "foto": [
+                "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/sukabumi/curug_sawer/1.jpg",
+                "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/sukabumi/curug_sawer/1.jpg",
+                "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/sukabumi/curug_sawer/1.jpg",
+                "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/sukabumi/curug_sawer/4.jpg"
+            ],
+            "tentang": "Curug Sawer adalah sebuah air terjun yang terletak di Cianjur, Jawa Barat, yang menawarkan pemandangan alam yang memukau dengan air terjun yang deras dan dikelilingi oleh vegetasi hijau yang menyejukkan.",
+            "alamat": "Gede Pangrango, Kec. Kadudampit, Kabupaten Sukabumi, Jawa Barat ",
             "fasilitas": ["Jalur pejalan kaki", "Tempat parkir", "Toilet"],
             "aktivitas": ["Trekking", "Fotografi alam", "Berenang di bawah air terjun"],
             "rating": 4.7,
@@ -2767,10 +2858,15 @@
         },
         {
             "kategori": "Wisata Budaya",
-            "nama": "Museum Siliwangi",
-            "foto": "https://example.com/museum-siliwangi.jpg",
-            "tentang": "Museum Siliwangi is dedicated to preserving the history and culture of the Siliwangi warriors. The museum offers a glimpse into the ancient civilization and their heroic acts.",
-            "alamat": "Jl. Raya Siliwangi, Sukabumi, Jawa Barat",
+            "nama": " Bumi Ageung Cikidang",
+            "foto": [
+                "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cianjur/bumi_ageung_cikidang/1.jpg",
+                "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cianjur/bumi_ageung_cikidang/2.jpg",
+                "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cianjur/bumi_ageung_cikidang/3.jpg",
+                "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cianjur/bumi_ageung_cikidang/4.jpg"  
+            ],
+            "tentang": "Bumi Ageung Cikidang adalah sebuah tempat wisata alam yang menawarkan keindahan alam pegunungan, dengan berbagai aktivitas luar ruangan yang menyegarkan, cocok untuk liburan keluarga dan menikmati udara segar.",
+            "alamat": "Jl. Moch. Ali No.64, Solokpandan, Kec. Cianjur, Kabupaten Cianjur, Jawa Barat",
             "fasilitas": ["Area parkir", "Pemandu wisata", "Toilet"],
             "aktivitas": ["Berziarah sejarah", "Melihat koleksi artefak budaya", "Fotografi"],
             "rating": 4.6,
@@ -2786,10 +2882,15 @@
         },
         {
             "kategori": "Wisata Kuliner",
-            "nama": "Warung Makan Cibiuk",
-            "foto": "https://example.com/warung-makan-cibiuk.jpg",
-            "tentang": "Warung Makan Cibiuk is a local restaurant famous for its traditional Sundanese cuisine. Visitors can enjoy various authentic dishes including nasi liwet, ayam goreng, and sambal.",
-            "alamat": "Jl. Raya Cibiuk, Sukabumi, Jawa Barat",
+            "nama": "Saung Nikmat Cianjur",
+            "foto": [
+                "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cianjur/saung_nikmat_cianjur/1.jpg",
+                "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cianjur/saung_nikmat_cianjur/2.jpg",
+                "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cianjur/saung_nikmat_cianjur/3.jpg",
+                "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cianjur/saung_nikmat_cianjur/4.jpg" 
+            ],
+            "tentang": "Saung Nikmat Cianjur adalah sebuah tempat makan yang menawarkan hidangan khas Sunda dalam suasana yang nyaman dan asri, dengan pemandangan alam yang menenangkan di sekitar area saung.",
+            "alamat": "Jl. Dr. Muwardi No.155, Bojongherang, Kec. Cianjur, Kabupaten Cianjur, Jawa Barat",
             "fasilitas": ["Tempat duduk", "Toilet", "Area parkir"],
             "aktivitas": ["Mencicipi makanan khas Sunda", "Berkumpul dengan keluarga", "Makan siang santai"],
             "rating": 4.5,
@@ -2805,17 +2906,22 @@
         },
         {
             "kategori": "Wisata Religi",
-            "nama": "Masjid Agung Sukabumi",
-            "foto": "https://example.com/masjid-agung-sukabumi.jpg",
-            "tentang": "Masjid Agung Sukabumi is one of the largest mosques in the region. It offers a peaceful environment for prayer and reflection, with beautiful architecture that blends modern and traditional Islamic styles.",
-            "alamat": "Jl. Raya Masjid Agung, Sukabumi, Jawa Barat",
+            "nama": "Masjid Agung Cimahi",
+            "foto": [
+                "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/sukabumi/masjid_agung_sukabumi/1.jpg",
+                "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/sukabumi/masjid_agung_sukabumi/2.jpg",
+                "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/sukabumi/masjid_agung_sukabumi/3.jpg",
+                "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/sukabumi/masjid_agung_sukabumi/4.jpg"
+            ],
+            "tentang": "Masjid Agung Cimahi is one of the largest mosques in the region. It offers a peaceful environment for prayer and reflection, with beautiful architecture that blends modern and traditional Islamic styles.",
+            "alamat": "Jl. Raya Masjid Agung, Cimahi, Jawa Barat",
             "fasilitas": ["Toilet", "Tempat parkir", "Area wudhu", "Kafetaria"],
             "aktivitas": ["Sholat berjamaah", "Kegiatan keagamaan", "Mendengarkan ceramah"],
             "rating": 4.8,
             "ulasan": [
                 {"user": "Siti", "komentar": "Masjid ini sangat luas dan nyaman untuk beribadah.", "rating": 4.9},
                 {"user": "Ayu", "komentar": "Tempat yang sangat damai untuk melakukan ibadah, arsitekturnya sangat indah.", "rating": 4.8},
-                {"user": "Budi", "komentar": "Masjid Agung Sukabumi adalah tempat yang luar biasa untuk berdoa dan merenung.", "rating": 4.7},
+                {"user": "Budi", "komentar": "Masjid Agung Cimahi adalah tempat yang luar biasa untuk berdoa dan merenung.", "rating": 4.7},
                 {"user": "Tio", "komentar": "Sangat mengagumkan, fasilitasnya lengkap dan pelayanan sangat baik.", "rating": 4.8},
                 {"user": "Rina", "komentar": "Sangat tenang, cocok untuk refleksi pribadi dan ibadah.", "rating": 4.9}
             ],
@@ -2824,10 +2930,15 @@
         },
         {
             "kategori": "Wisata Alam",
-            "nama": "Pantai Cikao",
-            "foto": "https://example.com/pantai-cikao.jpg",
-            "tentang": "Pantai Cikao is a hidden gem in Sukabumi. With its calm waters, it is an excellent spot for swimming and beach sports. The beach also offers a scenic view perfect for relaxing.",
-            "alamat": "Cikao, Sukabumi, Jawa Barat",
+            "nama": "Cikao Park",
+            "foto": [
+                "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/purwakarta/cikao_park/1.jpg",
+                "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/purwakarta/cikao_park/2.jpg",
+                "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/purwakarta/cikao_park/3.jpg",
+                "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/purwakarta/cikao_park/4.jpg"
+            ],
+            "tentang": "Cikao Park adalah destinasi wisata keluarga di Purwakarta yang menawarkan berbagai atraksi menarik seperti taman bermain, kebun binatang mini, dan area edukasi, cocok untuk rekreasi bersama anak-anak.",
+            "alamat": "Jalan Raya Sukatani, Cisalada, Sukatani, Kabupaten Purwakarta, Jawa Barat",
             "fasilitas": ["Tempat parkir", "Toilet", "Warung makanan", "Area bermain"],
             "aktivitas": ["Berenang", "Bermain voli pantai", "Fotografi pantai", "Bersantai"],
             "rating": 4.7,
@@ -2845,9 +2956,13 @@
     {
         "kategori": "Wisata Alam",
         "nama": "Tebing Keraton",
-        "foto": "https://example.com/tebing-keraton.jpg",
-        "tentang": "Tebing Keraton offers breathtaking views of the surrounding forest and the Bandung Plateau. The spot is famous for its sunrise view and picturesque landscapes.",
-        "alamat": "Cimenyan, Cimahi, Jawa Barat",
+        "foto": [
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/bandung/tebing_keraton/1.jpg",
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/bandung/tebing_keraton/2.jpg",
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/bandung/tebing_keraton/3.jpg"
+        ],
+        "tentang": "Tebing Keraton adalah destinasi wisata alam yang menawarkan pemandangan indah dari ketinggian, terutama saat matahari terbit. Tempat ini populer di kalangan para penggemar fotografi dan pecinta alam.",
+        "alamat": "Puncak Kordon, RT.2/RW.10, Ciburial, Kec. Cimenyan, Bandung Barat, Jawa Barat",
         "fasilitas": ["Tempat parkir", "Warung makan", "Toilet"],
         "aktivitas": ["Menikmati pemandangan matahari terbit", "Fotografi alam", "Berkunjung bersama keluarga"],
         "rating": 4.7,
@@ -2864,9 +2979,13 @@
     {
         "kategori": "Wisata Sejarah",
         "nama": "Cagar Budaya Alun-Alun Cimahi",
-        "foto": "https://example.com/cagar-budaya-alun-alun-cimahi.jpg",
-        "tentang": "Cagar Budaya Alun-Alun Cimahi is a historical park in the heart of the city that showcases local history and cultural heritage. It is often used for public events and gatherings.",
-        "alamat": "Jl. Alun-Alun, Cimahi, Jawa Barat",
+        "foto": [
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cimahi/alun_cimahi/1.jpg",
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cimahi/alun_cimahi/2.jpg",
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cimahi/alun_cimahi/3.jpg"
+        ],
+        "tentang": "Cagar Budaya Alun-Alun Cimahi merupakan taman bersejarah di jantung kota yang menampilkan sejarah dan warisan budaya lokal. Ini sering digunakan untuk acara-acara publik dan pertemuan.",
+        "alamat": "Jl.Raya Barat No.57, Cimahi, Kec. Cimahi Tengah, Kota Cimahi, Jawa Barat",
         "fasilitas": ["Tempat duduk", "Area parkir", "Toilet"],
         "aktivitas": ["Menyaksikan acara budaya", "Berkunjung dengan keluarga", "Menikmati ruang terbuka hijau"],
         "rating": 4.3,
@@ -2882,10 +3001,15 @@
     },
     {
         "kategori": "Wisata Kuliner",
-        "nama": "Warung Nasi Liwet Cimahi",
-        "foto": "https://example.com/warung-nasi-liwet-cimahi.jpg",
-        "tentang": "Warung Nasi Liwet Cimahi offers a delicious traditional Sundanese dish, Nasi Liwet, served with a variety of side dishes such as fried chicken, tofu, and tempe. It’s a favorite among locals for its authentic taste and affordable prices.",
-        "alamat": "Jl. Raya Cimahi, Cimahi, Jawa Barat",
+        "nama": "Warung Nasi Sunda Nikmat",
+        "foto": [
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cimahi/warung_nasi_sunda/1.jpg",
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cimahi/warung_nasi_sunda/2.jpg",
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cimahi/warung_nasi_sunda/3.jpg",
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cimahi/warung_nasi_sunda/4.jpg"
+        ],
+        "tentang": "Warung Nasi Sunda Nikmat Cimahi adalah tempat makan khas Sunda yang menyajikan berbagai hidangan lezat dengan cita rasa autentik di Cimahi.",
+        "alamat": "Jl.Raya Barat No.698, Padasuka, Kec. Cimahi Tengah, Kota Cimahi, Jawa Barat",
         "fasilitas": ["Tempat duduk", "Area parkir", "Toilet"],
         "aktivitas": ["Mencicipi nasi liwet", "Berkumpul dengan keluarga", "Makan bersama"],
         "rating": 4.5,
@@ -2901,10 +3025,15 @@
     },
     {
         "kategori": "Wisata Religi",
-        "nama": "Vihara Dhamma Agni",
-        "foto": "https://example.com/vihara-dhamma-agni.jpg",
-        "tentang": "Vihara Dhamma Agni is a Buddhist temple in Cimahi known for its peaceful atmosphere and beautiful architecture. It is an excellent place for meditation, reflection, and spiritual activities.",
-        "alamat": "Jl. Raya Vihara, Cimahi, Jawa Barat",
+        "nama": "Pura Agung Wira Loka Natha",
+        "foto": [
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cimahi/pa_wira_loka_natha/1.jpg",
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cimahi/pa_wira_loka_natha/2.jpg",
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cimahi/pa_wira_loka_natha/3.jpg",
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cimahi/pa_wira_loka_natha/4.jpg"
+        ],
+        "tentang": "Pura Agung Wira Loka Natha adalah tempat ibadah umat Hindu di Bandung yang memadukan arsitektur tradisional Bali dengan suasana spiritual yang tenang dan asri.",
+        "alamat": "Jl. Sriwijaya Raya, Karangmekar, Kec. Cimahi Tengah, Kota Cimahi, Jawa Barat ",
         "fasilitas": ["Tempat parkir", "Toilet", "Area doa"],
         "aktivitas": ["Meditasi", "Berdoa", "Mengikuti ceramah"],
         "rating": 4.8,
@@ -2921,9 +3050,14 @@
     {
         "kategori": "Wisata Budaya",
         "nama": "Museum Seni Rupa Cimahi",
-        "foto": "https://example.com/museum-seni-rupa-cimahi.jpg",
-        "tentang": "Museum Seni Rupa Cimahi is a place to explore traditional and contemporary art from local and national artists. It is a great spot for art enthusiasts and visitors interested in the cultural heritage of Cimahi.",
-        "alamat": "Jl. Seni Rupa, Cimahi, Jawa Barat",
+        "foto": [
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cimahi/museum_seni_rupa_cimahi/1.jpg",
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cimahi/museum_seni_rupa_cimahi/2.jpg",
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cimahi/museum_seni_rupa_cimahi/3.jpg",
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cimahi/museum_seni_rupa_cimahi/4.jpg"
+        ],
+        "tentang": "Museum Seni Rupa Cimahi merupakan tempat untuk mengeksplorasi seni tradisional dan kontemporer dari seniman lokal dan nasional. Ini adalah tempat yang bagus bagi pecinta seni dan pengunjung yang tertarik dengan warisan budaya Cimahi.",
+        "alamat": "Ruko Cimahi Square No. B.09, Jl. Pabrik Aci, Cimahi, Kec. Cimahi Tengah",
         "fasilitas": ["Galeri seni", "Area parkir", "Toilet"],
         "aktivitas": ["Melihat pameran seni", "Mempelajari seni lokal", "Berkeliling galeri"],
         "rating": 4.6,
@@ -2940,10 +3074,14 @@
 
     {
         "kategori": "Wisata Alam",
-        "nama": "Taman Hutan Raya Ir. H. Djuanda",
-        "foto": "https://example.com/taman-hutan-raya-djuanda.jpg",
-        "tentang": "Taman Hutan Raya Ir. H. Djuanda is a vast nature reserve that features dense forests, walking trails, and diverse wildlife. It is an ideal location for nature lovers and those interested in hiking and environmental conservation.",
-        "alamat": "Jl. Raya Djuanda, Subang, Jawa Barat",
+        "nama": "Kebun Teh Ciater",
+        "foto": [
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/subang/kebun_teh_ciater/1.jpg",
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/subang/kebun_teh_ciater/2.jpg",
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/subang/kebun_teh_ciater/3.jpg"
+        ],
+        "tentang": "Kebun Teh Ciater adalah kawasan perkebunan teh yang terletak di Subang, Jawa Barat, yang terkenal dengan pemandangan alam yang hijau, udara sejuk, serta berbagai fasilitas wisata seperti pemadatan teh, pemandian air panas, dan trekking yang memukau.",
+        "alamat": "Ciater, Kec. Ciater, Kabupaten Subang, Jawa Barat",
         "fasilitas": ["Tempat parkir", "Warung makan", "Toilet", "Area berkemah"],
         "aktivitas": ["Berkemah", "Hiking", "Mengamati flora dan fauna"],
         "rating": 4.6,
@@ -2960,9 +3098,14 @@
     {
         "kategori": "Wisata Sejarah",
         "nama": "Kampung Naga",
-        "foto": "https://example.com/kampung-naga.jpg",
-        "tentang": "Kampung Naga is a traditional village in Subang, known for its preserved Sundanese culture. The village remains untouched by modern developments and is a great place to learn about local history and traditions.",
-        "alamat": "Kampung Naga, Subang, Jawa Barat",
+        "foto": [
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/subang/kampung_naga/1.jpg",
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/subang/kampung_naga/2.jpg",
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/subang/kampung_naga/3.jpg",
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/subang/kampung_naga/4.jpg"
+        ],
+        "tentang": "Kampung Naga merupakan sebuah kampung adat di Subang yang terkenal dengan budaya Sunda yang masih dilestarikan. Desa ini masih belum tersentuh oleh perkembangan modern dan merupakan tempat yang bagus untuk belajar tentang sejarah dan tradisi lokal.",
+        "alamat": "Neglasari, Kec. Salawu, Subang, Jawa Barat",
         "fasilitas": ["Tempat parkir", "Toilet", "Warung makan"],
         "aktivitas": ["Berziarah", "Mengunjungi rumah tradisional", "Belajar tentang budaya Sunda"],
         "rating": 4.8,
@@ -2978,10 +3121,14 @@
     },
     {
         "kategori": "Wisata Kuliner",
-        "nama": "Sate Maranggi Cibungur",
-        "foto": "https://example.com/sate-maranggi-cibungur.jpg",
-        "tentang": "Sate Maranggi Cibungur is a popular culinary spot in Subang known for its delicious and tender Maranggi satay. The dish is served with a special marinade and is a must-try for food lovers.",
-        "alamat": "Jl. Raya Cibungur, Subang, Jawa Barat",
+        "nama": "Sate Maranggi Si Bungsu",
+        "foto": [
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/subang/sate_maranggi_sibungsu/1.jpg",
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/subang/sate_maranggi_sibungsu/2.jpg",
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/subang/sate_maranggi_sibungsu/3.jpg"
+        ],
+        "tentang": "Sate Maranggi Si Bungsu adalah tempat kuliner legendaris di Purwakarta yang menyajikan sate maranggi dengan cita rasa khas dan bumbu rempah yang lezat.",
+        "alamat": "Jalan Bedeng Cikuda RT.03/RW.02, Lengkong, Cipeundeuy, Lengkong, Kec. Cipeundeuy, Kabupaten Subang, Jawa Barat",
         "fasilitas": ["Tempat duduk", "Toilet", "Area parkir"],
         "aktivitas": ["Mencicipi sate maranggi", "Menikmati makanan khas Subang", "Berkumpul dengan teman dan keluarga"],
         "rating": 4.7,
@@ -2997,10 +3144,15 @@
     },
     {
         "kategori": "Wisata Religi",
-        "nama": "Masjid Agung Subang",
-        "foto": "https://example.com/masjid-agung-subang.jpg",
-        "tentang": "Masjid Agung Subang is a grand mosque located in the heart of Subang, offering a serene and peaceful atmosphere for prayer and reflection. The mosque is known for its beautiful architecture and spiritual significance.",
-        "alamat": "Jl. Raya Subang, Subang, Jawa Barat",
+        "nama": "Masjid Agung Al-Musabaqoh",
+        "foto": [
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/subang/masjid_agung_almusabaqoh/1.jpg",
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/subang/masjid_agung_almusabaqoh/2.jpg",
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/subang/masjid_agung_almusabaqoh/3.jpg",
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/subang/masjid_agung_almusabaqoh/4.jpg"
+        ],
+        "tentang": "Masjid Agung Al-Musabaqoh merupakan masjid agung yang terletak di jantung kota Subang, menawarkan suasana tenteram dan damai untuk sholat dan refleksi. Masjid ini terkenal dengan arsitekturnya yang indah dan makna spiritualnya.",
+        "alamat": "Karanganyar, Kec. Subang, Kabupaten Subang, Jawa Barat",
         "fasilitas": ["Tempat parkir", "Toilet", "Area doa"],
         "aktivitas": ["Sholat berjamaah", "Berdoa", "Mengikuti ceramah agama"],
         "rating": 4.9,
@@ -3017,9 +3169,13 @@
     {
         "kategori": "Wisata Budaya",
         "nama": "Festival Budaya Subang",
-        "foto": "https://example.com/festival-budaya-subang.jpg",
-        "tentang": "Festival Budaya Subang is an annual event that celebrates the diverse cultures and traditions of Subang. It features traditional music, dance, art performances, and various exhibitions from the local community.",
-        "alamat": "Jl. Raya Festival, Subang, Jawa Barat",
+        "foto": [
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/subang/festival_budaya_subang/1.jpg",
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/subang/festival_budaya_subang/2.jpg",
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/subang/festival_budaya_subang/3.jpg"
+        ],
+        "tentang": "Suaria Festival merupakan rangkaian event penghargaan terhadap setiap budaya lokal asli kota Subang yang bertujuan untuk menjadi hiburan tahunan masyarakat.",
+        "alamat": "Pasirkareumbi, Kec. Subang, Kabupaten Subang, Jawa Barat",
         "fasilitas": ["Tempat parkir", "Area pameran", "Toilet"],
         "aktivitas": ["Menonton pertunjukan seni", "Berpartisipasi dalam acara budaya", "Belanja barang seni lokal"],
         "rating": 4.8,
@@ -3036,10 +3192,15 @@
 
     {
         "kategori": "Wisata Alam",
-        "nama": "Curug Tilu Leuwi Opat",
-        "foto": "https://example.com/curug-tilu-leuwi-opat.jpg",
-        "tentang": "Curug Tilu Leuwi Opat is a stunning waterfall located in the lush forests of Subang. It's a perfect spot for trekking, picnics, and enjoying the beauty of nature.",
-        "alamat": "Desa Cisalak, Subang, Jawa Barat",
+        "nama": "Curug Cijalu",
+        "foto": [
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/subang/curug_cijalu/1.jpg",
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/subang/curug_cijalu/2.jpg",
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/subang/curug_cijalu/3.jpg",
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/subang/curug_cijalu/4.jpg"
+        ],
+        "tentang": "Curug Cijalu adalah sebuah air terjun yang terletak di daerah Subang, Jawa Barat, yang menawarkan keindahan alam dengan air terjun yang mempesona dan suasana yang asri, ideal untuk wisata alam dan trekking.",
+        "alamat": "Cipancar, Serangpanjang, Pusakamulya, Kec. Kiarapedes, Kabupaten Subang, Jawa Barat",
         "fasilitas": ["Tempat parkir", "Toilet", "Area berkemah"],
         "aktivitas": ["Trekking", "Berenang", "Berkemah"],
         "rating": 4.6,
@@ -3055,10 +3216,14 @@
     },
     {
         "kategori": "Wisata Sejarah",
-        "nama": "Kota Tua Subang",
-        "foto": "https://example.com/kota-tua-subang.jpg",
-        "tentang": "Kota Tua Subang is a historical site that showcases the remnants of colonial-era architecture. The area offers a glimpse into the history and heritage of Subang.",
-        "alamat": "Jl. Kota Tua, Subang, Jawa Barat",
+        "nama": "Rumah Sejarah Kalijati",
+        "foto": [
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/subang/rumah_sejarah_kalijati/1.jpg",
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/subang/rumah_sejarah_kalijati/2.jpg",
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/subang/rumah_sejarah_kalijati/3.jpg"
+        ],
+        "tentang": "Rumah Sejarah Kalijati adalah situs bersejarah yang terletak di Subang, Jawa Barat, yang menjadi saksi bisu peristiwa penting dalam sejarah Indonesia, yaitu perundingan yang mengarah pada kemerdekaan Indonesia.",
+        "alamat": "Komplek Garuda E 25 Lanud Suryadarma, Kalijati Barat, Kalijati, Subang, Jawa Barat",
         "fasilitas": ["Tempat parkir", "Toilet", "Museum kecil"],
         "aktivitas": ["Berjalan-jalan di sekitar kota tua", "Mengunjungi bangunan bersejarah", "Fotografi"],
         "rating": 4.5,
@@ -3074,10 +3239,15 @@
     },
     {
         "kategori": "Wisata Kuliner",
-        "nama": "Nasi Goreng Subang Special",
-        "foto": "https://example.com/nasi-goreng-subang-special.jpg",
-        "tentang": "Nasi Goreng Subang Special offers a unique twist on the classic Indonesian fried rice, featuring local spices and ingredients that make it a must-try dish for foodies.",
-        "alamat": "Jl. Raya Subang, Subang, Jawa Barat",
+        "nama": "Nasi Goreng Mas Wito",
+        "foto": [
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/subang/nasi_goreng_mas_wito/1.jpg",
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/subang/nasi_goreng_mas_wito/2.jpg",
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/subang/nasi_goreng_mas_wito/3.jpg",
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/subang/nasi_goreng_mas_wito/4.jpg"
+        ],
+        "tentang": "Nasi Goreng Mas Wito di Subang adalah tempat kuliner favorit yang menyajikan nasi goreng khas dengan cita rasa lezat dan porsi yang mengenyangkan.",
+        "alamat": "Jl. Otto Iskandardinata No.244-242, Karanganyar, Kec. Subang, Kabupaten Subang, Jawa Barat",
         "fasilitas": ["Tempat duduk", "Toilet", "Warung makan"],
         "aktivitas": ["Mencicipi nasi goreng", "Menikmati hidangan lokal"],
         "rating": 4.8,
@@ -3094,9 +3264,15 @@
     {
         "kategori": "Wisata Religi",
         "nama": "Pura Parahyangan Agung Jagatkartta",
-        "foto": "https://example.com/pura-parahyangan.jpg",
-        "tentang": "Pura Parahyangan Agung Jagatkartta is a significant Hindu temple in Subang, offering a tranquil environment for meditation and religious activities. The temple is a place of peace and worship, attracting many pilgrims and tourists alike.",
-        "alamat": "Desa Jagatkartta, Subang, Jawa Barat",
+        "foto": [
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/bogor/pura_parahyangan_agung_jagatkartta/1.jpg",
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/bogor/pura_parahyangan_agung_jagatkartta/2.jpg",
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/bogor/pura_parahyangan_agung_jagatkartta/3.jpg",
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/bogor/pura_parahyangan_agung_jagatkartta/4.jpg"
+
+        ],
+        "tentang": "Pura Parahyangan Agung Jagatkartta adalah pura terbesar di luar Bali yang terletak di kaki Gunung Salak, Bogor, menawarkan suasana spiritual yang damai dengan arsitektur megah dan pemandangan alam yang indah.",
+        "alamat": "Tamansari, Kec. Tamansari, Kabupaten Bogor, Jawa Barat",
         "fasilitas": ["Tempat parkir", "Toilet", "Area doa"],
         "aktivitas": ["Berdoa", "Meditasi", "Mengikuti upacara agama"],
         "rating": 4.7,
@@ -3113,9 +3289,14 @@
     {
         "kategori": "Wisata Budaya",
         "nama": "Museum Daerah Subang",
-        "foto": "https://example.com/museum-daerah-subang.jpg",
-        "tentang": "Museum Daerah Subang is dedicated to preserving the cultural heritage of the region. It showcases historical artifacts, traditional costumes, and exhibits on the local way of life.",
-        "alamat": "Jl. Raya Subang, Subang, Jawa Barat",
+        "foto": [
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/subang/museum_subang/1.jpg",
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/subang/museum_subang/2.jpg",
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/subang/museum_subang/3.jpg",
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/subang/museum_subang/4.jpg"
+        ],
+        "tentang": "Museum Daerah Subang didedikasikan untuk melestarikan warisan budaya daerah. Ini menampilkan artefak sejarah, kostum tradisional, dan pameran tentang cara hidup lokal.",
+        "alamat": "Jl. Ade Irma Suryani Nasution No.2, Karanganyar, Cigadung, Kec. Subang, Kabupaten Subang, Jawa Barat 41211",
         "fasilitas": ["Tempat parkir", "Toilet", "Area pameran"],
         "aktivitas": ["Melihat koleksi seni dan sejarah", "Fotografi", "Menambah wawasan budaya"],
         "rating": 4.5,
@@ -3130,53 +3311,3 @@
         "jam_buka": "09:00 - 17:00"
     }
 ]
-
-
-
-    
-
-
-
-
-                                                                                                
-                                                                                                
-                                                                                            
-
-                                                                                        
-                                                                                                    
-                                                                                    
-                                                                                                                                                                    
-                                                                                
-                                                                                
-                                                                    
-                                                                
-                                                                
-                                                            
-                                                            
-                                                        
-                                                                                                           
-                                                    
-                                                
-                                                
-
-                                            
-                                            
-                                        
-                                        
-                                    
-                                                                   
-                                
-                            
-                        
-                        
-
-                    
-                    
-                
-            
-            
-        
-        
-    
-    
-
