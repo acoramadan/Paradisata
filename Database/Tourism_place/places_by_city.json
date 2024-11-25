@@ -173,11 +173,10 @@
             "kategori": "Wisata Religi",
             "nama": "Vihara Dharma Guna",
             "foto": [
-            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/bandung/museum_geologi/1.jpg",
-            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/bandung/museum_geologi/2.jpg",
-            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/bandung/museum_geologi/3.jpg",
-            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/bandung/museum_geologi/4.jpg",
-            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/bandung/museum_geologi/5.jpg"
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/bandung/vihara_dharma_guna/1.jpg",
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/bandung/vihara_dharma_guna/2.jpg",
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/bandung/vihara_dharma_guna/3.jpg",
+           
             ],
             "tentang": "Vihara Dharma Guna adalah tempat ibadah bagi umat Buddha yang terletak di Bandung. Vihara ini terkenal dengan patung Buddha yang besar dan suasana yang tenang.",
             "alamat": "Jl. Kopo No. 16, Bandung, Jawa Barat",
@@ -198,12 +197,10 @@
             "kategori": "Wisata Alam",
             "nama": "Curug Cimahi",
             "foto": [
-            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/bandung/museum_geologi/1.jpg",
-            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/bandung/museum_geologi/2.jpg",
-            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/bandung/museum_geologi/3.jpg",
-            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/bandung/museum_geologi/4.jpg",
-            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/bandung/museum_geologi/5.jpg"
-            ],
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/bandung/curug_cimahi/1.jpg",
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/bandung/curug_cimahi/2.jpg",
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/bandung/curug_cimahi/3.jpg",
+                     ],
             "tentang": "Curug Cimahi adalah air terjun yang terletak di kawasan Lembang. Dikenal juga dengan sebutan Air Terjun Pelangi karena pancaran warna-warni yang ditampilkan pada malam hari.",
             "alamat": "Jl. Raya Tegallega No. 56, Lembang, Bandung, Jawa Barat",
             "fasilitas": ["Toilet", "Tempat parkir", "Area foto", "Warung makan"],
@@ -222,7 +219,11 @@
         {
             "kategori": "Wisata Sejarah",
             "nama": "Candi Cangkuang",
-            "foto": "https://example.com/candi-cangkuang.jpg",
+            "foto": [
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/garut/candi_cangkuang/1.jpg",
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/garut/candi_cangkuang/2.jpg",
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/garut/candi_cangkuang/3.jpg",
+                     ],
             "tentang": "Candi Cangkuang adalah candi Hindu yang terletak di daerah Garut, Bandung. Candi ini diperkirakan berasal dari abad ke-8 dan dikelilingi oleh danau.",
             "alamat": "Desa Cangkuang, Kecamatan Leles, Kabupaten Garut, Jawa Barat",
             "fasilitas": ["Tempat parkir", "Toilet", "Area berkeliling candi", "Pemandu wisata"],
@@ -241,7 +242,11 @@
         {
             "kategori": "Wisata Kuliner",
             "nama": "Warung Nasi Ampera",
-            "foto": "https://example.com/warung-nasi-ampera.jpg",
+            "foto": [
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/bandung/warung_nasi_ampera/1.jpeg",
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/bandung/warung_nasi_ampera/2.jpg",
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/bandung/warung_nasi_ampera/3.jpg",
+                     ],
             "tentang": "Warung Nasi Ampera adalah tempat makan yang menawarkan berbagai pilihan masakan khas Sunda yang lezat dan harga yang terjangkau.",
             "alamat": "Jl. Cihampelas No. 10, Bandung, Jawa Barat",
             "fasilitas": ["Toilet", "Area parkir", "Wi-Fi", "Tempat duduk indoor & outdoor"],
@@ -260,7 +265,11 @@
         {
                 "kategori": "Wisata Alam",
                 "nama": "Tebing Keraton",
-                "foto": "https://example.com/tebing-keraton.jpg",
+                "foto": [
+                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/bandung/tebing_keraton/1.jpg",
+                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/bandung/tebing_keraton/2.jpg",
+                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/bandung/tebing_keraton/3.jpg",
+                     ],
                 "tentang": "Tebing Keraton adalah destinasi wisata alam yang menawarkan pemandangan indah dari ketinggian, terutama saat matahari terbit. Tempat ini populer di kalangan para penggemar fotografi dan pecinta alam.",
                 "alamat": "Jl. Raya Taman Hutan No. 55, Bandung, Jawa Barat",
                 "fasilitas": ["Tempat parkir", "Toilet", "Area foto", "Warung makan"],
@@ -280,7 +289,11 @@
             {
                 "kategori": "Wisata Kuliner",
                 "nama": "Batagor Riri",
-                "foto": "https://example.com/batagor-riri.jpg",
+                "foto": [
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/bandung/batagor_riri/1.jpg",
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/bandung/batagor_riri/2.jpg",
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/bandung/batagor_riri/3.jpg",
+                     ],
                 "tentang": "Batagor Riri adalah tempat makan yang terkenal dengan batagor (bakso tahu goreng) khas Bandung. Tempat ini menjadi favorit bagi para pecinta kuliner yang ingin menikmati camilan khas Bandung.",
                 "alamat": "Jl. Burangrang No. 14, Bandung, Jawa Barat",
                 "fasilitas": ["Toilet", "Area parkir", "Tempat duduk indoor"],
@@ -301,7 +314,11 @@
                 {
                     "kategori": "Wisata Alam",
                     "nama": "Pantai Kejawanan",
-                    "foto": "https://example.com/pantai-kejawanan.jpg",
+                    "foto": [
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/pantai_kejawanan/1.jpg",
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/pantai_kejawanan/2.png",
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/pantai_kejawanan/3.jpg",
+                     ],
                     "tentang": "Pantai Kejawanan merupakan salah satu pantai yang terkenal di Cirebon, dikenal dengan pasir putih dan pemandangan laut yang indah. Tempat ini cocok untuk bersantai atau menikmati matahari terbenam.",
                     "alamat": "Jl. Raya Kejawanan No. 1, Cirebon, Jawa Barat",
                     "fasilitas": ["Toilet", "Tempat parkir", "Warung makan", "Taman bermain"],
@@ -320,7 +337,11 @@
                 {
                     "kategori": "Wisata Sejarah",
                     "nama": "Keraton Kasepuhan",
-                    "foto": "https://example.com/keraton-kasepuhan.jpg",
+                    "foto": [
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/keraton_kasepuhan/1.jpg",
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/keraton_kasepuhan/2.jpg",
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/keraton_kasepuhan/3.jpg",
+                     ],
                     "tentang": "Keraton Kasepuhan adalah keraton yang merupakan peninggalan Kesultanan Cirebon. Tempat ini menyimpan banyak sejarah dan koleksi benda bersejarah yang menceritakan perjalanan Cirebon sebagai kerajaan.",
                     "alamat": "Jl. Kasepuhan No. 43, Cirebon, Jawa Barat",
                     "fasilitas": ["Toilet", "Tempat parkir", "Ruang pameran", "Pemandu wisata"],
@@ -339,7 +360,11 @@
                 {
                     "kategori": "Wisata Kuliner",
                     "nama": "Empal Gentong H. Apud",
-                    "foto": "https://example.com/empal-gentong.jpg",
+                    "foto": [
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/empal_gentong_hapud/1.jpg",
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/empal_gentong_hapud/2.jpg",
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/empal_gentong_hapud/3.jpg",
+                     ],
                     "tentang": "Empal Gentong H. Apud terkenal dengan empal gentong khas Cirebon, makanan berbahan dasar daging sapi yang dimasak dengan kuah santan kental dan rempah-rempah khas. Tempat ini selalu ramai dikunjungi wisatawan.",
                     "alamat": "Jl. Ir. H. Juanda No. 4, Cirebon, Jawa Barat",
                     "fasilitas": ["Toilet", "Area parkir", "Tempat duduk indoor"],
@@ -358,7 +383,11 @@
                 {
                     "kategori": "Wisata Religi",
                     "nama": "Masjid Agung Cirebon",
-                    "foto": "https://example.com/masjid-agung-cirebon.jpg",
+                    "foto": [
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/1.jpg",
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/2.jpg",
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/3.jpg",
+                     ],
                     "tentang": "Masjid Agung Cirebon adalah salah satu masjid tertua dan terbesar di Cirebon. Masjid ini memiliki arsitektur yang sangat khas, dengan kombinasi budaya Islam, Jawa, dan Tionghoa.",
                     "alamat": "Jl. Alun-Alun No. 1, Cirebon, Jawa Barat",
                     "fasilitas": ["Toilet", "Tempat parkir", "Area sholat", "Pemandu wisata"],
@@ -377,7 +406,11 @@
                 {
                         "kategori": "Wisata Alam",
                         "nama": "Taman Sumber Air Taman Sari",
-                        "foto": "https://example.com/taman-sumber-air-taman-sari.jpg",
+                        "foto": [
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/taman_sumber_air/1.jpg",
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/taman_sumber_air/2.jpg",
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/taman_sumber_air/3.jpg",
+                     ],
                         "tentang": "Taman Sumber Air Taman Sari merupakan taman dengan sumber mata air yang jernih. Tempat ini sering dikunjungi oleh wisatawan yang ingin menikmati suasana alam yang asri dan sejuk.",
                         "alamat": "Jl. Taman Sari No. 1, Cirebon, Jawa Barat",
                         "fasilitas": ["Toilet", "Tempat parkir", "Area piknik", "Kolam renang alami"],
@@ -396,7 +429,11 @@
                     {
                         "kategori": "Wisata Sejarah",
                         "nama": "Museum Batik Cirebon",
-                        "foto": "https://example.com/museum-batik-cirebon.jpg",
+                        "foto": [
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/museum_batik_cirebon/1.jpg",
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/museum_batik_cirebon/2.jpg",
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/museum_batik_cirebon/3.jpg",
+                     ],
                         "tentang": "Museum Batik Cirebon adalah tempat yang menyimpan koleksi batik Cirebon yang kaya akan sejarah. Di sini, pengunjung dapat melihat berbagai macam motif batik yang unik dan berbeda.",
                         "alamat": "Jl. Siliwangi No. 22, Cirebon, Jawa Barat",
                         "fasilitas": ["Toilet", "Tempat parkir", "Ruangan pameran", "Pemandu wisata"],
@@ -415,7 +452,11 @@
                     {
                         "kategori": "Wisata Kuliner",
                         "nama": "Tahu Gejrot",
-                        "foto": "https://example.com/tahu-gejrot.jpg",
+                        "foto": [
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/bandung/curug_cimahi/1.jpg",
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/bandung/curug_cimahi/2.jpg",
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/bandung/curug_cimahi/3.jpg",
+                     ],
                         "tentang": "Tahu Gejrot adalah makanan khas Cirebon yang terbuat dari tahu yang dipotong kecil-kecil dan dicelupkan ke dalam kuah bumbu pedas manis. Rasanya yang unik menjadikannya sangat populer di kalangan wisatawan.",
                         "alamat": "Jl. Cipto No. 18, Cirebon, Jawa Barat",
                         "fasilitas": ["Tempat parkir", "Area duduk"],
@@ -434,7 +475,11 @@
                     {
                         "kategori": "Wisata Religi",
                         "nama": "Makam Sunan Gunung Jati",
-                        "foto": "https://example.com/makam-sunan-gunung-jati.jpg",
+                        "foto": [
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/makam_sunan_gunung_jati/1.jpeg",
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/makam_sunan_gunung_jati/2.jpg",
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/makam_sunan_gunung_jati/3.jpg",
+                     ],
                         "tentang": "Makam Sunan Gunung Jati adalah makam dari salah satu wali songo yang sangat terkenal. Tempat ini menjadi situs religi bagi umat Islam dan sering dikunjungi peziarah.",
                         "alamat": "Kecamatan Gunung Jati, Cirebon, Jawa Barat",
                         "fasilitas": ["Toilet", "Tempat parkir", "Mushola", "Pemandu wisata"],
@@ -454,7 +499,11 @@
                         {
                             "kategori": "Wisata Alam",
                             "nama": "Taman Wisata Alam Leuwi Hejo",
-                            "foto": "https://example.com/taman-wisata-alam-leuwi-hejo.jpg",
+                            "foto": [
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/taman_wisata_alam/1.jpg",
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/taman_wisata_alam/2.jpg",
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/taman_wisata_alam/3.jpg",
+                     ],
                             "tentang": "Taman Wisata Alam Leuwi Hejo adalah taman yang terletak di daerah perbukitan, dengan pemandangan alam yang indah dan air terjun yang menawan. Tempat ini cocok untuk trekking dan menikmati keindahan alam.",
                             "alamat": "Jl. Leuwi Hejo No. 10, Cirebon, Jawa Barat",
                             "fasilitas": ["Toilet", "Tempat parkir", "Area berkemah", "Warung makan"],
@@ -473,7 +522,11 @@
                         {
                             "kategori": "Wisata Kuliner",
                             "nama": "Sate Kalong Cirebon",
-                            "foto": "https://example.com/sate-kalong-cirebon.jpg",
+                            "foto": [
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/sate_kalong/1.jpg",
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/sate_kalong/2.jpg",
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/sate_kalong/3.jpg",
+                     ],
                             "tentang": "Sate Kalong adalah sate khas Cirebon yang terbuat dari daging kelinci. Sate ini memiliki rasa yang khas dan berbeda dengan sate lainnya, menjadi favorit di kalangan wisatawan.",
                             "alamat": "Jl. Raya No. 35, Cirebon, Jawa Barat",
                             "fasilitas": ["Tempat parkir", "Area duduk", "Warung makan"],
@@ -493,7 +546,11 @@
                         {
                             "kategori": "Wisata Alam",
                             "nama": "Kampung Naga",
-                            "foto": "https://example.com/kampung-naga.jpg",
+                            "foto": [
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/kampung_naga/1.jpg",
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/kampung_naga/2.jpg",
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/kampung_naga/3.jpeg",
+                     ],
                             "tentang": "Kampung Naga adalah sebuah desa adat yang terletak di Kabupaten Tasikmalaya. Desa ini terkenal karena penduduknya yang masih mempertahankan kebudayaan Sunda yang kental dan sangat asri.",
                             "alamat": "Kampung Naga, Tasikmalaya, Jawa Barat",
                             "fasilitas": ["Toilet", "Area parkir", "Tempat duduk", "Jalan setapak"],
@@ -513,7 +570,8 @@
                             {
                                 "kategori": "Wisata Alam",
                                 "nama": "Taman Wisata Alam Leuwi Hejo",
-                                "foto": "https://example.com/taman-wisata-alam-leuwi-hejo.jpg",
+                                "foto": [
+                                 ],
                                 "tentang": "Taman Wisata Alam Leuwi Hejo adalah taman yang terletak di daerah perbukitan, dengan pemandangan alam yang indah dan air terjun yang menawan. Tempat ini cocok untuk trekking dan menikmati keindahan alam.",
                                 "alamat": "Jl. Leuwi Hejo No. 10, Cirebon, Jawa Barat",
                                 "fasilitas": ["Toilet", "Tempat parkir", "Area berkemah", "Warung makan"],
@@ -528,25 +586,6 @@
                                 ],
                                 "harga": "Rp 20,000",
                                 "jam_buka": "08:00 - 17:00"
-                            },
-                            {
-                                "kategori": "Wisata Kuliner",
-                                "nama": "Sate Kalong Cirebon",
-                                "foto": "https://example.com/sate-kalong-cirebon.jpg",
-                                "tentang": "Sate Kalong adalah sate khas Cirebon yang terbuat dari daging kelinci. Sate ini memiliki rasa yang khas dan berbeda dengan sate lainnya, menjadi favorit di kalangan wisatawan.",
-                                "alamat": "Jl. Raya No. 35, Cirebon, Jawa Barat",
-                                "fasilitas": ["Tempat parkir", "Area duduk", "Warung makan"],
-                                "aktivitas": ["Makan Sate Kalong", "Menikmati hidangan khas Cirebon"],
-                                "rating": 4.8,
-                                "ulasan": [
-                                    {"user": "Ali", "komentar": "Sate Kalongnya enak sekali, dagingnya lembut dan bumbunya pas.", "rating": 4.9},
-                                    {"user": "Bima", "komentar": "Rasa sate kalong yang sangat khas, harus coba!", "rating": 4.8},
-                                    {"user": "Tio", "komentar": "Sate kalong ini sangat lezat dan gurih.", "rating": 4.7},
-                                    {"user": "Dewi", "komentar": "Makanan yang sangat unik, daging kelinci rasanya enak sekali.", "rating": 4.9},
-                                    {"user": "Fitri", "komentar": "Sate kalong yang sangat enak dan cocok untuk dicicipi di Cirebon.", "rating": 4.8}
-                                ],
-                                "harga": "Rp 30,000",
-                                "jam_buka": "10:00 - 22:00"
                             },
                             {
                                 "kategori": "Wisata Religi",
@@ -567,26 +606,6 @@
                                 "harga": "Gratis",
                                 "jam_buka": "24 Jam"
                             },
-                            {
-                                "kategori": "Wisata Alam",
-                                "nama": "Kampung Naga",
-                                "foto": "https://example.com/kampung-naga.jpg",
-                                "tentang": "Kampung Naga adalah sebuah desa adat yang terletak di Kabupaten Tasikmalaya. Desa ini terkenal karena penduduknya yang masih mempertahankan kebudayaan Sunda yang kental dan sangat asri.",
-                                "alamat": "Kampung Naga, Tasikmalaya, Jawa Barat",
-                                "fasilitas": ["Toilet", "Area parkir", "Tempat duduk", "Jalan setapak"],
-                                "aktivitas": ["Berjalan-jalan di desa adat", "Melihat kehidupan tradisional", "Berfoto dengan latar belakang alam"],
-                                "rating": 4.7,
-                                "ulasan": [
-                                    {"user": "Dina", "komentar": "Desa yang sangat indah dan menyimpan banyak budaya yang unik.", "rating": 4.8},
-                                    {"user": "Rina", "komentar": "Tempat yang tenang, sangat cocok untuk beristirahat dari kebisingan kota.", "rating": 4.7},
-                                    {"user": "Tio", "komentar": "Kampung Naga sangat asri dan memberikan pengalaman budaya yang berbeda.", "rating": 4.6},
-                                    {"user": "Beni", "komentar": "Sangat menarik melihat kehidupan masyarakat adat yang masih terjaga.", "rating": 4.8},
-                                    {"user": "Fitri", "komentar": "Salah satu tempat yang menyenangkan untuk merasakan atmosfer desa tradisional.", "rating": 4.7}
-                                ],
-                                "harga": "Rp 10,000",
-                                "jam_buka": "08:00 - 17:00"
-                            },
-                            
                                 {
                                     "kategori": "Wisata Alam",
                                     "nama": "Situ Wanayasa",
