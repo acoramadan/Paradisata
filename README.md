@@ -9,26 +9,33 @@ Here is our repository for Bangkit 2024 Capstone project. Our team consist of 3 
 
 |              Name              | Bangkit-ID |   Learning Path    |                                                       Contact Link                                                       |
 | :----------------------------: | :--------: | :----------------: | :----------------------------------------------------------------------------------------------------------------------: |
-| Tia Noviani | M322D4KX1442 |  Machine Learning  |            [LinkedIn]() or [GitHub]()             |
-| Karina Afifah | M322D4KX1443 |  Machine Learning  |                [LinkedIn]() or [GitHub]()                |
-| Iwan Kurniawan | M010D4KY2363 |  Machine Learning  |                [LinkedIn]() or [GitHub]()                |
-| M Mahfudl Awaludin | A704D4KY4200 | Mobile Development |              [LinkedIn](https://www.linkedin.com/in/mahfudlawaludin26/) or [GitHub]()               |
-| Darmawan Suhara | A009D4KY4336 | Mobile Development |    [LinkedIn](https://www.linkedin.com/in/darmawan-suhara-a9426422b/) or [GitHub]()     |
-| Shafa Zhafira G | C009D4KX0568 |  Cloud Computing   | [LinkedIn]() or [GitHub]() |
-| Raihan Fathan | C009D4KY0780 |  Cloud Computing   |        [LinkedIn]() or [GitHub]()        |
+| M Mahfudl Awaludin | m704b4ky2323 |  Machine Learning  |            [LinkedIn](https://www.linkedin.com/in/mahfudlawaludin26) or [GitHub](https://github.com/M-Mahfudl-Awaludin)             |
+| Nadya Ilma Pratiwi | m296b4kx3211 |  Machine Learning  |                [LinkedIn](https://www.linkedin.com/in/nadyailmaa/) or [GitHub](https://github.com/naddyaaa)                |
+| Cikal Firdansyah Ramadhan | m210b4ky0938 |  Machine Learning  |                [LinkedIn](https://www.linkedin.com/in/cikalfirdansyah/) or [GitHub](https://github.com/cikalfirdansyah)                |
+| Ahmad Mufli Ramadhan | a272b4ky0215 | Mobile Development |              [LinkedIn](https://www.linkedin.com/in/ahmad-mufli-ramadhan-7a9767282/) or [GitHub](http://github.com/acoramadan)               |
+| Hanna Anggraini | a156b4kx1719 | Mobile Development |    [LinkedIn](http://www.linkedin.com/in/hanna-anggraini-2706b723b) or [GitHub](https://github.com/HannaAnggraini06/)     |
+| Atikah Oktaria | C248B4KX0714 |  Cloud Computing   | [LinkedIn](https://www.linkedin.com/in/atikahoktaria) or [GitHub](https://github.com/AtikahOktaria) |
+| Andria Laras Ramadhania | C248B4KX0528 |  Cloud Computing   |        [LinkedIn](https://www.linkedin.com/in/andria-laras-ramadhania) or [GitHub](https://github.com/AndriaLarasRamadhania)        |
+
+## Our Advisor 
+|              Advisor Name              | Advisor -ID |   Expertise    |                                                       Contact Link                                                       |
+| :----------------------------: | :--------: | :----------------: | :----------------------------------------------------------------------------------------------------------------------: |
+| Reza Juliandri | MD24-0292 |  Android/Mobile Development  |            [Email](reza@bangkit.academy)             |
+| Danviero Yuzwan Pratama | B24-0466 |  UI & UX  |                [Email](danviero.pratama@gojek.com)              |
 
 ## About this project
+PARADISATA is an application where it connects between tourist and local tour guide directly. There are two types of users on PARADISATA, they are local tour guides and tourists. In this application, users as local tour guides can offer their ‘package’ that includes the tour guide services and tourist accommodations such as homestay, transportation, and meal. On the other hand, users as tourists can order local tour guide’s package and tourist destinations around West Java. Our application offers a unique experience for tourist to stay directly with local residents, thereby indirectly introducing the culture of West Java to outsiders. Additionally, this can also increase the income of local residents by making them tour guides.
 
-MetaBook is a platform to get the best and most complete popular book reviews & spoilers based on a website To get the optimal reading experience, it is highly recommended to read the whole book & buy the book directly.
     
 
 ## Documentation
-
-Youtube Video Presentation : [METABOOK ID](https://youtu.be/CmFLvnpOfhM)
+Project PLAN
+Project Brief
+Youtube Video Presentation : [PARADISATA]()
 
 ## System Architecture
 
-![SystemArchitecture](https://github.com/darkswan12/Metabook-Indonesia/blob/main/assets/Capture.PNG)
+![SystemArchitecture]()
 
 ## Repositories
 
@@ -41,21 +48,21 @@ Youtube Video Presentation : [METABOOK ID](https://youtu.be/CmFLvnpOfhM)
 ## API Documentations
 
 API Documentation Endpoint : <br>
-[Endpoint login recommend](https://login-ukgslf65fa-et.a.run.app/logrecommend)<br>
-[Endpoint click recommend](https://book-udlgmdtcyq-et.a.run.app/recommendations)
+[Endpoint login recommend]()<br>
+[Endpoint click recommend]()
 
 ## Datasets
 
 Dataset Links of This Project :<br>
-Google Books API: [link](https://www.googleapis.com/books/v1/volumes)
+Google Books API: [link]()
 
 
 ## UI/UX Design
 
-- Link Lo-Fi Design : [Lo-Fi](https://www.figma.com/design/J6RuVvLLDEzOzQwmyGrJlX/MetaBook-ID?node-id=0-1&t=ATGK6S028SC54Lbj-0)
-- Link Hi-Fi Design : [Hi-Fi](https://www.figma.com/design/J6RuVvLLDEzOzQwmyGrJlX/MetaBook-ID?node-id=19-16&t=ATGK6S028SC54Lbj-0)
-- Link Demo Product : [Prototype](https://drive.google.com/file/d/1UmLLsAVnqCU583sfNYcUXv3IWRtNQru6/view?usp=sharing)
+- Link Lo-Fi Design : [Lo-Fi]()
+- Link Hi-Fi Design : [Hi-Fi]()
+- Link Demo Product : [Prototype]()
 
 ## Deployment Link APK METABOOK ID
 
-Download Link APK Metabook ID:<br>[Metabook_apk](https://drive.google.com/file/d/1-gDkxUpHMP9rPaqT_sCIpc-dLeW66Qet/view?usp=sharing)
+Download Link APK Metabook ID:<br>[PARADISATA_apk]()
