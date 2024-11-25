@@ -15,23 +15,47 @@ import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 import java.io.InputStreamReader
 
-class PlaceViewModel(application: Application): AndroidViewModel(application) {
+class PlaceViewModel(application: Application) : AndroidViewModel(application) {
     private val _places = MutableLiveData<List<DataPlaces>>()
     val places: LiveData<List<DataPlaces>> get() = _places
 
-    fun loadPlaces() {
+    fun loadPlaces(limit: Int = 5) {
         viewModelScope.launch {
-            val data = readPlacesFromRaw()
-            _places.postValue(data)
+            try {
+                val data = readPlacesFromRaw(limit)
+                 _places.postValue(data)
+            } catch (e: Exception) {
+                Log.e("PlaceViewModel", "${e.message}")
+            }
+
         }
     }
 
-    private suspend fun readPlacesFromRaw(): List<DataPlaces> {
+    private suspend fun readPlacesFromRaw(limit: Int = 0): List<DataPlaces> {
         return withContext(Dispatchers.IO) {
             val raw = getApplication<Application>().resources.openRawResource(R.raw.places_by_city)
             val reader = InputStreamReader(raw)
-            val type = object : TypeToken<List<DataPlaces>>() {}.type
-            Gson().fromJson<List<DataPlaces>>(reader, type)
+            try {
+                val jsonArray = Gson().fromJson<List<Map<String, Any>>>(
+                    reader,
+                    object : TypeToken<List<Map<String, Any>>>() {}.type
+                )
+
+                val limitedJson = if(limit > 1) jsonArray.take(limit) else jsonArray
+
+                val limitedPlaces = limitedJson.mapNotNull { item ->
+                    try {
+                        Gson().fromJson(Gson().toJson(item), DataPlaces::class.java)
+                    } catch (e: Exception) {
+                        null
+                    }
+                }
+                limitedPlaces
+            } catch (e: Exception) {
+                emptyList()
+            } finally {
+                reader.close()
+            }
         }
     }
 }

@@ -8,7 +8,7 @@ import kotlinx.parcelize.RawValue
 data class DataPlaces(
     val kategori: String,
     val nama: String,
-    val foto: String,
+    val foto: List<String>,
     val tentang: String,
     val alamat: String,
     val fasilitas: List<String>,

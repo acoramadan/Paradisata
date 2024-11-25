@@ -58,4 +58,10 @@
     <string name="date_of_birth">Date Of Birth</string>
     <string name="package_information">Package Information</string>
     <string name="image_category">image category</string>
+    <string name="wisata_kuliner">Wisata Kuliner</string>
+    <string name="more_than_just_a_meal_it_s_an_experience">More than just a meal, it\'s an experience.</string>
+    <string name="destinasi_kuliner_yang_wajib_anda_jelajahi">Destinasi kuliner yang wajib anda jelajahi</string>
+    <string name="profile_tourguide">profile tourguide</string>
+    <string name="melangkah_menyusuri_waktu_menemukan_keabadian">Melangkah Menyusuri Waktu, Menemukan Keabadian.</string>
+    <string name="wisata_sejarah">Wisata Sejarah</string>
 </resources>

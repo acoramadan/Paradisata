@@ -23,7 +23,7 @@ class CategoryListAdapter(
             with(binding) {
                 tvName.text = dataPlaces.kategori
                 Glide.with(context)
-                    .load(dataPlaces.foto)
+                    .load(dataPlaces.foto[0])
                     .placeholder(R.drawable.placeholder)
                     .into(imageView)
                 root.setOnClickListener {
