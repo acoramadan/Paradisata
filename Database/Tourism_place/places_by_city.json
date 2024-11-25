@@ -28,9 +28,11 @@
         "kategori": "Wisata Sejarah",
         "nama": "Museum Geologi",
         "foto": [
-            "https://example.com/tangkuban-perahu-1.jpg",
-            "https://example.com/tangkuban-perahu-2.jpg",
-            "https://example.com/tangkuban-perahu-3.jpg"
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/bandung/museum_geologi/1.jpg",
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/bandung/museum_geologi/2.jpg",
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/bandung/museum_geologi/3.jpg",
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/bandung/museum_geologi/4.jpg",
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/bandung/museum_geologi/5.jpg"
         ],
         "tentang": "Museum Geologi Bandung menawarkan koleksi geologi dan fosil-fosil yang menarik, serta informasi tentang perkembangan bumi.",
         "alamat": "Jl. Diponegoro No. 57, Bandung, Jawa Barat",
@@ -50,7 +52,12 @@
     {
         "kategori": "Wisata Kuliner",
         "nama": "Kedai Kopi 88",
-        "foto": "https://example.com/kedai-kopi88.jpg",
+        "foto": [
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/bandung/kedai_kopi/1.jpg",
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/bandung/kedai_kopi/2.jpg",
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/bandung/kedai_kopi/3.jpeg"
+            
+        ],
         "tentang": "Kedai Kopi 88 adalah tempat yang menawarkan berbagai varian kopi lokal yang nikmat, cocok bagi pecinta kopi Bandung.",
         "alamat": "Jl. Progo No. 88, Bandung, Jawa Barat",
         "fasilitas": ["Area parkir", "Wi-Fi", "Toilet", "Tempat duduk luar"],
@@ -69,7 +76,12 @@
     {
         "kategori": "Wisata Religi",
         "nama": "Masjid Raya Bandung",
-        "foto": "https://example.com/masjid-raya-bandung.jpg",
+        "foto": [
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/bandung/masjid_raya_bandung/1.jpg",
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/bandung/masjid_raya_bandung/2.jpg",
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/bandung/masjid_raya_bandung/3.jpg",
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/bandung/masjid_raya_bandung/4.jpg",
+                ],
         "tentang": "Masjid Raya Bandung adalah masjid terbesar di kota ini, dengan arsitektur yang memukau dan suasana yang tenang untuk beribadah.",
         "alamat": "Jl. Alun-Alun No. 1, Bandung, Jawa Barat",
         "fasilitas": ["Toilet", "Tempat parkir", "Area ziarah"],
@@ -88,7 +100,12 @@
     {
         "kategori": "Wisata Alam",
         "nama": "Kawah Cibuni",
-        "foto": "https://example.com/kawah-cibuni.jpg",
+        "foto": [
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/bandung/kawah_cibuni/1.jpg",
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/bandung/kawah_cibuni/2.jpg",
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/bandung/kawah_cibuni/3.jpg",
+            
+        ],
         "tentang": "Kawah Cibuni adalah kawah vulkanik yang terletak di daerah Lembang. Kawah ini memiliki pemandangan yang sangat indah dan udara yang sejuk.",
         "alamat": "Cibuni, Lembang, Bandung, Jawa Barat",
         "fasilitas": ["Tempat parkir", "Warung makan", "Toilet"],
@@ -107,7 +124,12 @@
     {
         "kategori": "Wisata Sejarah",
         "nama": "Gedung Sate",
-        "foto": "https://example.com/gedung-sate.jpg",
+        "foto": [
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/bandung/gedung_sate/1.jpg",
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/bandung/gedung_sate/2.jpg",
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/bandung/gedung_sate/3.jpg",
+            
+        ],
         "tentang": "Gedung Sate adalah bangunan bersejarah yang terletak di pusat kota Bandung. Gedung ini terkenal dengan arsitekturnya yang unik dan menjadi simbol kota Bandung.",
         "alamat": "Jl. Diponegoro No. 22, Bandung, Jawa Barat",
         "fasilitas": ["Toilet", "Tempat parkir", "Pemandu wisata"],
@@ -126,7 +148,12 @@
     {
             "kategori": "Wisata Kuliner",
             "nama": "Sate Khas Senayan",
-            "foto": "https://example.com/sate-khas-senayan.jpg",
+            "foto": [
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/bandung/sate_khas_senayan/1.jpg",
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/bandung/sate_khas_senayan/2.jpg",
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/bandung/sate_khas_senayan/3.jpg",
+            
+            ],
             "tentang": "Sate Khas Senayan adalah restoran yang terkenal dengan sate dan menu khas Indonesia lainnya. Terletak di pusat kota Bandung, tempat ini menjadi favorit bagi para pencinta kuliner.",
             "alamat": "Jl. Setiabudi No. 25, Bandung, Jawa Barat",
             "fasilitas": ["Wi-Fi", "Toilet", "Tempat parkir", "Area duduk indoor & outdoor"],
@@ -145,7 +172,13 @@
         {
             "kategori": "Wisata Religi",
             "nama": "Vihara Dharma Guna",
-            "foto": "https://example.com/vihara-dharma-guna.jpg",
+            "foto": [
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/bandung/museum_geologi/1.jpg",
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/bandung/museum_geologi/2.jpg",
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/bandung/museum_geologi/3.jpg",
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/bandung/museum_geologi/4.jpg",
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/bandung/museum_geologi/5.jpg"
+            ],
             "tentang": "Vihara Dharma Guna adalah tempat ibadah bagi umat Buddha yang terletak di Bandung. Vihara ini terkenal dengan patung Buddha yang besar dan suasana yang tenang.",
             "alamat": "Jl. Kopo No. 16, Bandung, Jawa Barat",
             "fasilitas": ["Tempat parkir", "Toilet", "Area ziarah"],
@@ -164,7 +197,13 @@
         {
             "kategori": "Wisata Alam",
             "nama": "Curug Cimahi",
-            "foto": "https://example.com/curug-cimahi.jpg",
+            "foto": [
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/bandung/museum_geologi/1.jpg",
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/bandung/museum_geologi/2.jpg",
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/bandung/museum_geologi/3.jpg",
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/bandung/museum_geologi/4.jpg",
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/bandung/museum_geologi/5.jpg"
+            ],
             "tentang": "Curug Cimahi adalah air terjun yang terletak di kawasan Lembang. Dikenal juga dengan sebutan Air Terjun Pelangi karena pancaran warna-warni yang ditampilkan pada malam hari.",
             "alamat": "Jl. Raya Tegallega No. 56, Lembang, Bandung, Jawa Barat",
             "fasilitas": ["Toilet", "Tempat parkir", "Area foto", "Warung makan"],
