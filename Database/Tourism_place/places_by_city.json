@@ -3,9 +3,11 @@
         "kategori": "Wisata Alam",
         "nama": "Tangkuban Perahu",
         "foto": [
-            "https://example.com/tangkuban-perahu-1.jpg",
-            "https://example.com/tangkuban-perahu-2.jpg",
-            "https://example.com/tangkuban-perahu-3.jpg"
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/bandung/tangkuban_perahu/1.jpg",
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/bandung/tangkuban_perahu/2.jpg",
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/bandung/tangkuban_perahu/3.jpg",
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/bandung/tangkuban_perahu/4.jpg",
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/bandung/tangkuban_perahu/5.jpg"
         ],
         "tentang": "Tangkuban Perahu adalah gunung berapi aktif yang terkenal dengan kawahnya yang indah. Pengunjung dapat berjalan-jalan di sekitar kawah dan menikmati pemandangan yang spektakuler.",
         "alamat": "Jl. Raya Tangkuban Perahu, Lembang, Bandung, Jawa Barat",
