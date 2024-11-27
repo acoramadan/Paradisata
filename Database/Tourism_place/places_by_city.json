@@ -1,5 +1,6 @@
 [
     {
+        "id_place":1,
         "kategori": "Wisata Alam",
         "nama": "Tangkuban Perahu",
         "foto": [
@@ -25,6 +26,7 @@
         "jam_buka": "08:00 - 17:00"
     },
     {
+        "id_place":2,
         "kategori": "Wisata Sejarah",
         "nama": "Museum Geologi",
         "foto": [
@@ -50,6 +52,7 @@
         "jam_buka": "08:00 - 16:00"
     },
     {
+        "id_place":3,
         "kategori": "Wisata Kuliner",
         "nama": "Kedai Kopi 88",
         "foto": [
@@ -74,6 +77,7 @@
         "jam_buka": "09:00 - 22:00"
     },
     {
+        "id_place":4,
         "kategori": "Wisata Religi",
         "nama": "Masjid Raya Bandung",
         "foto": [
@@ -98,6 +102,7 @@
         "jam_buka": "24 Jam"
     },
     {
+        "id_place":5,
         "kategori": "Wisata Alam",
         "nama": "Kawah Cibuni",
         "foto": [
@@ -122,6 +127,7 @@
         "jam_buka": "08:00 - 16:00"
     },
     {
+        "id_place":6,
         "kategori": "Wisata Sejarah",
         "nama": "Gedung Sate",
         "foto": [
@@ -146,6 +152,7 @@
         "jam_buka": "08:00 - 17:00"
     },
     {
+            "id_place":7,
             "kategori": "Wisata Kuliner",
             "nama": "Sate Khas Senayan",
             "foto": [
@@ -170,6 +177,7 @@
             "jam_buka": "10:00 - 22:00"
         },
         {
+            "id_place":8,
             "kategori": "Wisata Religi",
             "nama": "Vihara Dharma Guna",
             "foto": [
@@ -194,6 +202,7 @@
             "jam_buka": "08:00 - 17:00"
         },
         {
+            "id_place":9,
             "kategori": "Wisata Alam",
             "nama": "Curug Cimahi",
             "foto": [
@@ -217,6 +226,7 @@
             "jam_buka": "08:00 - 18:00"
         },
         {
+            "id_place":10,
             "kategori": "Wisata Sejarah",
             "nama": "Candi Cangkuang",
             "foto": [
@@ -240,6 +250,7 @@
             "jam_buka": "08:00 - 17:00"
         },
         {
+            "id_place":11,
             "kategori": "Wisata Kuliner",
             "nama": "Warung Nasi Ampera",
             "foto": [
@@ -263,6 +274,7 @@
             "jam_buka": "10:00 - 22:00"
         },
         {
+            "id_place":12,
                 "kategori": "Wisata Alam",
                 "nama": "Tebing Keraton",
                 "foto": [
@@ -287,6 +299,7 @@
             },
             
             {
+                "id_place":13,
                 "kategori": "Wisata Kuliner",
                 "nama": "Batagor Riri",
                 "foto": [
@@ -312,6 +325,7 @@
                        
           
                 {
+                    "id_place":14,
                     "kategori": "Wisata Alam",
                     "nama": "Pantai Kejawanan",
                     "foto": [
@@ -335,6 +349,7 @@
                     "jam_buka": "08:00 - 18:00"
                 },
                 {
+                    "id_place":15,
                     "kategori": "Wisata Sejarah",
                     "nama": "Keraton Kasepuhan",
                     "foto": [
@@ -358,6 +373,7 @@
                     "jam_buka": "08:00 - 16:00"
                 },
                 {
+                    "id_place":16,
                     "kategori": "Wisata Kuliner",
                     "nama": "Empal Gentong H. Apud",
                     "foto": [
@@ -381,6 +397,7 @@
                     "jam_buka": "09:00 - 21:00"
                 },
                 {
+                    "id_place":17,
                     "kategori": "Wisata Religi",
                     "nama": "Masjid Agung Cirebon",
                     "foto": [
@@ -404,6 +421,7 @@
                     "jam_buka": "24 Jam"
                 },
                 {
+                    "id_place":18,
                         "kategori": "Wisata Alam",
                         "nama": "Taman Sumber Air Taman Sari",
                         "foto": [
@@ -427,6 +445,7 @@
                         "jam_buka": "07:00 - 17:00"
                     },
                     {
+                        "id_place":19,
                         "kategori": "Wisata Sejarah",
                         "nama": "Museum Batik Cirebon",
                         "foto": [
@@ -450,6 +469,7 @@
                         "jam_buka": "09:00 - 16:00"
                     },
                     {
+                        "id_place":20,
                         "kategori": "Wisata Kuliner",
                         "nama": "Tahu Gejrot",
                         "foto": [
@@ -473,6 +493,7 @@
                         "jam_buka": "10:00 - 20:00"
                     },
                     {
+                        "id_place":21,
                         "kategori": "Wisata Religi",
                         "nama": "Makam Sunan Gunung Jati",
                         "foto": [
@@ -497,6 +518,7 @@
                     },
                        
                         {
+                            "id_place":22,
                             "kategori": "Wisata Alam",
                             "nama": "Taman Wisata Alam Leuwi Hejo",
                             "foto": [
@@ -520,6 +542,7 @@
                             "jam_buka": "08:00 - 17:00"
                         },
                         {
+                            "id_place":23,
                             "kategori": "Wisata Kuliner",
                             "nama": "Sate Kalong Cirebon",
                             "foto": [
@@ -544,6 +567,7 @@
                         },
                         
                         {
+                            "id_place":24,
                             "kategori": "Wisata Alam",
                             "nama": "Kampung Naga",
                             "foto": [
@@ -568,10 +592,14 @@
                         },
                         
                             {
+                                "id_place":25,
                                 "kategori": "Wisata Alam",
                                 "nama": "Taman Wisata Alam Leuwi Hejo",
                                 "foto": [
-                                 ],
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/kampung_naga/1.jpg",
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/kampung_naga/2.jpg",
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/kampung_naga/3.jpeg",
+                                          ],
                                 "tentang": "Taman Wisata Alam Leuwi Hejo adalah taman yang terletak di daerah perbukitan, dengan pemandangan alam yang indah dan air terjun yang menawan. Tempat ini cocok untuk trekking dan menikmati keindahan alam.",
                                 "alamat": "Jl. Leuwi Hejo No. 10, Cirebon, Jawa Barat",
                                 "fasilitas": ["Toilet", "Tempat parkir", "Area berkemah", "Warung makan"],
@@ -588,6 +616,7 @@
                                 "jam_buka": "08:00 - 17:00"
                             },
                             {
+                                "id_place":26,
                                 "kategori": "Wisata Religi",
                                 "nama": "Masjid Agung Cirebon",
                                 "foto": "https://example.com/masjid-agung-cirebon.jpg",
@@ -607,6 +636,7 @@
                                 "jam_buka": "24 Jam"
                             },
                                 {
+                                    "id_place":27,
                                     "kategori": "Wisata Alam",
                                     "nama": "Situ Wanayasa",
                                     "foto": "https://example.com/situ-wanayasa.jpg",
@@ -627,6 +657,7 @@
                                 },
                                 
                                 {
+                                    "id_place":28,
                                     "kategori": "Wisata Kuliner",
                                     "nama": "Sate Maranggi Purwakarta",
                                     "foto": "https://example.com/sate-maranggi-purwakarta.jpg",
@@ -646,6 +677,7 @@
                                     "jam_buka": "09:00 - 21:00"
                                 },
                                 {
+                                    "id_place":29,
                                     "kategori": "Wisata Religi",
                                     "nama": "Masjid Agung Purwakarta",
                                     "foto": "https://example.com/masjid-agung-purwakarta.jpg",
@@ -665,6 +697,7 @@
                                     "jam_buka": "24 Jam"
                                 },
                                 {
+                                    "id_place":30,
                                     "kategori": "Wisata Alam",
                                     "nama": "Taman Wisata Alam Gunung Lembu",
                                     "foto": "https://example.com/taman-wisata-alam-gunung-lembu.jpg",
@@ -685,6 +718,7 @@
                                 },
                                 
                                     {
+                                        "id_place":31,
                                         "kategori": "Wisata Alam",
                                         "nama": "Air Terjun Cipurut",
                                         "foto": "https://example.com/air-terjun-cipurut.jpg",
@@ -704,6 +738,7 @@
                                         "jam_buka": "07:00 - 16:00"
                                     },
                                     {
+                                        "id_place":32,
                                         "kategori": "Wisata Sejarah",
                                         "nama": "Benteng Pendem Purwakarta",
                                         "foto": "https://example.com/benteng-pendem.jpg",
