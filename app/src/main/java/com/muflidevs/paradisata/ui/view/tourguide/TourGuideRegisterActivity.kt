@@ -1,4 +1,4 @@
-package com.muflidevs.paradisata.ui.view
+package com.muflidevs.paradisata.ui.view.tourguide
 
 import android.os.Bundle
 import android.text.Editable
@@ -22,6 +22,7 @@ class TourGuideRegisterActivity : AppCompatActivity(),View.OnClickListener{
     private lateinit var noTelpEdtTxt: CustomNoTelephoneEditText
     private lateinit var submitBtn: CustomButton
     private lateinit var backBtn: Button
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityTourGuideRegisterBinding.inflate(layoutInflater)
@@ -34,11 +35,9 @@ class TourGuideRegisterActivity : AppCompatActivity(),View.OnClickListener{
         submitBtn = binding.btnSubmit
         backBtn = binding.btnBack
 
-        //buttonOnOff
         setEnabledButton()
         checkUserInput()
 
-        //navigation
         backBtn.setOnClickListener(this)
         submitBtn.setOnClickListener(this)
     }

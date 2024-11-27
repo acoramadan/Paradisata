@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_bg"
+    tools:context=".ui.view.tourguide.TourGuideIdentityAuthActivity">
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/btn_back_tourist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="16dp"
+        android:layout_marginBottom="8dp"
+        android:contentDescription="@string/back_icon"
+        android:text="@string/back"
+        android:textColor="@color/md_theme_secondary"
+        app:backgroundTint="@color/md_theme_onTertiary"
+        app:icon="@drawable/icon_back"
+        app:iconTint="@color/md_theme_secondary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.007" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="@string/sign_up_as_a_tour_guide"
+        android:textColor="@color/md_theme_onPrimary"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.186"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.160" />
+
+    <LinearLayout
+        android:id="@+id/login_linear1"
+        android:layout_width="match_parent"
+        android:layout_height="570dp"
+        android:background="@drawable/login_container_shape"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:layout_editor_absoluteX="0dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="center"
+            android:text="@string/identity_authentication"
+            android:textColor="@color/md_theme_secondary"
+            android:textSize="20sp" />
+
+       <ImageView
+           android:id="@+id/image_ktp"
+           android:layout_width="200dp"
+           android:layout_height="117dp"
+           android:layout_gravity="center"
+           android:contentDescription="@string/image_ktp"
+           tools:src="@drawable/ktp"/>
+
+        <com.muflidevs.paradisata.ui.view.customView.CustomUsernameEditText
+            android:id="@+id/edtTxt_fullname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="45dp"
+            android:layout_marginBottom="10dp"
+            android:drawableStart="@drawable/user_login_icon"
+            android:fontFamily="@font/poppins"
+            android:hint="@string/full_name" />
+
+        <com.muflidevs.paradisata.ui.view.customView.CustomAddressEditText
+            android:id="@+id/edtTxt_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="45dp"
+            android:layout_marginBottom="10dp"
+            android:drawableStart="@drawable/location_edttxt"
+            android:fontFamily="@font/poppins"
+            android:hint="@string/location"/>
+
+        <com.muflidevs.paradisata.ui.view.customView.CustomDateBirthEditText
+            android:id="@+id/edtTxt_datebirth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="45dp"
+            android:layout_marginBottom="10dp"
+            android:drawableStart="@drawable/calendar"
+            android:fontFamily="@font/poppins"
+            android:hint="@string/date_of_birth"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/gender"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="18sp"
+            android:textColor="@color/md_theme_secondary"
+            android:layout_gravity="center"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+
+            <Button
+                style="?attr/materialButtonOutlinedStyle"
+                android:id="@+id/female_btn"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:text="@string/female"/>
+            <Button
+                style="?attr/materialButtonOutlinedStyle"
+                android:id="@+id/male_btn"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:text="@string/male"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.muflidevs.paradisata.ui.view.customView.CustomButton
+        android:id="@+id/btn_submit_tourist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintBottom_toBottomOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
