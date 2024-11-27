@@ -7,8 +7,6 @@ import android.os.Looper
 import android.os.Handler
 import androidx.appcompat.app.AppCompatActivity
 import com.muflidevs.paradisata.databinding.ActivitySplashScreenBinding
-import com.muflidevs.paradisata.ui.view.category.CategoryCulinaryActivity
-import com.muflidevs.paradisata.ui.view.category.CategoryHistoryActivity
 
 @SuppressLint("CustomSplashScreen")
 class SplashScreenActivity : AppCompatActivity() {
@@ -19,7 +17,7 @@ class SplashScreenActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         Handler(Looper.getMainLooper()).postDelayed({
-            val intent = Intent(this@SplashScreenActivity, CategoryHistoryActivity::class.java)
+            val intent = Intent(this@SplashScreenActivity, MainActivity::class.java)
             startActivity(intent)
             finish()
         },5000)

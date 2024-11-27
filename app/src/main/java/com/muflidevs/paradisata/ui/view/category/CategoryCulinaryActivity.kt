@@ -37,13 +37,16 @@ class CategoryCulinaryActivity : AppCompatActivity() {
         setupRecycleView(binding)
 
         viewModel.loadPlaces(0)
-        viewModel.places.observe(this) {dataPlace ->
+        viewModel.places.observe(this) { dataPlace ->
             adapter.submitList(dataPlace)
+        }
+        binding.exitButton.setOnClickListener {
+            finish()
         }
     }
 
     private fun setupRecycleView(binding: ActivityCategoryCulinaryBinding) {
-        adapter = CulinaryListAdapter(this) {dataPlaces ->
+        adapter = CulinaryListAdapter(this) { dataPlaces ->
             onCategoryClicked(dataPlaces)
         }
         binding.apply {
@@ -52,6 +55,7 @@ class CategoryCulinaryActivity : AppCompatActivity() {
             rvCulinary.isNestedScrollingEnabled = false
         }
     }
+
     private fun onCategoryClicked(dataPlace: DataPlaces) {
 
     }

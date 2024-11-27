@@ -1,5 +1,6 @@
 package com.muflidevs.paradisata.ui.view.fragments
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
@@ -10,6 +11,10 @@ import androidx.recyclerview.widget.GridLayoutManager
 import com.muflidevs.paradisata.data.model.remote.json.DataPlaces
 import com.muflidevs.paradisata.databinding.FragmentHomeBinding
 import com.muflidevs.paradisata.ui.view.adapter.CategoryListAdapter
+import com.muflidevs.paradisata.ui.view.category.CategoryCulinaryActivity
+import com.muflidevs.paradisata.ui.view.category.CategoryHistoryActivity
+import com.muflidevs.paradisata.ui.view.category.CategoryNatureActivity
+import com.muflidevs.paradisata.ui.view.category.CategoryReligionActivity
 import com.muflidevs.paradisata.viewModel.PlaceViewModel
 
 class HomeFragment : Fragment() {
@@ -22,7 +27,7 @@ class HomeFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        binding = FragmentHomeBinding.inflate(inflater,container,false)
+        binding = FragmentHomeBinding.inflate(inflater, container, false)
         return binding.root
     }
 
@@ -34,19 +39,40 @@ class HomeFragment : Fragment() {
         viewModel.places.observe(viewLifecycleOwner) { places ->
             adapter.submitList(places.take(4))
         }
+
     }
+
+    private fun onCategoryItemClicked(dataPlaces: DataPlaces) {
+        when (dataPlaces.kategori) {
+            "Wisata Alam" -> {
+                val intent = Intent(requireContext(), CategoryNatureActivity::class.java)
+                startActivity(intent)
+            }
+
+            "Wisata Religi" -> {
+                val intent = Intent(requireContext(), CategoryReligionActivity::class.java)
+                startActivity(intent)
+            }
+
+            "Wisata Kuliner" -> {
+                val intent = Intent(requireContext(), CategoryCulinaryActivity::class.java)
+                startActivity(intent)
+            }
+
+            "Wisata Sejarah" -> {
+                val intent = Intent(requireContext(), CategoryHistoryActivity::class.java)
+                startActivity(intent)
+            }
+        }
+    }
+
     private fun setupRecyleView() {
-        adapter = CategoryListAdapter(requireContext()) {dataPlaces ->
-            onCategoryClicked(dataPlaces)
+        adapter = CategoryListAdapter(requireContext()) { dataPlaces ->
+            onCategoryItemClicked(dataPlaces)
         }
         binding.categoryRv.apply {
-            layoutManager = GridLayoutManager(requireContext(),2)
+            layoutManager = GridLayoutManager(requireContext(), 2)
             adapter = this@HomeFragment.adapter
         }
     }
-    private fun onCategoryClicked(dataPlace: DataPlaces) {
-
-    }
-
-
 }

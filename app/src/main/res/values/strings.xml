@@ -64,4 +64,16 @@
     <string name="profile_tourguide">profile tourguide</string>
     <string name="melangkah_menyusuri_waktu_menemukan_keabadian">Melangkah Menyusuri Waktu, Menemukan Keabadian.</string>
     <string name="wisata_sejarah">Wisata Sejarah</string>
+    <string name="destinasi_sejarah_yang_wajib_anda_ketahui">Destinasi Sejarah yang wajib anda ketahui</string>
+    <string name="destinasi_alam_yang_wajib_kamu_ketahui">Destinasi Alam yang wajib kamu ketahui</string>
+    <string name="menyusuri_tempat_suci_merasakan_kedekatan_dengan_tuhan">Menyusuri tempat suci, merasakan kedekatan dengan Tuhan.</string>
+    <string name="wisata_religi">Wisata Religi</string>
+    <string name="wisata_alam">Wisata Alam</string>
+    <string name="stars">stars</string>
+    <string name="book_now">Book Now</string>
+    <string name="image_ktp">Image Ktp</string>
+    <string name="aktivitas">Aktivitas</string>
+    <string name="fasilitas">Fasilitas</string>
+    <string name="harga">Harga</string>
+    <string name="jam_buka">Jam Buka</string>
 </resources>

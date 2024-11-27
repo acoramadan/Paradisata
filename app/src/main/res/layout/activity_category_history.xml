@@ -78,7 +78,7 @@
                 android:layout_gravity="center"
                 android:layout_marginTop="11dp"
                 android:fontFamily="@font/poppins_medium"
-                android:text="@string/destinasi_kuliner_yang_wajib_anda_jelajahi"
+                android:text="@string/destinasi_sejarah_yang_wajib_anda_ketahui"
                 android:textSize="18sp" />
 
             <androidx.recyclerview.widget.RecyclerView

@@ -41,6 +41,9 @@ class CategoryHistoryActivity : AppCompatActivity() {
         viewModel.places.observe(this) { dataPlace ->
             adapter.submitList(dataPlace)
         }
+        binding.exitButton.setOnClickListener {
+            finish()
+        }
     }
 
     private fun setupRecycleView(binding: ActivityCategoryHistoryBinding) {

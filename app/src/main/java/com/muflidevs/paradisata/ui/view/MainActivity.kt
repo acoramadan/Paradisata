@@ -1,10 +1,16 @@
 package com.muflidevs.paradisata.ui.view
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.navigation.NavigationBarView
 import com.muflidevs.paradisata.R
+import com.muflidevs.paradisata.data.model.remote.json.DataPlaces
 import com.muflidevs.paradisata.databinding.ActivityMainBinding
+import com.muflidevs.paradisata.ui.view.category.CategoryCulinaryActivity
+import com.muflidevs.paradisata.ui.view.category.CategoryHistoryActivity
+import com.muflidevs.paradisata.ui.view.category.CategoryNatureActivity
+import com.muflidevs.paradisata.ui.view.category.CategoryReligionActivity
 import com.muflidevs.paradisata.ui.view.fragments.HomeFragment
 import com.muflidevs.paradisata.ui.view.fragments.HistoryFragment
 import com.muflidevs.paradisata.ui.view.fragments.ProfileFragment
@@ -19,6 +25,7 @@ class MainActivity : AppCompatActivity() {
 
         navBarClick()
     }
+
 
     private fun navBarClick() {
         navBar = binding.bottomNavigation
