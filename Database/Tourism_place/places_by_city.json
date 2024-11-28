@@ -11,7 +11,7 @@
             "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/bandung/tangkuban_perahu/5.jpg"
         ],
         "tentang": "Tangkuban Perahu adalah gunung berapi aktif yang terkenal dengan kawahnya yang indah. Pengunjung dapat berjalan-jalan di sekitar kawah dan menikmati pemandangan yang spektakuler.",
-        "alamat": "Jl. Raya Tangkuban Perahu, Lembang, Bandung, Jawa Barat",
+        "alamat": "Cikahuripan, Kecamatan Lembang, Kabupaten Bandung, Jawa Barat",
         "fasilitas": ["Parkir", "Toilet", "Warung makan", "Area foto"],
         "aktivitas": ["Hiking", "Fotografi", "Menikmati pemandangan"],
         "rating": 4.7,
@@ -37,7 +37,7 @@
             "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/bandung/museum_geologi/5.jpg"
         ],
         "tentang": "Museum Geologi Bandung menawarkan koleksi geologi dan fosil-fosil yang menarik, serta informasi tentang perkembangan bumi.",
-        "alamat": "Jl. Diponegoro No. 57, Bandung, Jawa Barat",
+        "alamat": "Jl. Diponegoro No.57, Cihaur Geulis, Kec. Cibeunying Kaler, Kota Bandung, Jawa Barat 40122",
         "fasilitas": ["Toilet", "Area parkir", "Pemandu wisata"],
         "aktivitas": ["Mengunjungi pameran geologi", "Mempelajari fosil", "Fotografi museum"],
         "rating": 4.6,
@@ -87,7 +87,7 @@
             "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/bandung/masjid_raya_bandung/4.jpg",
                 ],
         "tentang": "Masjid Raya Bandung adalah masjid terbesar di kota ini, dengan arsitektur yang memukau dan suasana yang tenang untuk beribadah.",
-        "alamat": "Jl. Alun-Alun No. 1, Bandung, Jawa Barat",
+        "alamat": "Jl. Dalem Kaum No.14, Balonggede, Kec. Regol, Kota Bandung, Jawa Barat 40251",
         "fasilitas": ["Toilet", "Tempat parkir", "Area ziarah"],
         "aktivitas": ["Beribadah", "Ziarah", "Fotografi arsitektur"],
         "rating": 4.9,
@@ -112,7 +112,7 @@
             
         ],
         "tentang": "Kawah Cibuni adalah kawah vulkanik yang terletak di daerah Lembang. Kawah ini memiliki pemandangan yang sangat indah dan udara yang sejuk.",
-        "alamat": "Cibuni, Lembang, Bandung, Jawa Barat",
+        "alamat": "Patengan, Rancabali, Lembang, Bandung, Jawa Barat",
         "fasilitas": ["Tempat parkir", "Warung makan", "Toilet"],
         "aktivitas": ["Fotografi", "Menikmati pemandangan kawah", "Berjalan-jalan"],
         "rating": 4.5,
@@ -1590,41 +1590,18 @@
                                                                     "harga": "Rp 15,000",
                                                                     "jam_buka": "08:00 - 17:00"
                                                                 },
-                                                                {
-                                                                    "id_place":66,
-                                                                    "kategori": "Wisata Sejarah",
-                                                                    "nama": "Masjid Raya Al-Barkah",
-                                                                    "foto": [
-                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/1.jpg",
-                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/2.jpg",
-                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/3.jpeg",
-                                          ], 
-                                                                    "tentang": "Masjid Raya Al-Barkah adalah masjid besar dan bersejarah di Bekasi. Masjid ini menjadi pusat kegiatan agama dan budaya di kota Bekasi, serta memiliki arsitektur yang megah.",
-                                                                    "alamat": "Jl. Raya Masjid No. 3, Bekasi, Jawa Barat",
-                                                                    "fasilitas": ["Tempat parkir", "Toilet", "Area sholat", "Wi-Fi"],
-                                                                    "aktivitas": ["Beribadah", "Melakukan wisata religi", "Mempelajari sejarah masjid"],
-                                                                    "rating": 4.7,
-                                                                    "ulasan": [
-                                                                        {"user": "Dina", "komentar": "Masjid yang sangat indah dan megah, cocok untuk beribadah dan berkunjung.", "rating": 4.8},
-                                                                        {"user": "Budi", "komentar": "Tempat yang sangat tenang, cocok untuk merenung dan beribadah.", "rating": 4.6},
-                                                                        {"user": "Tio", "komentar": "Arsitekturnya luar biasa, sangat menawan.", "rating": 4.7},
-                                                                        {"user": "Rina", "komentar": "Masjid yang besar dan nyaman untuk sholat berjamaah.", "rating": 4.7},
-                                                                        {"user": "Ayu", "komentar": "Sangat direkomendasikan untuk wisata religi, suasananya sangat damai.", "rating": 4.7}
-                                                                    ],
-                                                                    "harga": "Gratis",
-                                                                    "jam_buka": "04:30 - 22:00"
-                                                                },
+                                                                
                                                                 {
                                                                     "id_place":67,
                                                                     "kategori": "Wisata Kuliner",
-                                                                    "nama": "Kedai Kopi Bekasi",
+                                                                    "nama": "Kedai Kopi Tjan Bekasi",
                                                                     "foto": [
                                     "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/1.jpg",
                                     "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/2.jpg",
                                     "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/3.jpeg",
                                           ], 
                                                                     "tentang": "Kedai Kopi Bekasi menyajikan kopi lokal dengan berbagai varian rasa yang nikmat. Tempat ini sangat populer di kalangan pecinta kopi dan mereka yang ingin menikmati suasana kafe yang nyaman.",
-                                                                    "alamat": "Jl. Kopi No. 10, Bekasi, Jawa Barat",
+                                                                    "alamat": "Ruko Emerald, Jl. Harapan Indah Raya No.7 blok EB 1, Medan Satria, Kecamatan Medan Satria, Bekasi, Jawa Barat",
                                                                     "fasilitas": ["Tempat parkir", "Wi-Fi", "Area duduk indoor dan outdoor"],
                                                                     "aktivitas": ["Mencicipi kopi", "Berkumpul bersama teman", "Mencari inspirasi"],
                                                                     "rating": 4.5,
@@ -1786,7 +1763,7 @@
                                                                     {
                                                                         "id_place":74,
                                                                         "kategori": "Wisata Religi",
-                                                                        "nama": "Vihara Dhamma Karawang",
+                                                                        "nama": "Vihara San Jin Ku Poh Karawang",
                                                                         "foto": [
                                     "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/1.jpg",
                                     "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/2.jpg",
@@ -2121,57 +2098,7 @@
                                                                                     "harga": "Rp 25,000",
                                                                                     "jam_buka": "10:00 - 22:00"
                                                                                 },
-                                                                                {
-                                                                                    "id_place":88,
-                                                                                    "kategori": "Wisata Budaya",
-                                                                                    "nama": "Museum Karawang",
-                                                                                    "foto": [
-                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/1.jpg",
-                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/2.jpg",
-                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/3.jpeg",
-                                          ], 
-                                                                                    "tentang": "Museum Karawang menyimpan berbagai koleksi sejarah dan budaya yang mencerminkan kehidupan masyarakat Karawang. Tempat ini sangat cocok untuk belajar lebih dalam tentang kebudayaan lokal.",
-                                                                                    "alamat": "Jl. Museum Karawang No. 3, Karawang, Jawa Barat",
-                                                                                    "fasilitas": ["Tempat parkir", "Toilet", "Pemandu wisata", "Area pameran budaya"],
-                                                                                    "aktivitas": ["Mempelajari budaya lokal", "Berkeliling museum", "Fotografi"],
-                                                                                    "rating": 4.7,
-                                                                                    "ulasan": [
-                                                                                        {"user": "Tio", "komentar": "Museum yang sangat informatif dan menyajikan koleksi yang menarik tentang budaya Karawang.", "rating": 4.8},
-                                                                                        {"user": "Ayu", "komentar": "Tempat yang cocok untuk belajar tentang sejarah dan budaya Karawang.", "rating": 4.6},
-                                                                                        {"user": "Budi", "komentar": "Museum yang sangat bagus, banyak hal menarik yang bisa dipelajari.", "rating": 4.7},
-                                                                                        {"user": "Siti", "komentar": "Tempat yang sangat bermanfaat untuk memahami lebih dalam tentang budaya Karawang.", "rating": 4.8},
-                                                                                        {"user": "Dina", "komentar": "Museum ini memberikan pengalaman yang sangat menarik, banyak informasi yang bisa diperoleh.", "rating": 4.9}
-                                                                                    ],
-                                                                                    "harga": "Rp 20,000",
-                                                                                    "jam_buka": "09:00 - 18:00"
-                                                                                },
-                                                                                {
-                                                                                    "id_place":89,
-                                                                                    "kategori": "Wisata Religi",
-                                                                                    "nama": "Vihara Dhamma Karawang",
-                                                                                    "foto": [
-                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/1.jpg",
-                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/2.jpg",
-                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/3.jpeg",
-                                          ], 
-                                                                                    "tentang": "Vihara Dhamma Karawang adalah tempat ibadah agama Buddha yang indah dan tenang. Tempat ini sering digunakan untuk meditasi dan kegiatan keagamaan lainnya. Suasana di sini sangat damai dan menenangkan.",
-                                                                                    "alamat": "Jl. Vihara No. 4, Karawang, Jawa Barat",
-                                                                                    "fasilitas": ["Tempat parkir", "Toilet", "Area meditasi", "Pusat informasi agama"],
-                                                                                    "aktivitas": ["Meditasi", "Beribadah", "Mengikuti kegiatan keagamaan"],
-                                                                                    "rating": 4.8,
-                                                                                    "ulasan": [
-                                                                                        {"user": "Budi", "komentar": "Tempat yang sangat tenang, cocok untuk meditasi dan beribadah.", "rating": 4.9},
-                                                                                        {"user": "Siti", "komentar": "Suasana di vihara ini sangat damai, membuat saya merasa tenang.", "rating": 4.8},
-                                                                                        {"user": "Ayu", "komentar": "Tempat yang sangat nyaman dan spiritual, saya merasa sangat damai di sini.", "rating": 4.8},
-                                                                                        {"user": "Dina", "komentar": "Vihara ini sangat cocok untuk yang mencari ketenangan jiwa dan meditasi.", "rating": 4.9},
-                                                                                        {"user": "Tio", "komentar": "Sangat mengesankan, vihara ini memberi pengalaman yang sangat menenangkan.", "rating": 5.0}
-                                                                                    ],
-                                                                                    "harga": "Gratis",
-                                                                                    "jam_buka": "08:00 - 17:00"
-                                                                                },
-                                                                            
-                                                                            
-                                                                        
+                                                                                
                                                                                 
                                                                                     {
                                                                                         "id_place":90,
@@ -2510,30 +2437,7 @@
                                                                                                 "harga": "Rp 15,000",
                                                                                                 "jam_buka": "08:00 - 17:00"
                                                                                             },
-                                                                                            {
-                                                                                                "id_place":104,
-                                                                                                "kategori": "Wisata Sejarah",
-                                                                                                "nama": "Istana Bogor",
-                                                                                                "foto": [
-                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/1.jpg",
-                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/2.jpg",
-                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/3.jpeg",
-                                          ], 
-                                                                                                "tentang": "Istana Bogor adalah kediaman resmi Presiden Republik Indonesia di Bogor, yang juga dikenal dengan taman yang indah. Tempat ini menjadi salah satu tempat bersejarah yang wajib dikunjungi.",
-                                                                                                "alamat": "Jl. Ir. H. Juanda No.1, Bogor, Jawa Barat",
-                                                                                                "fasilitas": ["Tempat parkir", "Toilet", "Taman", "Area foto"],
-                                                                                                "aktivitas": ["Berjalan-jalan di taman", "Fotografi", "Berburu sejarah"],
-                                                                                                "rating": 4.8,
-                                                                                                "ulasan": [
-                                                                                                    {"user": "Rina", "komentar": "Taman yang sangat luas dan indah, sejarahnya sangat menarik.", "rating": 4.9},
-                                                                                                    {"user": "Budi", "komentar": "Sangat menarik untuk melihat sejarah Indonesia dan menikmati keindahan taman.", "rating": 4.7},
-                                                                                                    {"user": "Ayu", "komentar": "Suasana yang sangat asri dan damai, cocok untuk wisata sejarah.", "rating": 4.8},
-                                                                                                    {"user": "Tio", "komentar": "Tempat yang penuh dengan sejarah, sangat direkomendasikan.", "rating": 4.8},
-                                                                                                    {"user": "Siti", "komentar": "Pemandangan taman yang luar biasa, dan bangunan istana yang megah.", "rating": 4.9}
-                                                                                                ],
-                                                                                                "harga": "Gratis",
-                                                                                                "jam_buka": "09:00 - 16:00"
-                                                                                            },
+                                                                                            
                                                                                             {
                                                                                                 "id_place":105,
                                                                                                 "kategori": "Wisata Kuliner",
@@ -2581,153 +2485,8 @@
                                                                                                 ],
                                                                                                 "harga": "Gratis",
                                                                                                 "jam_buka": "24 Jam"
-                                                                                            },
-                                                                                            {
-                                                                                                "id_place":107,
-                                                                                                "kategori": "Wisata Budaya",
-                                                                                                "nama": "Museum Zoologi Bogor",
-                                                                                                "foto": [
-                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/1.jpg",
-                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/2.jpg",
-                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/3.jpeg",
-                                          ], 
-                                                                                                "tentang": "Museum Zoologi Bogor merupakan salah satu museum terbesar yang menampilkan berbagai koleksi flora dan fauna. Sangat cocok untuk belajar tentang dunia hewan dan tumbuhan.",
-                                                                                                "alamat": "Jl. Ir. H. Juanda No.13, Bogor, Jawa Barat",
-                                                                                                "fasilitas": ["Tempat parkir", "Toilet", "Kios souvenir", "Area museum"],
-                                                                                                "aktivitas": ["Mempelajari koleksi fauna", "Fotografi", "Edukasi tentang alam"],
-                                                                                                "rating": 4.7,
-                                                                                                "ulasan": [
-                                                                                                    {"user": "Tio", "komentar": "Sangat mendidik dan menarik, tempat yang bagus untuk anak-anak belajar.", "rating": 4.8},
-                                                                                                    {"user": "Ayu", "komentar": "Museum yang sangat informatif dengan banyak koleksi hewan.", "rating": 4.7},
-                                                                                                    {"user": "Budi", "komentar": "Tempat yang sangat menarik untuk mempelajari dunia hewan dan tumbuhan.", "rating": 4.7},
-                                                                                                    {"user": "Siti", "komentar": "Sangat seru dan mendidik, cocok untuk wisata edukasi.", "rating": 4.6},
-                                                                                                    {"user": "Rina", "komentar": "Museum yang sangat edukatif, banyak yang bisa dipelajari di sini.", "rating": 4.8}
-                                                                                                ],
-                                                                                                "harga": "Rp 25,000",
-                                                                                                "jam_buka": "08:00 - 16:00"
-                                                                                            },
-                                                                                       
-                                                                                                {
-                                                                                                    "id_place":108,
-                                                                                                    "kategori": "Wisata Alam",
-                                                                                                    "nama": "Situ Gunung",
-                                                                                                    "foto": [
-                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/1.jpg",
-                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/2.jpg",
-                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/3.jpeg",
-                                          ], 
-                                                                                                    "tentang": "Situ Gunung adalah sebuah danau yang terletak di kaki Gunung Gede. Pemandangan alam yang asri dan udara yang sejuk membuat tempat ini sangat cocok untuk berlibur.",
-                                                                                                    "alamat": "Cicadas, Kadudampit, Bogor, Jawa Barat",
-                                                                                                    "fasilitas": ["Tempat parkir", "Kawasan perkemahan", "Trekking", "Spot foto"],
-                                                                                                    "aktivitas": ["Menikmati pemandangan", "Berkemah", "Trekking"],
-                                                                                                    "rating": 4.7,
-                                                                                                    "ulasan": [
-                                                                                                        {"user": "Ayu", "komentar": "Pemandangannya sangat indah dan sejuk, cocok untuk berkemah.", "rating": 4.8},
-                                                                                                        {"user": "Siti", "komentar": "Tempat yang sangat tenang dan menyegarkan untuk liburan.", "rating": 4.6},
-                                                                                                        {"user": "Budi", "komentar": "Suasana yang damai, danau yang luas dengan pemandangan gunung.", "rating": 4.7},
-                                                                                                        {"user": "Tio", "komentar": "Sangat nyaman, cocok untuk yang suka alam terbuka.", "rating": 4.7},
-                                                                                                        {"user": "Rina", "komentar": "Tempat yang sangat bagus untuk foto-foto dan bersantai.", "rating": 4.8}
-                                                                                                    ],
-                                                                                                    "harga": "Rp 15,000",
-                                                                                                    "jam_buka": "08:00 - 17:00"
-                                                                                                },
-                                                                                                {
-                                                                                                    "id_place":109,
-                                                                                                    "kategori": "Wisata Sejarah",
-                                                                                                    "nama": "Istana Bogor",
-                                                                                                    "foto": [
-                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/1.jpg",
-                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/2.jpg",
-                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/3.jpeg",
-                                          ], 
-                                                                                                    "tentang": "Istana Bogor adalah kediaman resmi Presiden Republik Indonesia di Bogor, yang juga dikenal dengan taman yang indah. Tempat ini menjadi salah satu tempat bersejarah yang wajib dikunjungi.",
-                                                                                                    "alamat": "Jl. Ir. H. Juanda No.1, Bogor, Jawa Barat",
-                                                                                                    "fasilitas": ["Tempat parkir", "Toilet", "Taman", "Area foto"],
-                                                                                                    "aktivitas": ["Berjalan-jalan di taman", "Fotografi", "Berburu sejarah"],
-                                                                                                    "rating": 4.8,
-                                                                                                    "ulasan": [
-                                                                                                        {"user": "Rina", "komentar": "Taman yang sangat luas dan indah, sejarahnya sangat menarik.", "rating": 4.9},
-                                                                                                        {"user": "Budi", "komentar": "Sangat menarik untuk melihat sejarah Indonesia dan menikmati keindahan taman.", "rating": 4.7},
-                                                                                                        {"user": "Ayu", "komentar": "Suasana yang sangat asri dan damai, cocok untuk wisata sejarah.", "rating": 4.8},
-                                                                                                        {"user": "Tio", "komentar": "Tempat yang penuh dengan sejarah, sangat direkomendasikan.", "rating": 4.8},
-                                                                                                        {"user": "Siti", "komentar": "Pemandangan taman yang luar biasa, dan bangunan istana yang megah.", "rating": 4.9}
-                                                                                                    ],
-                                                                                                    "harga": "Gratis",
-                                                                                                    "jam_buka": "09:00 - 16:00"
-                                                                                                },
-                                                                                                {
-                                                                                                    "id_place":110,
-                                                                                                    "kategori": "Wisata Kuliner",
-                                                                                                    "nama": "Kampung Sate Cibungbulang",
-                                                                                                    "foto": [
-                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/1.jpg",
-                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/2.jpg",
-                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/3.jpeg",
-                                          ], 
-                                                                                                    "tentang": "Kampung Sate Cibungbulang adalah tempat yang dikenal dengan sate khas yang lezat dan nikmat. Banyak pilihan sate yang menggugah selera dengan cita rasa yang khas.",
-                                                                                                    "alamat": "Jl. Raya Cibungbulang No.10, Bogor, Jawa Barat",
-                                                                                                    "fasilitas": ["Tempat parkir", "Toilet", "Restoran", "Area makan outdoor"],
-                                                                                                    "aktivitas": ["Menikmati sate", "Kulineran bersama keluarga", "Fotografi makanan"],
-                                                                                                    "rating": 4.6,
-                                                                                                    "ulasan": [
-                                                                                                        {"user": "Tio", "komentar": "Sate yang sangat enak dan nikmat, bumbu kacangnya mantap!", "rating": 4.7},
-                                                                                                        {"user": "Siti", "komentar": "Rasa sate yang luar biasa, harga yang terjangkau juga.", "rating": 4.5},
-                                                                                                        {"user": "Ayu", "komentar": "Sate khas Cibungbulang memang terkenal enaknya, sangat puas!", "rating": 4.6},
-                                                                                                        {"user": "Rina", "komentar": "Sate yang pedas dan lezat, tempatnya nyaman untuk makan bersama keluarga.", "rating": 4.7},
-                                                                                                        {"user": "Budi", "komentar": "Nikmat banget, cocok buat yang suka kuliner sate.", "rating": 4.6}
-                                                                                                    ],
-                                                                                                    "harga": "Rp 40,000",
-                                                                                                    "jam_buka": "10:00 - 22:00"
-                                                                                                },
-                                                                                                {
-                                                                                                    "id_place":111,
-                                                                                                    "kategori": "Wisata Religi",
-                                                                                                    "nama": "Masjid Raya Bogor",
-                                                                                                    "foto": [
-                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/1.jpg",
-                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/2.jpg",
-                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/3.jpeg",
-                                          ], 
-                                                                                                    "tentang": "Masjid Raya Bogor adalah masjid yang memiliki arsitektur megah dan merupakan salah satu masjid terbesar di kota Bogor. Tempat ini juga sering digunakan untuk berbagai kegiatan keagamaan dan sosial.",
-                                                                                                    "alamat": "Jl. Merdeka No.3, Bogor, Jawa Barat",
-                                                                                                    "fasilitas": ["Tempat parkir", "Toilet", "Area ibadah", "Kios makanan"],
-                                                                                                    "aktivitas": ["Beribadah", "Menikmati keindahan masjid", "Fotografi"],
-                                                                                                    "rating": 4.9,
-                                                                                                    "ulasan": [
-                                                                                                        {"user": "Siti", "komentar": "Masjid yang sangat megah, sangat nyaman untuk beribadah.", "rating": 5.0},
-                                                                                                        {"user": "Tio", "komentar": "Arsitektur yang luar biasa, suasananya sangat damai.", "rating": 4.9},
-                                                                                                        {"user": "Budi", "komentar": "Sangat bersih dan nyaman, tempat ibadah yang penuh kedamaian.", "rating": 4.8},
-                                                                                                        {"user": "Rina", "komentar": "Tempat yang sangat indah dan cocok untuk berdoa.", "rating": 4.9},
-                                                                                                        {"user": "Ayu", "komentar": "Masjid yang luar biasa, sangat nyaman untuk ibadah dengan keluarga.", "rating": 4.8}
-                                                                                                    ],
-                                                                                                    "harga": "Gratis",
-                                                                                                    "jam_buka": "24 Jam"
-                                                                                                },
-                                                                                                {
-                                                                                                    "id_place":112,
-                                                                                                    "kategori": "Wisata Budaya",
-                                                                                                    "nama": "Museum Zoologi Bogor",
-                                                                                                    "foto": [
-                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/1.jpg",
-                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/2.jpg",
-                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/3.jpeg",
-                                          ], 
-                                                                                                    "tentang": "Museum Zoologi Bogor merupakan salah satu museum terbesar yang menampilkan berbagai koleksi flora dan fauna. Sangat cocok untuk belajar tentang dunia hewan dan tumbuhan.",
-                                                                                                    "alamat": "Jl. Ir. H. Juanda No.13, Bogor, Jawa Barat",
-                                                                                                    "fasilitas": ["Tempat parkir", "Toilet", "Kios souvenir", "Area museum"],
-                                                                                                    "aktivitas": ["Mempelajari koleksi fauna", "Fotografi", "Edukasi tentang alam"],
-                                                                                                    "rating": 4.7,
-                                                                                                    "ulasan": [
-                                                                                                        {"user": "Tio", "komentar": "Sangat mendidik dan menarik, tempat yang bagus untuk anak-anak belajar.", "rating": 4.8},
-                                                                                                        {"user": "Ayu", "komentar": "Museum yang sangat informatif dengan banyak koleksi hewan.", "rating": 4.7},
-                                                                                                        {"user": "Budi", "komentar": "Tempat yang sangat menarik untuk mempelajari dunia hewan dan tumbuhan.", "rating": 4.7},
-                                                                                                        {"user": "Siti", "komentar": "Sangat seru dan mendidik, cocok untuk wisata edukasi.", "rating": 4.6},
-                                                                                                        {"user": "Rina", "komentar": "Museum yang sangat edukatif, banyak yang bisa dipelajari di sini.", "rating": 4.8}
-                                                                                                    ],
-                                                                                                    "harga": "Rp 25,000",
-                                                                                                    "jam_buka": "08:00 - 16:00"
-                                                                                                },                                                                                          
-                                                                                                     {
+                                                                                            },                                                                                                                                                                                                                                                                
+                 {
                                                                                                          "id_place":113,
                                                                                                         "kategori": "Wisata Sejarah",
                                                                                                         "nama": "Benteng Pendem",
@@ -2778,7 +2537,7 @@
                                                                                                     {
                                                                                                         "id_place":115,
                                                                                                         "kategori": "Wisata Religi",
-                                                                                                        "nama": "Makam Kyai Garu",
+                                                                                                        "nama": "Makam Syekh H. Abdul Ghorib",
                                                                                                         "foto": [
                                     "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/1.jpg",
                                     "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/2.jpg",
