@@ -1,14 +1,17 @@
 package com.muflidevs.paradisata.ui.view.category
 
+import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
+import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.viewpager2.widget.ViewPager2
 import com.muflidevs.paradisata.R
 import com.muflidevs.paradisata.data.model.remote.json.DataPlaces
 import com.muflidevs.paradisata.databinding.ActivityCategoryCulinaryBinding
+import com.muflidevs.paradisata.ui.view.DetailActivity
 import com.muflidevs.paradisata.ui.view.adapter.CulinaryListAdapter
 import com.muflidevs.paradisata.ui.view.adapter.ImageSliderAdapter
 import com.muflidevs.paradisata.viewModel.PlaceViewModel
@@ -57,7 +60,15 @@ class CategoryCulinaryActivity : AppCompatActivity() {
     }
 
     private fun onCategoryClicked(dataPlace: DataPlaces) {
+        val intent = Intent(this, DetailActivity::class.java).apply {
+            putExtra("Item", dataPlace)
+        }
+        Log.d("CategoryCulinaryActivity", "Data yang dikirim ke Intent: $dataPlace")
+        Log.d("CategoryCulinaryActivity", "Foto: ${dataPlace.foto}")
+        Log.d("CategoryCulinaryActivity", "Fasilitas: ${dataPlace.fasilitas}")
+        Log.d("CategoryCulinaryActivity", "Ulasan List: ${dataPlace.ulasanList}")
 
+        startActivity(intent)
     }
 
     private fun autoSlide(viewPager: ViewPager2, itemCount: Int) {

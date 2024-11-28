@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_margin="16dp"
     app:cardCornerRadius="12dp"
     app:cardElevation="6dp">
@@ -26,9 +26,9 @@
             android:layout_height="wrap_content"
             android:layout_alignBottom="@id/image_background"
             android:background="#80000000"
+            android:gravity="center_vertical"
             android:orientation="horizontal"
-            android:padding="16dp"
-            android:gravity="center_vertical">
+            android:padding="16dp">
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -40,35 +40,36 @@
                     android:id="@+id/places_name"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    tools:text="tes"
                     android:textColor="#FFFFFF"
                     android:textSize="16sp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    tools:text="tes" />
 
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:layout_marginTop="4dp">
+                    android:layout_marginTop="4dp"
+                    android:orientation="horizontal">
 
                     <RatingBar
                         android:id="@+id/rating_bar"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:rating="4.5"
+                        android:isIndicator="true"
                         android:numStars="5"
-                        android:stepSize="0"
                         android:progressBackgroundTint="@color/md_theme_onSecondary"
+                        android:rating="4.5"
                         android:scaleX="0.8"
-                        android:scaleY="0.8"/>
+                        android:scaleY="0.8"
+                        android:stepSize="0" />
 
                     <TextView
                         android:id="@+id/rating_text"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        tools:text="tes"
                         android:textColor="#FFFFFF"
-                        android:textSize="14sp" />
+                        android:textSize="14sp"
+                        tools:text="tes" />
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>

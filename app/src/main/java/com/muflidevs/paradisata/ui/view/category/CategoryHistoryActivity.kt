@@ -1,5 +1,6 @@
 package com.muflidevs.paradisata.ui.view.category
 
+import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
@@ -9,6 +10,7 @@ import androidx.viewpager2.widget.ViewPager2
 import com.muflidevs.paradisata.R
 import com.muflidevs.paradisata.data.model.remote.json.DataPlaces
 import com.muflidevs.paradisata.databinding.ActivityCategoryHistoryBinding
+import com.muflidevs.paradisata.ui.view.DetailActivity
 import com.muflidevs.paradisata.ui.view.adapter.HistoryListAdapter
 import com.muflidevs.paradisata.ui.view.adapter.ImageSliderAdapter
 import com.muflidevs.paradisata.viewModel.PlaceViewModel
@@ -58,7 +60,10 @@ class CategoryHistoryActivity : AppCompatActivity() {
     }
 
     private fun onCategoryClicked(dataPlace: DataPlaces) {
-
+        val intent = Intent(this, DetailActivity::class.java).apply {
+            putExtra("Item", dataPlace)
+        }
+        startActivity(intent)
     }
 
     private fun autoSlide(viewPager: ViewPager2, itemCount: Int) {

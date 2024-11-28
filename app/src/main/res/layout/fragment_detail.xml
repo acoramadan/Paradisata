@@ -14,14 +14,12 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <!-- Judul tentang Tangkuban Perahu -->
             <TextView
-                android:id="@+id/tentang_title"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/poppins_bold"
                 android:textColor="@color/md_theme_secondary"
-                tools:text="Tentang Tangkuban Perahu"
+                android:text="@string/tentang"
                 android:textSize="18sp"
                 android:textStyle="bold"
                 android:layout_marginBottom="8dp" />
@@ -35,9 +33,7 @@
                 android:textSize="14sp"
                 android:layout_marginBottom="16dp" />
 
-            <!-- Fasilitas -->
             <TextView
-                android:id="@+id/fasilitas_title"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/poppins_bold"
@@ -85,7 +81,6 @@
             </LinearLayout>
 
             <TextView
-                android:id="@+id/aktivitas"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/aktivitas"
@@ -115,7 +110,7 @@
                     tools:text="• Fotografi"
                     android:textSize="14sp" />
                 <TextView
-                    android:id="@+id/aktivitas_pemandangan"
+                    android:id="@+id/aktivitas3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/poppins"
@@ -124,7 +119,6 @@
             </LinearLayout>
 
             <TextView
-                android:id="@+id/harga_title"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/poppins_bold"
@@ -143,7 +137,6 @@
                 android:layout_marginBottom="16dp" />
 
             <TextView
-                android:id="@+id/jam_buka_title"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/poppins_bold"
