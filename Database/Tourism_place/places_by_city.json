@@ -596,9 +596,9 @@
                                 "kategori": "Wisata Alam",
                                 "nama": "Taman Wisata Alam Leuwi Hejo",
                                 "foto": [
-                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/kampung_naga/1.jpg",
-                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/kampung_naga/2.jpg",
-                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/kampung_naga/3.jpeg",
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/taman_wisata_alam/1.jpg",
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/taman_wisata_alam/2.jpg",
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/taman_wisata_alam/3.jpeg",
                                           ],
                                 "tentang": "Taman Wisata Alam Leuwi Hejo adalah taman yang terletak di daerah perbukitan, dengan pemandangan alam yang indah dan air terjun yang menawan. Tempat ini cocok untuk trekking dan menikmati keindahan alam.",
                                 "alamat": "Jl. Leuwi Hejo No. 10, Cirebon, Jawa Barat",
@@ -619,7 +619,11 @@
                                 "id_place":26,
                                 "kategori": "Wisata Religi",
                                 "nama": "Masjid Agung Cirebon",
-                                "foto": "https://example.com/masjid-agung-cirebon.jpg",
+                                "foto": [
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/1.jpg",
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/2.jpg",
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/3.jpeg",
+                                          ],                                
                                 "tentang": "Masjid Agung Cirebon merupakan masjid yang memiliki nilai sejarah tinggi. Masjid ini tidak hanya digunakan sebagai tempat ibadah, tetapi juga sering dijadikan lokasi acara keagamaan dan budaya.",
                                 "alamat": "Jl. Sisingamangaraja No. 12, Cirebon, Jawa Barat",
                                 "fasilitas": ["Toilet", "Tempat parkir", "Mushola", "Pemandu wisata"],
@@ -639,7 +643,11 @@
                                     "id_place":27,
                                     "kategori": "Wisata Alam",
                                     "nama": "Situ Wanayasa",
-                                    "foto": "https://example.com/situ-wanayasa.jpg",
+                                    "foto": [
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/1.jpg",
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/2.jpg",
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/3.jpeg",
+                                          ], 
                                     "tentang": "Situ Wanayasa adalah sebuah danau yang terletak di Purwakarta, dikelilingi oleh pepohonan hijau dan pemandangan alam yang menyejukkan. Tempat ini sangat cocok untuk berperahu dan bersantai sambil menikmati keindahan alam.",
                                     "alamat": "Jl. Raya Situ Wanayasa No. 10, Purwakarta, Jawa Barat",
                                     "fasilitas": ["Toilet", "Tempat parkir", "Perahu dayung", "Warung makan"],
@@ -660,7 +668,11 @@
                                     "id_place":28,
                                     "kategori": "Wisata Kuliner",
                                     "nama": "Sate Maranggi Purwakarta",
-                                    "foto": "https://example.com/sate-maranggi-purwakarta.jpg",
+                                    "foto": [
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/1.jpg",
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/2.jpg",
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/3.jpeg",
+                                          ], 
                                     "tentang": "Sate Maranggi Purwakarta adalah salah satu makanan khas yang terkenal di daerah ini. Daging sapi yang dibumbui dengan rempah khas lalu dibakar dengan arang, menciptakan rasa yang lezat.",
                                     "alamat": "Jl. Raya Maranggi No. 8, Purwakarta, Jawa Barat",
                                     "fasilitas": ["Tempat parkir", "Warung makan", "Area duduk"],
@@ -680,7 +692,11 @@
                                     "id_place":29,
                                     "kategori": "Wisata Religi",
                                     "nama": "Masjid Agung Purwakarta",
-                                    "foto": "https://example.com/masjid-agung-purwakarta.jpg",
+                                    "foto": [
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/1.jpg",
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/2.jpg",
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/3.jpeg",
+                                          ], 
                                     "tentang": "Masjid Agung Purwakarta adalah masjid yang sangat megah dan menjadi simbol kebesaran agama Islam di Purwakarta. Dengan arsitektur yang indah, masjid ini juga memiliki sejarah panjang dalam perkembangan Islam di daerah tersebut.",
                                     "alamat": "Jl. Raya Masjid No. 6, Purwakarta, Jawa Barat",
                                     "fasilitas": ["Toilet", "Tempat parkir", "Mushola", "Pemandu wisata"],
@@ -700,7 +716,11 @@
                                     "id_place":30,
                                     "kategori": "Wisata Alam",
                                     "nama": "Taman Wisata Alam Gunung Lembu",
-                                    "foto": "https://example.com/taman-wisata-alam-gunung-lembu.jpg",
+                                    "foto": [
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/1.jpg",
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/2.jpg",
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/3.jpeg",
+                                          ], 
                                     "tentang": "Taman Wisata Alam Gunung Lembu adalah sebuah destinasi wisata alam di Purwakarta yang menyajikan keindahan alam pegunungan. Tempat ini cocok untuk kegiatan hiking dan menikmati pemandangan indah.",
                                     "alamat": "Jl. Gunung Lembu No. 4, Purwakarta, Jawa Barat",
                                     "fasilitas": ["Toilet", "Area parkir", "Warung makan"],
@@ -721,7 +741,11 @@
                                         "id_place":31,
                                         "kategori": "Wisata Alam",
                                         "nama": "Air Terjun Cipurut",
-                                        "foto": "https://example.com/air-terjun-cipurut.jpg",
+                                        "foto": [
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/1.jpg",
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/2.jpg",
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/3.jpeg",
+                                          ], 
                                         "tentang": "Air Terjun Cipurut adalah sebuah air terjun yang terletak di kawasan hutan, menawarkan pemandangan alam yang menyejukkan dan udara segar. Tempat ini cocok untuk hiking dan menikmati keindahan alam.",
                                         "alamat": "Jl. Cipurut No. 5, Purwakarta, Jawa Barat",
                                         "fasilitas": ["Toilet", "Tempat parkir", "Warung makan", "Area berkemah"],
@@ -741,7 +765,11 @@
                                         "id_place":32,
                                         "kategori": "Wisata Sejarah",
                                         "nama": "Benteng Pendem Purwakarta",
-                                        "foto": "https://example.com/benteng-pendem.jpg",
+                                        "foto": [
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/1.jpg",
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/2.jpg",
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/3.jpeg",
+                                          ], 
                                         "tentang": "Benteng Pendem adalah peninggalan sejarah yang memiliki nilai budaya tinggi. Benteng ini merupakan sisa-sisa pertahanan yang dibangun pada zaman penjajahan Belanda, terletak di pusat kota Purwakarta.",
                                         "alamat": "Jl. Benteng Pendem No. 1, Purwakarta, Jawa Barat",
                                         "fasilitas": ["Toilet", "Tempat parkir", "Pemandu wisata", "Warung makan"],
@@ -758,9 +786,14 @@
                                         "jam_buka": "08:00 - 18:00"
                                     },
                                     {
+                                         "id_place":33,
                                         "kategori": "Wisata Religi",
                                         "nama": "Vihara Avalokitesvara",
-                                        "foto": "https://example.com/vihara-avalokitesvara.jpg",
+                                        "foto": [
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/1.jpg",
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/2.jpg",
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/3.jpeg",
+                                          ], 
                                         "tentang": "Vihara Avalokitesvara adalah vihara Buddha yang terletak di Purwakarta. Tempat ini dikenal dengan patung Buddha raksasa dan arsitektur yang khas, menciptakan suasana yang damai dan penuh ketenangan.",
                                         "alamat": "Jl. Vihara No. 7, Purwakarta, Jawa Barat",
                                         "fasilitas": ["Toilet", "Tempat parkir", "Mushola", "Area meditasi"],
@@ -777,9 +810,14 @@
                                         "jam_buka": "08:00 - 17:00"
                                     },
                                     {
+                                         "id_place":34,
                                         "kategori": "Wisata Kuliner",
                                         "nama": "Warung Nasi Liwet Purwakarta",
-                                        "foto": "https://example.com/warung-nasi-liwet.jpg",
+                                        "foto": [
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/1.jpg",
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/2.jpg",
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/3.jpeg",
+                                          ], 
                                         "tentang": "Warung Nasi Liwet Purwakarta menawarkan hidangan khas yang terbuat dari nasi liwet, dengan berbagai pilihan lauk yang menggugah selera. Tempat ini cocok untuk menikmati hidangan tradisional Jawa Barat.",
                                         "alamat": "Jl. Raya Nasi Liwet No. 4, Purwakarta, Jawa Barat",
                                         "fasilitas": ["Tempat parkir", "Warung makan", "Area duduk"],
@@ -796,9 +834,14 @@
                                         "jam_buka": "10:00 - 20:00"
                                     },
                                     {
+                                         "id_place":35,
                                         "kategori": "Wisata Alam",
                                         "nama": "Taman Air Mancur",
-                                        "foto": "https://example.com/taman-air-mancur.jpg",
+                                        "foto": [
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/1.jpg",
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/2.jpg",
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/3.jpeg",
+                                          ], 
                                         "tentang": "Taman Air Mancur adalah taman yang memiliki air mancur yang menyala dengan berbagai warna. Tempat ini sering digunakan sebagai tempat bersantai dan menikmati keindahan malam.",
                                         "alamat": "Jl. Taman Air Mancur No. 2, Purwakarta, Jawa Barat",
                                         "fasilitas": ["Toilet", "Tempat parkir", "Warung makan"],
@@ -815,9 +858,14 @@
                                         "jam_buka": "09:00 - 22:00"
                                     },
                                     {
+                                         "id_place":36,
                                         "kategori": "Wisata Sejarah",
                                         "nama": "Museum Purwakarta",
-                                        "foto": "https://example.com/museum-purwakarta.jpg",
+                                        "foto": [
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/1.jpg",
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/2.jpg",
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/3.jpeg",
+                                          ], 
                                         "tentang": "Museum Purwakarta menyimpan banyak koleksi benda-benda bersejarah yang menceritakan tentang perkembangan kota Purwakarta, dari zaman penjajahan hingga era modern.",
                                         "alamat": "Jl. Museum No. 6, Purwakarta, Jawa Barat",
                                         "fasilitas": ["Toilet", "Tempat parkir", "Pemandu wisata", "Warung makan"],
@@ -834,9 +882,14 @@
                                         "jam_buka": "09:00 - 18:00"
                                     },
                                         {
+                                             "id_place":37,
                                             "kategori": "Wisata Alam",
                                             "nama": "Kebun Teh Purwakarta",
-                                            "foto": "https://example.com/kebun-teh.jpg",
+                                            "foto": [
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/1.jpg",
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/2.jpg",
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/3.jpeg",
+                                          ], 
                                             "tentang": "Kebun Teh Purwakarta adalah sebuah tempat wisata alam yang menawarkan pemandangan hijau kebun teh yang luas. Pengunjung dapat menikmati suasana pedesaan yang tenang sambil berjalan-jalan di antara kebun teh.",
                                             "alamat": "Jl. Kebun Teh No. 3, Purwakarta, Jawa Barat",
                                             "fasilitas": ["Toilet", "Tempat parkir", "Warung makan", "Trekking trail"],
@@ -854,9 +907,14 @@
                                         },
                                         
                                         {
+                                             "id_place":38,
                                             "kategori": "Wisata Alam",
                                             "nama": "Situ Buleud",
-                                            "foto": "https://example.com/situ-buleud.jpg",
+                                            "foto": [
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/1.jpg",
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/2.jpg",
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/3.jpeg",
+                                          ], 
                                             "tentang": "Situ Buleud adalah sebuah danau alami yang terletak di Purwakarta, menawarkan pemandangan alam yang asri dan cocok untuk bersantai. Pengunjung dapat menikmati suasana danau dengan berjalan-jalan atau berperahu.",
                                             "alamat": "Jl. Situ Buleud No. 4, Purwakarta, Jawa Barat",
                                             "fasilitas": ["Toilet", "Tempat parkir", "Perahu", "Warung makan"],
@@ -876,9 +934,14 @@
 
                                         
                                             {
+                                                 "id_place":39,
                                                 "kategori": "Wisata Alam",
                                                 "nama": "Pantai Pangandaran",
-                                                "foto": "https://example.com/pantai-pangandaran.jpg",
+                                                "foto": [
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/1.jpg",
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/2.jpg",
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/3.jpeg",
+                                          ], 
                                                 "tentang": "Pantai Pangandaran adalah salah satu pantai terkenal di Jawa Barat yang menawarkan pemandangan indah dengan pasir putih dan ombak yang cocok untuk berenang serta berbagai aktivitas air lainnya.",
                                                 "alamat": "Jl. Pantai No. 1, Pangandaran, Jawa Barat",
                                                 "fasilitas": ["Toilet", "Tempat parkir", "Warung makan", "Penginapan"],
@@ -895,9 +958,14 @@
                                                 "jam_buka": "24 Jam"
                                             },
                                             {
+                                                 "id_place":40,
                                                 "kategori": "Wisata Alam",
                                                 "nama": "Cagar Alam Pangandaran",
-                                                "foto": "https://example.com/cagar-alam-pangandaran.jpg",
+                                                "foto": [
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/1.jpg",
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/2.jpg",
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/3.jpeg",
+                                          ], 
                                                 "tentang": "Cagar Alam Pangandaran adalah kawasan konservasi alam yang menawarkan keindahan hutan tropis dengan beragam flora dan fauna. Pengunjung bisa melakukan trekking dan menikmati keindahan alam.",
                                                 "alamat": "Jl. Cagar Alam No. 2, Pangandaran, Jawa Barat",
                                                 "fasilitas": ["Toilet", "Tempat parkir", "Pemandu wisata", "Warung makan"],
@@ -914,9 +982,14 @@
                                                 "jam_buka": "08:00 - 17:00"
                                             },
                                             {
+                                                "id_place":41,
                                                 "kategori": "Wisata Sejarah",
                                                 "nama": "Museum Pangandaran",
-                                                "foto": "https://example.com/museum-pangandaran.jpg",
+                                                "foto": [
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/1.jpg",
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/2.jpg",
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/3.jpeg",
+                                          ], 
                                                 "tentang": "Museum Pangandaran adalah tempat yang menyimpan koleksi sejarah dan budaya lokal. Museum ini memberikan wawasan tentang sejarah Pangandaran dan perkembangan daerah ini dari masa ke masa.",
                                                 "alamat": "Jl. Museum No. 5, Pangandaran, Jawa Barat",
                                                 "fasilitas": ["Toilet", "Tempat parkir", "Pemandu wisata", "Toko suvenir"],
@@ -933,9 +1006,14 @@
                                                 "jam_buka": "09:00 - 16:00"
                                             },
                                             {
+                                                "id_place":42,
                                                 "kategori": "Wisata Kuliner",
                                                 "nama": "Warung Makan Tepi Laut",
-                                                "foto": "https://example.com/warung-makan-tepi-laut.jpg",
+                                                "foto": [
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/1.jpg",
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/2.jpg",
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/3.jpeg",
+                                          ], 
                                                 "tentang": "Warung Makan Tepi Laut menawarkan berbagai hidangan laut segar yang dapat dinikmati sambil menikmati pemandangan laut. Menyajikan masakan laut khas Pangandaran yang lezat dan menggugah selera.",
                                                 "alamat": "Jl. Laut No. 10, Pangandaran, Jawa Barat",
                                                 "fasilitas": ["Tempat parkir", "Warung makan", "Duduk santai"],
@@ -952,9 +1030,14 @@
                                                 "jam_buka": "10:00 - 22:00"
                                             },
                                             {
+                                                "id_place":43,
                                                 "kategori": "Wisata Religi",
                                                 "nama": "Masjid Agung Pangandaran",
-                                                "foto": "https://example.com/masjid-agung-pangandaran.jpg",
+                                                "foto": [
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/1.jpg",
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/2.jpg",
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/3.jpeg",
+                                          ], 
                                                 "tentang": "Masjid Agung Pangandaran adalah tempat ibadah yang indah dan megah. Masjid ini menjadi tempat yang ramai dikunjungi oleh warga sekitar dan wisatawan yang ingin beribadah dengan nyaman.",
                                                 "alamat": "Jl. Raya No. 8, Pangandaran, Jawa Barat",
                                                 "fasilitas": ["Toilet", "Tempat parkir", "Area wudhu", "Mushola tambahan"],
@@ -973,9 +1056,14 @@
 
                                             
                                                 {
+                                                    "id_place":44,
                                                     "kategori": "Wisata Alam",
                                                     "nama": "Pantai Barat Pangandaran",
-                                                    "foto": "https://example.com/pantai-barat-pangandaran.jpg",
+                                                    "foto": [
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/1.jpg",
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/2.jpg",
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/3.jpeg",
+                                          ], 
                                                     "tentang": "Pantai Barat Pangandaran adalah pantai yang menawarkan keindahan matahari terbenam dan suasana yang tenang, cocok untuk relaksasi.",
                                                     "alamat": "Jl. Barat No. 2, Pangandaran, Jawa Barat",
                                                     "fasilitas": ["Tempat parkir", "Warung makan", "Toilet", "Penginapan"],
@@ -992,9 +1080,14 @@
                                                     "jam_buka": "24 Jam"
                                                 },
                                                 {
+                                                    "id_place":45,
                                                     "kategori": "Wisata Sejarah",
                                                     "nama": "Kota Tua Pangandaran",
-                                                    "foto": "https://example.com/kota-tua-pangandaran.jpg",
+                                                    "foto": [
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/1.jpg",
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/2.jpg",
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/3.jpeg",
+                                          ], 
                                                     "tentang": "Kota Tua Pangandaran menawarkan peninggalan sejarah dengan bangunan tua yang masih terawat. Tempat ini cocok bagi yang ingin mengetahui lebih dalam tentang sejarah Pangandaran.",
                                                     "alamat": "Jl. Kota Tua No. 12, Pangandaran, Jawa Barat",
                                                     "fasilitas": ["Toilet", "Tempat parkir", "Pemandu wisata", "Warung makan"],
@@ -1011,8 +1104,13 @@
                                                     "jam_buka": "09:00 - 17:00"
                                                 },
                                                 {
+                                                    "id_place":46,
                                                     "kategori": "Wisata Budaya",
-                                                    "nama": "Pangandaran Culture Center",
+                                                    "nama": [
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/1.jpg",
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/2.jpg",
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/3.jpeg",
+                                          ], 
                                                     "foto": "https://example.com/pangandaran-culture-center.jpg",
                                                     "tentang": "Pangandaran Culture Center adalah tempat untuk memperkenalkan budaya lokal, di mana pengunjung dapat menikmati pertunjukan seni, tarian tradisional, dan kerajinan tangan.",
                                                     "alamat": "Jl. Budaya No. 5, Pangandaran, Jawa Barat",
@@ -1030,9 +1128,14 @@
                                                     "jam_buka": "08:00 - 18:00"
                                                 },
                                                 {
+                                                    "id_place":47,
                                                     "kategori": "Wisata Kuliner",
                                                     "nama": "Warung Seafood Pangandaran",
-                                                    "foto": "https://example.com/warung-seafood-pangandaran.jpg",
+                                                    "foto": [
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/1.jpg",
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/2.jpg",
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/3.jpeg",
+                                          ], 
                                                     "tentang": "Warung Seafood Pangandaran menyajikan berbagai hidangan laut segar yang dapat dinikmati langsung dengan pemandangan laut. Tempat ini sangat populer di kalangan wisatawan yang menyukai makanan laut.",
                                                     "alamat": "Jl. Laut No. 8, Pangandaran, Jawa Barat",
                                                     "fasilitas": ["Tempat parkir", "Warung makan", "Toilet", "Wi-Fi"],
@@ -1049,9 +1152,14 @@
                                                     "jam_buka": "09:00 - 21:00"
                                                 },
                                                 {
+                                                    "id_place":48,
                                                     "kategori": "Wisata Religi",
                                                     "nama": "Masjid Al-Muhajirin Pangandaran",
-                                                    "foto": "https://example.com/masjid-al-muhajirin.jpg",
+                                                    "foto": [
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/1.jpg",
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/2.jpg",
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/3.jpeg",
+                                          ], 
                                                     "tentang": "Masjid Al-Muhajirin adalah masjid yang dikenal dengan arsitektur yang unik dan atmosfer yang tenang, sering dikunjungi oleh umat Muslim untuk beribadah.",
                                                     "alamat": "Jl. Raya No. 9, Pangandaran, Jawa Barat",
                                                     "fasilitas": ["Tempat parkir", "Toilet", "Area wudhu", "Mushola tambahan"],
@@ -1068,9 +1176,14 @@
                                                     "jam_buka": "24 Jam"
                                                 },
                                                 {
+                                                    "id_place":49,
                                                     "kategori": "Wisata Alam",
                                                     "nama": "Hutan Pinus Pangandaran",
-                                                    "foto": "https://example.com/hutan-pinus-pangandaran.jpg",
+                                                    "foto": [
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/1.jpg",
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/2.jpg",
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/3.jpeg",
+                                          ], 
                                                     "tentang": "Hutan Pinus Pangandaran adalah tempat wisata alam dengan pemandangan hutan pinus yang rindang. Pengunjung dapat menikmati udara segar dan melakukan berbagai aktivitas outdoor.",
                                                     "alamat": "Jl. Hutan Pinus No. 7, Pangandaran, Jawa Barat",
                                                     "fasilitas": ["Tempat parkir", "Warung makan", "Toilet", "Trekking trail"],
@@ -1088,9 +1201,14 @@
                                                 },
                                                 
                                                     {
+                                                        "id_place":50,
                                                         "kategori": "Wisata Alam",
                                                         "nama": "Taman Nasional Pangandaran",
-                                                        "foto": "https://example.com/taman-nasional-pangandaran.jpg",
+                                                        "foto": [
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/1.jpg",
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/2.jpg",
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/3.jpeg",
+                                          ], 
                                                         "tentang": "Taman Nasional Pangandaran adalah kawasan konservasi alam yang kaya akan flora dan fauna, serta pantai yang eksotis. Tempat ini sangat cocok untuk wisatawan yang ingin menikmati alam dengan trekking, melihat satwa liar, atau berenang di pantai.",
                                                         "alamat": "Jl. Taman Nasional No. 1, Pangandaran, Jawa Barat",
                                                         "fasilitas": ["Tempat parkir", "Toilet", "Pemandu wisata", "Warung makan"],
@@ -1107,9 +1225,14 @@
                                                         "jam_buka": "07:00 - 17:00"
                                                     },
                                                     {
+                                                        "id_place":51,
                                                         "kategori": "Wisata Sejarah",
                                                         "nama": "Benteng Cagar Alam Pangandaran",
-                                                        "foto": "https://example.com/benteng-cagar-alam.jpg",
+                                                        "foto": [
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/1.jpg",
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/2.jpg",
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/3.jpeg",
+                                          ], 
                                                         "tentang": "Benteng Cagar Alam adalah situs bersejarah yang dulunya digunakan sebagai benteng pertahanan pada masa kolonial Belanda. Kini, tempat ini menjadi objek wisata sejarah yang menarik, dengan pemandangan laut yang memukau.",
                                                         "alamat": "Jl. Sejarah No. 10, Pangandaran, Jawa Barat",
                                                         "fasilitas": ["Tempat parkir", "Pemandu wisata", "Toilet", "Toko suvenir"],
@@ -1126,9 +1249,14 @@
                                                         "jam_buka": "08:00 - 18:00"
                                                     },
                                                     {
+                                                        "id_place":52,
                                                         "kategori": "Wisata Kuliner",
                                                         "nama": "Kedai Kopi Pangandaran",
-                                                        "foto": "https://example.com/kedai-kopi-pangandaran.jpg",
+                                                        "foto": [
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/1.jpg",
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/2.jpg",
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/3.jpeg",
+                                          ], 
                                                         "tentang": "Kedai Kopi Pangandaran adalah tempat yang populer bagi pecinta kopi. Menyajikan berbagai varian kopi lokal dan makanan ringan yang nikmat, kedai ini sangat cocok untuk bersantai sambil menikmati suasana Pangandaran.",
                                                         "alamat": "Jl. Kopi No. 3, Pangandaran, Jawa Barat",
                                                         "fasilitas": ["Wi-Fi", "Tempat parkir", "Warung makan", "Toilet"],
@@ -1145,9 +1273,14 @@
                                                         "jam_buka": "08:00 - 22:00"
                                                     },
                                                     {
+                                                        "id_place":53,
                                                         "kategori": "Wisata Religi",
                                                         "nama": "Gua Maria Pangandaran",
-                                                        "foto": "https://example.com/gua-maria-pangandaran.jpg",
+                                                        "foto": [
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/1.jpg",
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/2.jpg",
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/3.jpeg",
+                                          ], 
                                                         "tentang": "Gua Maria Pangandaran adalah tempat ziarah yang terkenal di Pangandaran. Terletak di kawasan yang sejuk, gua ini sering dikunjungi oleh umat Kristen untuk berdoa dan merenung.",
                                                         "alamat": "Jl. Gua No. 4, Pangandaran, Jawa Barat",
                                                         "fasilitas": ["Toilet", "Tempat parkir", "Area berdoa", "Tempat duduk"],
@@ -1164,9 +1297,14 @@
                                                         "jam_buka": "08:00 - 18:00"
                                                     },
                                                     {
+                                                        "id_place":54,
                                                         "kategori": "Wisata Alam",
                                                         "nama": "Pantai Green Canyon Pangandaran",
-                                                        "foto": "https://example.com/pantai-green-canyon.jpg",
+                                                        "foto": [
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/1.jpg",
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/2.jpg",
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/3.jpeg",
+                                          ], 
                                                         "tentang": "Pantai Green Canyon Pangandaran adalah pantai dengan air yang sangat jernih, dikelilingi oleh tebing-tebing hijau. Pantai ini menawarkan pemandangan yang menakjubkan, serta cocok untuk kegiatan berenang dan berperahu.",
                                                         "alamat": "Jl. Green Canyon No. 7, Pangandaran, Jawa Barat",
                                                         "fasilitas": ["Tempat parkir", "Toilet", "Warung makan", "Penyewaan perahu"],
@@ -1187,9 +1325,14 @@
                                                     
                                                 
                                                         {
+                                                            "id_place":55,
                                                             "kategori": "Wisata Alam",
                                                             "nama": "Taman Buaya Indonesia Jaya",
-                                                            "foto": "https://example.com/taman-buaya.jpg",
+                                                            "foto": [
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/1.jpg",
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/2.jpg",
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/3.jpeg",
+                                          ], 
                                                             "tentang": "Taman Buaya Indonesia Jaya adalah taman wisata yang menyajikan berbagai jenis buaya dan reptil lainnya. Taman ini cocok untuk keluarga yang ingin mengenal lebih dekat dunia reptil, serta memberikan edukasi tentang pelestarian buaya.",
                                                             "alamat": "Jl. Raya Jaya No. 3, Bekasi, Jawa Barat",
                                                             "fasilitas": ["Tempat parkir", "Toilet", "Restoran", "Area bermain anak"],
@@ -1206,9 +1349,14 @@
                                                             "jam_buka": "09:00 - 17:00"
                                                         },
                                                         {
+                                                            "id_place":56,
                                                             "kategori": "Wisata Sejarah",
                                                             "nama": "Museum Bekasi",
-                                                            "foto": "https://example.com/museum-bekasi.jpg",
+                                                            "foto": [
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/1.jpg",
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/2.jpg",
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/3.jpeg",
+                                          ], 
                                                             "tentang": "Museum Bekasi adalah tempat yang menyimpan koleksi sejarah dan budaya dari kota Bekasi dan sekitarnya. Di sini pengunjung bisa menemukan berbagai artefak sejarah yang menceritakan perjalanan kota Bekasi.",
                                                             "alamat": "Jl. Raya No. 5, Bekasi, Jawa Barat",
                                                             "fasilitas": ["Toilet", "Area parkir", "Pemandu wisata", "Toko suvenir"],
@@ -1225,9 +1373,14 @@
                                                             "jam_buka": "09:00 - 16:00"
                                                         },
                                                         {
+                                                            "id_place":57,
                                                             "kategori": "Wisata Kuliner",
                                                             "nama": "Sate Maranggi Cibungur",
-                                                            "foto": "https://example.com/sate-maranggi.jpg",
+                                                            "foto": [
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/1.jpg",
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/2.jpg",
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/3.jpeg",
+                                          ], 
                                                             "tentang": "Sate Maranggi Cibungur terkenal dengan rasa sate daging sapi yang empuk dan bumbu kacangnya yang khas. Tempat ini menjadi favorit bagi pengunjung yang ingin menikmati kuliner khas Bekasi.",
                                                             "alamat": "Jl. Sate Maranggi No. 6, Bekasi, Jawa Barat",
                                                             "fasilitas": ["Tempat parkir", "Wi-Fi", "Toilet", "Tempat duduk"],
@@ -1244,9 +1397,14 @@
                                                             "jam_buka": "10:00 - 22:00"
                                                         },
                                                         {
+                                                            "id_place":58,
                                                             "kategori": "Wisata Budaya",
                                                             "nama": "Padepokan Pencak Silat Bekasi",
-                                                            "foto": "https://example.com/padepokan-pencak-silat.jpg",
+                                                            "foto": [
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/1.jpg",
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/2.jpg",
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/3.jpeg",
+                                          ], 
                                                             "tentang": "Padepokan Pencak Silat Bekasi adalah tempat latihan dan pertunjukan seni bela diri tradisional Indonesia, khususnya pencak silat. Pengunjung bisa menikmati pertunjukan silat dan juga ikut serta dalam pelatihan.",
                                                             "alamat": "Jl. Pencak Silat No. 7, Bekasi, Jawa Barat",
                                                             "fasilitas": ["Tempat parkir", "Toilet", "Area latihan", "Toko suvenir"],
@@ -1263,9 +1421,14 @@
                                                             "jam_buka": "08:00 - 18:00"
                                                         },
                                                         {
+                                                            "id_place":59,
                                                             "kategori": "Wisata Religi",
                                                             "nama": "Masjid Agung Bekasi",
-                                                            "foto": "https://example.com/masjid-agung-bekasi.jpg",
+                                                            "foto": [
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/1.jpg",
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/2.jpg",
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/3.jpeg",
+                                          ], 
                                                             "tentang": "Masjid Agung Bekasi adalah masjid terbesar dan tertua di Bekasi. Tempat ini menjadi pusat kegiatan ibadah umat Muslim di kota Bekasi. Selain untuk beribadah, pengunjung juga bisa menikmati arsitektur masjid yang megah.",
                                                             "alamat": "Jl. Raya Masjid No. 2, Bekasi, Jawa Barat",
                                                             "fasilitas": ["Tempat parkir", "Toilet", "Area sholat", "Warung makan"],
@@ -1283,9 +1446,14 @@
                                                         },
                                                         
                                                             {
+                                                                "id_place":60,
                                                                 "kategori": "Wisata Alam",
                                                                 "nama": "Situ Gede",
-                                                                "foto": "https://example.com/situ-gede.jpg",
+                                                                "foto": [
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/1.jpg",
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/2.jpg",
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/3.jpeg",
+                                          ], 
                                                                 "tentang": "Situ Gede adalah danau alami yang terletak di Bekasi. Tempat ini menawarkan pemandangan alam yang indah dan merupakan tempat yang cocok untuk kegiatan berkemah, memancing, atau sekadar bersantai.",
                                                                 "alamat": "Jl. Situ Gede, Bekasi, Jawa Barat",
                                                                 "fasilitas": ["Tempat parkir", "Restoran", "Toilet", "Perahu sewaan"],
@@ -1302,9 +1470,14 @@
                                                                 "jam_buka": "08:00 - 18:00"
                                                             },
                                                             {
+                                                                "id_place":61,
                                                                 "kategori": "Wisata Sejarah",
                                                                 "nama": "Kampung Cina",
-                                                                "foto": "https://example.com/kampung-cina.jpg",
+                                                                "foto": [
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/1.jpg",
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/2.jpg",
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/3.jpeg",
+                                          ], ,
                                                                 "tentang": "Kampung Cina adalah kawasan bersejarah yang menggabungkan budaya Tionghoa dan Indonesia. Di sini, pengunjung bisa melihat bangunan-bangunan kuno, toko-toko tradisional, serta menikmati kuliner khas Tionghoa.",
                                                                 "alamat": "Jl. Kampung Cina No. 10, Bekasi, Jawa Barat",
                                                                 "fasilitas": ["Tempat parkir", "Toilet", "Toko suvenir", "Restoran"],
@@ -1321,9 +1494,14 @@
                                                                 "jam_buka": "09:00 - 17:00"
                                                             },
                                                             {
+                                                                "id_place":62,
                                                                 "kategori": "Wisata Kuliner",
                                                                 "nama": "Warung Nasi Ampera",
-                                                                "foto": "https://example.com/warung-nasi-ampera.jpg",
+                                                                "foto": [
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/1.jpg",
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/2.jpg",
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/3.jpeg",
+                                          ], 
                                                                 "tentang": "Warung Nasi Ampera terkenal dengan menu nasi liwet khas Sunda yang lezat. Pengunjung bisa menikmati berbagai hidangan tradisional dengan cita rasa otentik di tempat ini.",
                                                                 "alamat": "Jl. Raya No. 25, Bekasi, Jawa Barat",
                                                                 "fasilitas": ["Tempat parkir", "Wi-Fi", "Toilet", "Area makan outdoor"],
@@ -1340,9 +1518,14 @@
                                                                 "jam_buka": "10:00 - 22:00"
                                                               },
                                                               {
+                                                                  "id_place":63,
                                                                 "kategori": "Wisata Budaya",
                                                                 "nama": "Taman Kota Bekasi",
-                                                                "foto": "https://example.com/taman-kota-bekasi.jpg",
+                                                                "foto": [
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/1.jpg",
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/2.jpg",
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/3.jpeg",
+                                          ], 
                                                                 "tentang": "Taman Kota Bekasi adalah ruang terbuka hijau yang menyajikan pemandangan yang asri dan cocok untuk bersantai, berolahraga, atau sekadar berjalan-jalan menikmati udara segar.",
                                                                 "alamat": "Jl. Taman Kota No. 2, Bekasi, Jawa Barat",
                                                                 "fasilitas": ["Tempat parkir", "Toilet", "Tempat duduk", "Jogging track"],
@@ -1359,9 +1542,14 @@
                                                                 "jam_buka": "06:00 - 18:00"
                                                             },
                                                             {
+                                                                "id_place":64,
                                                                 "kategori": "Wisata Religi",
                                                                 "nama": "Vihara Avalokitesvara",
-                                                                "foto": "https://example.com/vihara-avalokitesvara.jpg",
+                                                                "foto": [
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/1.jpg",
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/2.jpg",
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/3.jpeg",
+                                          ], 
                                                                 "tentang": "Vihara Avalokitesvara adalah vihara yang terletak di Bekasi dan menjadi tempat ibadah bagi umat Buddha. Selain beribadah, pengunjung juga bisa menikmati suasana yang damai dan arsitektur khas Buddha.",
                                                                 "alamat": "Jl. Vihara No. 5, Bekasi, Jawa Barat",
                                                                 "fasilitas": ["Tempat parkir", "Toilet", "Area sholat", "Warung makan"],
@@ -1379,9 +1567,14 @@
                                                             },
                                                             
                                                                 {
+                                                                    "id_place":65,
                                                                     "kategori": "Wisata Alam",
                                                                     "nama": "Kampung Bambu",
-                                                                    "foto": "https://example.com/kampung-bambu.jpg",
+                                                                    "foto": [
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/1.jpg",
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/2.jpg",
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/3.jpeg",
+                                          ], 
                                                                     "tentang": "Kampung Bambu adalah destinasi wisata alam yang menawarkan suasana pedesaan yang alami dan asri. Tempat ini ideal untuk menikmati udara segar, berfoto dengan latar belakang pepohonan bambu, dan menjelajahi kawasan alam sekitar.",
                                                                     "alamat": "Jl. Bambu No. 4, Bekasi, Jawa Barat",
                                                                     "fasilitas": ["Tempat parkir", "Toilet", "Pondok-pondok kecil", "Taman bermain anak"],
@@ -1398,9 +1591,14 @@
                                                                     "jam_buka": "08:00 - 17:00"
                                                                 },
                                                                 {
+                                                                    "id_place":66,
                                                                     "kategori": "Wisata Sejarah",
                                                                     "nama": "Masjid Raya Al-Barkah",
-                                                                    "foto": "https://example.com/masjid-raya-al-barkah.jpg",
+                                                                    "foto": [
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/1.jpg",
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/2.jpg",
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/3.jpeg",
+                                          ], 
                                                                     "tentang": "Masjid Raya Al-Barkah adalah masjid besar dan bersejarah di Bekasi. Masjid ini menjadi pusat kegiatan agama dan budaya di kota Bekasi, serta memiliki arsitektur yang megah.",
                                                                     "alamat": "Jl. Raya Masjid No. 3, Bekasi, Jawa Barat",
                                                                     "fasilitas": ["Tempat parkir", "Toilet", "Area sholat", "Wi-Fi"],
@@ -1417,9 +1615,14 @@
                                                                     "jam_buka": "04:30 - 22:00"
                                                                 },
                                                                 {
+                                                                    "id_place":67,
                                                                     "kategori": "Wisata Kuliner",
                                                                     "nama": "Kedai Kopi Bekasi",
-                                                                    "foto": "https://example.com/kedai-kopi-bekasi.jpg",
+                                                                    "foto": [
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/1.jpg",
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/2.jpg",
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/3.jpeg",
+                                          ], 
                                                                     "tentang": "Kedai Kopi Bekasi menyajikan kopi lokal dengan berbagai varian rasa yang nikmat. Tempat ini sangat populer di kalangan pecinta kopi dan mereka yang ingin menikmati suasana kafe yang nyaman.",
                                                                     "alamat": "Jl. Kopi No. 10, Bekasi, Jawa Barat",
                                                                     "fasilitas": ["Tempat parkir", "Wi-Fi", "Area duduk indoor dan outdoor"],
@@ -1436,9 +1639,14 @@
                                                                     "jam_buka": "08:00 - 22:00"
                                                                 },
                                                                 {
+                                                                    "id_place":68,
                                                                     "kategori": "Wisata Budaya",
                                                                     "nama": "Gedung Juang 45",
-                                                                    "foto": "https://example.com/gedung-juang-45.jpg",
+                                                                    "foto": [
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/1.jpg",
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/2.jpg",
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/3.jpeg",
+                                          ], 
                                                                     "tentang": "Gedung Juang 45 adalah situs bersejarah yang menjadi saksi perjuangan kemerdekaan Indonesia. Tempat ini kini menjadi museum yang menyimpan banyak koleksi benda-benda bersejarah.",
                                                                     "alamat": "Jl. Juang No. 7, Bekasi, Jawa Barat",
                                                                     "fasilitas": ["Tempat parkir", "Toilet", "Museum", "Area wisata sejarah"],
@@ -1455,9 +1663,14 @@
                                                                     "jam_buka": "08:00 - 17:00"
                                                                 },
                                                                 {
+                                                                    "id_place":69,
                                                                     "kategori": "Wisata Religi",
                                                                     "nama": "Gereja Santa Teresa",
-                                                                    "foto": "https://example.com/gereja-santa-teresa.jpg",
+                                                                    "foto": [
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/1.jpg",
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/2.jpg",
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/3.jpeg",
+                                          ], 
                                                                     "tentang": "Gereja Santa Teresa adalah gereja Katolik yang menjadi pusat ibadah umat Katolik di Bekasi. Gereja ini memiliki arsitektur yang indah dan merupakan tempat yang damai untuk berdoa.",
                                                                     "alamat": "Jl. Gereja No. 4, Bekasi, Jawa Barat",
                                                                     "fasilitas": ["Tempat parkir", "Toilet", "Area ibadah", "Toko roti"],
@@ -1475,9 +1688,14 @@
                                                                 },
                                                                                                                                                 
                                                                     {
+                                                                        "id_place":70,
                                                                         "kategori": "Wisata Alam",
                                                                         "nama": "Pantai Tanjung Pakis",
-                                                                        "foto": "https://example.com/pantai-tanjung-pakis.jpg",
+                                                                        "foto": [
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/1.jpg",
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/2.jpg",
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/3.jpeg",
+                                          ], 
                                                                         "tentang": "Pantai Tanjung Pakis adalah destinasi wisata alam yang terletak di pesisir utara Karawang. Dengan pasir putih dan air laut yang jernih, tempat ini cocok untuk menikmati suasana pantai yang tenang, berenang, atau berkeliling menggunakan perahu.",
                                                                         "alamat": "Jl. Raya Tanjung Pakis, Karawang, Jawa Barat",
                                                                         "fasilitas": ["Tempat parkir", "Toilet", "Perahu wisata", "Warung makan"],
@@ -1494,9 +1712,14 @@
                                                                         "jam_buka": "08:00 - 18:00"
                                                                     },
                                                                     {
+                                                                        "id_place":71,
                                                                         "kategori": "Wisata Sejarah",
                                                                         "nama": "Candi Jiwa",
-                                                                        "foto": "https://example.com/candi-jiwa.jpg",
+                                                                        "foto": [
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/1.jpg",
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/2.jpg",
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/3.jpeg",
+                                          ], 
                                                                         "tentang": "Candi Jiwa adalah situs candi bersejarah yang terletak di daerah Karawang. Candi ini diperkirakan dibangun pada masa kerajaan Sunda, dan menjadi simbol kejayaan sejarah masa lalu di wilayah Karawang.",
                                                                         "alamat": "Jl. Candi Jiwa No. 5, Karawang, Jawa Barat",
                                                                         "fasilitas": ["Tempat parkir", "Toilet", "Area wisata sejarah", "Pemandu wisata"],
@@ -1513,9 +1736,14 @@
                                                                         "jam_buka": "08:00 - 16:00"
                                                                     },
                                                                     {
+                                                                        "id_place":72,
                                                                         "kategori": "Wisata Kuliner",
                                                                         "nama": "Warung Makan Sate Karawang",
-                                                                        "foto": "https://example.com/sate-karawang.jpg",
+                                                                        "foto": [
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/1.jpg",
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/2.jpg",
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/3.jpeg",
+                                          ], 
                                                                         "tentang": "Warung Makan Sate Karawang menyajikan sate dengan cita rasa khas Karawang yang terkenal dengan bumbu kacang yang lezat dan daging yang empuk. Sate ini sudah menjadi favorit banyak orang, baik lokal maupun wisatawan.",
                                                                         "alamat": "Jl. Sate No. 15, Karawang, Jawa Barat",
                                                                         "fasilitas": ["Tempat parkir", "Toilet", "Area makan indoor dan outdoor"],
@@ -1532,9 +1760,14 @@
                                                                         "jam_buka": "10:00 - 22:00"
                                                                     },
                                                                     {
+                                                                        "id_place":73,
                                                                         "kategori": "Wisata Budaya",
                                                                         "nama": "Museum Karawang",
-                                                                        "foto": "https://example.com/museum-karawang.jpg",
+                                                                        "foto": [
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/1.jpg",
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/2.jpg",
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/3.jpeg",
+                                          ], 
                                                                         "tentang": "Museum Karawang adalah tempat yang menyimpan berbagai koleksi budaya dan sejarah Karawang. Museum ini memiliki banyak koleksi benda bersejarah yang menggambarkan perjalanan sejarah kota Karawang, terutama pada masa kemerdekaan.",
                                                                         "alamat": "Jl. Raya Karawang No. 8, Karawang, Jawa Barat",
                                                                         "fasilitas": ["Tempat parkir", "Toilet", "Museum", "Pemandu wisata"],
@@ -1551,9 +1784,14 @@
                                                                         "jam_buka": "08:00 - 17:00"
                                                                     },
                                                                     {
+                                                                        "id_place":74,
                                                                         "kategori": "Wisata Religi",
                                                                         "nama": "Vihara Dhamma Karawang",
-                                                                        "foto": "https://example.com/vihara-dhamma-karawang.jpg",
+                                                                        "foto": [
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/1.jpg",
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/2.jpg",
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/3.jpeg",
+                                          ], 
                                                                         "tentang": "Vihara Dhamma Karawang adalah tempat ibadah Buddha yang sangat tenang dan damai. Vihara ini tidak hanya digunakan untuk beribadah, tetapi juga untuk kegiatan meditasi dan refleksi spiritual.",
                                                                         "alamat": "Jl. Vihara No. 12, Karawang, Jawa Barat",
                                                                         "fasilitas": ["Tempat parkir", "Toilet", "Area ibadah", "Pusat meditasi"],
@@ -1571,9 +1809,14 @@
                                                                     },
                                                                     
                                                                         {
+                                                                            "id_place":75,
                                                                             "kategori": "Wisata Alam",
                                                                             "nama": "Situ Cipule",
-                                                                            "foto": "https://example.com/situ-cipule.jpg",
+                                                                            "foto": [
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/1.jpg",
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/2.jpg",
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/3.jpeg",
+                                          ], 
                                                                             "tentang": "Situ Cipule adalah sebuah danau alami yang terletak di Karawang. Tempat ini dikelilingi oleh pepohonan hijau, menjadikannya tempat yang ideal untuk beristirahat dan menikmati keindahan alam sambil melakukan aktivitas seperti memancing atau berkeliling dengan perahu.",
                                                                             "alamat": "Jl. Situ Cipule No. 1, Karawang, Jawa Barat",
                                                                             "fasilitas": ["Tempat parkir", "Perahu sewaan", "Toilet", "Tempat piknik"],
@@ -1590,9 +1833,14 @@
                                                                             "jam_buka": "08:00 - 18:00"
                                                                         },
                                                                         {
+                                                                            "id_place":76,
                                                                             "kategori": "Wisata Sejarah",
                                                                             "nama": "Tugu Perjuangan Karawang",
-                                                                            "foto": "https://example.com/tugu-perjuangan-karawang.jpg",
+                                                                            "foto": [
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/1.jpg",
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/2.jpg",
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/3.jpeg",
+                                          ], 
                                                                             "tentang": "Tugu Perjuangan Karawang adalah tugu yang dibangun untuk mengenang peristiwa sejarah penting di Karawang, khususnya terkait dengan perjuangan kemerdekaan Indonesia. Tugu ini menjadi simbol semangat juang rakyat Karawang.",
                                                                             "alamat": "Jl. Raya Perjuangan No. 10, Karawang, Jawa Barat",
                                                                             "fasilitas": ["Tempat parkir", "Toilet", "Pemandu wisata"],
@@ -1609,9 +1857,14 @@
                                                                             "jam_buka": "08:00 - 17:00"
                                                                         },
                                                                         {
+                                                                            "id_place":77,
                                                                             "kategori": "Wisata Kuliner",
                                                                             "nama": "Kedai Kopi Karawang",
-                                                                            "foto": "https://example.com/kedai-kopi-karawang.jpg",
+                                                                            "foto": [
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/1.jpg",
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/2.jpg",
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/3.jpeg",
+                                          ], 
                                                                             "tentang": "Kedai Kopi Karawang adalah tempat yang menawarkan berbagai jenis kopi khas daerah Karawang. Dengan suasana yang nyaman, kedai ini menjadi tempat yang populer bagi para pecinta kopi untuk bersantai sambil menikmati cita rasa kopi lokal.",
                                                                             "alamat": "Jl. Kopi Karawang No. 12, Karawang, Jawa Barat",
                                                                             "fasilitas": ["Tempat parkir", "Toilet", "Wi-Fi gratis", "Area makan indoor dan outdoor"],
@@ -1628,9 +1881,14 @@
                                                                             "jam_buka": "10:00 - 22:00"
                                                                         },
                                                                         {
+                                                                            "id_place":78,
                                                                             "kategori": "Wisata Budaya",
                                                                             "nama": "Sanggar Tari Karawang",
-                                                                            "foto": "https://example.com/sanggar-tari-karawang.jpg",
+                                                                            "foto": [
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/1.jpg",
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/2.jpg",
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/3.jpeg",
+                                          ], 
                                                                             "tentang": "Sanggar Tari Karawang adalah tempat yang menyajikan pertunjukan tari tradisional khas Karawang. Di sini, pengunjung dapat menyaksikan berbagai tarian daerah yang mencerminkan kekayaan budaya Karawang.",
                                                                             "alamat": "Jl. Budaya Karawang No. 8, Karawang, Jawa Barat",
                                                                             "fasilitas": ["Tempat parkir", "Toilet", "Area pertunjukan tari"],
@@ -1647,9 +1905,14 @@
                                                                             "jam_buka": "09:00 - 18:00"
                                                                         },
                                                                         {
+                                                                            "id_place":79,
                                                                             "kategori": "Wisata Religi",
                                                                             "nama": "Masjid Agung Karawang",
-                                                                            "foto": "https://example.com/masjid-agung-karawang.jpg",
+                                                                            "foto": [
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/1.jpg",
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/2.jpg",
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/3.jpeg",
+                                          ], 
                                                                             "tentang": "Masjid Agung Karawang adalah masjid terbesar di Karawang, dengan arsitektur yang megah dan suasana yang sangat damai. Tempat ini sering digunakan sebagai tempat ibadah, serta berbagai kegiatan keagamaan lainnya.",
                                                                             "alamat": "Jl. Agung Karawang No. 1, Karawang, Jawa Barat",
                                                                             "fasilitas": ["Tempat parkir", "Toilet", "Area ibadah", "Pusat informasi"],
@@ -1667,9 +1930,14 @@
                                                                         },
                                                                         
                                                                             {
+                                                                                "id_place":80,
                                                                                 "kategori": "Wisata Alam",
                                                                                 "nama": "Gunung Sanggabuana",
-                                                                                "foto": "https://example.com/gunung-sanggabuana.jpg",
+                                                                                "foto": [
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/1.jpg",
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/2.jpg",
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/3.jpeg",
+                                          ], 
                                                                                 "tentang": "Gunung Sanggabuana menawarkan pemandangan alam yang menakjubkan, dengan udara sejuk dan jalur pendakian yang menyenangkan. Tempat ini sangat populer di kalangan pendaki dan pecinta alam.",
                                                                                 "alamat": "Jl. Gunung Sanggabuana No. 2, Karawang, Jawa Barat",
                                                                                 "fasilitas": ["Tempat parkir", "Toilet", "Area berkemah", "Tempat istirahat"],
@@ -1686,9 +1954,14 @@
                                                                                 "jam_buka": "05:00 - 18:00"
                                                                             },
                                                                             {
+                                                                                "id_place":81,
                                                                                 "kategori": "Wisata Sejarah",
                                                                                 "nama": "Benteng Karawang",
-                                                                                "foto": "https://example.com/benteng-karawang.jpg",
+                                                                                "foto": [
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/1.jpg",
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/2.jpg",
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/3.jpeg",
+                                          ], 
                                                                                 "tentang": "Benteng Karawang merupakan peninggalan sejarah yang berperan penting dalam perjuangan kemerdekaan Indonesia. Benteng ini masih terawat dengan baik dan menjadi saksi bisu dari berbagai peristiwa penting.",
                                                                                 "alamat": "Jl. Benteng No. 5, Karawang, Jawa Barat",
                                                                                 "fasilitas": ["Tempat parkir", "Toilet", "Pemandu wisata", "Area belajar sejarah"],
@@ -1705,9 +1978,14 @@
                                                                                 "jam_buka": "08:00 - 17:00"
                                                                             },
                                                                             {
+                                                                                "id_place":82,
                                                                                 "kategori": "Wisata Kuliner",
                                                                                 "nama": "Warung Nasi Liwet Karawang",
-                                                                                "foto": "https://example.com/warung-nasi-liwet-karawang.jpg",
+                                                                                "foto": [
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/1.jpg",
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/2.jpg",
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/3.jpeg",
+                                          ], 
                                                                                 "tentang": "Warung Nasi Liwet Karawang menyajikan nasi liwet yang khas dengan berbagai lauk pendamping yang menggugah selera. Tempat ini sangat terkenal dengan cita rasa tradisional yang lezat dan autentik.",
                                                                                 "alamat": "Jl. Kuliner Karawang No. 7, Karawang, Jawa Barat",
                                                                                 "fasilitas": ["Tempat parkir", "Toilet", "Area makan indoor"],
@@ -1724,9 +2002,14 @@
                                                                                 "jam_buka": "10:00 - 22:00"
                                                                             },
                                                                             {
+                                                                                "id_place":83,
                                                                                 "kategori": "Wisata Budaya",
                                                                                 "nama": "Museum Karawang",
-                                                                                "foto": "https://example.com/museum-karawang.jpg",
+                                                                                "foto": [
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/1.jpg",
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/2.jpg",
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/3.jpeg",
+                                          ], 
                                                                                 "tentang": "Museum Karawang menyimpan berbagai koleksi sejarah dan budaya yang mencerminkan kehidupan masyarakat Karawang. Tempat ini sangat cocok untuk belajar lebih dalam tentang kebudayaan lokal.",
                                                                                 "alamat": "Jl. Museum Karawang No. 3, Karawang, Jawa Barat",
                                                                                 "fasilitas": ["Tempat parkir", "Toilet", "Pemandu wisata", "Area pameran budaya"],
@@ -1743,9 +2026,14 @@
                                                                                 "jam_buka": "09:00 - 18:00"
                                                                             },
                                                                             {
+                                                                                "id_place":84,
                                                                                 "kategori": "Wisata Religi",
                                                                                 "nama": "Vihara Dhamma Karawang",
-                                                                                "foto": "https://example.com/vihara-dhamma-karawang.jpg",
+                                                                                "foto": [
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/1.jpg",
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/2.jpg",
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/3.jpeg",
+                                          ], 
                                                                                 "tentang": "Vihara Dhamma Karawang adalah tempat ibadah agama Buddha yang indah dan tenang. Tempat ini sering digunakan untuk meditasi dan kegiatan keagamaan lainnya. Suasana di sini sangat damai dan menenangkan.",
                                                                                 "alamat": "Jl. Vihara No. 4, Karawang, Jawa Barat",
                                                                                 "fasilitas": ["Tempat parkir", "Toilet", "Area meditasi", "Pusat informasi agama"],
@@ -1761,10 +2049,15 @@
                                                                                 "harga": "Gratis",
                                                                                 "jam_buka": "08:00 - 17:00"
                                                                             },
-                                                                                                                                                        {
+                                                                                    {
+                                                                                    "id_place":85,
                                                                                     "kategori": "Wisata Alam",
                                                                                     "nama": "Gunung Sanggabuana",
-                                                                                    "foto": "https://example.com/gunung-sanggabuana.jpg",
+                                                                                    "foto": [
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/1.jpg",
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/2.jpg",
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/3.jpeg",
+                                          ], 
                                                                                     "tentang": "Gunung Sanggabuana menawarkan pemandangan alam yang menakjubkan, dengan udara sejuk dan jalur pendakian yang menyenangkan. Tempat ini sangat populer di kalangan pendaki dan pecinta alam.",
                                                                                     "alamat": "Jl. Gunung Sanggabuana No. 2, Karawang, Jawa Barat",
                                                                                     "fasilitas": ["Tempat parkir", "Toilet", "Area berkemah", "Tempat istirahat"],
@@ -1781,9 +2074,14 @@
                                                                                     "jam_buka": "05:00 - 18:00"
                                                                                 },
                                                                                 {
+                                                                                    "id_place":86,
                                                                                     "kategori": "Wisata Sejarah",
                                                                                     "nama": "Benteng Karawang",
-                                                                                    "foto": "https://example.com/benteng-karawang.jpg",
+                                                                                    "foto": [
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/1.jpg",
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/2.jpg",
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/3.jpeg",
+                                          ], 
                                                                                     "tentang": "Benteng Karawang merupakan peninggalan sejarah yang berperan penting dalam perjuangan kemerdekaan Indonesia. Benteng ini masih terawat dengan baik dan menjadi saksi bisu dari berbagai peristiwa penting.",
                                                                                     "alamat": "Jl. Benteng No. 5, Karawang, Jawa Barat",
                                                                                     "fasilitas": ["Tempat parkir", "Toilet", "Pemandu wisata", "Area belajar sejarah"],
@@ -1800,9 +2098,14 @@
                                                                                     "jam_buka": "08:00 - 17:00"
                                                                                 },
                                                                                 {
+                                                                                    "id_place":87,
                                                                                     "kategori": "Wisata Kuliner",
                                                                                     "nama": "Warung Nasi Liwet Karawang",
-                                                                                    "foto": "https://example.com/warung-nasi-liwet-karawang.jpg",
+                                                                                    "foto": [
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/1.jpg",
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/2.jpg",
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/3.jpeg",
+                                          ], 
                                                                                     "tentang": "Warung Nasi Liwet Karawang menyajikan nasi liwet yang khas dengan berbagai lauk pendamping yang menggugah selera. Tempat ini sangat terkenal dengan cita rasa tradisional yang lezat dan autentik.",
                                                                                     "alamat": "Jl. Kuliner Karawang No. 7, Karawang, Jawa Barat",
                                                                                     "fasilitas": ["Tempat parkir", "Toilet", "Area makan indoor"],
@@ -1819,9 +2122,14 @@
                                                                                     "jam_buka": "10:00 - 22:00"
                                                                                 },
                                                                                 {
+                                                                                    "id_place":88,
                                                                                     "kategori": "Wisata Budaya",
                                                                                     "nama": "Museum Karawang",
-                                                                                    "foto": "https://example.com/museum-karawang.jpg",
+                                                                                    "foto": [
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/1.jpg",
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/2.jpg",
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/3.jpeg",
+                                          ], 
                                                                                     "tentang": "Museum Karawang menyimpan berbagai koleksi sejarah dan budaya yang mencerminkan kehidupan masyarakat Karawang. Tempat ini sangat cocok untuk belajar lebih dalam tentang kebudayaan lokal.",
                                                                                     "alamat": "Jl. Museum Karawang No. 3, Karawang, Jawa Barat",
                                                                                     "fasilitas": ["Tempat parkir", "Toilet", "Pemandu wisata", "Area pameran budaya"],
@@ -1838,9 +2146,14 @@
                                                                                     "jam_buka": "09:00 - 18:00"
                                                                                 },
                                                                                 {
+                                                                                    "id_place":89,
                                                                                     "kategori": "Wisata Religi",
                                                                                     "nama": "Vihara Dhamma Karawang",
-                                                                                    "foto": "https://example.com/vihara-dhamma-karawang.jpg",
+                                                                                    "foto": [
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/1.jpg",
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/2.jpg",
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/3.jpeg",
+                                          ], 
                                                                                     "tentang": "Vihara Dhamma Karawang adalah tempat ibadah agama Buddha yang indah dan tenang. Tempat ini sering digunakan untuk meditasi dan kegiatan keagamaan lainnya. Suasana di sini sangat damai dan menenangkan.",
                                                                                     "alamat": "Jl. Vihara No. 4, Karawang, Jawa Barat",
                                                                                     "fasilitas": ["Tempat parkir", "Toilet", "Area meditasi", "Pusat informasi agama"],
@@ -1861,9 +2174,14 @@
                                                                         
                                                                                 
                                                                                     {
+                                                                                        "id_place":90,
                                                                                         "kategori": "Wisata Alam",
                                                                                         "nama": "Taman Safari Indonesia",
-                                                                                        "foto": "https://example.com/taman-safari.jpg",
+                                                                                        "foto": [
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/1.jpg",
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/2.jpg",
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/3.jpeg",
+                                          ], 
                                                                                         "tentang": "Taman Safari Indonesia merupakan tempat wisata alam yang menawarkan pengalaman berinteraksi dengan berbagai jenis satwa. Pengunjung bisa berkeliling menggunakan kendaraan pribadi atau mobil safari untuk melihat binatang secara langsung.",
                                                                                         "alamat": "Jl. Raya Cisarua No. 101, Cisarua, Bogor, Jawa Barat",
                                                                                         "fasilitas": ["Tempat parkir", "Restoran", "Toilet", "Kamar mandi", "Area bermain anak"],
@@ -1880,9 +2198,14 @@
                                                                                         "jam_buka": "09:00 - 17:00"
                                                                                     },
                                                                                     {
+                                                                                        "id_place":91,
                                                                                         "kategori": "Wisata Sejarah",
                                                                                         "nama": "Istana Bogor",
-                                                                                        "foto": "https://example.com/istana-bogor.jpg",
+                                                                                        "foto": [
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/1.jpg",
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/2.jpg",
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/3.jpeg",
+                                          ], 
                                                                                         "tentang": "Istana Bogor adalah salah satu istana kepresidenan Indonesia yang terletak di pusat kota Bogor. Selain sebagai tempat tinggal presiden, istana ini juga memiliki taman yang indah dan menjadi tempat wisata sejarah yang menarik.",
                                                                                         "alamat": "Jl. Ir. H. Juanda No. 1, Bogor, Jawa Barat",
                                                                                         "fasilitas": ["Tempat parkir", "Toilet", "Taman", "Monumen"],
@@ -1899,9 +2222,14 @@
                                                                                         "jam_buka": "09:00 - 17:00"
                                                                                     },
                                                                                     {
+                                                                                        "id_place":92,
                                                                                         "kategori": "Wisata Kuliner",
                                                                                         "nama": "Kampung Daun",
-                                                                                        "foto": "https://example.com/kampung-daun.jpg",
+                                                                                        "foto": [
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/1.jpg",
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/2.jpg",
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/3.jpeg",
+                                          ], 
                                                                                         "tentang": "Kampung Daun menawarkan pengalaman makan di alam terbuka dengan udara sejuk dan pemandangan indah. Terletak di daerah Lembang, tempat ini menyajikan berbagai makanan tradisional Indonesia dengan suasana yang nyaman.",
                                                                                         "alamat": "Jl. Raya Lembang No. 88, Lembang, Bogor, Jawa Barat",
                                                                                         "fasilitas": ["Tempat parkir", "Toilet", "Area makan terbuka", "Restoran"],
@@ -1918,9 +2246,14 @@
                                                                                         "jam_buka": "10:00 - 22:00"
                                                                                     },
                                                                                     {
+                                                                                        "id_place":93,
                                                                                         "kategori": "Wisata Budaya",
                                                                                         "nama": "Museum Zoologi Bogor",
-                                                                                        "foto": "https://example.com/museum-zoologi.jpg",
+                                                                                        "foto": [
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/1.jpg",
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/2.jpg",
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/3.jpeg",
+                                          ], 
                                                                                         "tentang": "Museum Zoologi Bogor merupakan tempat yang menyimpan koleksi satwa dan flora dari Indonesia serta negara-negara lain. Museum ini juga menyajikan informasi tentang keberagaman hayati dan ekosistem dunia.",
                                                                                         "alamat": "Jl. Ir. H. Juanda No. 13, Bogor, Jawa Barat",
                                                                                         "fasilitas": ["Tempat parkir", "Toilet", "Kios souvenir", "Area pameran"],
@@ -1937,9 +2270,14 @@
                                                                                         "jam_buka": "09:00 - 17:00"
                                                                                     },
                                                                                     {
+                                                                                        "id_place":94,
                                                                                         "kategori": "Wisata Religi",
                                                                                         "nama": "Masjid Agung Bogor",
-                                                                                        "foto": "https://example.com/masjid-agung-bogor.jpg",
+                                                                                        "foto": [
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/1.jpg",
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/2.jpg",
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/3.jpeg",
+                                          ], 
                                                                                         "tentang": "Masjid Agung Bogor merupakan masjid besar yang terletak di pusat kota. Selain sebagai tempat ibadah, masjid ini juga menjadi tempat kegiatan keagamaan dan sering dikunjungi oleh wisatawan untuk beribadah.",
                                                                                         "alamat": "Jl. Raya Pajajaran No. 6, Bogor, Jawa Barat",
                                                                                         "fasilitas": ["Tempat parkir", "Toilet", "Area ibadah", "Pusat dakwah"],
@@ -1956,9 +2294,14 @@
                                                                                         "jam_buka": "24 Jam"
                                                                                     },
                                                                                     {
+                                                                                        "id_place":95,
                                                                                         "kategori": "Wisata Alam",
                                                                                         "nama": "Puncak Pass",
-                                                                                        "foto": "https://example.com/puncak-pass.jpg",
+                                                                                        "foto": [
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/1.jpg",
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/2.jpg",
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/3.jpeg",
+                                          ], 
                                                                                         "tentang": "Puncak Pass adalah tempat wisata yang menawarkan pemandangan alam yang indah dengan udara yang sejuk. Lokasi ini sering menjadi tujuan wisatawan yang ingin beristirahat dan menikmati keindahan alam.",
                                                                                         "alamat": "Jl. Raya Puncak No. 98, Cisarua, Bogor, Jawa Barat",
                                                                                         "fasilitas": ["Tempat parkir", "Restoran", "Toilet", "Area berkemah"],
@@ -1975,9 +2318,14 @@
                                                                                         "jam_buka": "08:00 - 17:00"
                                                                                     },
                                                                                     {
+                                                                                        "id_place":96,
                                                                                         "kategori": "Wisata Kuliner",
                                                                                         "nama": "Cimory Riverside",
-                                                                                        "foto": "https://example.com/cimory-riverside.jpg",
+                                                                                        "foto": [
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/1.jpg",
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/2.jpg",
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/3.jpeg",
+                                          ], 
                                                                                         "tentang": "Cimory Riverside adalah tempat wisata kuliner yang terletak di tepi sungai dengan suasana yang sejuk dan alami. Di sini, pengunjung dapat menikmati berbagai hidangan lezat sambil menikmati pemandangan alam yang indah.",
                                                                                         "alamat": "Jl. Raya Puncak No. 84, Cisarua, Bogor, Jawa Barat",
                                                                                         "fasilitas": ["Tempat parkir", "Restoran", "Toilet", "Area bermain anak"],
@@ -1994,9 +2342,14 @@
                                                                                         "jam_buka": "10:00 - 22:00"
                                                                                     },
                                                                                     {
+                                                                                        "id_place":97,
                                                                                         "kategori": "Wisata Religi",
                                                                                         "nama": "Vihara Dharma Giri",
-                                                                                        "foto": "https://example.com/vihara-dharma-giri.jpg",
+                                                                                        "foto": [
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/1.jpg",
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/2.jpg",
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/3.jpeg",
+                                          ], 
                                                                                         "tentang": "Vihara Dharma Giri adalah vihara yang terletak di daerah Puncak Bogor. Tempat ini merupakan salah satu tempat ibadah umat Buddha dengan pemandangan alam yang sangat indah.",
                                                                                         "alamat": "Jl. Raya Puncak No. 72, Cisarua, Bogor, Jawa Barat",
                                                                                         "fasilitas": ["Tempat parkir", "Toilet", "Area ibadah", "Pusat studi agama"],
@@ -2013,9 +2366,14 @@
                                                                                         "jam_buka": "08:00 - 17:00"
                                                                                     },
                                                                                     {
+                                                                                        "id_place":98,
                                                                                             "kategori": "Wisata Alam",
                                                                                             "nama": "Curug Cilember",
-                                                                                            "foto": "https://example.com/curug-cilember.jpg",
+                                                                                            "foto": [
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/1.jpg",
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/2.jpg",
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/3.jpeg",
+                                          ], 
                                                                                             "tentang": "Curug Cilember adalah air terjun yang terletak di daerah Cisarua, Bogor. Dengan pemandangan alam yang indah, tempat ini sangat cocok untuk para penggemar alam dan petualangan.",
                                                                                             "alamat": "Cisarua, Bogor, Jawa Barat",
                                                                                             "fasilitas": ["Tempat parkir", "Toilet", "Trekking", "Area piknik"],
@@ -2032,9 +2390,14 @@
                                                                                             "jam_buka": "08:00 - 17:00"
                                                                                         },
                                                                                         {
+                                                                                            "id_place":99,
                                                                                             "kategori": "Wisata Sejarah",
                                                                                             "nama": "Kota Tua Bogor",
-                                                                                            "foto": "https://example.com/kota-tua-bogor.jpg",
+                                                                                            "foto": [
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/1.jpg",
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/2.jpg",
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/3.jpeg",
+                                          ], 
                                                                                             "tentang": "Kota Tua Bogor adalah kawasan yang penuh dengan bangunan-bangunan bersejarah yang mencerminkan masa kolonial Belanda. Kawasan ini menawarkan pengalaman sejarah yang kaya.",
                                                                                             "alamat": "Jl. Suryakencana, Bogor, Jawa Barat",
                                                                                             "fasilitas": ["Tempat parkir", "Toilet", "Kios souvenir", "Area berjalan kaki"],
@@ -2051,9 +2414,14 @@
                                                                                             "jam_buka": "24 Jam"
                                                                                         },
                                                                                         {
+                                                                                            "id_place":100,
                                                                                             "kategori": "Wisata Alam",
                                                                                             "nama": "Taman Nasional Gunung Gede Pangrango",
-                                                                                            "foto": "https://example.com/taman-nasional-gede.jpg",
+                                                                                            "foto": [
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/1.jpg",
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/2.jpg",
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/3.jpeg",
+                                          ], 
                                                                                             "tentang": "Taman Nasional Gunung Gede Pangrango adalah taman nasional yang sangat populer di kalangan para pendaki. Dengan jalur pendakian yang menantang dan pemandangan alam yang luar biasa, tempat ini sangat cocok untuk petualangan alam.",
                                                                                             "alamat": "Cibodas, Cipanas, Bogor, Jawa Barat",
                                                                                             "fasilitas": ["Tempat parkir", "Toilet", "Pos pendakian", "Area perkemahan"],
@@ -2070,9 +2438,14 @@
                                                                                             "jam_buka": "08:00 - 16:00"
                                                                                         },
                                                                                         {
+                                                                                            "id_place":101,
                                                                                             "kategori": "Wisata Budaya",
                                                                                             "nama": "Pura Parahyangan Agung Jagatkartta",
-                                                                                            "foto": "https://example.com/pura-parahyangan.jpg",
+                                                                                            "foto": [
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/1.jpg",
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/2.jpg",
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/3.jpeg",
+                                          ], 
                                                                                             "tentang": "Pura Parahyangan Agung Jagatkartta adalah tempat ibadah umat Hindu yang terletak di daerah Cisarua, Bogor. Pura ini memiliki arsitektur yang indah dan merupakan salah satu tempat wisata religi di Bogor.",
                                                                                             "alamat": "Jl. Raya Puncak No. 55, Cisarua, Bogor, Jawa Barat",
                                                                                             "fasilitas": ["Tempat parkir", "Toilet", "Area ibadah", "Kios souvenir"],
@@ -2089,9 +2462,14 @@
                                                                                             "jam_buka": "08:00 - 17:00"
                                                                                         },
                                                                                         {
+                                                                                            "id_place":102,
                                                                                             "kategori": "Wisata Kuliner",
                                                                                             "nama": "Taman Kencana",
-                                                                                            "foto": "https://example.com/taman-kencana.jpg",
+                                                                                            "foto": [
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/1.jpg",
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/2.jpg",
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/3.jpeg",
+                                          ], 
                                                                                             "tentang": "Taman Kencana adalah salah satu tempat wisata kuliner terkenal di Bogor. Di sini pengunjung bisa menikmati berbagai hidangan lezat dan menikmati suasana taman yang asri.",
                                                                                             "alamat": "Jl. Kencana No. 45, Bogor, Jawa Barat",
                                                                                             "fasilitas": ["Tempat parkir", "Toilet", "Restoran", "Area duduk luar"],
@@ -2109,9 +2487,14 @@
                                                                                         },
                                                                                         
                                                                                             {
+                                                                                                "id_place":103,
                                                                                                 "kategori": "Wisata Alam",
                                                                                                 "nama": "Situ Gunung",
-                                                                                                "foto": "https://example.com/situ-gunung.jpg",
+                                                                                                "foto": [
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/1.jpg",
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/2.jpg",
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/3.jpeg",
+                                          ], 
                                                                                                 "tentang": "Situ Gunung adalah sebuah danau yang terletak di kaki Gunung Gede. Pemandangan alam yang asri dan udara yang sejuk membuat tempat ini sangat cocok untuk berlibur.",
                                                                                                 "alamat": "Cicadas, Kadudampit, Bogor, Jawa Barat",
                                                                                                 "fasilitas": ["Tempat parkir", "Kawasan perkemahan", "Trekking", "Spot foto"],
@@ -2128,9 +2511,14 @@
                                                                                                 "jam_buka": "08:00 - 17:00"
                                                                                             },
                                                                                             {
+                                                                                                "id_place":104,
                                                                                                 "kategori": "Wisata Sejarah",
                                                                                                 "nama": "Istana Bogor",
-                                                                                                "foto": "https://example.com/istana-bogor.jpg",
+                                                                                                "foto": [
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/1.jpg",
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/2.jpg",
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/3.jpeg",
+                                          ], 
                                                                                                 "tentang": "Istana Bogor adalah kediaman resmi Presiden Republik Indonesia di Bogor, yang juga dikenal dengan taman yang indah. Tempat ini menjadi salah satu tempat bersejarah yang wajib dikunjungi.",
                                                                                                 "alamat": "Jl. Ir. H. Juanda No.1, Bogor, Jawa Barat",
                                                                                                 "fasilitas": ["Tempat parkir", "Toilet", "Taman", "Area foto"],
@@ -2147,9 +2535,14 @@
                                                                                                 "jam_buka": "09:00 - 16:00"
                                                                                             },
                                                                                             {
+                                                                                                "id_place":105,
                                                                                                 "kategori": "Wisata Kuliner",
                                                                                                 "nama": "Kampung Sate Cibungbulang",
-                                                                                                "foto": "https://example.com/sate-cibungbulang.jpg",
+                                                                                                "foto": [
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/1.jpg",
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/2.jpg",
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/3.jpeg",
+                                          ], 
                                                                                                 "tentang": "Kampung Sate Cibungbulang adalah tempat yang dikenal dengan sate khas yang lezat dan nikmat. Banyak pilihan sate yang menggugah selera dengan cita rasa yang khas.",
                                                                                                 "alamat": "Jl. Raya Cibungbulang No.10, Bogor, Jawa Barat",
                                                                                                 "fasilitas": ["Tempat parkir", "Toilet", "Restoran", "Area makan outdoor"],
@@ -2166,9 +2559,14 @@
                                                                                                 "jam_buka": "10:00 - 22:00"
                                                                                             },
                                                                                             {
+                                                                                                "id_place":106,
                                                                                                 "kategori": "Wisata Religi",
                                                                                                 "nama": "Masjid Raya Bogor",
-                                                                                                "foto": "https://example.com/masjid-raya-bogor.jpg",
+                                                                                                "foto": [
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/1.jpg",
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/2.jpg",
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/3.jpeg",
+                                          ], 
                                                                                                 "tentang": "Masjid Raya Bogor adalah masjid yang memiliki arsitektur megah dan merupakan salah satu masjid terbesar di kota Bogor. Tempat ini juga sering digunakan untuk berbagai kegiatan keagamaan dan sosial.",
                                                                                                 "alamat": "Jl. Merdeka No.3, Bogor, Jawa Barat",
                                                                                                 "fasilitas": ["Tempat parkir", "Toilet", "Area ibadah", "Kios makanan"],
@@ -2185,9 +2583,14 @@
                                                                                                 "jam_buka": "24 Jam"
                                                                                             },
                                                                                             {
+                                                                                                "id_place":107,
                                                                                                 "kategori": "Wisata Budaya",
                                                                                                 "nama": "Museum Zoologi Bogor",
-                                                                                                "foto": "https://example.com/museum-zoologi-bogor.jpg",
+                                                                                                "foto": [
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/1.jpg",
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/2.jpg",
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/3.jpeg",
+                                          ], 
                                                                                                 "tentang": "Museum Zoologi Bogor merupakan salah satu museum terbesar yang menampilkan berbagai koleksi flora dan fauna. Sangat cocok untuk belajar tentang dunia hewan dan tumbuhan.",
                                                                                                 "alamat": "Jl. Ir. H. Juanda No.13, Bogor, Jawa Barat",
                                                                                                 "fasilitas": ["Tempat parkir", "Toilet", "Kios souvenir", "Area museum"],
@@ -2205,9 +2608,14 @@
                                                                                             },
                                                                                        
                                                                                                 {
+                                                                                                    "id_place":108,
                                                                                                     "kategori": "Wisata Alam",
                                                                                                     "nama": "Situ Gunung",
-                                                                                                    "foto": "https://example.com/situ-gunung.jpg",
+                                                                                                    "foto": [
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/1.jpg",
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/2.jpg",
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/3.jpeg",
+                                          ], 
                                                                                                     "tentang": "Situ Gunung adalah sebuah danau yang terletak di kaki Gunung Gede. Pemandangan alam yang asri dan udara yang sejuk membuat tempat ini sangat cocok untuk berlibur.",
                                                                                                     "alamat": "Cicadas, Kadudampit, Bogor, Jawa Barat",
                                                                                                     "fasilitas": ["Tempat parkir", "Kawasan perkemahan", "Trekking", "Spot foto"],
@@ -2224,9 +2632,14 @@
                                                                                                     "jam_buka": "08:00 - 17:00"
                                                                                                 },
                                                                                                 {
+                                                                                                    "id_place":109,
                                                                                                     "kategori": "Wisata Sejarah",
                                                                                                     "nama": "Istana Bogor",
-                                                                                                    "foto": "https://example.com/istana-bogor.jpg",
+                                                                                                    "foto": [
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/1.jpg",
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/2.jpg",
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/3.jpeg",
+                                          ], 
                                                                                                     "tentang": "Istana Bogor adalah kediaman resmi Presiden Republik Indonesia di Bogor, yang juga dikenal dengan taman yang indah. Tempat ini menjadi salah satu tempat bersejarah yang wajib dikunjungi.",
                                                                                                     "alamat": "Jl. Ir. H. Juanda No.1, Bogor, Jawa Barat",
                                                                                                     "fasilitas": ["Tempat parkir", "Toilet", "Taman", "Area foto"],
@@ -2243,9 +2656,14 @@
                                                                                                     "jam_buka": "09:00 - 16:00"
                                                                                                 },
                                                                                                 {
+                                                                                                    "id_place":110,
                                                                                                     "kategori": "Wisata Kuliner",
                                                                                                     "nama": "Kampung Sate Cibungbulang",
-                                                                                                    "foto": "https://example.com/sate-cibungbulang.jpg",
+                                                                                                    "foto": [
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/1.jpg",
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/2.jpg",
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/3.jpeg",
+                                          ], 
                                                                                                     "tentang": "Kampung Sate Cibungbulang adalah tempat yang dikenal dengan sate khas yang lezat dan nikmat. Banyak pilihan sate yang menggugah selera dengan cita rasa yang khas.",
                                                                                                     "alamat": "Jl. Raya Cibungbulang No.10, Bogor, Jawa Barat",
                                                                                                     "fasilitas": ["Tempat parkir", "Toilet", "Restoran", "Area makan outdoor"],
@@ -2262,9 +2680,14 @@
                                                                                                     "jam_buka": "10:00 - 22:00"
                                                                                                 },
                                                                                                 {
+                                                                                                    "id_place":111,
                                                                                                     "kategori": "Wisata Religi",
                                                                                                     "nama": "Masjid Raya Bogor",
-                                                                                                    "foto": "https://example.com/masjid-raya-bogor.jpg",
+                                                                                                    "foto": [
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/1.jpg",
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/2.jpg",
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/3.jpeg",
+                                          ], 
                                                                                                     "tentang": "Masjid Raya Bogor adalah masjid yang memiliki arsitektur megah dan merupakan salah satu masjid terbesar di kota Bogor. Tempat ini juga sering digunakan untuk berbagai kegiatan keagamaan dan sosial.",
                                                                                                     "alamat": "Jl. Merdeka No.3, Bogor, Jawa Barat",
                                                                                                     "fasilitas": ["Tempat parkir", "Toilet", "Area ibadah", "Kios makanan"],
@@ -2281,9 +2704,14 @@
                                                                                                     "jam_buka": "24 Jam"
                                                                                                 },
                                                                                                 {
+                                                                                                    "id_place":112,
                                                                                                     "kategori": "Wisata Budaya",
                                                                                                     "nama": "Museum Zoologi Bogor",
-                                                                                                    "foto": "https://example.com/museum-zoologi-bogor.jpg",
+                                                                                                    "foto": [
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/1.jpg",
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/2.jpg",
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/3.jpeg",
+                                          ], 
                                                                                                     "tentang": "Museum Zoologi Bogor merupakan salah satu museum terbesar yang menampilkan berbagai koleksi flora dan fauna. Sangat cocok untuk belajar tentang dunia hewan dan tumbuhan.",
                                                                                                     "alamat": "Jl. Ir. H. Juanda No.13, Bogor, Jawa Barat",
                                                                                                     "fasilitas": ["Tempat parkir", "Toilet", "Kios souvenir", "Area museum"],
@@ -2298,31 +2726,16 @@
                                                                                                     ],
                                                                                                     "harga": "Rp 25,000",
                                                                                                     "jam_buka": "08:00 - 16:00"
-                                                                                                },
-                                                                                                
-                                                                                                    {
-                                                                                                        "kategori": "Wisata Alam",
-                                                                                                        "nama": "Taman Wisata Alam Leuwi Hejo",
-                                                                                                        "foto": "https://example.com/leuwi-hejo.jpg",
-                                                                                                        "tentang": "Taman Wisata Alam Leuwi Hejo adalah destinasi wisata alam yang menawarkan pemandangan air terjun dengan air yang jernih dan pemandangan alam yang menyejukkan. Tempat ini cocok untuk trekking dan berenang.",
-                                                                                                        "alamat": "Desa Leuwi Hejo, Kecamatan Cikalong, Tasikmalaya, Jawa Barat",
-                                                                                                        "fasilitas": ["Tempat parkir", "Toilet", "Jalur trekking", "Spot foto"],
-                                                                                                        "aktivitas": ["Trekking", "Berenang", "Menikmati pemandangan alam"],
-                                                                                                        "rating": 4.6,
-                                                                                                        "ulasan": [
-                                                                                                            {"user": "Budi", "komentar": "Pemandangan alam yang sangat indah, air terjun dan airnya sangat segar!", "rating": 4.7},
-                                                                                                            {"user": "Ayu", "komentar": "Tempat yang sangat cocok untuk melepas penat, trekking di sini sangat menyenangkan.", "rating": 4.6},
-                                                                                                            {"user": "Tio", "komentar": "Air terjun yang sangat cantik, cocok untuk bersantai atau berenang.", "rating": 4.7},
-                                                                                                            {"user": "Rina", "komentar": "Sangat alami dan segar, tempat yang cocok untuk menikmati alam.", "rating": 4.5},
-                                                                                                            {"user": "Siti", "komentar": "Pemandangan yang luar biasa, sangat menyegarkan dan cocok untuk berpetualang.", "rating": 4.6}
-                                                                                                        ],
-                                                                                                        "harga": "Rp 30,000",
-                                                                                                        "jam_buka": "07:00 - 17:00"
-                                                                                                    },
-                                                                                                    {
+                                                                                                },                                                                                          
+                                                                                                     {
+                                                                                                         "id_place":113,
                                                                                                         "kategori": "Wisata Sejarah",
                                                                                                         "nama": "Benteng Pendem",
-                                                                                                        "foto": "https://example.com/benteng-pendem.jpg",
+                                                                                                        "foto": [
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/1.jpg",
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/2.jpg",
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/3.jpeg",
+                                          ], 
                                                                                                         "tentang": "Benteng Pendem adalah situs sejarah yang digunakan pada masa penjajahan Belanda. Benteng ini digunakan sebagai tempat pertahanan yang kini menjadi tempat wisata sejarah dengan peninggalan sejarah yang masih terjaga.",
                                                                                                         "alamat": "Jl. Benteng No.15, Tasikmalaya, Jawa Barat",
                                                                                                         "fasilitas": ["Tempat parkir", "Toilet", "Area belajar sejarah"],
@@ -2339,9 +2752,14 @@
                                                                                                         "jam_buka": "08:00 - 17:00"
                                                                                                     },
                                                                                                     {
+                                                                                                        "id_place":114,
                                                                                                         "kategori": "Wisata Kuliner",
                                                                                                         "nama": "Pisang Bakar Sate",
-                                                                                                        "foto": "https://example.com/pisang-bakar-sate.jpg",
+                                                                                                        "foto": [
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/1.jpg",
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/2.jpg",
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/3.jpeg",
+                                          ], 
                                                                                                         "tentang": "Pisang Bakar Sate adalah kuliner khas Tasikmalaya yang menggabungkan pisang bakar dengan sate. Rasanya yang manis dan gurih membuatnya jadi pilihan cemilan populer di daerah ini.",
                                                                                                         "alamat": "Jl. Raya Tasikmalaya, Tasikmalaya, Jawa Barat",
                                                                                                         "fasilitas": ["Restoran", "Area makan", "Tempat parkir"],
@@ -2358,9 +2776,14 @@
                                                                                                         "jam_buka": "10:00 - 21:00"
                                                                                                     },
                                                                                                     {
+                                                                                                        "id_place":115,
                                                                                                         "kategori": "Wisata Religi",
                                                                                                         "nama": "Makam Kyai Garu",
-                                                                                                        "foto": "https://example.com/makam-kyai-garu.jpg",
+                                                                                                        "foto": [
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/1.jpg",
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/2.jpg",
+                                    "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/cirebon/masjid_agung_cirebon/3.jpeg",
+                                          ], 
                                                                                                         "tentang": "Makam Kyai Garu adalah situs religi yang sangat dihormati oleh masyarakat Tasikmalaya. Tempat ini menjadi tujuan bagi para peziarah yang ingin memanjatkan doa dan berziarah.",
                                                                                                         "alamat": "Desa Garu, Kecamatan Cipatujah, Tasikmalaya, Jawa Barat",
                                                                                                         "fasilitas": ["Area parkir", "Tempat berdoa", "Toilet"],
@@ -2376,10 +2799,15 @@
                                                                                                         "harga": "Gratis",
                                                                                                         "jam_buka": "24 Jam"
                                                                                                     },
-                                                                                                    {
-                                                                                                        "kategori": "Wisata Budaya",
-                                                                                                        "nama": "Festival Seba Tasikmalaya",
-                                                                                                        "foto": "https://example.com/festival-seba.jpg",
+         {
+          "id_place":116,
+          "kategori": "Wisata Budaya",
+          "nama": "Festival Seba Tasikmalaya",
+           "foto": [
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/tasikmalaya/pantai_sindangkerta/1.jpg",
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/tasikmalaya/pantai_sindangkerta/2.jpg",
+            "https://raw.githubusercontent.com/acoramadan/Paradisata/CC/Database/Tourism_place/Tourism_place_photo/tasikmalaya/pantai_sindangkerta/3.jpg"
+            ],
                                                                                                         "tentang": "Festival Seba adalah festival budaya tahunan yang digelar di Tasikmalaya untuk merayakan budaya Sunda. Festival ini menampilkan berbagai pertunjukan seni dan budaya lokal.",
                                                                                                         "alamat": "Alun-Alun Tasikmalaya, Tasikmalaya, Jawa Barat",
                                                                                                         "fasilitas": ["Area parkir", "Tempat duduk", "Kios makanan", "Spot foto"],
@@ -2396,6 +2824,7 @@
                                                                                                         "jam_buka": "08:00 - 22:00"
  },
      {
+         "id_place":117,
         "kategori": "Wisata Alam",
         "nama": "Pantai Sindangkerta",
         "foto": [
@@ -2419,6 +2848,7 @@
         "jam_buka": "07:00 - 18:00"
     },
     {
+        "id_place":118,
         "kategori": "Wisata Sejarah",
         "nama": "Makam Sunan Gunung Jati",
         "foto": [
@@ -2442,6 +2872,7 @@
         "jam_buka": "24 Jam"
     },
     {
+        "id_place":119,
         "kategori": "Wisata Kuliner",
         "nama": "Sate Maranggi AA",
         "foto": [
@@ -2465,6 +2896,7 @@
         "jam_buka": "10:00 - 22:00"
     },
     {
+        "id_place":120,
         "kategori": "Wisata Religi",
         "nama": "Masjid Agung Tasikmalaya",
         "foto": [
@@ -2489,6 +2921,7 @@
         "jam_buka": "24 Jam"
     },
     {
+        "id_place":121,
         "kategori": "Wisata Budaya",
         "nama": "Pusat Kerajinan Rajapolah",
         "foto": [
@@ -2515,6 +2948,7 @@
 
 
     {
+        "id_place":122,
         "kategori": "Wisata Alam",
         "nama": "Cisolok Hot Spring",
         "foto": [
@@ -2538,6 +2972,7 @@
         "jam_buka": "08:00 - 17:00"
     },
     {
+        "id_place":123,
         "kategori": "Wisata Sejarah",
         "nama": "Makam Syekh Abdul Muhyi",
         "foto": [
@@ -2561,6 +2996,7 @@
         "jam_buka": "24 Jam"
     },
     {
+        "id_place":124,
         "kategori": "Wisata Kuliner",
         "nama": "Sate Maranggi Hj Nani",
         "foto": [
@@ -2584,6 +3020,7 @@
         "jam_buka": "10:00 - 22:00"
     },
     {
+        "id_place":125,
         "kategori": "Wisata Religi",
         "nama": "Masjid Agung Sukabumi",
         "foto": [
@@ -2608,6 +3045,7 @@
         "jam_buka": "24 Jam"
     },
     {
+        "id_place":126,
         "kategori": "Wisata Budaya",
         "nama": "Sukabumi Craft Center",
         "foto": [
@@ -2632,6 +3070,7 @@
 },
 
     {
+        "id_place":127,
         "kategori": "Wisata Alam",
         "nama": "Taman Nasional Gunung Halimun Salak",
         "foto": [
@@ -2657,6 +3096,7 @@
         "jam_buka": "06:00 - 18:00"
     },
     {
+        "id_place":128,
         "kategori": "Wisata Edukasi",
         "nama": "Kebun Raya Cibodas",
         "foto": [
@@ -2681,6 +3121,7 @@
         "jam_buka": "08:00 - 17:00"
     },
     {
+        "id_place":129,
         "kategori": "Wisata Alam",
         "nama": "Air Terjun Cibereum",
         "foto": [
@@ -2704,6 +3145,7 @@
         "jam_buka": "08:00 - 16:00"
     },
     {
+        "id_place":130,
         "kategori": "Wisata Sejarah",
         "nama": "Benteng Pendem",
         "foto": [
@@ -2727,6 +3169,7 @@
         "jam_buka": "08:00 - 17:00"
     },
     {
+        "id_place":131,
         "kategori": "Wisata Alam",
         "nama": "Pantai Ujung Genteng",
         "foto": [
@@ -2752,6 +3195,7 @@
 },
 
     {
+        "id_place":132,
         "kategori": "Wisata Alam",
         "nama": "Curug Cikaso",
         "foto": [
@@ -2775,6 +3219,7 @@
         "jam_buka": "08:00 - 16:00"
     },
     {
+        "id_place":133,
         "kategori": "Wisata Budaya",
         "nama": "Museum Siliwangi",
         "foto": [
@@ -2798,6 +3243,7 @@
         "jam_buka": "09:00 - 17:00"
     },
     {
+        "id_place":134,
         "kategori": "Wisata Kuliner",
         "nama": "Warung Makan Cibiuk",
         "foto": [
@@ -2821,6 +3267,7 @@
         "jam_buka": "10:00 - 20:00"
     },
     {
+        "id_place":135,
         "kategori": "Wisata Religi",
         "nama": "Masjid Agung Trans Studio Bandung",
         "foto": [
@@ -2844,6 +3291,7 @@
         "jam_buka": "24 jam"
     },
     {
+        "id_place":136,
         "kategori": "Wisata Alam",
         "nama": "Pantai Cikao",
         "foto": [
@@ -2868,6 +3316,7 @@
     },
     
         {
+            "id_place":137,
             "kategori": "Wisata Alam",
             "nama": "Curug Sawer",
             "foto": [
@@ -2892,6 +3341,7 @@
             "jam_buka": "08:00 - 16:00"
         },
         {
+            "id_place":138,
             "kategori": "Wisata Budaya",
             "nama": " Bumi Ageung Cikidang",
             "foto": [
@@ -2916,6 +3366,7 @@
             "jam_buka": "09:00 - 17:00"
         },
         {
+            "id_place":139,
             "kategori": "Wisata Kuliner",
             "nama": "Saung Nikmat Cianjur",
             "foto": [
@@ -2940,6 +3391,7 @@
             "jam_buka": "10:00 - 20:00"
         },
         {
+            "id_place":140,
             "kategori": "Wisata Religi",
             "nama": "Masjid Agung Cimahi",
             "foto": [
@@ -2964,6 +3416,7 @@
             "jam_buka": "24 jam"
         },
         {
+            "id_place":141,
             "kategori": "Wisata Alam",
             "nama": "Cikao Park",
             "foto": [
@@ -2989,6 +3442,7 @@
 },
 
     {
+        "id_place":142,
         "kategori": "Wisata Alam",
         "nama": "Tebing Keraton",
         "foto": [
@@ -3012,6 +3466,7 @@
         "jam_buka": "05:00 - 17:00"
     },
     {
+        "id_place":143,
         "kategori": "Wisata Sejarah",
         "nama": "Cagar Budaya Alun-Alun Cimahi",
         "foto": [
@@ -3035,6 +3490,7 @@
         "jam_buka": "24 jam"
     },
     {
+        "id_place":144,
         "kategori": "Wisata Kuliner",
         "nama": "Warung Nasi Sunda Nikmat",
         "foto": [
@@ -3059,6 +3515,7 @@
         "jam_buka": "08:00 - 21:00"
     },
     {
+        "id_place":145,
         "kategori": "Wisata Religi",
         "nama": "Pura Agung Wira Loka Natha",
         "foto": [
@@ -3083,6 +3540,7 @@
         "jam_buka": "08:00 - 17:00"
     },
     {
+        "id_place":146,
         "kategori": "Wisata Budaya",
         "nama": "Museum Seni Rupa Cimahi",
         "foto": [
@@ -3108,6 +3566,7 @@
 },
 
     {
+        "id_place":147,
         "kategori": "Wisata Alam",
         "nama": "Kebun Teh Ciater",
         "foto": [
@@ -3131,6 +3590,7 @@
         "jam_buka": "08:00 - 17:00"
     },
     {
+        "id_place":148,
         "kategori": "Wisata Sejarah",
         "nama": "Kampung Naga",
         "foto": [
@@ -3155,6 +3615,7 @@
         "jam_buka": "09:00 - 18:00"
     },
     {
+        "id_place":149,
         "kategori": "Wisata Kuliner",
         "nama": "Sate Maranggi Si Bungsu",
         "foto": [
@@ -3178,6 +3639,7 @@
         "jam_buka": "10:00 - 20:00"
     },
     {
+        "id_place":150,
         "kategori": "Wisata Religi",
         "nama": "Masjid Agung Al-Musabaqoh",
         "foto": [
@@ -3202,6 +3664,7 @@
         "jam_buka": "24 jam"
     },
     {
+        "id_place":151,
         "kategori": "Wisata Budaya",
         "nama": "Festival Budaya Subang",
         "foto": [
@@ -3226,6 +3689,7 @@
 },
 
     {
+        "id_place":152,
         "kategori": "Wisata Alam",
         "nama": "Curug Cijalu",
         "foto": [
@@ -3250,6 +3714,7 @@
         "jam_buka": "08:00 - 17:00"
     },
     {
+        "id_place":153,
         "kategori": "Wisata Sejarah",
         "nama": "Rumah Sejarah Kalijati",
         "foto": [
@@ -3273,6 +3738,7 @@
         "jam_buka": "09:00 - 18:00"
     },
     {
+        "id_place":154,
         "kategori": "Wisata Kuliner",
         "nama": "Nasi Goreng Mas Wito",
         "foto": [
@@ -3297,6 +3763,7 @@
         "jam_buka": "10:00 - 21:00"
     },
     {
+        "id_place":155,
         "kategori": "Wisata Religi",
         "nama": "Pura Parahyangan Agung Jagatkartta",
         "foto": [
@@ -3322,6 +3789,7 @@
         "jam_buka": "06:00 - 18:00"
     },
     {
+        "id_place":156,
         "kategori": "Wisata Budaya",
         "nama": "Museum Daerah Subang",
         "foto": [
