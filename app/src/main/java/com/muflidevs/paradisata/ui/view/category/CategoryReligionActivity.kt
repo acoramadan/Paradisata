@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
+import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.viewpager2.widget.ViewPager2
@@ -41,6 +42,9 @@ class CategoryReligionActivity : AppCompatActivity() {
         viewModel.places.observe(this) { dataPlace ->
             adapter.submitList(dataPlace)
         }
+        viewModel.isLoading.observe(this) {
+            setProgressBar(it)
+        }
         binding.exitButton.setOnClickListener {
             finish()
         }
@@ -75,5 +79,8 @@ class CategoryReligionActivity : AppCompatActivity() {
             }
         }
         handler.post(runnable)
+    }
+    private fun setProgressBar(isLoading: Boolean) {
+        binding.progressBar.visibility = if(isLoading) View.VISIBLE else View.GONE
     }
 }

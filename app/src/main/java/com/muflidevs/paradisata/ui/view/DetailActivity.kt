@@ -1,5 +1,6 @@
 package com.muflidevs.paradisata.ui.view
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -11,6 +12,7 @@ import com.muflidevs.paradisata.data.model.remote.json.DataPlaces
 import com.muflidevs.paradisata.databinding.ActivityDetailBinding
 import com.muflidevs.paradisata.ui.view.fragments.FragmentDetail
 import com.muflidevs.paradisata.ui.view.fragments.FragmentReview
+import com.muflidevs.paradisata.ui.view.tourguide.TourGuideListActivity
 
 class DetailActivity : AppCompatActivity() {
     private lateinit var binding: ActivityDetailBinding
@@ -75,6 +77,11 @@ class DetailActivity : AppCompatActivity() {
             }
             exitButton.setOnClickListener {
                 finish()
+            }
+
+            bookingBtn.setOnClickListener {
+                val intent = Intent(this@DetailActivity, TourGuideListActivity::class.java)
+                startActivity(intent)
             }
         }
 

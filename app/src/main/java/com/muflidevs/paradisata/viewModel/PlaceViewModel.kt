@@ -19,15 +19,19 @@ class PlaceViewModel(application: Application) : AndroidViewModel(application) {
     private val _places = MutableLiveData<List<DataPlaces>>()
     val places: LiveData<List<DataPlaces>> get() = _places
 
+    private val _isLoading = MutableLiveData<Boolean>()
+    val isLoading: LiveData<Boolean> = _isLoading
     fun loadPlaces(limit: Int = 5) {
         viewModelScope.launch {
+            _isLoading.value = true
             try {
                 val data = readPlacesFromRaw(limit)
                  _places.postValue(data)
             } catch (e: Exception) {
                 Log.e("PlaceViewModel", "${e.message}")
+            }finally {
+                _isLoading.value = false
             }
-
         }
     }
 

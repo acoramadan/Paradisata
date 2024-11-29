@@ -16,6 +16,12 @@
         android:theme="@style/Theme.Paradisata"
         tools:targetApi="31">
         <activity
+            android:name=".ui.view.tourguide.TourGuideDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.view.tourguide.TourGuideListActivity"
+            android:exported="false" />
+        <activity
             android:name=".ui.view.category.CategoryCulinaryActivity"
             android:exported="false" />
         <activity

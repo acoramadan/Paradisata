@@ -12,7 +12,7 @@
     <string name="gambar_register">gambar register</string>
     <string name="sign_up_as_a">Sign Up As</string>
     <string name="tourist">Tourism</string>
-    <string name="tour_guide">Guide</string>
+    <string name="tour_guide">Tour Guide</string>
     <string name="login">Login</string>
     <string name="sudah_punya_akun">Already Have an Account?</string>
     <string name="sign_up_as_a_tour_guide">Sign up as a Tour Guide</string>
@@ -77,4 +77,7 @@
     <string name="harga">Harga</string>
     <string name="jam_buka">Jam Buka</string>
     <string name="tentang">Tentang</string>
+    <string name="contact_tour_guide">Contact Tour Guide</string>
+    <string name="home_stay">Home Stay</string>
+    <string name="facilities">Facilities</string>
 </resources>

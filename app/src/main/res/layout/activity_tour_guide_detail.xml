@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/md_theme_onSecondary"
-    tools:context=".ui.view.DetailActivity">
+    tools:context=".ui.view.tourguide.TourGuideDetailActivity">
 
     <ScrollView
         android:id="@+id/scroll_container"
@@ -44,7 +43,6 @@
                     app:srcCompat="@drawable/icon_back" />
             </FrameLayout>
 
-            <!-- Konten lainnya, seperti nama, rating, lokasi, dll -->
             <LinearLayout
                 android:id="@+id/layout_name_stars"
                 android:layout_width="match_parent"

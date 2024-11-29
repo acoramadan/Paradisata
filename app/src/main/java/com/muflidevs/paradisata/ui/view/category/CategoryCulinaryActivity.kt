@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
 import android.util.Log
+import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.viewpager2.widget.ViewPager2
@@ -38,11 +39,14 @@ class CategoryCulinaryActivity : AppCompatActivity() {
 
         autoSlide(viewPager, images.size)
         setupRecycleView(binding)
-
-        viewModel.loadPlaces(0)
         viewModel.places.observe(this) { dataPlace ->
             adapter.submitList(dataPlace)
         }
+        viewModel.isLoading.observe(this) {
+            setProgressBar(it)
+        }
+        viewModel.loadPlaces(0)
+
         binding.exitButton.setOnClickListener {
             finish()
         }
@@ -82,5 +86,8 @@ class CategoryCulinaryActivity : AppCompatActivity() {
             }
         }
         handler.post(runnable)
+    }
+    private fun setProgressBar(isLoading: Boolean) {
+        binding.progressBar.visibility = if(isLoading) View.VISIBLE else View.GONE
     }
 }

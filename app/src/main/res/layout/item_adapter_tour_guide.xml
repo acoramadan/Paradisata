@@ -44,7 +44,7 @@
                 android:orientation="vertical">
 
                 <TextView
-                    android:id="@+id/home_stay_name"
+                    android:id="@+id/tour_guide_name"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     tools:text="tes"
