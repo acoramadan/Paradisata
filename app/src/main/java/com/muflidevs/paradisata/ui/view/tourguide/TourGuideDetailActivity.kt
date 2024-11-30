@@ -10,6 +10,8 @@ import com.bumptech.glide.Glide
 import com.muflidevs.paradisata.R
 import com.muflidevs.paradisata.data.model.remote.json.TourGuide
 import com.muflidevs.paradisata.databinding.ActivityTourGuideDetailBinding
+import com.muflidevs.paradisata.ui.view.fragments.FragmentDetailTourGuide
+import com.muflidevs.paradisata.ui.view.fragments.FragmentReview
 
 @Suppress("DEPRECATION")
 class TourGuideDetailActivity : AppCompatActivity() {
@@ -33,7 +35,48 @@ class TourGuideDetailActivity : AppCompatActivity() {
                 .into(imageDetail)
         }
     }
-    private fun setFragment() {
 
+    @SuppressLint("CommitTransaction")
+    private fun setFragment(data: TourGuide) {
+        val fragmentDetail = FragmentDetailTourGuide().apply {
+           arguments = Bundle().apply {
+               putParcelable("dataTourGuide",data)
+           }
+        }
+        val fragmentReview = FragmentReview().apply {
+            arguments = Bundle().apply {
+                putParcelable("dataReviewTourGuide", data)
+            }
+        }
+        val fragmentManager = supportFragmentManager
+
+        fragmentManager.beginTransaction().replace(
+            binding.frameContainer.id,
+            fragmentDetail,
+            FragmentDetailTourGuide::class.java.simpleName
+        )
+
+        with(binding) {
+            btnDetail.setOnClickListener {
+                fragmentManager.beginTransaction().replace(
+                    binding.frameContainer.id,
+                    fragmentDetail,
+                    FragmentDetailTourGuide::class.java.simpleName
+                )
+            }
+            btnReviews.setOnClickListener {
+                fragmentManager.beginTransaction().replace(
+                    binding.frameContainer.id,
+                    fragmentReview,
+                    FragmentReview::class.java.simpleName
+                )
+            }
+            bookingBtn.setOnClickListener {
+                
+            }
+            exitButton.setOnClickListener{
+                finish()
+            }
+        }
     }
 }
