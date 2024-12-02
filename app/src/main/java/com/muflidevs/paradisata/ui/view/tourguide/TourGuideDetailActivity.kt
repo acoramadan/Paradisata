@@ -23,7 +23,7 @@ class TourGuideDetailActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityTourGuideDetailBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        detailTourGuide = intent.getParcelableExtra<TourGuide>("item")!!
+        detailTourGuide = intent.getParcelableExtra("tourGuide")!!
 
         with(binding) {
             detailName.text = "${detailTourGuide.name} Home Stay"
@@ -34,6 +34,7 @@ class TourGuideDetailActivity : AppCompatActivity() {
                 .placeholder(R.drawable.placeholder)
                 .into(imageDetail)
         }
+        setFragment(detailTourGuide)
     }
 
     @SuppressLint("CommitTransaction")

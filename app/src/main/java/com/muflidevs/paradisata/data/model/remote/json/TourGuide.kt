@@ -33,7 +33,7 @@ data class TourGuide(
     @SerializedName("HomestayPicture")
     val homestay: String,
 
-    @SerializedName("HomestayAdress")
+    @SerializedName("HomestayAddress")
     val homestayAddress: String,
 
     @SerializedName("Facilities")

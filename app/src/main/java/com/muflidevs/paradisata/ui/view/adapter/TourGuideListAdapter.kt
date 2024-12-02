@@ -22,7 +22,6 @@ class TourGuideListAdapter(
         fun bind(tourGuide: TourGuide, onItemClicked: (TourGuide) -> Unit) {
             with(binding) {
                 tourGuideName.text = tourGuide.name
-                ratingBar.rating = tourGuide.rating
                 ratingText.text = tourGuide.rating.toString()
                 Glide.with(context)
                     .load(tourGuide.profilePicture)
@@ -32,6 +31,27 @@ class TourGuideListAdapter(
                     .load(tourGuide.homestay)
                     .placeholder(R.drawable.placeholder)
                     .into(imageBackground)
+
+                setRatingStars(tourGuide.rating)
+                root.setOnClickListener {
+                    onItemClicked(tourGuide)
+                }
+            }
+        }
+
+        private fun setRatingStars(rating: Float) {
+            val stars =
+                listOf(binding.star1, binding.star2, binding.star3, binding.star4, binding.star5)
+
+            for (i in stars.indices) {
+                if (i < rating.toInt()) {
+                    stars[i].setImageResource(R.drawable.stars)
+                } else {
+                    stars[i].setImageResource(R.drawable.stars_kosong)
+                }
+            }
+            if (rating % 1 > 0) {
+                stars[rating.toInt()].setImageResource(R.drawable.stars_setengah)
             }
         }
     }

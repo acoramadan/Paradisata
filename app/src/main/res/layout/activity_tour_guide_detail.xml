@@ -58,8 +58,8 @@
                     android:textSize="20sp"
                     tools:text="Way Kambas" />
                 <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
                     android:layout_marginStart="5dp"
                     android:contentDescription="@string/stars"
                     android:src="@drawable/stars" />

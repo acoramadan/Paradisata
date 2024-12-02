@@ -80,4 +80,18 @@
     <string name="contact_tour_guide">Contact Tour Guide</string>
     <string name="home_stay">Home Stay</string>
     <string name="facilities">Facilities</string>
+    <string name="tour_guide_recomendation">Tour Guide Recomendation</string>
+    <string name="places_recomendation">Places Recomendation</string>
+    <string name="history">History</string>
+    <string name="culinary">Culinary</string>
+    <string name="religion">Religion</string>
+    <string name="nature">Nature</string>
+    <string name="image_home">image home</string>
+    <string name="transportation">Transportation</string>
+    <string name="transportation_type">Transportation Type</string>
+    <string name="two_wheels">Two Wheels</string>
+    <string name="four_wheels">Four Wheels</string>
+    <string name="daftar_dengan">Daftar Dengan</string>
+    <string name="otp_verification">OTP Verification</string>
+    <string name="enter_otp_sent_to">Enter OTP sent to</string>
 </resources>
