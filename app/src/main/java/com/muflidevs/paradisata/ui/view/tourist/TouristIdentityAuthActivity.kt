@@ -1,21 +1,236 @@
 package com.muflidevs.paradisata.ui.view.tourist
 
+import android.annotation.SuppressLint
+import android.app.Activity
+import android.content.ContentValues
+import android.content.Context
+import android.content.pm.PackageManager
+import android.graphics.Bitmap
+import android.net.Uri
+import android.os.Build
 import android.os.Bundle
-import androidx.activity.enableEdgeToEdge
+import android.os.Environment
+import android.provider.MediaStore
+import android.util.Log
+import androidx.activity.result.PickVisualMediaRequest
+import androidx.activity.result.contract.ActivityResultContracts
+import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
+import androidx.core.content.ContextCompat
+import androidx.core.content.FileProvider
+import androidx.lifecycle.ViewModelProvider
 import com.muflidevs.paradisata.R
+import com.muflidevs.paradisata.databinding.ActivityTouristIdentityAuthBinding
+import com.muflidevs.paradisata.viewModel.RegistrationViewModel
+import java.io.File
+import java.text.SimpleDateFormat
+import java.util.Date
+import java.util.Locale
 
+@Suppress("DEPRECATION")
 class TouristIdentityAuthActivity : AppCompatActivity() {
+    private lateinit var binding: ActivityTouristIdentityAuthBinding
+    private lateinit var viewModel: RegistrationViewModel
+    private lateinit var gender: String
+    private lateinit var touristFrom: String
+    private val FILENAME_FORMAT = "yyyyMMdd_HHmmss"
+    private val timeStamp: String = SimpleDateFormat(FILENAME_FORMAT, Locale.US).format(Date())
+    private var currentImageUri: Uri? = null
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
-        setContentView(R.layout.activity_tourist_identity_auth)
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
-            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-            insets
+        binding = ActivityTouristIdentityAuthBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+
+        viewModel = ViewModelProvider(this).get(RegistrationViewModel::class.java)
+
+        binding.profileImage.setOnClickListener {
+            showMediaOptionDialog()
         }
+        viewModel.imageUri.observe(this) { uri ->
+            uri.let {
+                currentImageUri = it
+                showImage()
+            }
+        }
+        binding.apply {
+            maleBtn.setOnClickListener {
+                maleBtn.setBackgroundColor(
+                    ContextCompat.getColor(
+                        this@TouristIdentityAuthActivity,
+                        R.color.md_theme_secondaryContainer
+                    )
+                )
+                femaleBtn.setBackgroundColor(
+                    ContextCompat.getColor(
+                        this@TouristIdentityAuthActivity,
+                        R.color.md_theme_onSecondary
+                    )
+                )
+                gender = "Male"
+            }
+            femaleBtn.setOnClickListener {
+                maleBtn.setBackgroundColor(
+                    ContextCompat.getColor(
+                        this@TouristIdentityAuthActivity,
+                        R.color.md_theme_onSecondary
+                    )
+                )
+                femaleBtn.setBackgroundColor(
+                    ContextCompat.getColor(
+                        this@TouristIdentityAuthActivity,
+                        R.color.md_theme_secondaryContainer
+                    )
+                )
+                gender = "female"
+            }
+
+            foreignBtn.setOnClickListener {
+                foreignBtn.setBackgroundColor(
+                    ContextCompat.getColor(
+                        this@TouristIdentityAuthActivity,
+                        R.color.md_theme_secondaryContainer
+                    )
+                )
+                domesticBtn.setBackgroundColor(
+                    ContextCompat.getColor(
+                        this@TouristIdentityAuthActivity,
+                        R.color.md_theme_onSecondary
+                    )
+                )
+                touristFrom = "Foreign"
+            }
+            domesticBtn.setOnClickListener {
+                foreignBtn.setBackgroundColor(
+                    ContextCompat.getColor(
+                        this@TouristIdentityAuthActivity,
+                        R.color.md_theme_onSecondary
+                    )
+                )
+                domesticBtn.setBackgroundColor(
+                    ContextCompat.getColor(
+                        this@TouristIdentityAuthActivity,
+                        R.color.md_theme_secondaryContainer
+                    )
+                )
+                touristFrom = "domestic"
+            }
+        }
+
+    }
+
+    private fun showMediaOptionDialog() {
+        val options = arrayOf("Camera", "Gallery")
+        val builder = AlertDialog.Builder(this)
+        builder.setTitle("Select Media Source")
+        builder.setItems(options) { dialog, which ->
+            when (which) {
+                0 -> startCamera()
+                1 -> startGallery()
+            }
+        }
+        builder.show()
+    }
+
+    private fun startGallery() {
+        galleryResultLauncher.launch(PickVisualMediaRequest(ActivityResultContracts.PickVisualMedia.ImageOnly))
+    }
+
+    private val galleryResultLauncher = registerForActivityResult(
+        ActivityResultContracts.PickVisualMedia()
+    ) { uri: Uri? ->
+        if (uri != null) {
+            viewModel.setImageUri(uri)
+        } else {
+            Log.d("TouristIdentityAuthActivity", "No media selected")
+        }
+    }
+
+    private fun startCamera() {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+            if (checkSelfPermission(android.Manifest.permission.CAMERA) != PackageManager.PERMISSION_GRANTED) {
+                requestPermissions(
+                    arrayOf(android.Manifest.permission.CAMERA),
+                    CAMERA_PERMISSION_REQUEST_CODE
+                )
+                return
+            }
+        }
+        val newImageUri = createImageUriForCamera(this)
+        currentImageUri = newImageUri
+        viewModel.setImageUri(currentImageUri!!)
+        cameraResultLauncher.launch(currentImageUri!!)
+    }
+
+    private val cameraResultLauncher =
+        registerForActivityResult(ActivityResultContracts.TakePicture()) { isSuccess ->
+            if (isSuccess) {
+                currentImageUri?.let { uri ->
+                    viewModel.setImageUri(uri)
+                    displayImage(uri)
+                }
+            } else {
+                currentImageUri = null
+                viewModel.setImageUri(null)
+            }
+        }
+
+    private fun showImage() {
+        viewModel.imageUri.value.let { uri ->
+            try {
+                binding.profileImage.setImageURI(null)
+                binding.profileImage.setImageURI(uri)
+            } catch (e: Exception) {
+                Log.e("AddActivity", "gagal menampilkan gambar ${e.message}")
+            }
+
+        }
+    }
+
+    private fun createImageUriForCamera(context: Context): Uri {
+        var uri: Uri? = null
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
+            val contentValues = ContentValues().apply {
+                put(MediaStore.MediaColumns.DISPLAY_NAME, "$timeStamp.jpg")
+                put(MediaStore.MediaColumns.MIME_TYPE, "image/jpeg")
+                put(MediaStore.MediaColumns.RELATIVE_PATH, "Pictures/MyCamera/")
+            }
+            uri = context.contentResolver.insert(
+                MediaStore.Images.Media.EXTERNAL_CONTENT_URI,
+                contentValues
+            )
+        }
+        return uri ?: createImageUriForLegacyDevices(context)
+    }
+
+    private fun createImageUriForLegacyDevices(context: Context): Uri {
+        val fileDir = context.getExternalFilesDir(Environment.DIRECTORY_PICTURES)
+        val imageFile = File(fileDir, "/MyCamera/$timeStamp.jpg")
+        if (imageFile.parentFile?.exists() == false) {
+            imageFile.parentFile?.mkdirs()
+        }
+        return FileProvider.getUriForFile(
+            context,
+            "${context.packageName}.fileprovider",
+            imageFile
+        )
+    }
+
+    private fun displayImage(uri: Uri) {
+        try {
+            binding.profileImage.setImageURI(uri)
+        } catch (e: Exception) {
+            Log.e("TouristIdentityAuthActivity", "Failed to display image: ${e.message}")
+        }
+    }
+
+    private fun resetAllButtonColors() {
+        with(binding) {
+
+        }
+    }
+
+    companion object {
+        const val CAMERA_PERMISSION_REQUEST_CODE = 101
     }
 }

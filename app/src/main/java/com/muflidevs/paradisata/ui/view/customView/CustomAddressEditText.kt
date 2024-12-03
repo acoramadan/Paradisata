@@ -32,7 +32,6 @@ class CustomAddressEditText @JvmOverloads constructor(
                 if(s.toString().isEmpty()) showUserIcon()
                 else if(s.toString().isNotEmpty()) showClearButton()
                 else hideClearButton()
-                if(!isValidEmail(s.toString())) error = "Email Tidak Valid"
             }
 
             override fun afterTextChanged(s: Editable?) {
@@ -110,9 +109,5 @@ class CustomAddressEditText @JvmOverloads constructor(
             endOfTheText,
             bottomOfTheText
         )
-    }
-    fun isValidEmail(target: CharSequence?): Boolean {
-        if (TextUtils.isEmpty(target)) return false
-        return android.util.Patterns.EMAIL_ADDRESS.matcher(target!!).matches()
     }
 }

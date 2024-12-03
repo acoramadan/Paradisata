@@ -35,7 +35,5 @@ class LoginViewModel(application: Application): AndroidViewModel(application) {
             }
         }
     }
-    fun isUserSignedIn(): Boolean {
-        return mAuth.currentUser != null
-    }
+
 }

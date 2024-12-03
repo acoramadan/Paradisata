@@ -2,6 +2,7 @@ package com.muflidevs.paradisata.viewModel
 
 import android.app.Application
 import android.content.ContentValues.TAG
+import android.net.Uri
 import android.util.Log
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.LiveData
@@ -19,7 +20,7 @@ import kotlinx.coroutines.tasks.await
 
 class RegistrationViewModel(application: Application) : AndroidViewModel(application) {
     private val mAuth: FirebaseAuth = FirebaseAuth.getInstance()
-    private val db = FirebaseFirestore.getInstance("db-paradisata")
+    private val db = FirebaseFirestore.getInstance("db-user")
 
     private val _user = MutableLiveData<User>()
     val user: LiveData<User> get() = _user
@@ -28,6 +29,9 @@ class RegistrationViewModel(application: Application) : AndroidViewModel(applica
 
     private val _tourGuide = MutableLiveData<TourGuide>()
     val tourGuide: LiveData<TourGuide> get() = _tourGuide
+
+    private val _imageUri = MutableLiveData<Uri>()
+    val imageUri: LiveData<Uri> get() = _imageUri
 
     private val _isLoading = MutableLiveData<Boolean>()
     val isLoading: LiveData<Boolean> get() = _isLoading
@@ -135,6 +139,10 @@ class RegistrationViewModel(application: Application) : AndroidViewModel(applica
         } finally {
             _isLoading.value = false
         }
+    }
+
+    fun setImageUri(uri: Uri?) {
+        _imageUri.value = uri!!
     }
 
 }

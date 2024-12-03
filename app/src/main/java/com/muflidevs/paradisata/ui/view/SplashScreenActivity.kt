@@ -10,6 +10,7 @@ import com.google.firebase.Firebase
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.auth
 import com.muflidevs.paradisata.databinding.ActivitySplashScreenBinding
+import com.muflidevs.paradisata.ui.view.tourist.TouristIdentityAuthActivity
 
 @SuppressLint("CustomSplashScreen")
 class SplashScreenActivity : AppCompatActivity() {
@@ -24,13 +25,17 @@ class SplashScreenActivity : AppCompatActivity() {
         val firebaseUser = auth.currentUser
 
         Handler(Looper.getMainLooper()).postDelayed({
-            if (firebaseUser == null) {
-                val intent = Intent(this@SplashScreenActivity, RegisterActivity::class.java)
-                startActivity(intent)
-                finish()
-            } else {
-                startActivity(Intent(this@SplashScreenActivity, MainActivity::class.java))
-            }
+            val intent = Intent(this@SplashScreenActivity, TouristIdentityAuthActivity::class.java)
+            startActivity(intent)
+            finish()
+
+//            if (firebaseUser == null) {
+//                val intent = Intent(this@SplashScreenActivity, RegisterActivity::class.java)
+//                startActivity(intent)
+//                finish()
+//            } else {
+//                startActivity(Intent(this@SplashScreenActivity, MainActivity::class.java))
+//            }
         }, 5000)
     }
 }

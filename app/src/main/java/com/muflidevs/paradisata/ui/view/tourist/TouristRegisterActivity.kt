@@ -40,10 +40,8 @@ class TouristRegisterActivity : AppCompatActivity(), View.OnClickListener {
     private lateinit var noTelpEdtTxt: CustomNoTelephoneEditText
     private lateinit var submitBtn: CustomButton
     private lateinit var backBtn: Button
-    private lateinit var googleSignInClient: GoogleSignInClient
     private lateinit var viewModel: RegistrationViewModel
     private val RC_SIGN_IN = 9001
-    private val WEB_API_KEY = "AIzaSyBxP7csoR7JWX3AlfkHyKJQAxZq1eD_F8E"
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityTouristRegisterBinding.inflate(layoutInflater)
@@ -63,34 +61,34 @@ class TouristRegisterActivity : AppCompatActivity(), View.OnClickListener {
         //navigation
         backBtn.setOnClickListener(this)
         submitBtn.setOnClickListener(this)
-        binding.googleIcon?.setOnClickListener(this)
     }
 
     override fun onClick(view: View?) {
-        when(view?.id) {
+        when (view?.id) {
             R.id.btn_back_tourist -> {
                 finish()
             }
+
             R.id.btn_submit_tourist -> {
                 register()
-            }
-            R.id.google_icon -> {
-                signInWithGoogle()
             }
         }
     }
 
     private fun setEnabledButton() {
-        val checkUsernameInput = usernameEdtTxt.text != null && usernameEdtTxt.toString().isNotEmpty()
-        val checkPasswordInput = passwordEdtTxt.text != null && passwordEdtTxt.toString().isNotEmpty()
+        val checkUsernameInput =
+            usernameEdtTxt.text != null && usernameEdtTxt.toString().isNotEmpty()
+        val checkPasswordInput =
+            passwordEdtTxt.text != null && passwordEdtTxt.toString().isNotEmpty()
         val checkEmailInput = emailEdtTxt.text != null && emailEdtTxt.toString().isNotEmpty()
         val checkNoTelpInput = noTelpEdtTxt.text != null && noTelpEdtTxt.toString().isNotEmpty()
 
-        submitBtn.isEnabled = checkUsernameInput && checkPasswordInput && checkEmailInput && checkNoTelpInput
+        submitBtn.isEnabled =
+            checkUsernameInput && checkPasswordInput && checkEmailInput && checkNoTelpInput
     }
 
     private fun checkUserInput() {
-        usernameEdtTxt.addTextChangedListener(object: TextWatcher {
+        usernameEdtTxt.addTextChangedListener(object : TextWatcher {
             override fun beforeTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {
             }
 
@@ -102,7 +100,7 @@ class TouristRegisterActivity : AppCompatActivity(), View.OnClickListener {
             }
 
         })
-        passwordEdtTxt.addTextChangedListener(object: TextWatcher {
+        passwordEdtTxt.addTextChangedListener(object : TextWatcher {
             override fun beforeTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {
             }
 
@@ -114,7 +112,7 @@ class TouristRegisterActivity : AppCompatActivity(), View.OnClickListener {
             }
 
         })
-        emailEdtTxt.addTextChangedListener(object: TextWatcher {
+        emailEdtTxt.addTextChangedListener(object : TextWatcher {
             override fun beforeTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {
             }
 
@@ -126,7 +124,7 @@ class TouristRegisterActivity : AppCompatActivity(), View.OnClickListener {
             }
 
         })
-        noTelpEdtTxt.addTextChangedListener(object: TextWatcher {
+        noTelpEdtTxt.addTextChangedListener(object : TextWatcher {
             override fun beforeTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {
             }
 
@@ -138,6 +136,7 @@ class TouristRegisterActivity : AppCompatActivity(), View.OnClickListener {
             }
         })
     }
+
     private fun register() {
         with(binding) {
             val user = User(
@@ -147,47 +146,29 @@ class TouristRegisterActivity : AppCompatActivity(), View.OnClickListener {
                 phoneNumber = edtTxtNoTelp.text.toString()
             )
             lifecycleScope.launch {
-                val viewModel = RegistrationViewModel(application)
+                viewModel = RegistrationViewModel(application)
                 try {
                     viewModel.registerNewUser(user)
-                    Toast.makeText(this@TouristRegisterActivity,"Berhasil registrasi",Toast.LENGTH_SHORT).show()
-                }catch (e: Exception) {
-                    Toast.makeText(this@TouristRegisterActivity,"registrasi gagal ${e.message}",Toast.LENGTH_SHORT).show()
+                    Toast.makeText(
+                        this@TouristRegisterActivity,
+                        "Berhasil registrasi",
+                        Toast.LENGTH_SHORT
+                    ).show()
+                    startActivity(
+                        Intent(
+                            this@TouristRegisterActivity,
+                            TouristIdentityAuthActivity::class.java
+                        )
+                    )
+                    finish()
+                } catch (e: Exception) {
+                    Toast.makeText(
+                        this@TouristRegisterActivity,
+                        "registrasi gagal ${e.message}",
+                        Toast.LENGTH_SHORT
+                    ).show()
                 }
             }
         }
     }
-
-    private fun signInWithGoogle() {
-       val signIn = GoogleSignIn.getClient(this,gso).signInIntent
-        startActivityForResult(signIn,RC_SIGN_IN)
-    }
-
-
-    override fun onActivityResult(
-        requestCode: Int,
-        resultCode: Int,
-        data: Intent?,
-        caller: ComponentCaller
-    ) {
-        super.onActivityResult(requestCode, resultCode, data, caller)
-
-        if(requestCode == RC_SIGN_IN) {
-            val task = GoogleSignIn.getSignedInAccountFromIntent(data)
-            try {
-                val account = task.getResult(ApiException::class.java)
-                viewModel = RegistrationViewModel(application).apply {
-                    registerWithGoole(account)
-                }
-            }catch (e: Exception) {
-                Log.e(TAG,"${e.message}")
-            }
-        }
-
-    }
-    private val gso = GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
-        .requestIdToken("428329049233-9tammq5ohj2jgi6f8vribqu7et1o0g0s.apps.googleusercontent.com")
-        .requestEmail()
-        .build()
-
 }

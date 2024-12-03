@@ -113,49 +113,7 @@
             android:fontFamily="@font/poppins"
             android:hint="@string/no_telephone" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:orientation="horizontal">
 
-            <View
-                android:layout_width="0dp"
-                android:layout_height="2dp"
-                android:layout_weight="1"
-                android:background="?android:attr/listDivider" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/poppins"
-                android:paddingStart="8dp"
-                android:paddingEnd="8dp"
-                android:text="@string/daftar_dengan"
-                android:textColor="@android:color/black"
-                android:textSize="16sp" />
-
-            <View
-                android:layout_width="0dp"
-                android:layout_height="2dp"
-                android:layout_weight="1"
-                android:background="?android:attr/listDivider" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="2dp"
-            android:gravity="center">
-
-            <ImageView
-                android:id="@+id/google_icon"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="2dp"
-                android:contentDescription="@string/login_dengan_menggunakan_google"
-                android:src="@drawable/google_icon" />
-        </LinearLayout>
     </LinearLayout>
 
     <com.muflidevs.paradisata.ui.view.customView.CustomButton
