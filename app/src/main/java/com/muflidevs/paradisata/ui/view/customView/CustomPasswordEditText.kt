@@ -31,8 +31,8 @@ class CustomPasswordEditText @JvmOverloads constructor(
                 if(s.toString().isEmpty()) showUserIcon()
                 else if(s.toString().isNotEmpty()) showClearButton()
                 else hideClearButton()
+                if(s.toString().length <= 8) error = "panjang password harus lebih dari 8"
             }
-
             override fun afterTextChanged(s: Editable?) {
             }
 

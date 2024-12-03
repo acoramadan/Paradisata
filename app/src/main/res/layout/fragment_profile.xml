@@ -120,7 +120,7 @@
                 android:fontFamily="@font/poppins_medium"/>
 
             <Button
-                android:id="@+id/history"
+                android:id="@+id/logout"
                 style="?attr/materialButtonOutlinedStyle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

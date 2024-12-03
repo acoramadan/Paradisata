@@ -106,6 +106,7 @@
             android:layout_marginBottom="10dp"
             android:drawableStart="@drawable/calendar"
             android:fontFamily="@font/poppins"
+            android:inputType="date"
             android:hint="@string/date_of_birth"/>
 
         <TextView

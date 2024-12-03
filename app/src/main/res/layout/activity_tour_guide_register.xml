@@ -85,7 +85,8 @@
             android:layout_marginEnd="45dp"
             android:layout_marginBottom="10dp"
             android:drawableStart="@drawable/user_login_password_icon"
-            android:fontFamily="@font/poppins" />
+            android:fontFamily="@font/poppins"
+            android:inputType="textPassword" />
 
         <com.muflidevs.paradisata.ui.view.customView.CustomEmailEditText
             android:id="@+id/edtTxt_email"
@@ -151,6 +152,7 @@
                 android:id="@+id/google_icon"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:padding="2dp"
                 android:contentDescription="@string/login_dengan_menggunakan_google"
                 android:src="@drawable/google_icon" />
         </LinearLayout>
