@@ -62,4 +62,5 @@ class PlaceViewModel(application: Application) : AndroidViewModel(application) {
             }
         }
     }
+
 }

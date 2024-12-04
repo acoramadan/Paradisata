@@ -2,6 +2,7 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
     id("kotlin-parcelize")
+    id("com.google.devtools.ksp") version "2.1.0-1.0.29"
     alias(libs.plugins.google.gms.google.services)
 }
 
@@ -53,6 +54,7 @@ dependencies {
     //glide
     implementation(libs.glide)
 
+    //android
     implementation(libs.androidx.fragment.ktx)
     implementation(libs.androidx.lifecycle.livedata.ktx)
     implementation(libs.androidx.lifecycle.viewmodel.ktx)
@@ -61,8 +63,7 @@ dependencies {
     implementation(libs.material)
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
-    implementation(libs.tensorflow.lite.support)
-    implementation(libs.tensorflow.lite.metadata)
+    ksp(libs.androidx.room.compiler)
 
     //firebase
     implementation(libs.firebase.auth)
@@ -72,7 +73,19 @@ dependencies {
     implementation(libs.firebase.firestore)
     implementation(libs.play.services.auth)
 
+    //tflite
+    implementation(libs.tensorflow.lite.support)
+    implementation(libs.tensorflow.lite.metadata)
+    implementation(libs.tensorflow.lite)
+    implementation(libs.tensorflow.lite.gpu)
+    implementation(libs.play.services.tflite.java)
+    implementation(libs.play.services.tflite.gpu)
 
+    //room
+    implementation(libs.androidx.room.runtime)
+    implementation(libs.androidx.room.ktx)
+
+    //unitTest
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)

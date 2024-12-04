@@ -11,6 +11,7 @@ import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.auth
 import com.muflidevs.paradisata.databinding.ActivitySplashScreenBinding
 import com.muflidevs.paradisata.ui.view.tourist.TouristIdentityAuthActivity
+import com.muflidevs.paradisata.ui.view.tourist.TouristRegisterActivity
 
 @SuppressLint("CustomSplashScreen")
 class SplashScreenActivity : AppCompatActivity() {
@@ -25,7 +26,7 @@ class SplashScreenActivity : AppCompatActivity() {
         val firebaseUser = auth.currentUser
 
         Handler(Looper.getMainLooper()).postDelayed({
-            val intent = Intent(this@SplashScreenActivity, TouristIdentityAuthActivity::class.java)
+            val intent = Intent(this@SplashScreenActivity, MainActivity::class.java)
             startActivity(intent)
             finish()
 

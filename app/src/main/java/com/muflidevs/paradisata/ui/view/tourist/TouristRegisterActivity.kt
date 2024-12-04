@@ -23,6 +23,7 @@ import com.google.firebase.auth.GoogleAuthProvider
 import com.muflidevs.paradisata.R
 import com.muflidevs.paradisata.data.model.remote.registration.User
 import com.muflidevs.paradisata.databinding.ActivityTouristRegisterBinding
+import com.muflidevs.paradisata.ui.view.OtpActivity
 import com.muflidevs.paradisata.ui.view.customView.CustomButton
 import com.muflidevs.paradisata.ui.view.customView.CustomEmailEditText
 import com.muflidevs.paradisata.ui.view.customView.CustomNoTelephoneEditText
@@ -40,8 +41,7 @@ class TouristRegisterActivity : AppCompatActivity(), View.OnClickListener {
     private lateinit var noTelpEdtTxt: CustomNoTelephoneEditText
     private lateinit var submitBtn: CustomButton
     private lateinit var backBtn: Button
-    private lateinit var viewModel: RegistrationViewModel
-    private val RC_SIGN_IN = 9001
+     private lateinit var viewModel: RegistrationViewModel
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityTouristRegisterBinding.inflate(layoutInflater)
@@ -157,8 +157,8 @@ class TouristRegisterActivity : AppCompatActivity(), View.OnClickListener {
                     startActivity(
                         Intent(
                             this@TouristRegisterActivity,
-                            TouristIdentityAuthActivity::class.java
-                        )
+                            OtpActivity::class.java
+                        ).putExtra("numberPhone",user.phoneNumber)
                     )
                     finish()
                 } catch (e: Exception) {

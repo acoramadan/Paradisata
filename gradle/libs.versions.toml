@@ -19,6 +19,10 @@ material = "1.12.0"
 activity = "1.9.3"
 constraintlayout = "2.2.0"
 playServicesAuth = "21.2.0"
+playServicesTfliteJava = "16.3.0"
+roomRuntime = "2.6.1"
+tensorflowLite = "2.11.0"
+tensorflowLiteGpu = "2.11.0"
 tensorflowLiteSupport = "0.1.0"
 tensorflowLiteMetadata = "0.1.0"
 googleGmsGoogleServices = "4.4.2"
@@ -31,6 +35,9 @@ androidx-credentials = { module = "androidx.credentials:credentials", version.re
 androidx-fragment-ktx = { module = "androidx.fragment:fragment-ktx", version.ref = "fragmentKtx" }
 androidx-lifecycle-livedata-ktx = { module = "androidx.lifecycle:lifecycle-livedata-ktx", version.ref = "lifecycleViewmodelKtx" }
 androidx-lifecycle-viewmodel-ktx = { module = "androidx.lifecycle:lifecycle-viewmodel-ktx", version.ref = "lifecycleViewmodelKtx" }
+androidx-room-compiler = { module = "androidx.room:room-compiler", version.ref = "roomRuntime" }
+androidx-room-ktx = { module = "androidx.room:room-ktx", version.ref = "roomRuntime" }
+androidx-room-runtime = { module = "androidx.room:room-runtime", version.ref = "roomRuntime" }
 circleimageview = { module = "de.hdodenhof:circleimageview", version.ref = "circleimageview" }
 credentials-play-services-auth = { module = "androidx.credentials:credentials-play-services-auth", version.ref = "credentialsPlayServicesAuth" }
 firebase-bom = { module = "com.google.firebase:firebase-bom", version.ref = "firebaseBom" }
@@ -45,6 +52,10 @@ material = { group = "com.google.android.material", name = "material", version.r
 androidx-activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
 androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
 play-services-auth = { module = "com.google.android.gms:play-services-auth", version.ref = "playServicesAuth" }
+play-services-tflite-gpu = { module = "com.google.android.gms:play-services-tflite-gpu", version.ref = "playServicesTfliteJava" }
+play-services-tflite-java = { module = "com.google.android.gms:play-services-tflite-java", version.ref = "playServicesTfliteJava" }
+tensorflow-lite-gpu = { module = "org.tensorflow:tensorflow-lite-gpu", version.ref = "tensorflowLiteGpu" }
+tensorflow-lite = { module = "org.tensorflow:tensorflow-lite", version.ref = "tensorflowLite" }
 tensorflow-lite-support = { group = "org.tensorflow", name = "tensorflow-lite-support", version.ref = "tensorflowLiteSupport" }
 tensorflow-lite-metadata = { group = "org.tensorflow", name = "tensorflow-lite-metadata", version.ref = "tensorflowLiteMetadata" }
 firebase-auth = { group = "com.google.firebase", name = "firebase-auth", version.ref = "firebaseAuth" }

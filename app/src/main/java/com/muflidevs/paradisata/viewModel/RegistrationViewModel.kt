@@ -1,5 +1,6 @@
 package com.muflidevs.paradisata.viewModel
 
+import android.app.Activity
 import android.app.Application
 import android.content.ContentValues.TAG
 import android.net.Uri
@@ -7,15 +8,18 @@ import android.util.Log
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
-import androidx.lifecycle.viewModelScope
-import com.google.android.gms.auth.api.signin.GoogleSignInAccount
+
+import com.google.firebase.FirebaseException
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.PhoneAuthCredential
+import com.google.firebase.auth.PhoneAuthOptions
+import com.google.firebase.auth.PhoneAuthProvider
 import com.google.firebase.firestore.FirebaseFirestore
 import com.muflidevs.paradisata.data.model.remote.registration.TourGuide
 import com.muflidevs.paradisata.data.model.remote.registration.Tourist
 import com.muflidevs.paradisata.data.model.remote.registration.User
-import kotlinx.coroutines.launch
 import kotlinx.coroutines.tasks.await
+import java.util.concurrent.TimeUnit
 
 
 class RegistrationViewModel(application: Application) : AndroidViewModel(application) {
@@ -36,29 +40,15 @@ class RegistrationViewModel(application: Application) : AndroidViewModel(applica
     private val _isLoading = MutableLiveData<Boolean>()
     val isLoading: LiveData<Boolean> get() = _isLoading
 
-    fun registerWithGoole(account: GoogleSignInAccount) {
-        account.let {
-            val name = it.displayName ?: " "
-            val email = it.email ?: " "
-            val photoUrl = it.photoUrl ?: " "
-            val uid = FirebaseAuth.getInstance().currentUser?.uid ?: "null"
+    private val _verificationId = MutableLiveData<String>()
+    val verificationId: LiveData<String> get() = _verificationId
 
-            val userMap = hashMapOf(
-                "name" to name,
-                "email" to email,
-                "photoUrl" to photoUrl,
-                "id" to uid
-            )
+    private val _verificationState = MutableLiveData<String>()
+    val verificationState: LiveData<String> get() = _verificationState
 
-            viewModelScope.launch {
-                saveToFireStore(
-                    collection = "users",
-                    documentId = uid,
-                    data = userMap
-                )
-            }
-        }
-    }
+    private val _isValid = MutableLiveData<Boolean>()
+    val isValid: LiveData<Boolean> get() = _isValid
+
 
     suspend fun registerNewUser(user: User) {
         _isLoading.value = true
@@ -145,4 +135,58 @@ class RegistrationViewModel(application: Application) : AndroidViewModel(applica
         _imageUri.value = uri!!
     }
 
+    fun sendVerificationCode(number: String, activity: Activity) {
+        val options = PhoneAuthOptions.newBuilder(mAuth)
+            .setPhoneNumber(number)
+            .setTimeout(60L, TimeUnit.SECONDS)
+            .setActivity(activity)
+            .setCallbacks(mCallBack)
+            .build()
+        PhoneAuthProvider.verifyPhoneNumber(options)
+    }
+
+    private val mCallBack: PhoneAuthProvider.OnVerificationStateChangedCallbacks =
+        object : PhoneAuthProvider.OnVerificationStateChangedCallbacks() {
+
+            override fun onCodeSent(
+                verificationId: String,
+                forceResendingToken: PhoneAuthProvider.ForceResendingToken
+            ) {
+                super.onCodeSent(verificationId, forceResendingToken)
+                _verificationId.value = verificationId
+            }
+
+            override fun onVerificationCompleted(phoneAuthCredential: PhoneAuthCredential) {
+                val code = phoneAuthCredential.smsCode
+                code?.let {
+                    _verificationState.value = "Code received: $it"
+                    Log.e(TAG,it)
+                    verifyCode(it)
+                }
+            }
+
+            override fun onVerificationFailed(e: FirebaseException) {
+                _verificationState.value = "Verification failed: ${e.message}"
+                Log.e(TAG,"${e.message}")
+            }
+        }
+
+    fun verifyCode(code: String) {
+        val credential = PhoneAuthProvider.getCredential(_verificationId.value ?: "", code)
+        signInWithCredential(credential)
+    }
+
+    private fun signInWithCredential(credential: PhoneAuthCredential) {
+        mAuth.signInWithCredential(credential)
+            .addOnCompleteListener { task ->
+                if (task.isSuccessful) {
+                    _verificationState.value = "Sign in successful"
+                    _isValid.value = true
+                } else {
+                    _verificationState.value = "Sign in failed: ${task.exception?.message}"
+                    _isValid.value = false
+                    throw Exception("Sign in failed: ${task.exception?.message}")
+                }
+            }
+    }
 }

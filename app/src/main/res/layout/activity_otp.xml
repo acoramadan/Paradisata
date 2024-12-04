@@ -113,6 +113,7 @@
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:layout_marginEnd="8dp"
+                android:autofillHints="*"
                 android:background="@drawable/otp_input_bg"
                 android:inputType="number"
                 android:maxLength="1"
@@ -127,6 +128,7 @@
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:layout_marginEnd="8dp"
+                android:autofillHints="*"
                 android:background="@drawable/otp_input_bg"
                 android:inputType="number"
                 android:maxLength="1"
@@ -140,6 +142,37 @@
                 android:id="@+id/otp_digit_4"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
+                android:autofillHints="*"
+                android:background="@drawable/otp_input_bg"
+                android:inputType="number"
+                android:maxLength="1"
+                android:textColor="@color/md_theme_primary"
+                android:layout_marginEnd="8dp"
+
+                android:textSize="20sp"
+                android:gravity="center"
+                android:focusable="true"
+                android:importantForAccessibility="yes"/>
+            <EditText
+                android:id="@+id/otp_digit_5"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:autofillHints="*"
+                android:background="@drawable/otp_input_bg"
+                android:layout_marginEnd="8dp"
+
+                android:inputType="number"
+                android:maxLength="1"
+                android:textColor="@color/md_theme_primary"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:focusable="true"
+                android:importantForAccessibility="yes"/>
+            <EditText
+                android:id="@+id/otp_digit_6"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:autofillHints="*"
                 android:background="@drawable/otp_input_bg"
                 android:inputType="number"
                 android:maxLength="1"
@@ -154,11 +187,12 @@
             android:id="@+id/resend_otp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="9dp"
             android:fontFamily="@font/poppins_medium"
             android:gravity="center"
-            android:text="Resend OTP"
-            android:textSize="15sp" />
+            android:text="@string/resend_otp"
+
+            android:textSize="16sp" />
 
     </LinearLayout>
 
