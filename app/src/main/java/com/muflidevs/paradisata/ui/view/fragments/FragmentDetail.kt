@@ -77,9 +77,9 @@ class FragmentDetail : Fragment() {
         val activites: List<String> =
             with(binding) {
                 listOf(
-                    aktivitas1.text.toString(),
-                    aktivitas2.text.toString(),
-                    aktivitas3.text.toString()
+                    aktivitas1.text.toString().drop(1),
+                    aktivitas2.text.toString().drop(1),
+                    aktivitas3.text.toString().drop(1)
                 )
             }
         val category = dataPlaces.kategori
