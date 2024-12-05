@@ -14,6 +14,8 @@ import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.auth
 import com.muflidevs.paradisata.R
 import com.muflidevs.paradisata.databinding.FragmentProfileBinding
+import com.muflidevs.paradisata.ui.view.AppInfoActivity
+import com.muflidevs.paradisata.ui.view.EditProfileActivity
 import com.muflidevs.paradisata.ui.view.LoginActivity
 import kotlinx.coroutines.launch
 
@@ -34,8 +36,16 @@ class ProfileFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         auth = Firebase.auth
 
-        binding.logout.setOnClickListener {
-            signOut()
+        with(binding) {
+            logout.setOnClickListener {
+                signOut()
+            }
+            appInfo.setOnClickListener {
+                startActivity(Intent(requireContext(),AppInfoActivity::class.java))
+            }
+            editProfile.setOnClickListener {
+                startActivity(Intent(requireContext(),EditProfileActivity::class.java))
+            }
         }
 
     }

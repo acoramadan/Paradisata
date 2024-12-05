@@ -95,4 +95,9 @@
     <string name="otp_verification">OTP Verification</string>
     <string name="enter_otp_sent_to">Enter OTP sent to</string>
     <string name="resend_otp">Resend OTP</string>
+    <string name="app_info">App Info</string>
+    <string name="description_app">Paradisata is an application where it connects between tourist and local tour guide activity. There are two types of users on PARADISATA, they are local tour guides and tourist.in this application, users as local tour guides can offer their \'package\' that inlcludes the tour guide services and tourist accommodations such as homestay, transportation and meal.</string>
+    <string name="bangkit">bangkit</string>
+    <string name="id_team">C242-PS227</string>
+    <string name="app_information">App Info</string>
 </resources>

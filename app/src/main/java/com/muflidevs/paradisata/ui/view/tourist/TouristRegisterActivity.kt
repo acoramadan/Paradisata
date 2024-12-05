@@ -1,25 +1,15 @@
 package com.muflidevs.paradisata.ui.view.tourist
 
-import android.app.ComponentCaller
-import android.content.ContentValues.TAG
+
 import android.content.Intent
 import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
-import android.util.Log
 import android.view.View
 import android.widget.Button
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.lifecycleScope
-import com.google.android.gms.auth.api.signin.GoogleSignIn
-import com.google.android.gms.auth.api.signin.GoogleSignInAccount
-import com.google.android.gms.auth.api.signin.GoogleSignInClient
-import com.google.android.gms.auth.api.signin.GoogleSignInOptions
-import com.google.android.gms.common.api.ApiException
-import com.google.firebase.BuildConfig
-import com.google.firebase.auth.FirebaseAuth
-import com.google.firebase.auth.GoogleAuthProvider
 import com.muflidevs.paradisata.R
 import com.muflidevs.paradisata.data.model.remote.registration.User
 import com.muflidevs.paradisata.databinding.ActivityTouristRegisterBinding
@@ -32,7 +22,6 @@ import com.muflidevs.paradisata.ui.view.customView.CustomUsernameEditText
 import com.muflidevs.paradisata.viewModel.RegistrationViewModel
 import kotlinx.coroutines.launch
 
-@Suppress("DEPRECATION")
 class TouristRegisterActivity : AppCompatActivity(), View.OnClickListener {
     private lateinit var binding: ActivityTouristRegisterBinding
     private lateinit var usernameEdtTxt: CustomUsernameEditText
