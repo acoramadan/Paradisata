@@ -1,11 +1,13 @@
 package com.muflidevs.paradisata.ml
 
+import android.app.Application
 import android.content.Context
 import android.content.res.AssetManager
 import android.util.Log
 import com.google.android.gms.tflite.client.TfLiteInitializationOptions
 import com.google.android.gms.tflite.gpu.support.TfLiteGpu
 import com.google.android.gms.tflite.java.TfLite
+import com.muflidevs.paradisata.viewModel.PlaceViewModel
 import org.tensorflow.lite.InterpreterApi
 import org.tensorflow.lite.gpu.GpuDelegateFactory
 import java.io.FileInputStream
@@ -21,7 +23,6 @@ class TfLiteModel(
     private val onError: (String) -> Unit,
 ) {
     private var isGPUSupported: Boolean = false
-
     private var interpreter: InterpreterApi? = null
 
     init {
@@ -74,33 +75,57 @@ class TfLiteModel(
         }
     }
 
-    fun predict(inputData: List<Float>) {
+    fun predict(inputData: List<Float>, destinationList: List<String>, topN: Int = 10): List<String> {
+        // Membuat input array dengan tipe FloatArray sesuai inputData
         val inputArray = FloatArray(inputData.size) { index -> inputData[index] }
 
-        val outputArray = Array(1) { FloatArray(1) }  // Output array sesuai dengan model (misal hanya satu destinasi)
+        // Membuat output array sesuai dengan jumlah destinasi (misalnya 10 output untuk 10 destinasi)
+        val outputArray = FloatArray(destinationList.size) // Mengasumsikan output berjumlah sebanyak destinasi
 
         try {
+            Log.d("Input", inputArray.joinToString(", "))
+
+            // Menjalankan model untuk mendapatkan hasil output
             interpreter?.run(inputArray, outputArray)
 
-            val predictedClass = outputArray[0].withIndex().maxByOrNull { it.value }?.index
-            onResult("Prediksi destinasi wisata: ${destinationList[predictedClass!!]}") // Menampilkan nama destinasi
+            Log.d("Output", outputArray.joinToString(", "))
+
+            // Memproses output menjadi probabilitas atau skor
+            // Output array sekarang berisi skor untuk setiap destinasi
+            val topIndices = outputArray
+                .withIndex()
+                .sortedByDescending { it.value }  // Mengurutkan berdasarkan nilai tertinggi
+                .take(topN)                       // Mengambil top N rekomendasi
+                .map { it.index }                  // Mendapatkan indeks dari hasil sorting
+
+            // Mengambil destinasi berdasarkan topIndices dan mengembalikannya dalam bentuk list
+            val recommendations = topIndices
+                .map { destinationList[it] }  // Mengambil nama destinasi berdasarkan indeks
+
+            Log.d("TFLITEMODEL", "Top $topN rekomendasi destinasi wisata: ${recommendations.joinToString(", ")}")
+            Log.d("TFLITEMODEL", "Top $topN outputProbabilities: ${outputArray.joinToString { ", " }}")
+            Log.d("TFLITEMODEL", "Top $topN topIndices: $topIndices")
+
+            onResult("Rekomendasi destinasi wisata teratas: ${recommendations.joinToString(", ")}")
+
+            return recommendations  // Kembalikan list rekomendasi destinasi
         } catch (e: Exception) {
             onError("Error saat menjalankan model: ${e.message}")
+            return emptyList()  // Mengembalikan list kosong jika terjadi error
         }
     }
+
+
+
 
     fun close() {
         interpreter?.close()
     }
 
+
     companion object {
         private const val TAG = "PredictionHelper"
-        private  val destinationList = arrayOf(
-            "Gedung Sate", "Candi Cangkuang", "Rumah Sejarah Kalijati", "Benteng Pendem",
-            "Kampung Cina", "Candi Jiwa", "Museum Geologi", "Benteng Karawang",
-            "Pantai Ujung Genteng", "Kebun Teh Purwakarta", "Pantai Cikao", "Kota Tua Bogor",
-            "Cikao Park", "Keraton Kasepuhan", "Benteng Cagar Alam Pangandaran",
-            "Istana Bogor", "Curug Cimahi", "Tugu Perjuangan Karawang", "Situ Gunung", "Kawah Cibuni"
-        )
     }
+
+
 }
