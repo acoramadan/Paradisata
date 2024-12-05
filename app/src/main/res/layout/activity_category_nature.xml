@@ -5,11 +5,21 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fillViewport="true"
+    android:background="@color/md_theme_onSecondary"
     tools:context=".ui.view.category.CategoryCulinaryActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/exit_button"
@@ -25,39 +35,39 @@
             android:id="@+id/viewPager"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" />
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/textView2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:background="@android:color/transparent"
             android:fontFamily="@font/poppins_black"
+            android:gravity="center"
             android:text="@string/wisata_alam"
             android:textColor="@android:color/white"
             android:textSize="33sp"
-            app:layout_constraintTop_toTopOf="@id/viewPager"
-            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            android:layout_marginTop="60dp"
-            android:gravity="center"
-            android:background="@android:color/transparent" />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/viewPager" />
 
         <TextView
             android:id="@+id/subtitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@android:color/transparent"
             android:fontFamily="@font/poppins_medium"
+            android:gravity="center"
             android:text="@string/melangkah_menyusuri_waktu_menemukan_keabadian"
             android:textColor="@android:color/white"
             android:textSize="18sp"
-            app:layout_constraintTop_toBottomOf="@id/textView2"
-            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            android:layout_marginTop="8dp"
-            android:gravity="center"
-            android:background="@android:color/transparent" />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textView2" />
 
         <LinearLayout
             android:layout_width="match_parent"

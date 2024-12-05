@@ -84,7 +84,8 @@
             android:layout_marginEnd="45dp"
             android:layout_marginBottom="10dp"
             android:drawableStart="@drawable/user_login_password_icon"
-            android:fontFamily="@font/poppins" />
+            android:fontFamily="@font/poppins"
+            android:inputType="textPassword" />
 
         <com.muflidevs.paradisata.ui.view.customView.CustomEmailEditText
             android:id="@+id/edtTxt_email"
@@ -117,7 +118,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="37dp"
             android:layout_marginTop="8dp"
-            android:layout_marginEnd="35dp"/>
+            android:layout_marginEnd="35dp" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

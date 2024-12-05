@@ -12,7 +12,7 @@
     <string name="gambar_register">gambar register</string>
     <string name="sign_up_as_a">Sign Up As</string>
     <string name="tourist">Tourism</string>
-    <string name="tour_guide">Guide</string>
+    <string name="tour_guide">Tour Guide</string>
     <string name="login">Login</string>
     <string name="sudah_punya_akun">Already Have an Account?</string>
     <string name="sign_up_as_a_tour_guide">Sign up as a Tour Guide</string>
@@ -76,4 +76,23 @@
     <string name="fasilitas">Fasilitas</string>
     <string name="harga">Harga</string>
     <string name="jam_buka">Jam Buka</string>
+    <string name="tentang">Tentang</string>
+    <string name="contact_tour_guide">Contact Tour Guide</string>
+    <string name="home_stay">Home Stay</string>
+    <string name="facilities">Facilities</string>
+    <string name="tour_guide_recomendation">Tour Guide Recomendation</string>
+    <string name="places_recomendation">Places Recomendation</string>
+    <string name="history">History</string>
+    <string name="culinary">Culinary</string>
+    <string name="religion">Religion</string>
+    <string name="nature">Nature</string>
+    <string name="image_home">image home</string>
+    <string name="transportation">Transportation</string>
+    <string name="transportation_type">Transportation Type</string>
+    <string name="two_wheels">Two Wheels</string>
+    <string name="four_wheels">Four Wheels</string>
+    <string name="daftar_dengan">Daftar Dengan</string>
+    <string name="otp_verification">OTP Verification</string>
+    <string name="enter_otp_sent_to">Enter OTP sent to</string>
+    <string name="resend_otp">Resend OTP</string>
 </resources>

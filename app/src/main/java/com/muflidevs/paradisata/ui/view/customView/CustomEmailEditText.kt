@@ -4,6 +4,7 @@ import android.content.Context
 import android.graphics.Canvas
 import android.graphics.drawable.Drawable
 import android.text.Editable
+import android.text.TextUtils
 import android.text.TextWatcher
 import android.util.AttributeSet
 import android.view.MotionEvent
@@ -31,6 +32,7 @@ class CustomEmailEditText @JvmOverloads constructor(
                 if(s.toString().isEmpty()) showUserIcon()
                 else if(s.toString().isNotEmpty()) showClearButton()
                 else hideClearButton()
+                if(!isValidEmail(s.toString())) error = "Email Tidak Valid"
             }
 
             override fun afterTextChanged(s: Editable?) {
@@ -108,5 +110,9 @@ class CustomEmailEditText @JvmOverloads constructor(
             endOfTheText,
             bottomOfTheText
         )
+    }
+    fun isValidEmail(target: CharSequence?): Boolean {
+        if (TextUtils.isEmpty(target)) return false
+        return android.util.Patterns.EMAIL_ADDRESS.matcher(target!!).matches()
     }
 }
