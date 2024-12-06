@@ -33,6 +33,18 @@
         android:theme="@style/Theme.Paradisata"
         tools:targetApi="31">
         <activity
+            android:name=".ui.view.HistoryBookingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.view.FailedRegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.view.RegisterSuccessActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.view.ProsesRegisterActivity"
+            android:exported="false" />
+        <activity
             android:name=".ui.view.EditProfileActivity"
             android:exported="false" />
         <activity
@@ -42,7 +54,7 @@
             android:name=".ui.view.OtpActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.view.ActivityTransportationType"
+            android:name=".ui.view.tourguide.ActivityTransportationType"
             android:exported="false" />
         <activity
             android:name=".ui.view.tourguide.TourGuideDetailActivity"
@@ -63,7 +75,7 @@
             android:name=".ui.view.category.CategoryReligionActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.view.PackageInsertActivity"
+            android:name=".ui.view.tourguide.PackageInsertActivity"
             android:exported="false" />
         <activity
             android:name=".ui.view.tourist.TouristIdentityAuthActivity"

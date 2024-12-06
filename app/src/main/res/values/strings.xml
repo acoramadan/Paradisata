@@ -100,4 +100,17 @@
     <string name="bangkit">bangkit</string>
     <string name="id_team">C242-PS227</string>
     <string name="app_information">App Info</string>
+    <string name="your_data_is_being_verified_by_our_team">Your Data Is Being Verified By Our Team</string>
+    <string name="this_process_will_take_3_x_24_hours">This Process will take 3 x 24 Hours</string>
+    <string name="congratulation_now_you_are_part_of_paradisata">Congratulation now you are part of paradisata</string>
+    <string name="next">Next</string>
+    <string name="sorry_your_registration_is_failed">Sorry, your registration is failed</string>
+    <string name="you_can_try_sign_up_again">You can try sign up again</string>
+    <string name="btn_less">-</string>
+    <string name="btn_up">+</string>
+    <string name="_0">0</string>
+    <string name="total_guest">Total Guest</string>
+    <string name="my_booking">My Booking</string>
+    <string name="prosess">Prosess</string>
+    <string name="completed">Completed</string>
 </resources>
