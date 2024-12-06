@@ -55,14 +55,22 @@ data class TourGuide(
     val rating: Float,
 
     @SerializedName("JumlahUlasan")
-    val jumlahUlasan: Int
+    val jumlahUlasan: Int,
+
+    var touristRating: List<TouristRating>
 ): Parcelable
 
 @Parcelize
 data class TouristRating(
     @SerializedName("UserID")
     val idUser: Int,
+
+    @SerializedName("GuideID")
     val idTourGuide: Int,
+
+    @SerializedName("Rating")
     val rating: Float,
+
+    @SerializedName("Ulasan")
     val ulasan: String
 ): Parcelable

@@ -7,38 +7,38 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.muflidevs.paradisata.data.model.remote.json.DataPlaces
-import com.muflidevs.paradisata.data.model.remote.json.UlasanPlaces
+import com.muflidevs.paradisata.data.model.remote.json.TourGuide
+import com.muflidevs.paradisata.data.model.remote.json.TouristRating
 import com.muflidevs.paradisata.databinding.FragmentReviewBinding
-import com.muflidevs.paradisata.ui.view.adapter.ReviewListAdapter
 import com.muflidevs.paradisata.ui.view.adapter.ReviewListTourGuideAdapter
 
 
 @Suppress("DEPRECATION")
-class FragmentReview : Fragment() {
-    private lateinit var reviews: List<UlasanPlaces>
-    private lateinit var dataPlaces: DataPlaces
+class TourGuideFragmentReview : Fragment() {
+    private lateinit var reviews: List<TouristRating>
+    private lateinit var dataPlaces: TourGuide
     private lateinit var binding: FragmentReviewBinding
-    private lateinit var adapter: ReviewListAdapter
+    private lateinit var adapter: ReviewListTourGuideAdapter
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
         binding = FragmentReviewBinding.inflate(inflater,container,false)
-        dataPlaces = arguments?.getParcelable("detailPlace")!!
-        reviews = dataPlaces.ulasanList
+        dataPlaces = arguments?.getParcelable("dataReviewTourGuide")!!
+        reviews = dataPlaces.touristRating
         setupRecyleView()
 
         return binding.root
     }
 
     private fun setupRecyleView() {
-        adapter = ReviewListAdapter(requireContext()) { dataPlaces ->
+        adapter = ReviewListTourGuideAdapter(requireContext()) { dataPlaces ->
             onCategoryItemClicked(dataPlaces)
         }
         binding.rvReviews.apply {
             layoutManager = LinearLayoutManager(requireContext())
-            adapter = this@FragmentReview.adapter
+            adapter = this@TourGuideFragmentReview.adapter
         }
         adapter.submitList(reviews)
     }

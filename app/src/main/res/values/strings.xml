@@ -113,4 +113,12 @@
     <string name="my_booking">My Booking</string>
     <string name="prosess">Prosess</string>
     <string name="completed">Completed</string>
+    <string name="destinations">Destinations</string>
+    <string name="order_date">Order Date</string>
+    <string name="rating">Rating</string>
+    <string name="give_rating">Give Rating</string>
+    <string name="give_review">Give Review</string>
+    <string name="type_here">Type here</string>
+    <string name="submit">Submit</string>
+    <string name="choose_your_tour_guide">Choose Your Tour Guide</string>
 </resources>

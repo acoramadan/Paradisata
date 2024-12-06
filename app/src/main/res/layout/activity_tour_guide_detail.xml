@@ -75,7 +75,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="27dp"
-                android:layout_marginBottom="30dp"
+                android:layout_marginBottom="15dp"
                 android:layout_marginTop="3dp">
                 <ImageView
                     android:layout_width="wrap_content"
@@ -120,17 +120,44 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
 
-            <Button
-                android:id="@+id/booking_btn"
-                style="@style/Widget.Material3.Button.ElevatedButton"
+            <LinearLayout
+                android:id="@+id/btn_submit"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="@drawable/full_shape"
                 android:layout_marginStart="8dp"
                 android:layout_marginEnd="8dp"
-                android:layout_marginBottom="8dp"
-                android:backgroundTint="@color/md_theme_secondary"
-                android:text="@string/book_now"
-                android:textColor="@color/md_theme_onSecondary" />
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    android:id="@+id/price"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_bold"
+                    android:layout_gravity="center"
+                    android:textColor="@color/md_theme_onSecondary"
+                    android:padding="12dp"
+                    tools:text="Rp. 120k/night"
+                    android:layout_weight="1"/>
+                
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    
+                    <TextView
+                        android:background="@drawable/full_shape_white"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:text="@string/book_now"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/poppins_bold"
+                        app:drawableEndCompat="@drawable/arrow" />
+                </LinearLayout>
+            </LinearLayout>
         </LinearLayout>
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

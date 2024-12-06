@@ -13,6 +13,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.muflidevs.paradisata.data.model.remote.db.UserInteraction
 import com.muflidevs.paradisata.data.model.remote.json.DataPlaces
 import com.muflidevs.paradisata.data.model.remote.json.TourGuide
+import com.muflidevs.paradisata.data.model.remote.json.TouristRating
 import com.muflidevs.paradisata.databinding.FragmentHomeBinding
 import com.muflidevs.paradisata.ml.TfLiteModel
 import com.muflidevs.paradisata.ui.view.DetailActivity
@@ -36,7 +37,6 @@ class HomeFragment : Fragment() {
     private lateinit var adapterHorizontal: HomeHorizontalAdapter
     private lateinit var adapterGrid: HomeVerticalGridAdapter
     private lateinit var listRecommendation: List<String>
-    private var userSelectedCategory: String = "Wisata Alam"
     private lateinit var model: TfLiteModel
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -49,10 +49,17 @@ class HomeFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        setupRecyleView()
+        tourGuideModel.fecthTourGuideRating()
+        tourGuideModel.tourGuidesRating.value?.let {
+            setupRecyleView(it)
+        } ?: run {
+            Log.e("HomeFragment", "Tour guide ratings is null")
+            setupRecyleView(emptyList())
+        }
+
 
         dbViewModel.getAllUserInteractions().observe(viewLifecycleOwner) { userInteractions ->
-            cobaMl(userInteractions)
+            recomendationFetchMl(userInteractions)
             viewModel.loadRecommendationsPlaces(data = listRecommendation)
             viewModel.places.observe(viewLifecycleOwner) { places ->
                 Log.e("AdapterHorizontal", "$places")
@@ -97,19 +104,22 @@ class HomeFragment : Fragment() {
         startActivity(intent)
     }
 
-    private fun onCategoryItemClicked(tourGuide: TourGuide) {
+    private fun onCategoryItemClicked(tourGuide: TourGuide,dataRating: List<TouristRating>) {
         val intent = Intent(requireContext(), TourGuideDetailActivity::class.java).apply {
+            tourGuide.touristRating = dataRating
+            Log.d("Home Fragment","tourist rating : ${tourGuide.touristRating}")
             putExtra("tourGuide", tourGuide)
+
         }
         startActivity(intent)
     }
 
-    private fun setupRecyleView() {
+    private fun setupRecyleView(dataRating: List<TouristRating>) {
         adapterHorizontal = HomeHorizontalAdapter(requireContext()) { dataPlaces ->
             onCategoryItemClicked(dataPlaces)
         }
-        adapterGrid = HomeVerticalGridAdapter(requireContext()) { tourGuide ->
-            onCategoryItemClicked(tourGuide)
+        adapterGrid = HomeVerticalGridAdapter(requireContext()) { tourGuide->
+            onCategoryItemClicked(tourGuide,dataRating)
         }
         binding.categoryRv.apply {
             layoutManager =
@@ -122,7 +132,7 @@ class HomeFragment : Fragment() {
         }
     }
 
-    private fun cobaMl(userInteractions: List<UserInteraction>) {
+    private fun recomendationFetchMl(userInteractions: List<UserInteraction>) {
         model = TfLiteModel(
             modelName = "recommendation_model.tflite",
             context = requireContext(),

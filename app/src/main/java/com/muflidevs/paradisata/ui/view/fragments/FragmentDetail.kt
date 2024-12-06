@@ -23,7 +23,7 @@ class FragmentDetail : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         binding = FragmentDetailBinding.inflate(inflater, container, false)
 
         places = arguments?.getParcelable("detailPlace")

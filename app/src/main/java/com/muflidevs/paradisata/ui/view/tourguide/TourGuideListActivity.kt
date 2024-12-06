@@ -42,7 +42,7 @@ class TourGuideListActivity : AppCompatActivity() {
 
     private fun onCategoryClicked(tourGuide: TourGuide) {
         val intent = Intent(this@TourGuideListActivity,TourGuideDetailActivity::class.java).apply {
-            intent.putExtra("item",tourGuide)
+            intent.putExtra("tourGuide",tourGuide)
         }
         startActivity(intent)
 

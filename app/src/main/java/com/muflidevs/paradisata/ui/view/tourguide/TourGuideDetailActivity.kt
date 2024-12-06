@@ -12,6 +12,7 @@ import com.muflidevs.paradisata.data.model.remote.json.TourGuide
 import com.muflidevs.paradisata.databinding.ActivityTourGuideDetailBinding
 import com.muflidevs.paradisata.ui.view.fragments.FragmentDetailTourGuide
 import com.muflidevs.paradisata.ui.view.fragments.FragmentReview
+import com.muflidevs.paradisata.ui.view.fragments.TourGuideFragmentReview
 
 @Suppress("DEPRECATION")
 class TourGuideDetailActivity : AppCompatActivity() {
@@ -40,11 +41,11 @@ class TourGuideDetailActivity : AppCompatActivity() {
     @SuppressLint("CommitTransaction")
     private fun setFragment(data: TourGuide) {
         val fragmentDetail = FragmentDetailTourGuide().apply {
-           arguments = Bundle().apply {
-               putParcelable("dataTourGuide",data)
-           }
+            arguments = Bundle().apply {
+                putParcelable("dataTourGuide", data)
+            }
         }
-        val fragmentReview = FragmentReview().apply {
+        val fragmentReview = TourGuideFragmentReview().apply {
             arguments = Bundle().apply {
                 putParcelable("dataReviewTourGuide", data)
             }
@@ -55,7 +56,7 @@ class TourGuideDetailActivity : AppCompatActivity() {
             binding.frameContainer.id,
             fragmentDetail,
             FragmentDetailTourGuide::class.java.simpleName
-        )
+        ).commit()
 
         with(binding) {
             btnDetail.setOnClickListener {
@@ -63,19 +64,17 @@ class TourGuideDetailActivity : AppCompatActivity() {
                     binding.frameContainer.id,
                     fragmentDetail,
                     FragmentDetailTourGuide::class.java.simpleName
-                )
+                ).commit()
             }
             btnReviews.setOnClickListener {
                 fragmentManager.beginTransaction().replace(
                     binding.frameContainer.id,
                     fragmentReview,
-                    FragmentReview::class.java.simpleName
-                )
+                    TourGuideFragmentReview::class.java.simpleName
+                ).commit()
             }
-            bookingBtn.setOnClickListener {
-                
-            }
-            exitButton.setOnClickListener{
+
+            exitButton.setOnClickListener {
                 finish()
             }
         }

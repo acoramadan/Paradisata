@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_margin="16dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="6dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@drawable/full_shape">
+
+            <ImageView
+                android:id="@+id/image_background"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:contentDescription="@string/profile_tourguide"
+                android:scaleType="centerCrop"
+                tools:src="@tools:sample/avatars" />
+
+            <LinearLayout
+                android:id="@+id/overlay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/image_background"
+                android:background="#80000000"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:gravity="center_vertical">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profile_image"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    tools:src="@drawable/dummy_profile"
+                    app:civ_border_color="@color/md_theme_secondary"
+                    app:civ_border_width="0.5dp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginStart="8dp">
+
+                    <TextView
+                        android:id="@+id/tour_guide_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:text="tes"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="4dp">
+
+                        <ImageView
+                            android:id="@+id/star1"
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:contentDescription="@string/stars"
+                            android:src="@drawable/stars"
+                            android:layout_marginEnd="2dp" />
+
+                        <ImageView
+                            android:id="@+id/star2"
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:src="@drawable/stars"
+                            android:contentDescription="@string/stars"
+                            android:layout_marginEnd="2dp" />
+
+                        <ImageView
+                            android:id="@+id/star3"
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:src="@drawable/stars"
+                            android:contentDescription="@string/stars"
+                            android:layout_marginEnd="2dp" />
+
+                        <ImageView
+                            android:id="@+id/star4"
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:contentDescription="@string/stars"
+                            android:src="@drawable/stars"
+                            android:layout_marginEnd="2dp" />
+
+                        <ImageView
+                            android:id="@+id/star5"
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:src="@drawable/stars"
+                            android:contentDescription="@string/stars"
+                            android:layout_marginEnd="2dp" />
+
+                        <TextView
+                            android:id="@+id/rating_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            tools:text="tes"
+                            android:textColor="#FFFFFF"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="8dp"
+            android:weightSum="1">
+
+            <!-- Profile Tour Guide Section -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/destinations"
+                    android:layout_marginStart="7dp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:textColor="#000000"/>
+
+                <TextView
+                    android:id="@+id/destinations"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="7dp"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/poppins"
+                    tools:text="pahawang island\nCurup tujuh Waterfall\nPuncakMas\nLampung Museum" />
+
+                <TextView
+                    android:id="@+id/total_prize"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="7dp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:textSize="14sp"
+                    tools:text="Total: Rp. 2600k" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/order_date"
+                    android:fontFamily="@font/poppins_bold" />
+
+                <TextView
+                    android:id="@+id/date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="29/00/2029"/>
+
+                <Button
+                    android:id="@+id/status"
+                    android:layout_gravity="end"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/md_theme_secondary"
+                    android:layout_marginTop="30dp"
+                    tools:text="Proccess"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
