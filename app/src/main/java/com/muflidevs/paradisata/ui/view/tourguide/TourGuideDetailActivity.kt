@@ -2,6 +2,7 @@ package com.muflidevs.paradisata.ui.view.tourguide
 
 import android.annotation.SuppressLint
 import android.os.Bundle
+import android.util.Log
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -24,12 +25,15 @@ class TourGuideDetailActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityTourGuideDetailBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        val prices = intent.getIntExtra("price",0)
         detailTourGuide = intent.getParcelableExtra("tourGuide")!!
-
+        Log.d("TourGuide","$detailTourGuide + $prices")
+        Log.d("prices","$prices")
         with(binding) {
             detailName.text = "${detailTourGuide.name} Home Stay"
             detailLocation.text = detailTourGuide.address
             detailRating.text = detailTourGuide.rating.toString()
+            price.text = "Rp.${(detailTourGuide.prize + prices)}K/night"
             Glide.with(application)
                 .load(detailTourGuide.homestay)
                 .placeholder(R.drawable.placeholder)

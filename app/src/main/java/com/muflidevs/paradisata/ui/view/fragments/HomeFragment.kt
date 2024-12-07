@@ -49,15 +49,6 @@ class HomeFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        tourGuideModel.fecthTourGuideRating()
-        tourGuideModel.tourGuidesRating.value?.let {
-            setupRecyleView(it)
-        } ?: run {
-            Log.e("HomeFragment", "Tour guide ratings is null")
-            setupRecyleView(emptyList())
-        }
-
-
         dbViewModel.getAllUserInteractions().observe(viewLifecycleOwner) { userInteractions ->
             recomendationFetchMl(userInteractions)
             viewModel.loadRecommendationsPlaces(data = listRecommendation)
@@ -66,7 +57,7 @@ class HomeFragment : Fragment() {
                 adapterHorizontal.submitList(places)
             }
         }
-
+        setupRecyleView()
         tourGuideModel.fetchTourGuide()
         tourGuideModel.tourGuide.observe(viewLifecycleOwner) { tourGuide ->
             adapterGrid.submitList(tourGuide)
@@ -100,26 +91,25 @@ class HomeFragment : Fragment() {
     private fun onCategoryItemClicked(dataPlaces: DataPlaces) {
         val intent = Intent(requireContext(), DetailActivity::class.java).apply {
             putExtra("Item", dataPlaces)
+
         }
         startActivity(intent)
     }
 
-    private fun onCategoryItemClicked(tourGuide: TourGuide,dataRating: List<TouristRating>) {
+    private fun onCategoryItemClicked(tourGuide: TourGuide) {
         val intent = Intent(requireContext(), TourGuideDetailActivity::class.java).apply {
-            tourGuide.touristRating = dataRating
-            Log.d("Home Fragment","tourist rating : ${tourGuide.touristRating}")
             putExtra("tourGuide", tourGuide)
 
         }
         startActivity(intent)
     }
 
-    private fun setupRecyleView(dataRating: List<TouristRating>) {
+    private fun setupRecyleView() {
         adapterHorizontal = HomeHorizontalAdapter(requireContext()) { dataPlaces ->
             onCategoryItemClicked(dataPlaces)
         }
         adapterGrid = HomeVerticalGridAdapter(requireContext()) { tourGuide->
-            onCategoryItemClicked(tourGuide,dataRating)
+            onCategoryItemClicked(tourGuide)
         }
         binding.categoryRv.apply {
             layoutManager =

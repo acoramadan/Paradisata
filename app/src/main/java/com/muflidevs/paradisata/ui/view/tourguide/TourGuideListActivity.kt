@@ -19,10 +19,11 @@ class TourGuideListActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityTourGuideListBinding.inflate(layoutInflater)
         viewModel = TourGuideViewModel(application)
+        val prices = intent.getIntExtra("price",0)
         setContentView(binding.root)
         adapter = TourGuideListAdapter(this) { tourGuide ->
-            Log.d("TourguideListActivity", "data yang dikirim : $tourGuide")
-            onCategoryClicked(tourGuide)
+            Log.d("price", "data yang dikirim : $tourGuide + $prices")
+            onCategoryClicked(tourGuide,prices)
         }
 
         binding.apply {
@@ -40,9 +41,10 @@ class TourGuideListActivity : AppCompatActivity() {
     }
 
 
-    private fun onCategoryClicked(tourGuide: TourGuide) {
+    private fun onCategoryClicked(tourGuide: TourGuide,price: Int) {
         val intent = Intent(this@TourGuideListActivity,TourGuideDetailActivity::class.java).apply {
             intent.putExtra("tourGuide",tourGuide)
+            intent.putExtra("price",price)
         }
         startActivity(intent)
 

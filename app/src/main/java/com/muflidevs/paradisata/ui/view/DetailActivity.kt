@@ -2,6 +2,7 @@ package com.muflidevs.paradisata.ui.view
 
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -80,11 +81,16 @@ class DetailActivity : AppCompatActivity() {
             }
 
             bookingBtn.setOnClickListener {
-                val intent = Intent(this@DetailActivity, TourGuideListActivity::class.java)
+                val intent = Intent(this@DetailActivity, TourGuideListActivity::class.java).apply {
+                    Log.d("prices :","${parseAmount(data?.harga)}")
+                    putExtra("price",parseAmount(data?.harga))
+                }
                 startActivity(intent)
             }
         }
-
     }
-
+    private fun parseAmount(amount: String?) : Int {
+        val numberString = amount?.replace(Regex("[^\\d]"), "")
+        return numberString?.toIntOrNull() ?: 0
+    }
 }

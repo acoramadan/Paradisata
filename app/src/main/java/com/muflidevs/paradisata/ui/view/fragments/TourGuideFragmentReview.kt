@@ -26,7 +26,6 @@ class TourGuideFragmentReview : Fragment() {
     ): View {
         binding = FragmentReviewBinding.inflate(inflater,container,false)
         dataPlaces = arguments?.getParcelable("dataReviewTourGuide")!!
-        reviews = dataPlaces.touristRating
         setupRecyleView()
 
         return binding.root
