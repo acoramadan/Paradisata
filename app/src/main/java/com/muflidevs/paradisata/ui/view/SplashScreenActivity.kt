@@ -26,7 +26,7 @@ class SplashScreenActivity : AppCompatActivity() {
         val firebaseUser = auth.currentUser
 
         Handler(Looper.getMainLooper()).postDelayed({
-            val intent = Intent(this@SplashScreenActivity, MainActivity::class.java)
+            val intent = Intent(this@SplashScreenActivity, OrderActivity::class.java)
             startActivity(intent)
             finish()
 

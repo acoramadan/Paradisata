@@ -128,4 +128,6 @@
     <string name="destinations_order">Destinations Order</string>
     <string name="you_can_choose_up_to_2_destinations_in_a_day_except_the_day_when_you_check_in_and_check_out">You can choose up to 2 Destinations in a day except the day when you check in and check out</string>
     <string name="add_your_destinations">Add your destinations</string>
+    <string name="side_note">Side Note</string>
+    <string name="your_list_order">Your List Order</string>
 </resources>

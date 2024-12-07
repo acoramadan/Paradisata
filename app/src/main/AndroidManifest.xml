@@ -33,13 +33,13 @@
         android:theme="@style/Theme.Paradisata"
         tools:targetApi="31">
         <activity
-            android:name=".ui.DestinationsOrderActivity"
+            android:name=".ui.view.DestinationsOrderActivity"
             android:exported="false" />
         <activity
             android:name=".ui.view.GiveRatingActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.view.HistoryBookingActivity"
+            android:name=".ui.view.ListDestinationActivity"
             android:exported="false" />
         <activity
             android:name=".ui.view.FailedRegisterActivity"
