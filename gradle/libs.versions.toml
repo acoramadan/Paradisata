@@ -28,6 +28,8 @@ tensorflowLiteMetadata = "0.1.0"
 googleGmsGoogleServices = "4.4.2"
 firebaseAuth = "23.1.0"
 firebaseFirestore = "25.1.1"
+uikit = "2.0.0-SANDBOX"
+uikitVersion = "2.0.0"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -60,6 +62,8 @@ tensorflow-lite-support = { group = "org.tensorflow", name = "tensorflow-lite-su
 tensorflow-lite-metadata = { group = "org.tensorflow", name = "tensorflow-lite-metadata", version.ref = "tensorflowLiteMetadata" }
 firebase-auth = { group = "com.google.firebase", name = "firebase-auth", version.ref = "firebaseAuth" }
 firebase-firestore = { group = "com.google.firebase", name = "firebase-firestore", version.ref = "firebaseFirestore" }
+uikit = { module = "com.midtrans:uikit", version.ref = "uikit" }
+uikit-v200 = { module = "com.midtrans:uikit", version.ref = "uikitVersion" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
