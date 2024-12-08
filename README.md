@@ -1,5 +1,5 @@
 # PARADISATA
-![download]()
+![download](https://github.com/acoramadan/Paradisata/blob/822783762354b0c04ff5811e57a02b1f53ffeafc/Assets/Frame%202947.png)
 ## Capstone Project Product Track Bangkit Batch 2 2024
 
 Bangkit Capstone Team ID : : C242-PS227	<br>
@@ -30,7 +30,7 @@ PARADISATA is an application where it connects between tourist and local tour gu
 
 ## Documentation
 Project PLAN : [Link](https://docs.google.com/document/d/1q2nANjmLzhoAzdBLmhAOVAJ4lEluzO-7y3deEiD3Mps/edit?usp=sharing) <br>
-Project Brief : <br>
+Project Brief : [Link]() <br>
 Youtube Video Presentation : [PARADISATA]()
 
 ## System Architecture
@@ -48,21 +48,21 @@ Youtube Video Presentation : [PARADISATA]()
 ## API Documentations
 
 API Documentation Endpoint : <br>
-[Endpoint login recommend]()<br>
+[Endpoint login recommend]() <br>
 [Endpoint click recommend]()
 
 ## Datasets
 
 Dataset Links of This Project :<br>
-Google Books API: [link]()
+Tourism Place : [link](https://github.com/acoramadan/Paradisata/tree/e196c6343b865038708b1311bb24a62ceb1e6e4b/Database/Tourism_place)
+Rating_guide : [link](https://github.com/acoramadan/Paradisata/tree/e196c6343b865038708b1311bb24a62ceb1e6e4b/Database/Rating)
 
 
 ## UI/UX Design
 
-- Link Lo-Fi Design : [Lo-Fi]()
-- Link Hi-Fi Design : [Hi-Fi]()
+- Link Hi-Fi Design : [Hi-Fi](https://www.figma.com/design/ZQmT3FCk4KdWuondnqjdO1/Paradisata?node-id=1-2&t=6oJXuP8evjptao4M-1)
 - Link Demo Product : [Prototype]()
 
-## Deployment Link APK METABOOK ID
+## Deployment Link APK Paradisata
 
-Download Link APK Metabook ID:<br>[PARADISATA_apk]()
+Download Link APK Paradisata :<br>[PARADISATA_apk]()
