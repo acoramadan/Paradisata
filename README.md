@@ -54,13 +54,13 @@ API Documentation Endpoint : <br>
 ## Datasets
 
 Dataset Links of This Project :<br>
-Tourism Place : [link](https://github.com/acoramadan/Paradisata/tree/e196c6343b865038708b1311bb24a62ceb1e6e4b/Database/Tourism_place)
+Tourism Place : [link](https://github.com/acoramadan/Paradisata/tree/e196c6343b865038708b1311bb24a62ceb1e6e4b/Database/Tourism_place) <br>
 Rating_guide : [link](https://github.com/acoramadan/Paradisata/tree/e196c6343b865038708b1311bb24a62ceb1e6e4b/Database/Rating)
 
 
 ## UI/UX Design
 
-- Link Hi-Fi Design : [Hi-Fi](https://www.figma.com/design/ZQmT3FCk4KdWuondnqjdO1/Paradisata?node-id=1-2&t=6oJXuP8evjptao4M-1)
+- Link Hi-Fi Design : [Hi-Fi](https://www.figma.com/design/ZQmT3FCk4KdWuondnqjdO1/Paradisata?node-id=1-2&t=6oJXuP8evjptao4M-1) <br>
 - Link Demo Product : [Prototype]()
 
 ## Deployment Link APK Paradisata
