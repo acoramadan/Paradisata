@@ -29,8 +29,8 @@ PARADISATA is an application where it connects between tourist and local tour gu
     
 
 ## Documentation
-Project PLAN : [Link](https://docs.google.com/document/d/1q2nANjmLzhoAzdBLmhAOVAJ4lEluzO-7y3deEiD3Mps/edit?usp=sharing)
-Project Brief
+Project PLAN : [Link](https://docs.google.com/document/d/1q2nANjmLzhoAzdBLmhAOVAJ4lEluzO-7y3deEiD3Mps/edit?usp=sharing) <br>
+Project Brief : <br>
 Youtube Video Presentation : [PARADISATA]()
 
 ## System Architecture
