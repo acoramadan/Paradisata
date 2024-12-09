@@ -27,13 +27,19 @@ class TourGuideViewModel(application: Application) : AndroidViewModel(applicatio
 
     private val _tourGuidesRating = MutableLiveData<List<TouristRating>>()
     var tourGuidesRating: LiveData<List<TouristRating>> = _tourGuidesRating
-    fun fetchTourGuide() {
+    private lateinit var dataTur: List<TourGuide>
+    fun fetchTourGuide(limit: Int = 0) {
         viewModelScope.launch {
             _isLoading.value = true
             try {
-                val data = readPlacesFromRaw()
-                Log.d("TourGuideViewModel", "Data yang dikirim : $data")
-                _tourGuides.postValue(data)
+                if(limit != 0) {
+                    dataTur = readPlacesFromRaw().take(limit)
+                } else {
+                    dataTur = readPlacesFromRaw()
+                }
+
+                Log.d("TourGuideViewModel", "Data yang dikirim : $dataTur")
+                _tourGuides.postValue(dataTur)
 
             } catch (e: Exception) {
                 Log.e("TourGuideViewModel", "${e.message}")

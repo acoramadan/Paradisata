@@ -10,10 +10,11 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.bumptech.glide.Glide
+import com.muflidevs.paradisata.R
 import com.muflidevs.paradisata.data.model.remote.db.UserInteraction
 import com.muflidevs.paradisata.data.model.remote.json.DataPlaces
 import com.muflidevs.paradisata.data.model.remote.json.TourGuide
-import com.muflidevs.paradisata.data.model.remote.json.TouristRating
 import com.muflidevs.paradisata.databinding.FragmentHomeBinding
 import com.muflidevs.paradisata.ml.TfLiteModel
 import com.muflidevs.paradisata.ui.view.DetailActivity
@@ -62,7 +63,14 @@ class HomeFragment : Fragment() {
         tourGuideModel.tourGuide.observe(viewLifecycleOwner) { tourGuide ->
             adapterGrid.submitList(tourGuide)
         }
+        with(binding) {
+            Glide.with(requireActivity())
+                .load(R.drawable.profil_image)
+                .placeholder(R.drawable.placeholder)
+                .into(binding.profileImage)
 
+            userName.text = "Ahmad Mufli Ramadhan"
+        }
         iconBarClick()
     }
 
@@ -108,7 +116,7 @@ class HomeFragment : Fragment() {
         adapterHorizontal = HomeHorizontalAdapter(requireContext()) { dataPlaces ->
             onCategoryItemClicked(dataPlaces)
         }
-        adapterGrid = HomeVerticalGridAdapter(requireContext()) { tourGuide->
+        adapterGrid = HomeVerticalGridAdapter(requireContext()) { tourGuide ->
             onCategoryItemClicked(tourGuide)
         }
         binding.categoryRv.apply {
@@ -130,6 +138,7 @@ class HomeFragment : Fragment() {
                 Log.d("HomeFragment", result)
             },
             onError = { error ->
+                Log.d("HomeFragment", error)
             }
         )
         val data = viewModel.readPlacesFromRawString()
