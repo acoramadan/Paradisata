@@ -10,6 +10,7 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 
 import com.google.firebase.FirebaseException
+import com.google.firebase.auth.AuthResult
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.PhoneAuthCredential
 import com.google.firebase.auth.PhoneAuthOptions
@@ -53,8 +54,7 @@ class RegistrationViewModel(application: Application) : AndroidViewModel(applica
     suspend fun registerNewUser(user: User) {
         _isLoading.value = true
         try {
-            val authResult = mAuth.createUserWithEmailAndPassword(user.email, user.password).await()
-
+            var authResult = mAuth.createUserWithEmailAndPassword(user.email, user.password).await()
             val userMap = hashMapOf(
                 "userName" to user.userName,
                 "email" to user.email,
@@ -67,6 +67,7 @@ class RegistrationViewModel(application: Application) : AndroidViewModel(applica
                 data = userMap
             )
             _user.value = User(
+                id = authResult.user?.uid ?: " ",
                 email = user.email,
                 password = user.password,
                 userName = user.userName,
@@ -79,7 +80,7 @@ class RegistrationViewModel(application: Application) : AndroidViewModel(applica
         }
     }
 
-    suspend fun registerTourist(tourist: Tourist) {
+    suspend fun registerTourist(tourist: Tourist, documentId: String) {
         _isLoading.value = true
         try {
             val data = hashMapOf(
@@ -89,8 +90,13 @@ class RegistrationViewModel(application: Application) : AndroidViewModel(applica
                 "touristFrom" to tourist.touristFrom,
                 "photo" to tourist.photo
             )
-
-            saveToFireStore("user", "tourist", data = data)
+            saveToFireStore(
+                collection = "user",
+                subCollection = "tourist",  // Nama subkoleksi
+                documentId = documentId, // ID dokumen user yang valid
+                data = data
+            )
+            Log.d("authresulfirebase", "${documentId}")
             _tourist.value = tourist
 
         } catch (e: Exception) {
@@ -99,6 +105,7 @@ class RegistrationViewModel(application: Application) : AndroidViewModel(applica
             _isLoading.value = false
         }
     }
+
 
     private suspend fun saveToFireStore(
         collection: String,
@@ -113,8 +120,8 @@ class RegistrationViewModel(application: Application) : AndroidViewModel(applica
                     db.collection(collection).document(documentId)
                         .set(data)
                         .await()
+                    Log.d("RegistrationViewModel", "DocumentSnapshot successfully written!")
                 }
-                Log.d("RegistrationViewModel", "DocumentSnapshot successfully written!")
             } else {
                 if (documentId != null) {
                     db.collection(collection).document(documentId)
@@ -122,6 +129,7 @@ class RegistrationViewModel(application: Application) : AndroidViewModel(applica
                         .document()
                         .set(data)
                         .await()
+                    Log.d("RegistrationViewModel", "Document added to subcollection successfully!")
                 }
             }
         } catch (e: Exception) {
@@ -130,6 +138,7 @@ class RegistrationViewModel(application: Application) : AndroidViewModel(applica
             _isLoading.value = false
         }
     }
+
 
     fun setImageUri(uri: Uri?) {
         _imageUri.value = uri!!
@@ -160,14 +169,14 @@ class RegistrationViewModel(application: Application) : AndroidViewModel(applica
                 val code = phoneAuthCredential.smsCode
                 code?.let {
                     _verificationState.value = "Code received: $it"
-                    Log.e(TAG,it)
+                    Log.e(TAG, it)
                     verifyCode(it)
                 }
             }
 
             override fun onVerificationFailed(e: FirebaseException) {
                 _verificationState.value = "Verification failed: ${e.message}"
-                Log.e(TAG,"${e.message}")
+                Log.e(TAG, "${e.message}")
             }
         }
 
@@ -189,4 +198,5 @@ class RegistrationViewModel(application: Application) : AndroidViewModel(applica
                 }
             }
     }
+
 }

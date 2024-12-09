@@ -4,6 +4,7 @@ import android.annotation.SuppressLint
 import android.app.Activity
 import android.content.ContentValues
 import android.content.Context
+import android.content.Intent
 import android.content.pm.PackageManager
 import android.graphics.Bitmap
 import android.net.Uri
@@ -12,6 +13,7 @@ import android.os.Bundle
 import android.os.Environment
 import android.provider.MediaStore
 import android.util.Log
+import android.widget.Toast
 import androidx.activity.result.PickVisualMediaRequest
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AlertDialog
@@ -19,9 +21,13 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import androidx.core.content.FileProvider
 import androidx.lifecycle.ViewModelProvider
+import androidx.lifecycle.lifecycleScope
 import com.muflidevs.paradisata.R
+import com.muflidevs.paradisata.data.model.remote.json.Tourist
 import com.muflidevs.paradisata.databinding.ActivityTouristIdentityAuthBinding
+import com.muflidevs.paradisata.ui.view.RegisterSuccessActivity
 import com.muflidevs.paradisata.viewModel.RegistrationViewModel
+import kotlinx.coroutines.launch
 import java.io.File
 import java.text.SimpleDateFormat
 import java.util.Date
@@ -114,6 +120,9 @@ class TouristIdentityAuthActivity : AppCompatActivity() {
                     )
                 )
                 touristFrom = "domestic"
+            }
+            btnSubmitTourist.setOnClickListener {
+                regsiter()
             }
         }
 
@@ -224,9 +233,40 @@ class TouristIdentityAuthActivity : AppCompatActivity() {
         }
     }
 
-    private fun resetAllButtonColors() {
-        with(binding) {
-
+    private fun regsiter() {
+        try {
+            with(binding) {
+                val tourist = com.muflidevs.paradisata.data.model.remote.registration.Tourist(
+                    fullName = edtTxtFullname.text.toString(),
+                    address = edtTxtAddress.text.toString(),
+                    gender = gender,
+                    touristFrom = touristFrom,
+                    photo = currentImageUri.toString()
+                )
+                val uuid = intent.getStringExtra("extra_uuid")
+                lifecycleScope.launch {
+                    viewModel = RegistrationViewModel(application)
+                    try {
+                        viewModel.registerTourist(tourist,uuid?: " ")
+                        Toast.makeText(
+                            this@TouristIdentityAuthActivity,
+                            "Berhasil Registrasi",
+                            Toast.LENGTH_SHORT
+                        ).show()
+                        startActivity(
+                            Intent(
+                                this@TouristIdentityAuthActivity,
+                                RegisterSuccessActivity::class.java
+                            )
+                        )
+                        finish()
+                    } catch (e: Exception) {
+                        Log.e("TourisIdentityAuthActivity", "${e.message}")
+                    }
+                }
+            }
+        } catch(e: Exception) {
+            Log.e("TourisIdentityAuthActivity", "${e.message}")
         }
     }
 
