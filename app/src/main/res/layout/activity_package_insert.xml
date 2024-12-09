@@ -71,7 +71,7 @@
             android:textSize="20sp" />
 
         <ImageView
-            android:id="@+id/image_ktp"
+            android:id="@+id/image_homestay"
             android:layout_width="200dp"
             android:layout_height="117dp"
             android:layout_gravity="center"
@@ -144,7 +144,7 @@
     </LinearLayout>
 
     <com.muflidevs.paradisata.ui.view.customView.CustomButton
-        android:id="@+id/btn_submit_tourist"
+        android:id="@+id/btn_submit"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"

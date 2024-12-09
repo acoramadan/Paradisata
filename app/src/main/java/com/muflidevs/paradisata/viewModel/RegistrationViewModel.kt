@@ -16,6 +16,7 @@ import com.google.firebase.auth.PhoneAuthCredential
 import com.google.firebase.auth.PhoneAuthOptions
 import com.google.firebase.auth.PhoneAuthProvider
 import com.google.firebase.firestore.FirebaseFirestore
+import com.muflidevs.paradisata.data.model.remote.registration.PackageName
 import com.muflidevs.paradisata.data.model.remote.registration.TourGuide
 import com.muflidevs.paradisata.data.model.remote.registration.Tourist
 import com.muflidevs.paradisata.data.model.remote.registration.User
@@ -38,6 +39,8 @@ class RegistrationViewModel(application: Application) : AndroidViewModel(applica
     private val _imageUri = MutableLiveData<Uri>()
     val imageUri: LiveData<Uri> get() = _imageUri
 
+    private val _packageName = MutableLiveData<PackageName>()
+    val packageName: LiveData<PackageName> get() = _packageName
     private val _isLoading = MutableLiveData<Boolean>()
     val isLoading: LiveData<Boolean> get() = _isLoading
 
@@ -54,8 +57,9 @@ class RegistrationViewModel(application: Application) : AndroidViewModel(applica
     suspend fun registerNewUser(user: User) {
         _isLoading.value = true
         try {
-            var authResult = mAuth.createUserWithEmailAndPassword(user.email, user.password).await()
+            val authResult = mAuth.createUserWithEmailAndPassword(user.email, user.password).await()
             val userMap = hashMapOf(
+                "id" to user.id,
                 "userName" to user.userName,
                 "email" to user.email,
                 "password" to user.password,
@@ -63,11 +67,11 @@ class RegistrationViewModel(application: Application) : AndroidViewModel(applica
             )
             saveToFireStore(
                 collection = "user",
-                documentId = authResult.user?.uid ?: "",
+                documentId = user.id,
                 data = userMap
             )
             _user.value = User(
-                id = authResult.user?.uid ?: " ",
+                id = user.id,
                 email = user.email,
                 password = user.password,
                 userName = user.userName,
@@ -84,6 +88,7 @@ class RegistrationViewModel(application: Application) : AndroidViewModel(applica
         _isLoading.value = true
         try {
             val data = hashMapOf(
+                "id" to tourist.id,
                 "fullName" to tourist.fullName,
                 "address" to tourist.address,
                 "gender" to tourist.gender,
@@ -106,11 +111,70 @@ class RegistrationViewModel(application: Application) : AndroidViewModel(applica
         }
     }
 
+    suspend fun registerTourguide(tourGuide: TourGuide, documentId: String) {
+        _isLoading.value = true
+        try {
+            val data = hashMapOf(
+                "id" to tourGuide.id,
+                "fullName" to tourGuide.fullName,
+                "address" to tourGuide.address,
+                "gender" to tourGuide.gender,
+                "dateOfBirth" to tourGuide.dateOfBirth,
+                "photoKtp" to tourGuide.photo
+            )
+            saveToFireStore(
+                collection = "user",
+                subCollection = "tourGuide",
+                documentId = documentId,
+                data = data
+            )
+            Log.d("authresulfirebase", documentId)
+            _tourGuide.value = tourGuide
+
+        } catch (e: Exception) {
+            Log.e(TAG, "Gagal menyimpan data ${e.message}")
+        } finally {
+            _isLoading.value = false
+        }
+    }
+
+    suspend fun registerPackageTourguide(packageName: PackageName, documentId: String,secondDocumentId: String?) {
+        _isLoading.value = true
+        try {
+            val data = hashMapOf(
+                "id" to packageName.id,
+                "package_name" to packageName.name,
+                "address" to packageName.address,
+                "facilities" to packageName.facilities,
+                "homestayPhoto" to packageName.homeStayPhoto,
+                "totalGuest" to packageName.totalGuest
+            )
+            saveToFireStore(
+                collection = "user",
+                subCollection = "tourGuide",
+                thirdCollection = "package",
+                documentId = documentId,
+                secondDocumentId = secondDocumentId,
+                data = data
+            )
+            Log.d("authresulfirebase", documentId)
+            _packageName.value = packageName
+
+        } catch (e: Exception) {
+            Log.e(TAG, "Gagal menyimpan data ${e.message}")
+        } finally {
+            _isLoading.value = false
+        }
+    }
+
+
 
     private suspend fun saveToFireStore(
         collection: String,
         subCollection: String? = null,
+        thirdCollection: String? = null,
         documentId: String? = null,
+        secondDocumentId: String? = null,
         data: Map<String, Any>
     ) {
         _isLoading.value = true
@@ -124,6 +188,17 @@ class RegistrationViewModel(application: Application) : AndroidViewModel(applica
                 }
             } else {
                 if (documentId != null) {
+                    if (secondDocumentId != null) {
+                        db.collection(collection).document(documentId)
+                            .collection(subCollection).document(secondDocumentId)
+                            .collection(thirdCollection ?: "package").document()
+                            .set(data)
+                            .await()
+                        Log.d(
+                            "RegistrationViewModel",
+                            "Document added to Thirdcollection successfully!"
+                        )
+                    }
                     db.collection(collection).document(documentId)
                         .collection(subCollection)
                         .document()

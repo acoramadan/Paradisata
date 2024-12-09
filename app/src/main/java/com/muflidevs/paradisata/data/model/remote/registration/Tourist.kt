@@ -5,6 +5,7 @@ import kotlinx.parcelize.Parcelize
 
 @Parcelize
 data class Tourist(
+    var id: String,
     var fullName: String,
     var address: String,
     var gender: String,

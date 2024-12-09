@@ -32,6 +32,7 @@ import java.io.File
 import java.text.SimpleDateFormat
 import java.util.Date
 import java.util.Locale
+import java.util.UUID
 
 @Suppress("DEPRECATION")
 class TouristIdentityAuthActivity : AppCompatActivity() {
@@ -236,14 +237,15 @@ class TouristIdentityAuthActivity : AppCompatActivity() {
     private fun regsiter() {
         try {
             with(binding) {
+                val uuid = intent.getStringExtra("extra_uuid")
                 val tourist = com.muflidevs.paradisata.data.model.remote.registration.Tourist(
+                    id= UUID.randomUUID().toString(),
                     fullName = edtTxtFullname.text.toString(),
                     address = edtTxtAddress.text.toString(),
                     gender = gender,
                     touristFrom = touristFrom,
                     photo = currentImageUri.toString()
                 )
-                val uuid = intent.getStringExtra("extra_uuid")
                 lifecycleScope.launch {
                     viewModel = RegistrationViewModel(application)
                     try {

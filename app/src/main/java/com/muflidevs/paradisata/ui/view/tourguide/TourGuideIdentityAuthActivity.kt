@@ -1,34 +1,46 @@
 package com.muflidevs.paradisata.ui.view.tourguide
 
+import android.annotation.SuppressLint
+import android.app.DatePickerDialog
 import android.content.ContentValues
+import android.content.ContentValues.TAG
 import android.content.Context
+import android.content.Intent
 import android.content.pm.PackageManager
+import android.icu.util.Calendar
 import android.net.Uri
 import android.os.Build
 import android.os.Bundle
 import android.os.Environment
 import android.provider.MediaStore
 import android.util.Log
+import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.activity.result.PickVisualMediaRequest
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.content.ContextCompat
 import androidx.core.content.FileProvider
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.lifecycle.ViewModelProvider
+import androidx.lifecycle.lifecycleScope
 import com.muflidevs.paradisata.R
+import com.muflidevs.paradisata.data.model.remote.registration.TourGuide
 import com.muflidevs.paradisata.databinding.ActivityTourGuideIdentityAuthBinding
 import com.muflidevs.paradisata.databinding.ActivityTourGuideListBinding
 import com.muflidevs.paradisata.databinding.ActivityTouristIdentityAuthBinding
+import com.muflidevs.paradisata.ui.view.ProsesRegisterActivity
 import com.muflidevs.paradisata.ui.view.tourist.TouristIdentityAuthActivity
 import com.muflidevs.paradisata.ui.view.tourist.TouristIdentityAuthActivity.Companion
 import com.muflidevs.paradisata.viewModel.RegistrationViewModel
+import kotlinx.coroutines.launch
 import java.io.File
 import java.text.SimpleDateFormat
 import java.util.Date
 import java.util.Locale
+import java.util.UUID
 
 class TourGuideIdentityAuthActivity : AppCompatActivity() {
     private lateinit var binding:
@@ -36,9 +48,9 @@ class TourGuideIdentityAuthActivity : AppCompatActivity() {
     private val FILENAME_FORMAT = "yyyyMMdd_HHmmss"
     private lateinit var viewModel: RegistrationViewModel
     private val timeStamp: String =
-        SimpleDateFormat(FILENAME_FORMAT, Locale.US).
-        format(Date())
+        SimpleDateFormat(FILENAME_FORMAT, Locale.US).format(Date())
     private var currentImageUri: Uri? = null
+    private lateinit var gender: String
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -48,9 +60,10 @@ class TourGuideIdentityAuthActivity : AppCompatActivity() {
                 .inflate(layoutInflater)
 
         setContentView(binding.root)
-        viewModel = ViewModelProvider(this).get(RegistrationViewModel::class.java)
+        viewModel = ViewModelProvider(this)
+            .get(RegistrationViewModel::class.java)
 
-        viewModel.imageUri.observe(this) {uri ->
+        viewModel.imageUri.observe(this) { uri ->
             uri.let {
                 currentImageUri = it
                 showImage()
@@ -60,9 +73,60 @@ class TourGuideIdentityAuthActivity : AppCompatActivity() {
             imageKtp.setOnClickListener {
                 showMediaOptionDialog()
             }
+            maleBtn.setOnClickListener {
+                maleBtn.setBackgroundColor(
+                    ContextCompat.getColor(
+                        this@TourGuideIdentityAuthActivity,
+                        R.color.md_theme_secondaryContainer
+                    )
+                )
+                femaleBtn.setBackgroundColor(
+                    ContextCompat.getColor(
+                        this@TourGuideIdentityAuthActivity,
+                        R.color.md_theme_onSecondary
+                    )
+                )
+                gender = "Male"
+            }
+            femaleBtn.setOnClickListener {
+                maleBtn.setBackgroundColor(
+                    ContextCompat.getColor(
+                        this@TourGuideIdentityAuthActivity,
+                        R.color.md_theme_onSecondary
+                    )
+                )
+                femaleBtn.setBackgroundColor(
+                    ContextCompat.getColor(
+                        this@TourGuideIdentityAuthActivity,
+                        R.color.md_theme_secondaryContainer
+                    )
+                )
+                gender = "female"
+            }
+            edtTxtDatebirth.setOnClickListener {
+                val calendar = java.util.Calendar.getInstance()
 
+                val year = calendar.get(Calendar.YEAR)
+                val month = calendar.get(Calendar.MONTH)
+                val day = calendar.get(Calendar.DAY_OF_MONTH)
+
+                val datePickerDialog = DatePickerDialog(
+                    this@TourGuideIdentityAuthActivity,
+                    { _, selectedYear, selectedMonth, selectedDay ->
+                        val date = "$selectedDay/${selectedMonth + 1}/$selectedYear"
+                        binding.edtTxtDatebirth.setText(date)
+                    },
+                    year, month, day
+                )
+
+                datePickerDialog.show()
+            }
+            btnSubmitTourist.setOnClickListener {
+                register()
+            }
         }
     }
+
     private fun showMediaOptionDialog() {
         val options = arrayOf("Camera", "Gallery")
         val builder = AlertDialog.Builder(this)
@@ -95,7 +159,7 @@ class TourGuideIdentityAuthActivity : AppCompatActivity() {
             if (checkSelfPermission(android.Manifest.permission.CAMERA) != PackageManager.PERMISSION_GRANTED) {
                 requestPermissions(
                     arrayOf(android.Manifest.permission.CAMERA),
-                    TouristIdentityAuthActivity.CAMERA_PERMISSION_REQUEST_CODE
+                    CAMERA_PERMISSION_REQUEST_CODE
                 )
                 return
             }
@@ -162,9 +226,53 @@ class TourGuideIdentityAuthActivity : AppCompatActivity() {
 
     private fun displayImage(uri: Uri) {
         try {
-            binding.profileImage.setImageURI(uri)
+            binding.imageKtp.setImageURI(uri)
         } catch (e: Exception) {
             Log.e("TouristIdentityAuthActivity", "Failed to display image: ${e.message}")
+        }
+    }
+    @SuppressLint("SimpleDateFormat")
+    private fun register() {
+        val dateFormat = SimpleDateFormat("dd/MM/yyyy")
+        with(binding) {
+            val tourGuide = dateFormat.parse(binding.edtTxtDatebirth.text.toString())?.let {
+                TourGuide(
+                    id = UUID.randomUUID().toString(),
+                    fullName = edtTxtFullname.text.toString(),
+                    address = edtTxtAddress.text.toString(),
+                    gender =  gender,
+                    dateOfBirth = it.toString(),
+                    photo = currentImageUri.toString()
+                )
+            }
+            val uuid = intent.getStringExtra("extra_uuid")
+            try {
+                lifecycleScope.launch {
+                    viewModel = RegistrationViewModel(application)
+
+                    viewModel.registerTourguide(tourGuide = tourGuide!!,uuid ?: "")
+                    Toast.makeText(
+                        this@TourGuideIdentityAuthActivity,
+                        "Berhasil Registrasi",
+                        Toast.LENGTH_SHORT
+                    ).show()
+
+                    startActivity(
+                        Intent(
+                            this@TourGuideIdentityAuthActivity,
+                            ProsesRegisterActivity::class.java
+                        ).apply {
+                            putExtra("extra_uuid_1",uuid)
+                            Log.d("TourGuideIdentity","UUID1 : $uuid")
+                            putExtra("extra_uuid_2",tourGuide.id)
+                            Log.d("TourGuideIdentitiy   ","UUID2 : ${viewModel.tourGuide.value?.id}")
+                        }
+                    )
+                    finish()
+                }
+            }catch (e: Exception) {
+                Log.d("register Tour Guide",e.message!!)
+            }
         }
     }
     companion object {

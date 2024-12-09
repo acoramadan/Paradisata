@@ -104,6 +104,9 @@
             android:name=".ui.view.tourguide.TourGuideRegisterActivity"
             android:exported="false" />
         <activity
+            android:name=".ui.view.tourguide.TourGuideIdentityAuthActivity"
+            android:exported="false"/>
+        <activity
             android:name=".ui.view.tourist.TouristRegisterActivity"
             android:exported="false" />
         <activity
