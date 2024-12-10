@@ -25,10 +25,20 @@ class TourGuideDetailActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityTourGuideDetailBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        val prices = intent.getIntExtra("price",0)
-        detailTourGuide = intent.getParcelableExtra("tourGuide")!!
-        Log.d("TourGuide","$detailTourGuide + $prices")
-        Log.d("prices","$prices")
+        val prices = intent.getIntExtra("price", 0)
+        Log.d(
+            "TourGuideDetailActivity",
+            "Data yang diterima : ${
+                intent.getParcelableExtra<TourGuide>("tourGuide") ?: intent.getParcelableExtra(
+                    "tourGuideKe2"
+                )!!
+            }"
+        )
+        detailTourGuide = intent.getParcelableExtra("tourGuide")
+            ?: intent.getParcelableExtra("tourGuideKe2")!!
+
+        Log.d("TourGuide", "$detailTourGuide + $prices")
+        Log.d("prices", "$prices")
         with(binding) {
             detailName.text = "${detailTourGuide.name} Home Stay"
             detailLocation.text = detailTourGuide.address

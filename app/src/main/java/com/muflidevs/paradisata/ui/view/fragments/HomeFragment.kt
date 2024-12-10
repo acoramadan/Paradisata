@@ -31,17 +31,20 @@ import com.muflidevs.paradisata.viewModel.PlaceViewModel
 import com.muflidevs.paradisata.viewModel.TourGuideViewModel
 import com.muflidevs.paradisata.viewModel.TouristViewModel
 import com.muflidevs.paradisata.viewModel.UserViewModel
+import com.muflidevs.paradisata.viewModel.factory.TourGuideViewModelFactory
 
 class HomeFragment : Fragment() {
     private val touristModel: TouristViewModel by viewModels()
     private val userViewModel: UserViewModel by viewModels()
     private val viewModel: PlaceViewModel by viewModels()
-    private val tourGuideModel: TourGuideViewModel by viewModels()
+    private val tourGuideModel: TourGuideViewModel by viewModels {
+        TourGuideViewModelFactory(requireActivity().application)
+    }
     private val dbViewModel: DbViewModel by viewModels()
     private lateinit var binding: FragmentHomeBinding
     private lateinit var adapterHorizontal: HomeHorizontalAdapter
     private lateinit var adapterGrid: HomeVerticalGridAdapter
-    private lateinit var listRecommendation: List<String>
+    private var listRecommendation: List<String> = emptyList()
     private lateinit var model: TfLiteModel
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -115,8 +118,8 @@ class HomeFragment : Fragment() {
     private fun onCategoryItemClicked(tourGuide: TourGuide) {
         val intent = Intent(requireContext(), TourGuideDetailActivity::class.java).apply {
             putExtra("tourGuide", tourGuide)
-
         }
+        Log.d("HomeFragment", "Data yang dikirimkan $tourGuide")
         startActivity(intent)
     }
 
@@ -127,12 +130,12 @@ class HomeFragment : Fragment() {
         adapterGrid = HomeVerticalGridAdapter(requireContext()) { tourGuide ->
             onCategoryItemClicked(tourGuide)
         }
-        binding.categoryRv.apply {
+        binding.rvVisited.apply {
             layoutManager =
                 LinearLayoutManager(requireContext(), LinearLayoutManager.HORIZONTAL, false)
             adapter = this@HomeFragment.adapterHorizontal
         }
-        binding.tourGuideRecomendation.apply {
+        binding.rvGuide.apply {
             layoutManager = GridLayoutManager(requireContext(), 2)
             adapter = this@HomeFragment.adapterGrid
         }
