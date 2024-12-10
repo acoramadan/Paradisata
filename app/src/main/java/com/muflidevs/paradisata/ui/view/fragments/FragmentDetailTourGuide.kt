@@ -26,7 +26,6 @@ class FragmentDetailTourGuide : Fragment() {
 
         with(binding) {
             tvNameTourGuide.text = tourGuide.name
-            tvGuest.text = tourGuide.totalGuest.toString()
             tourGuideDescription.text = tourGuide.about
             tvDetailVehicle.text = tourGuide.transportationType
             Glide.with(requireActivity())
