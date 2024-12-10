@@ -231,26 +231,28 @@ class TourGuideIdentityAuthActivity : AppCompatActivity() {
             Log.e("TouristIdentityAuthActivity", "Failed to display image: ${e.message}")
         }
     }
+
     @SuppressLint("SimpleDateFormat")
     private fun register() {
         val dateFormat = SimpleDateFormat("dd/MM/yyyy")
         with(binding) {
-            val tourGuide = dateFormat.parse(binding.edtTxtDatebirth.text.toString())?.let {
-                TourGuide(
-                    id = UUID.randomUUID().toString(),
-                    fullName = edtTxtFullname.text.toString(),
-                    address = edtTxtAddress.text.toString(),
-                    gender =  gender,
-                    dateOfBirth = it.toString(),
-                    photo = currentImageUri.toString()
-                )
-            }
+            val tourGuide =
+                dateFormat.parse(binding.edtTxtDatebirth.text.toString())?.let {
+                    TourGuide(
+                        id = UUID.randomUUID().toString(),
+                        fullName = edtTxtFullname.text.toString(),
+                        address = edtTxtAddress.text.toString(),
+                        gender = gender,
+                        dateOfBirth = it.toString(),
+                        photo = currentImageUri.toString()
+                    )
+                }
             val uuid = intent.getStringExtra("extra_uuid")
             try {
                 lifecycleScope.launch {
                     viewModel = RegistrationViewModel(application)
 
-                    viewModel.registerTourguide(tourGuide = tourGuide!!,uuid ?: "")
+                    viewModel.registerTourguide(tourGuide = tourGuide!!, uuid ?: "", tourGuide.id)
                     Toast.makeText(
                         this@TourGuideIdentityAuthActivity,
                         "Berhasil Registrasi",
@@ -260,21 +262,22 @@ class TourGuideIdentityAuthActivity : AppCompatActivity() {
                     startActivity(
                         Intent(
                             this@TourGuideIdentityAuthActivity,
-                            ProsesRegisterActivity::class.java
+                            PackageInsertActivity::class.java
                         ).apply {
-                            putExtra("extra_uuid_1",uuid)
-                            Log.d("TourGuideIdentity","UUID1 : $uuid")
-                            putExtra("extra_uuid_2",tourGuide.id)
-                            Log.d("TourGuideIdentitiy   ","UUID2 : ${viewModel.tourGuide.value?.id}")
+                            putExtra("extra_uuid_1", uuid)
+                            Log.d("TourGuideIdentity", "UUID1 : $uuid")
+                            putExtra("extra_uuid_2", tourGuide.id)
+                            Log.d("TourGuideIdentitiy   ", "UUID2 :${tourGuide.id}")
                         }
                     )
                     finish()
                 }
-            }catch (e: Exception) {
-                Log.d("register Tour Guide",e.message!!)
+            } catch (e: Exception) {
+                Log.d("register Tour Guide", e.message!!)
             }
         }
     }
+
     companion object {
         const val CAMERA_PERMISSION_REQUEST_CODE = 101
     }

@@ -19,6 +19,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.FileProvider
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.lifecycleScope
 import com.muflidevs.paradisata.R
 import com.muflidevs.paradisata.data.model.remote.registration.PackageName
@@ -45,13 +46,22 @@ class PackageInsertActivity : AppCompatActivity() {
         enableEdgeToEdge()
         binding = ActivityPackageInsertBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        viewModel = ViewModelProvider(this)
+            .get(RegistrationViewModel::class.java)
 
+        viewModel.imageUri.observe(this) {uri ->
+            uri.let {
+                currentImageUri = it
+                showImage()
+            }
+        }
         with(binding) {
             btnMore.setOnClickListener { totalGuest++ }
             btnLess.setOnClickListener {
                 if (totalGuest < 0) totalGuest = 0
                 else totalGuest--
             }
+            etNumber.hint= totalGuest.toString()
             imageHomestay.setOnClickListener {
                 showMediaOptionDialog()
             }
@@ -172,7 +182,8 @@ class PackageInsertActivity : AppCompatActivity() {
                 val facilitiesString = edtTxtFacilities.text.toString()
                 val facilitiesList = facilitiesString.split(",").map { it.trim() }.toMutableList()
 
-                val uuid = intent.getStringExtra("extra_uuid")
+                val uuid = intent.getStringExtra("extra_uuid_1")
+                val uuid2 = intent.getStringExtra("extra_uuid_2")
                 val packageName = PackageName(
                     id = UUID.randomUUID().toString(),
                     name = edtTxtPackageInformation.text.toString(),
@@ -191,9 +202,10 @@ class PackageInsertActivity : AppCompatActivity() {
                     ).apply {
                         putExtra("extra_package", packageName)
                         putExtra("extra_id", uuid)
+                        putExtra("extra_id_2",uuid2)
                     }
                 )
-                Log.d("PackageInsertActivity","Data yang dikirim : ${packageName} \n uuid : $uuid")
+                Log.d("PackageInsertActivity","Data yang dikirim : ${packageName} \n uuid : $uuid, $uuid2")
 
             }
         } catch (e: Exception) {

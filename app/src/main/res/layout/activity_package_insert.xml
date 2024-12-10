@@ -76,7 +76,7 @@
             android:layout_height="117dp"
             android:layout_gravity="center"
             android:contentDescription="@string/image_home"
-            tools:src="@drawable/ktp" />
+            android:src="@drawable/ktp" />
 
         <com.muflidevs.paradisata.ui.view.customView.CustomAddressEditText
             android:id="@+id/edtTxt_address"

@@ -111,7 +111,11 @@ class RegistrationViewModel(application: Application) : AndroidViewModel(applica
         }
     }
 
-    suspend fun registerTourguide(tourGuide: TourGuide, documentId: String) {
+    suspend fun registerTourguide(
+        tourGuide: TourGuide,
+        documentId: String,
+        secondDocumentId: String?
+    ) {
         _isLoading.value = true
         try {
             val data = hashMapOf(
@@ -126,6 +130,7 @@ class RegistrationViewModel(application: Application) : AndroidViewModel(applica
                 collection = "user",
                 subCollection = "tourGuide",
                 documentId = documentId,
+                secondDocumentId = secondDocumentId,
                 data = data
             )
             Log.d("authresulfirebase", documentId)
@@ -138,7 +143,12 @@ class RegistrationViewModel(application: Application) : AndroidViewModel(applica
         }
     }
 
-    suspend fun registerPackageTourguide(packageName: PackageName, documentId: String,secondDocumentId: String?) {
+    suspend fun registerPackageTourguide(
+        packageName: PackageName,
+        documentId: String,
+        secondDocumentId: String?,
+        thirdDocumentId: String?
+    ) {
         _isLoading.value = true
         try {
             val data = hashMapOf(
@@ -147,7 +157,9 @@ class RegistrationViewModel(application: Application) : AndroidViewModel(applica
                 "address" to packageName.address,
                 "facilities" to packageName.facilities,
                 "homestayPhoto" to packageName.homeStayPhoto,
-                "totalGuest" to packageName.totalGuest
+                "totalGuest" to packageName.totalGuest,
+                "TransportationPicture" to packageName.transportationPhoto,
+                "TransportationType" to packageName.transportationType
             )
             saveToFireStore(
                 collection = "user",
@@ -155,6 +167,7 @@ class RegistrationViewModel(application: Application) : AndroidViewModel(applica
                 thirdCollection = "package",
                 documentId = documentId,
                 secondDocumentId = secondDocumentId,
+                thirdDocumentId = thirdDocumentId,
                 data = data
             )
             Log.d("authresulfirebase", documentId)
@@ -168,13 +181,13 @@ class RegistrationViewModel(application: Application) : AndroidViewModel(applica
     }
 
 
-
     private suspend fun saveToFireStore(
         collection: String,
         subCollection: String? = null,
         thirdCollection: String? = null,
         documentId: String? = null,
         secondDocumentId: String? = null,
+        thirdDocumentId: String? = null,
         data: Map<String, Any>
     ) {
         _isLoading.value = true
@@ -188,22 +201,23 @@ class RegistrationViewModel(application: Application) : AndroidViewModel(applica
                 }
             } else {
                 if (documentId != null) {
-                    if (secondDocumentId != null) {
+                    if (secondDocumentId != null && thirdDocumentId != null) {
                         db.collection(collection).document(documentId)
                             .collection(subCollection).document(secondDocumentId)
-                            .collection(thirdCollection ?: "package").document()
+                            .collection(thirdCollection ?: "package").document(thirdDocumentId)
                             .set(data)
                             .await()
                         Log.d(
                             "RegistrationViewModel",
                             "Document added to Thirdcollection successfully!"
                         )
+                    } else if (secondDocumentId != null) {
+                        db.collection(collection).document(documentId)
+                            .collection(subCollection)
+                            .document(secondDocumentId)
+                            .set(data)
+                            .await()
                     }
-                    db.collection(collection).document(documentId)
-                        .collection(subCollection)
-                        .document()
-                        .set(data)
-                        .await()
                     Log.d("RegistrationViewModel", "Document added to subcollection successfully!")
                 }
             }
