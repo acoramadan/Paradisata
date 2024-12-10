@@ -8,6 +8,7 @@ import androidx.fragment.app.viewModels
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.core.net.toUri
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.bumptech.glide.Glide
@@ -28,9 +29,12 @@ import com.muflidevs.paradisata.ui.view.tourguide.TourGuideDetailActivity
 import com.muflidevs.paradisata.viewModel.DbViewModel
 import com.muflidevs.paradisata.viewModel.PlaceViewModel
 import com.muflidevs.paradisata.viewModel.TourGuideViewModel
+import com.muflidevs.paradisata.viewModel.TouristViewModel
+import com.muflidevs.paradisata.viewModel.UserViewModel
 
 class HomeFragment : Fragment() {
-
+    private val touristModel: TouristViewModel by viewModels()
+    private val userViewModel: UserViewModel by viewModels()
     private val viewModel: PlaceViewModel by viewModels()
     private val tourGuideModel: TourGuideViewModel by viewModels()
     private val dbViewModel: DbViewModel by viewModels()
@@ -63,14 +67,18 @@ class HomeFragment : Fragment() {
         tourGuideModel.tourGuide.observe(viewLifecycleOwner) { tourGuide ->
             adapterGrid.submitList(tourGuide)
         }
-        with(binding) {
+        userViewModel.getUser(userViewModel.getUserToken())
+        userViewModel.user.observe(viewLifecycleOwner) {user ->
+           binding.userName.text = user?.userName ?: " "
+        }
+        touristModel.getTourist(userViewModel.getUserToken())
+        touristModel.tourist.observe(viewLifecycleOwner) { tourist ->
             Glide.with(requireActivity())
-                .load(R.drawable.profil_image)
+                .load(tourist?.photo)
                 .placeholder(R.drawable.placeholder)
                 .into(binding.profileImage)
-
-            userName.text = "Ahmad Mufli Ramadhan"
         }
+        Log.d("Home Fragment ", " user token : ${userViewModel.getUserToken()}")
         iconBarClick()
     }
 
