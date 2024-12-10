@@ -173,11 +173,12 @@
             android:id="@+id/et_checkin"
             android:layout_width="250dp"
             android:layout_height="40dp"
-            android:background="@drawable/full_shape_white"
+            android:background="@drawable/edittext_border"
             android:drawableEnd="@drawable/calendar"
             android:hint="@string/dd_mm_yy"
             android:inputType="date"
-            android:padding="8dp" />
+            android:padding="8dp"
+            android:layout_marginBottom="8dp" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -191,11 +192,12 @@
             android:id="@+id/et_checkout"
             android:layout_width="250dp"
             android:layout_height="40dp"
-            android:background="@drawable/full_shape_white"
+            android:background="@drawable/edittext_border"
             android:drawableEnd="@drawable/calendar"
             android:hint="@string/dd_mm_yy"
             android:inputType="date"
-            android:padding="8dp" />
+            android:padding="8dp"
+            android:layout_marginBottom="8dp" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -209,12 +211,10 @@
             android:id="@+id/et_sidenote"
             android:layout_width="250dp"
             android:layout_height="80dp"
-            android:background="@drawable/full_shape_white"
+            android:background="@drawable/edittext_border"
             android:hint="@string/type_here"
             android:padding="8dp" />
     </LinearLayout>
-
-
 
     <TextView
         android:id="@+id/next_btn"

@@ -74,12 +74,12 @@
             android:layout_marginTop="20dp"
             android:text="@string/transportation"/>
         <ImageView
-            android:id="@+id/image_transportation"
+            android:id="@+id/image_ktp"
             android:layout_width="200dp"
             android:layout_height="117dp"
             android:layout_gravity="center"
             android:contentDescription="@string/image_home"
-            android:src="@drawable/ktp"/>
+            tools:src="@drawable/ktp"/>
 
         <TextView
             android:layout_width="match_parent"
@@ -97,7 +97,7 @@
             android:layout_height="wrap_content">
             <Button
                 style="?attr/materialButtonOutlinedStyle"
-                android:id="@+id/two_wheels_btn"
+                android:id="@+id/female_btn"
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
@@ -105,7 +105,7 @@
                 android:text="@string/two_wheels"/>
             <Button
                 style="?attr/materialButtonOutlinedStyle"
-                android:id="@+id/four_wheels_btn"
+                android:id="@+id/male_btn"
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"

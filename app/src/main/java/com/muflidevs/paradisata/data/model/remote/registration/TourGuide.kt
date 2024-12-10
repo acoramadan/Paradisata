@@ -6,22 +6,19 @@ import kotlinx.parcelize.RawValue
 
 @Parcelize
 data class TourGuide(
-    var id: String,
     var fullName: String,
     var address: String,
     var gender: String,
     var dateOfBirth: String,
     var photo: String,
+    var packageName: @RawValue packageName
 ):Parcelable
 
-@Parcelize
-data class PackageName(
-    var id: String,
+data class packageName(
     var name: String,
     var homeStayPhoto: String,
     var address: String,
-    var facilities: MutableList<String>,
+    var facilities: List<String>,
     var transportationPhoto: String,
-    var transportationType: String,
-    var totalGuest: Int
-):Parcelable
+    var transportationType: String
+)

@@ -68,6 +68,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     tools:text="4.8" />
+
+
             </LinearLayout>
 
             <LinearLayout
@@ -77,6 +79,7 @@
                 android:layout_marginStart="27dp"
                 android:layout_marginBottom="15dp"
                 android:layout_marginTop="3dp">
+
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -96,7 +99,8 @@
                 android:id="@+id/linear2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="center">
+                android:gravity="center"
+                android:layout_marginBottom="20dp">
                 <Button
                     android:id="@+id/btn_detail"
                     style="?attr/materialButtonOutlinedStyle"

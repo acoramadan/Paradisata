@@ -8,7 +8,6 @@ import android.text.TextWatcher
 import android.util.Log
 import android.view.View
 import android.widget.TextView
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.credentials.CredentialManager
 import androidx.credentials.CustomCredential
@@ -27,12 +26,8 @@ import com.google.firebase.auth.auth
 import com.muflidevs.paradisata.R
 import com.muflidevs.paradisata.databinding.ActivityLoginBinding
 import com.muflidevs.paradisata.ui.view.customView.CustomButton
-import com.muflidevs.paradisata.ui.view.customView.CustomEmailEditText
 import com.muflidevs.paradisata.ui.view.customView.CustomPasswordEditText
 import com.muflidevs.paradisata.ui.view.customView.CustomUsernameEditText
-import com.muflidevs.paradisata.ui.view.tourguide.TourGuideMainActivity
-import com.muflidevs.paradisata.viewModel.LoginViewModel
-import com.muflidevs.paradisata.viewModel.UserViewModel
 import kotlinx.coroutines.launch
 
 class LoginActivity : AppCompatActivity(), View.OnClickListener {
@@ -40,29 +35,25 @@ class LoginActivity : AppCompatActivity(), View.OnClickListener {
     private var showOneTapUi = true
     private lateinit var binding: ActivityLoginBinding
     private lateinit var loginbtn: CustomButton
-    private lateinit var userNameEdtTxt: CustomEmailEditText
+    private lateinit var userNameEdtTxt: CustomUsernameEditText
     private lateinit var passwordEdtTxt: CustomPasswordEditText
     private lateinit var tvRegister: TextView
-    private lateinit var viewModel: LoginViewModel
     private lateinit var auth: FirebaseAuth
-    private lateinit var userViewModel: UserViewModel
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityLoginBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        viewModel = LoginViewModel(application)
         tvRegister = binding.tvRegister
         loginbtn = binding.btnLogin
-        userNameEdtTxt = binding.edtTxtEmail!!
+        userNameEdtTxt = binding.edtTxtUsername
         passwordEdtTxt = binding.edtTxtPassword
         auth = Firebase.auth
         setMyButtonEnabled()
         checkUserInput()
-        userViewModel = UserViewModel(application)
+
         tvRegister.setOnClickListener(this)
         binding.btnLoginwthGoogle.setOnClickListener(this)
-        binding.btnLogin.setOnClickListener(this)
 
     }
 
@@ -107,38 +98,17 @@ class LoginActivity : AppCompatActivity(), View.OnClickListener {
     override fun onClick(view: View?) {
         when (view?.id) {
             R.id.tv_register -> {
-                val intent =
-                    Intent(
-                        this@LoginActivity,
-                        RegisterActivity::class.java
-                    )
+                val intent = Intent(this@LoginActivity, RegisterActivity::class.java)
                 startActivity(intent)
                 finish()
             }
-
             R.id.btn_loginwthGoogle -> {
-                signInWithGoogle()
-            }
-
-            R.id.btn_login -> {
-                loginWithEmailAndPassword()
+                signIn()
             }
         }
     }
 
-    private fun loginWithEmailAndPassword() {
-        val email = userNameEdtTxt.text.toString()
-        val password = passwordEdtTxt.text.toString()
-
-        lifecycleScope.launch {
-            viewModel.signInWithEmailPassword(email, password)
-            viewModel.user.observe(this@LoginActivity) { currentUser ->
-                updateUI(currentUser)
-            }
-        }
-    }
-
-    private fun signInWithGoogle() {
+    private fun signIn() {
         val credential = CredentialManager.create(this)
 
         val googleIdOption = GetGoogleIdOption.Builder()
@@ -179,7 +149,6 @@ class LoginActivity : AppCompatActivity(), View.OnClickListener {
                     Log.e(TAG, "Unexpected type of credential")
                 }
             }
-
             else -> {
                 Log.e(TAG, "Unexpected type of credential")
             }
@@ -203,28 +172,9 @@ class LoginActivity : AppCompatActivity(), View.OnClickListener {
 
     private fun updateUI(currentUser: FirebaseUser?) {
         if (currentUser != null) {
-            val userId = currentUser.uid
-
-            userViewModel.checkUserRole(userId)
-
-            userViewModel.userRole.observe(this) { role ->
-                when (role) {
-                    "tourist" -> {
-                        val intent = Intent(this@LoginActivity, MainActivity::class.java)
-                        startActivity(intent)
-                        finish()
-                    }
-
-                    "tourGuide" -> {
-                        val intent = Intent(this@LoginActivity, TourGuideMainActivity::class.java)
-                        startActivity(intent)
-                        finish()
-                    }
-                }
-            }
-
-        } else {
-            Toast.makeText(this, "Login gagal Username/Password salah!", Toast.LENGTH_SHORT).show()
+            val intent = Intent(this@LoginActivity, MainActivity::class.java)
+            startActivity(intent)
+            finish()
         }
     }
 }

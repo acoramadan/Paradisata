@@ -162,11 +162,13 @@
             android:layout_gravity="center"
             android:fontFamily="@font/poppins"
             android:text="@string/give_rating"
+            android:layout_marginBottom="8dp"
             android:textSize="18sp" />
 
         <RatingBar
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"/>
 
         <TextView
             android:layout_marginTop="8dp"
@@ -181,6 +183,7 @@
             android:background="@drawable/full_shape"
             android:layout_width="match_parent"
             android:layout_height="80dp"
+            android:layout_marginTop="10dp"
             android:hint="@string/type_here"
             android:padding="8dp"/>
         
@@ -188,7 +191,7 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:backgroundTint="@color/md_theme_secondary"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="15dp"
             android:layout_gravity="center"
             android:text="@string/submit"/>
     </LinearLayout>

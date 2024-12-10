@@ -20,9 +20,9 @@
                 android:fontFamily="@font/poppins_bold"
                 android:textColor="@color/md_theme_secondary"
                 android:text="@string/tentang"
-                android:textSize="18sp"
+                android:textSize="20sp"
                 android:textStyle="bold"
-                android:layout_marginBottom="8dp" />
+                android:layout_marginStart="16dp" />
 
             <TextView
                 android:id="@+id/tentang_text"
@@ -31,7 +31,14 @@
                 android:fontFamily="@font/poppins"
                 tools:text="Tangkuban Perahu adalah gunung berapi aktif yang terkenal dengan kawahnya yang indah. Pengunjung dapat berjalan-jalan di sekitar kawah dan menikmati pemandangan yang spektakuler."
                 android:textSize="14sp"
+                android:layout_marginStart="16dp"
                 android:layout_marginBottom="16dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#000000"
+                />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -39,6 +46,8 @@
                 android:fontFamily="@font/poppins_bold"
                 android:textColor="@color/md_theme_secondary"
                 android:text="@string/fasilitas"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="16dp"
                 android:textSize="18sp"
                 android:textStyle="bold"
                 android:layout_marginBottom="8dp" />
@@ -47,7 +56,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:layout_marginBottom="16dp">
+                android:layout_marginBottom="16dp"
+                android:layout_marginStart="16dp">
 
 
                 <TextView
@@ -86,6 +96,7 @@
                 android:text="@string/aktivitas"
                 android:textColor="@color/md_theme_secondary"
                 android:fontFamily="@font/poppins_bold"
+                android:layout_marginStart="16dp"
                 android:textSize="18sp"
                 android:layout_marginBottom="8dp" />
 
@@ -93,7 +104,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:layout_marginBottom="16dp">
+                android:layout_marginBottom="16dp"
+                android:layout_marginStart="16dp">
 
                 <TextView
                     android:id="@+id/aktivitas1"
@@ -125,7 +137,8 @@
                 android:textColor="@color/md_theme_secondary"
                 android:text="@string/harga"
                 android:textSize="18sp"
-                android:layout_marginBottom="8dp" />
+                android:layout_marginBottom="8dp"
+                android:layout_marginStart="16dp"/>
 
             <TextView
                 android:id="@+id/harga"
@@ -134,7 +147,8 @@
                 android:fontFamily="@font/poppins"
                 tools:text="Rp 20,000"
                 android:textSize="14sp"
-                android:layout_marginBottom="16dp" />
+                android:layout_marginBottom="16dp"
+                android:layout_marginStart="16dp"/>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -143,7 +157,8 @@
                 android:text="@string/jam_buka"
                 android:textSize="18sp"
                 android:textColor="@color/md_theme_secondary"
-                android:layout_marginBottom="8dp" />
+                android:layout_marginBottom="8dp"
+                android:layout_marginStart="16dp"/>
 
             <TextView
                 android:id="@+id/jam_buka_text"
@@ -151,7 +166,15 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/poppins"
                 tools:text="08:00 - 17:00"
-                android:textSize="14sp" />
+                android:textSize="14sp"
+                android:layout_marginStart="16dp"
+                android:layout_marginBottom="8dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#000000"
+                />
         </LinearLayout>
     </ScrollView>
 

@@ -5,7 +5,9 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#ffffff"
     tools:context=".ui.view.DestinationsOrderActivity">
+
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/exit_button"
@@ -68,7 +70,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="20dp"
             android:fontFamily="@font/poppins_bold"
             android:textColor="@color/md_theme_secondary"
             android:textSize="18sp"
@@ -76,7 +78,7 @@
 
         <TextView
             android:id="@+id/list_order"
-            android:layout_marginStart="8dp"
+            android:layout_marginStart="20dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/poppins"

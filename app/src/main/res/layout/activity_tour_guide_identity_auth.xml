@@ -70,7 +70,7 @@
            android:layout_height="117dp"
            android:layout_gravity="center"
            android:contentDescription="@string/image_ktp"
-           android:src="@drawable/ktp"/>
+           tools:src="@drawable/ktp"/>
 
         <com.muflidevs.paradisata.ui.view.customView.CustomUsernameEditText
             android:id="@+id/edtTxt_fullname"
