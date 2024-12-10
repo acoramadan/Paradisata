@@ -8,13 +8,9 @@ import android.os.Handler
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.Firebase
-import com.google.firebase.FirebaseApp
-import com.google.firebase.appcheck.FirebaseAppCheck
-import com.google.firebase.appcheck.playintegrity.PlayIntegrityAppCheckProviderFactory
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.auth
 import com.muflidevs.paradisata.databinding.ActivitySplashScreenBinding
-import com.muflidevs.paradisata.ui.view.tourguide.TourGuideMainActivity
 import com.muflidevs.paradisata.viewModel.UserViewModel
 
 
