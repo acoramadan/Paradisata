@@ -5,6 +5,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
+import android.util.Log
 import android.view.View
 import android.widget.Button
 import android.widget.Toast
@@ -149,6 +150,7 @@ class TouristRegisterActivity : AppCompatActivity(), View.OnClickListener {
                             this@TouristRegisterActivity,
                             TouristIdentityAuthActivity::class.java
                         ).apply {
+                            Log.d("TouristRegisterActivity","UUID yg dikirim : ${viewModel.user.value?.id}")
                             putExtra("extra_uuid",viewModel.user.value?.id)
                         }
                     )

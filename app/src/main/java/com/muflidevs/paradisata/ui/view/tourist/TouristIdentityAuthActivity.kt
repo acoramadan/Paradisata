@@ -22,6 +22,7 @@ import androidx.core.content.ContextCompat
 import androidx.core.content.FileProvider
 import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.lifecycleScope
+import com.google.firebase.storage.FirebaseStorage
 import com.muflidevs.paradisata.R
 import com.muflidevs.paradisata.data.model.remote.json.Tourist
 import com.muflidevs.paradisata.databinding.ActivityTouristIdentityAuthBinding
@@ -235,40 +236,51 @@ class TouristIdentityAuthActivity : AppCompatActivity() {
     }
 
     private fun regsiter() {
-        try {
-            with(binding) {
-                val uuid = intent.getStringExtra("extra_uuid")
-                val tourist = com.muflidevs.paradisata.data.model.remote.registration.Tourist(
-                    id= UUID.randomUUID().toString(),
-                    fullName = edtTxtFullname.text.toString(),
-                    address = edtTxtAddress.text.toString(),
-                    gender = gender,
-                    touristFrom = touristFrom,
-                    photo = currentImageUri.toString()
-                )
-                lifecycleScope.launch {
-                    viewModel = RegistrationViewModel(application)
-                    try {
-                        viewModel.registerTourist(tourist,uuid?: " ")
-                        Toast.makeText(
-                            this@TouristIdentityAuthActivity,
-                            "Berhasil Registrasi",
-                            Toast.LENGTH_SHORT
-                        ).show()
-                        startActivity(
-                            Intent(
-                                this@TouristIdentityAuthActivity,
-                                RegisterSuccessActivity::class.java
+        val storageRef = FirebaseStorage.getInstance().reference
+        val imageRef = storageRef.child("image/${UUID.randomUUID()}.jpg")
+        val uploadTask = imageRef.putFile(currentImageUri!!)
+
+        uploadTask.addOnSuccessListener {
+            imageRef.downloadUrl.addOnSuccessListener { uri ->
+                val downloadUrl = uri.toString()
+                try {
+                    with(binding) {
+                        val uuid = intent.getStringExtra("extra_uuid")
+                        Log.d("TouristIdentityAuthActivity", "UUID yg diterima: $uuid")
+                        val tourist =
+                            com.muflidevs.paradisata.data.model.remote.registration.Tourist(
+                                id = UUID.randomUUID().toString(),
+                                fullName = edtTxtFullname.text.toString(),
+                                address = edtTxtAddress.text.toString(),
+                                gender = gender,
+                                touristFrom = touristFrom,
+                                photo = downloadUrl
                             )
-                        )
-                        finish()
-                    } catch (e: Exception) {
-                        Log.e("TourisIdentityAuthActivity", "${e.message}")
+                        lifecycleScope.launch {
+                            viewModel = RegistrationViewModel(application)
+                            try {
+                                viewModel.registerTourist(tourist, uuid ?: " ",tourist.id)
+                                Toast.makeText(
+                                    this@TouristIdentityAuthActivity,
+                                    "Berhasil Registrasi",
+                                    Toast.LENGTH_SHORT
+                                ).show()
+                                startActivity(
+                                    Intent(
+                                        this@TouristIdentityAuthActivity,
+                                        RegisterSuccessActivity::class.java
+                                    )
+                                )
+                                finish()
+                            } catch (e: Exception) {
+                                Log.e("TourisIdentityAuthActivity", "${e.message}")
+                            }
+                        }
                     }
+                } catch (e: Exception) {
+                    Log.e("TourisIdentityAuthActivity", "${e.message}")
                 }
             }
-        } catch(e: Exception) {
-            Log.e("TourisIdentityAuthActivity", "${e.message}")
         }
     }
 

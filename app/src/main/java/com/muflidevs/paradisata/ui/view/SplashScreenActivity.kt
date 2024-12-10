@@ -7,6 +7,9 @@ import android.os.Looper
 import android.os.Handler
 import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.Firebase
+import com.google.firebase.FirebaseApp
+import com.google.firebase.appcheck.FirebaseAppCheck
+import com.google.firebase.appcheck.playintegrity.PlayIntegrityAppCheckProviderFactory
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.auth
 import com.muflidevs.paradisata.databinding.ActivitySplashScreenBinding
@@ -29,7 +32,6 @@ class SplashScreenActivity : AppCompatActivity() {
             val intent = Intent(this@SplashScreenActivity, LoginActivity::class.java)
             startActivity(intent)
             finish()
-
 //            if (firebaseUser == null) {
 //                val intent = Intent(this@SplashScreenActivity, RegisterActivity::class.java)
 //                startActivity(intent)

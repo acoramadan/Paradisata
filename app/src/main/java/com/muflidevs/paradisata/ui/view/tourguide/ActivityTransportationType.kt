@@ -21,6 +21,7 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.lifecycleScope
+import com.google.firebase.storage.FirebaseStorage
 import com.muflidevs.paradisata.R
 import com.muflidevs.paradisata.data.model.remote.registration.PackageName
 import com.muflidevs.paradisata.databinding.ActivityTransportationTypeBinding
@@ -201,33 +202,50 @@ class ActivityTransportationType : AppCompatActivity() {
     }
 
     private fun regsiter() {
-        try {
-            viewModel = RegistrationViewModel(application)
-            val uuid = intent.getStringExtra("extra_id")
-            val uuid2 = intent.getStringExtra("extra_id_2")
-            val intentPackage = intent.getParcelableExtra<PackageName>("extra_package")!!
-            val packageName = PackageName(
-                id = intentPackage.id,
-                name = intentPackage.name,
-                homeStayPhoto = intentPackage.homeStayPhoto,
-                address = intentPackage.address,
-                facilities = intentPackage.facilities,
-                transportationPhoto = currentImageUri.toString(),
-                transportationType = vehicleType,
-                totalGuest = intentPackage.totalGuest
-            )
-            lifecycleScope.launch {
-                viewModel.registerPackageTourguide(packageName, uuid ?: "", uuid2, packageName.id)
-                startActivity(
-                    Intent(
-                        this@ActivityTransportationType,
-                        ProsesRegisterActivity::class.java
+        val storageRef = FirebaseStorage.getInstance().reference
+        val imageRef = storageRef.child("image/${UUID.randomUUID()}.jpg")
+        val uploadTask = imageRef.putFile(currentImageUri!!)
+
+        uploadTask.addOnSuccessListener {
+            imageRef.downloadUrl.addOnSuccessListener { uri ->
+                val downloadUrl = uri.toString()
+                try {
+                    viewModel = RegistrationViewModel(application)
+                    val uuid = intent.getStringExtra("extra_id")
+                    val uuid2 = intent.getStringExtra("extra_id_2")
+                    val intentPackage = intent.getParcelableExtra<PackageName>("extra_package")!!
+                    val packageName = PackageName(
+                        id = intentPackage.id,
+                        name = intentPackage.name,
+                        homeStayPhoto = intentPackage.homeStayPhoto,
+                        address = intentPackage.address,
+                        facilities = intentPackage.facilities,
+                        transportationPhoto = downloadUrl,
+                        transportationType = vehicleType,
+                        totalGuest = intentPackage.totalGuest
                     )
-                )
-                Log.d("PackageInsertActivity", "Data yang dikirim : ${packageName} \n uuid : $uuid")
+                    lifecycleScope.launch {
+                        viewModel.registerPackageTourguide(
+                            packageName,
+                            uuid ?: "",
+                            uuid2,
+                            packageName.id
+                        )
+                        startActivity(
+                            Intent(
+                                this@ActivityTransportationType,
+                                ProsesRegisterActivity::class.java
+                            )
+                        )
+                        Log.d(
+                            "PackageInsertActivity",
+                            "Data yang dikirim : ${packageName} \n uuid : $uuid"
+                        )
+                    }
+                } catch (e: Exception) {
+                    Log.e("TourisIdentityAuthActivity", "${e.message}")
+                }
             }
-        } catch (e: Exception) {
-            Log.e("TourisIdentityAuthActivity", "${e.message}")
         }
     }
 }

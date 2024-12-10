@@ -63,6 +63,7 @@ dependencies {
     implementation(libs.material)
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
+    implementation(libs.firebase.storage.ktx)
     ksp(libs.androidx.room.compiler)
 
     //firebase
@@ -72,6 +73,7 @@ dependencies {
     implementation(libs.googleid)
     implementation(libs.firebase.firestore)
     implementation(libs.play.services.auth)
+    implementation(libs.firebase.appcheck.playintegrity)
 
     //tflite
     implementation(libs.tensorflow.lite.support)
@@ -88,6 +90,7 @@ dependencies {
     //paymentGateway midtrans
     implementation(libs.uikit.v200)
     implementation (libs.uikit)
+
     //unitTest
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)

@@ -58,6 +58,7 @@ class RegistrationViewModel(application: Application) : AndroidViewModel(applica
         _isLoading.value = true
         try {
             val authResult = mAuth.createUserWithEmailAndPassword(user.email, user.password).await()
+            user.id = authResult.user?.uid ?: user.id
             val userMap = hashMapOf(
                 "id" to user.id,
                 "userName" to user.userName,
@@ -84,7 +85,7 @@ class RegistrationViewModel(application: Application) : AndroidViewModel(applica
         }
     }
 
-    suspend fun registerTourist(tourist: Tourist, documentId: String) {
+    suspend fun registerTourist(tourist: Tourist, documentId: String, secondDocumentId: String?) {
         _isLoading.value = true
         try {
             val data = hashMapOf(
@@ -97,8 +98,9 @@ class RegistrationViewModel(application: Application) : AndroidViewModel(applica
             )
             saveToFireStore(
                 collection = "user",
-                subCollection = "tourist",  // Nama subkoleksi
-                documentId = documentId, // ID dokumen user yang valid
+                subCollection = "tourist",
+                documentId = documentId,
+                secondDocumentId = secondDocumentId,
                 data = data
             )
             Log.d("authresulfirebase", "${documentId}")

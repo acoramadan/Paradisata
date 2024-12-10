@@ -3,7 +3,6 @@ package com.muflidevs.paradisata.ui.view.tourguide
 import android.annotation.SuppressLint
 import android.app.DatePickerDialog
 import android.content.ContentValues
-import android.content.ContentValues.TAG
 import android.content.Context
 import android.content.Intent
 import android.content.pm.PackageManager
@@ -22,18 +21,12 @@ import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import androidx.core.content.FileProvider
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.lifecycleScope
+import com.google.firebase.storage.FirebaseStorage
 import com.muflidevs.paradisata.R
 import com.muflidevs.paradisata.data.model.remote.registration.TourGuide
 import com.muflidevs.paradisata.databinding.ActivityTourGuideIdentityAuthBinding
-import com.muflidevs.paradisata.databinding.ActivityTourGuideListBinding
-import com.muflidevs.paradisata.databinding.ActivityTouristIdentityAuthBinding
-import com.muflidevs.paradisata.ui.view.ProsesRegisterActivity
-import com.muflidevs.paradisata.ui.view.tourist.TouristIdentityAuthActivity
-import com.muflidevs.paradisata.ui.view.tourist.TouristIdentityAuthActivity.Companion
 import com.muflidevs.paradisata.viewModel.RegistrationViewModel
 import kotlinx.coroutines.launch
 import java.io.File
@@ -60,8 +53,7 @@ class TourGuideIdentityAuthActivity : AppCompatActivity() {
                 .inflate(layoutInflater)
 
         setContentView(binding.root)
-        viewModel = ViewModelProvider(this)
-            .get(RegistrationViewModel::class.java)
+        viewModel = ViewModelProvider(this)[RegistrationViewModel::class.java]
 
         viewModel.imageUri.observe(this) { uri ->
             uri.let {
@@ -131,7 +123,7 @@ class TourGuideIdentityAuthActivity : AppCompatActivity() {
         val options = arrayOf("Camera", "Gallery")
         val builder = AlertDialog.Builder(this)
         builder.setTitle("Select Media Source")
-        builder.setItems(options) { dialog, which ->
+        builder.setItems(options) { _, which ->
             when (which) {
                 0 -> startCamera()
                 1 -> startGallery()
@@ -154,6 +146,7 @@ class TourGuideIdentityAuthActivity : AppCompatActivity() {
         }
     }
 
+    @SuppressLint("ObsoleteSdkInt")
     private fun startCamera() {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
             if (checkSelfPermission(android.Manifest.permission.CAMERA) != PackageManager.PERMISSION_GRANTED) {
@@ -235,45 +228,58 @@ class TourGuideIdentityAuthActivity : AppCompatActivity() {
     @SuppressLint("SimpleDateFormat")
     private fun register() {
         val dateFormat = SimpleDateFormat("dd/MM/yyyy")
-        with(binding) {
-            val tourGuide =
-                dateFormat.parse(binding.edtTxtDatebirth.text.toString())?.let {
-                    TourGuide(
-                        id = UUID.randomUUID().toString(),
-                        fullName = edtTxtFullname.text.toString(),
-                        address = edtTxtAddress.text.toString(),
-                        gender = gender,
-                        dateOfBirth = it.toString(),
-                        photo = currentImageUri.toString()
-                    )
-                }
-            val uuid = intent.getStringExtra("extra_uuid")
-            try {
-                lifecycleScope.launch {
-                    viewModel = RegistrationViewModel(application)
+        val storageRef = FirebaseStorage.getInstance().reference
+        val imageRef = storageRef.child("image/${UUID.randomUUID()}.jpg")
+        val uploadTask = imageRef.putFile(currentImageUri!!)
 
-                    viewModel.registerTourguide(tourGuide = tourGuide!!, uuid ?: "", tourGuide.id)
-                    Toast.makeText(
-                        this@TourGuideIdentityAuthActivity,
-                        "Berhasil Registrasi",
-                        Toast.LENGTH_SHORT
-                    ).show()
-
-                    startActivity(
-                        Intent(
-                            this@TourGuideIdentityAuthActivity,
-                            PackageInsertActivity::class.java
-                        ).apply {
-                            putExtra("extra_uuid_1", uuid)
-                            Log.d("TourGuideIdentity", "UUID1 : $uuid")
-                            putExtra("extra_uuid_2", tourGuide.id)
-                            Log.d("TourGuideIdentitiy   ", "UUID2 :${tourGuide.id}")
+        uploadTask.addOnSuccessListener {
+            imageRef.downloadUrl.addOnSuccessListener { uri ->
+                val downloadUrl = uri.toString()
+                with(binding) {
+                    val tourGuide =
+                        dateFormat.parse(binding.edtTxtDatebirth.text.toString())?.let {
+                            TourGuide(
+                                id = UUID.randomUUID().toString(),
+                                fullName = edtTxtFullname.text.toString(),
+                                address = edtTxtAddress.text.toString(),
+                                gender = gender,
+                                dateOfBirth = it.toString(),
+                                photo = downloadUrl
+                            )
                         }
-                    )
-                    finish()
+                    val uuid = intent.getStringExtra("extra_uuid")
+                    try {
+                        lifecycleScope.launch {
+                            viewModel = RegistrationViewModel(application)
+
+                            viewModel.registerTourguide(
+                                tourGuide = tourGuide!!,
+                                uuid ?: "",
+                                tourGuide.id
+                            )
+                            Toast.makeText(
+                                this@TourGuideIdentityAuthActivity,
+                                "Berhasil Registrasi",
+                                Toast.LENGTH_SHORT
+                            ).show()
+
+                            startActivity(
+                                Intent(
+                                    this@TourGuideIdentityAuthActivity,
+                                    PackageInsertActivity::class.java
+                                ).apply {
+                                    putExtra("extra_uuid_1", uuid)
+                                    Log.d("TourGuideIdentity", "UUID1 : $uuid")
+                                    putExtra("extra_uuid_2", tourGuide.id)
+                                    Log.d("TourGuideIdentitiy   ", "UUID2 :${tourGuide.id}")
+                                }
+                            )
+                            finish()
+                        }
+                    } catch (e: Exception) {
+                        Log.d("register Tour Guide", e.message!!)
+                    }
                 }
-            } catch (e: Exception) {
-                Log.d("register Tour Guide", e.message!!)
             }
         }
     }

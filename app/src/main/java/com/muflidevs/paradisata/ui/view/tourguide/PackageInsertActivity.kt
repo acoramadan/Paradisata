@@ -21,6 +21,7 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.lifecycleScope
+import com.google.firebase.storage.FirebaseStorage
 import com.muflidevs.paradisata.R
 import com.muflidevs.paradisata.data.model.remote.registration.PackageName
 import com.muflidevs.paradisata.databinding.ActivityPackageInsertBinding
@@ -49,7 +50,7 @@ class PackageInsertActivity : AppCompatActivity() {
         viewModel = ViewModelProvider(this)
             .get(RegistrationViewModel::class.java)
 
-        viewModel.imageUri.observe(this) {uri ->
+        viewModel.imageUri.observe(this) { uri ->
             uri.let {
                 currentImageUri = it
                 showImage()
@@ -61,7 +62,7 @@ class PackageInsertActivity : AppCompatActivity() {
                 if (totalGuest < 0) totalGuest = 0
                 else totalGuest--
             }
-            etNumber.hint= totalGuest.toString()
+            etNumber.hint = totalGuest.toString()
             imageHomestay.setOnClickListener {
                 showMediaOptionDialog()
             }
@@ -177,39 +178,51 @@ class PackageInsertActivity : AppCompatActivity() {
     }
 
     private fun regsiter() {
-        try {
-            with(binding) {
-                val facilitiesString = edtTxtFacilities.text.toString()
-                val facilitiesList = facilitiesString.split(",").map { it.trim() }.toMutableList()
+        val storageRef = FirebaseStorage.getInstance().reference
+        val imageRef = storageRef.child("image/${UUID.randomUUID()}.jpg")
+        val uploadTask = imageRef.putFile(currentImageUri!!)
 
-                val uuid = intent.getStringExtra("extra_uuid_1")
-                val uuid2 = intent.getStringExtra("extra_uuid_2")
-                val packageName = PackageName(
-                    id = UUID.randomUUID().toString(),
-                    name = edtTxtPackageInformation.text.toString(),
-                    homeStayPhoto = currentImageUri.toString(),
-                    address = edtTxtAddress.text.toString(),
-                    facilities = facilitiesList,
-                    transportationPhoto = " ",
-                    transportationType = " ",
-                    totalGuest = totalGuest
-                )
+        uploadTask.addOnSuccessListener {
+            imageRef.downloadUrl.addOnSuccessListener { uri ->
+                val downloadUrl = uri.toString()
+                try {
+                    with(binding) {
+                        val facilitiesString = edtTxtFacilities.text.toString()
+                        val facilitiesList =
+                            facilitiesString.split(",").map { it.trim() }.toMutableList()
 
-                startActivity(
-                    Intent(
-                        this@PackageInsertActivity,
-                        ActivityTransportationType::class.java
-                    ).apply {
-                        putExtra("extra_package", packageName)
-                        putExtra("extra_id", uuid)
-                        putExtra("extra_id_2",uuid2)
+                        val uuid = intent.getStringExtra("extra_uuid_1")
+                        val uuid2 = intent.getStringExtra("extra_uuid_2")
+                        val packageName = PackageName(
+                            id = UUID.randomUUID().toString(),
+                            name = edtTxtPackageInformation.text.toString(),
+                            homeStayPhoto = downloadUrl,
+                            address = edtTxtAddress.text.toString(),
+                            facilities = facilitiesList,
+                            transportationPhoto = " ",
+                            transportationType = " ",
+                            totalGuest = totalGuest
+                        )
+                        startActivity(
+                            Intent(
+                                this@PackageInsertActivity,
+                                ActivityTransportationType::class.java
+                            ).apply {
+                                putExtra("extra_package", packageName)
+                                putExtra("extra_id", uuid)
+                                putExtra("extra_id_2", uuid2)
+                            }
+                        )
+                        Log.d(
+                            "PackageInsertActivity",
+                            "Data yang dikirim : ${packageName} \n uuid : $uuid, $uuid2"
+                        )
+
                     }
-                )
-                Log.d("PackageInsertActivity","Data yang dikirim : ${packageName} \n uuid : $uuid, $uuid2")
-
+                } catch (e: Exception) {
+                    Log.e("TourisIdentityAuthActivity", "${e.message}")
+                }
             }
-        } catch (e: Exception) {
-            Log.e("TourisIdentityAuthActivity", "${e.message}")
         }
     }
 }
