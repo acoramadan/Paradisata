@@ -37,14 +37,12 @@ class UserViewModel(application: Application) : AndroidViewModel(application) {
                 }
             }
     }
-
     fun getUser(userId: String) {
         val userDocRef = db.collection("user").document(userId)
         userDocRef.get()
             .addOnSuccessListener { documentSnapshot ->
                 if (documentSnapshot.exists()) {
                     val user = documentSnapshot.toObject(User::class.java)
-
                     user?.let {
                         _user.postValue(user)
                     } ?: run {
@@ -58,7 +56,6 @@ class UserViewModel(application: Application) : AndroidViewModel(application) {
                 Log.e("User", "Error getting user data", exception)
             }
     }
-
     fun getUserToken(): String {
         val sharedPref = getApplication<Application>().getSharedPreferences(
             "app_preferences",
@@ -66,4 +63,5 @@ class UserViewModel(application: Application) : AndroidViewModel(application) {
         )
         return sharedPref.getString("user_token", null) ?: " "
     }
+
 }

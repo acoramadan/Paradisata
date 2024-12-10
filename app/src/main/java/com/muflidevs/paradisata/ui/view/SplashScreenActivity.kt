@@ -8,6 +8,7 @@ import android.os.Handler
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.Firebase
+
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.auth
 import com.muflidevs.paradisata.databinding.ActivitySplashScreenBinding
@@ -39,7 +40,13 @@ class SplashScreenActivity : AppCompatActivity() {
                 startActivity(intent)
             }
             finish()
-
+//            if (firebaseUser == null) {
+//                val intent = Intent(this@SplashScreenActivity, RegisterActivity::class.java)
+//                startActivity(intent)
+//                finish()
+//            } else {
+//                startActivity(Intent(this@SplashScreenActivity, MainActivity::class.java))
+//            }
         }, 5000)
     }
 }

@@ -8,6 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.credentials.ClearCredentialStateRequest
 import androidx.credentials.CredentialManager
+import androidx.fragment.app.viewModels
 import androidx.lifecycle.lifecycleScope
 import com.google.firebase.Firebase
 import com.google.firebase.auth.FirebaseAuth
@@ -17,6 +18,8 @@ import com.muflidevs.paradisata.databinding.FragmentProfileBinding
 import com.muflidevs.paradisata.ui.view.AppInfoActivity
 import com.muflidevs.paradisata.ui.view.EditProfileActivity
 import com.muflidevs.paradisata.ui.view.LoginActivity
+import com.muflidevs.paradisata.viewModel.LoginViewModel
+import com.muflidevs.paradisata.viewModel.UserViewModel
 import kotlinx.coroutines.launch
 
 
@@ -24,6 +27,7 @@ class ProfileFragment : Fragment() {
 
     private lateinit var auth: FirebaseAuth
     private lateinit var binding: FragmentProfileBinding
+    private val viewModel: LoginViewModel by viewModels()
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -54,6 +58,7 @@ class ProfileFragment : Fragment() {
         lifecycleScope.launch {
             val credentialManager = CredentialManager.create(requireContext())
             auth.signOut()
+            viewModel.logout()
             credentialManager.clearCredentialState(ClearCredentialStateRequest())
             startActivity(Intent(requireContext(),LoginActivity::class.java))
             activity?.finish()

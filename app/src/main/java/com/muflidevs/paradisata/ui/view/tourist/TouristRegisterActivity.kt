@@ -5,6 +5,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
+import android.util.Log
 import android.view.View
 import android.widget.Button
 import android.widget.Toast
@@ -13,7 +14,7 @@ import androidx.lifecycle.lifecycleScope
 import com.muflidevs.paradisata.R
 import com.muflidevs.paradisata.data.model.remote.registration.User
 import com.muflidevs.paradisata.databinding.ActivityTouristRegisterBinding
-import com.muflidevs.paradisata.ui.view.OtpActivity
+import com.muflidevs.paradisata.ui.view.FailedRegisterActivity
 import com.muflidevs.paradisata.ui.view.customView.CustomButton
 import com.muflidevs.paradisata.ui.view.customView.CustomEmailEditText
 import com.muflidevs.paradisata.ui.view.customView.CustomNoTelephoneEditText
@@ -21,6 +22,7 @@ import com.muflidevs.paradisata.ui.view.customView.CustomPasswordEditText
 import com.muflidevs.paradisata.ui.view.customView.CustomUsernameEditText
 import com.muflidevs.paradisata.viewModel.RegistrationViewModel
 import kotlinx.coroutines.launch
+import java.util.UUID
 
 class TouristRegisterActivity : AppCompatActivity(), View.OnClickListener {
     private lateinit var binding: ActivityTouristRegisterBinding
@@ -30,7 +32,7 @@ class TouristRegisterActivity : AppCompatActivity(), View.OnClickListener {
     private lateinit var noTelpEdtTxt: CustomNoTelephoneEditText
     private lateinit var submitBtn: CustomButton
     private lateinit var backBtn: Button
-     private lateinit var viewModel: RegistrationViewModel
+    private lateinit var viewModel: RegistrationViewModel
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityTouristRegisterBinding.inflate(layoutInflater)
@@ -129,6 +131,7 @@ class TouristRegisterActivity : AppCompatActivity(), View.OnClickListener {
     private fun register() {
         with(binding) {
             val user = User(
+                id = UUID.randomUUID().toString(),
                 email = edtTxtEmail.text.toString(),
                 password = edtTxtPassword.text.toString(),
                 userName = edtTxtUsername.text.toString(),
@@ -146,8 +149,11 @@ class TouristRegisterActivity : AppCompatActivity(), View.OnClickListener {
                     startActivity(
                         Intent(
                             this@TouristRegisterActivity,
-                            OtpActivity::class.java
-                        ).putExtra("numberPhone",user.phoneNumber)
+                            TouristIdentityAuthActivity::class.java
+                        ).apply {
+                            Log.d("TouristRegisterActivity","UUID yg dikirim : ${viewModel.user.value?.id}")
+                            putExtra("extra_uuid",viewModel.user.value?.id)
+                        }
                     )
                     finish()
                 } catch (e: Exception) {
@@ -156,6 +162,13 @@ class TouristRegisterActivity : AppCompatActivity(), View.OnClickListener {
                         "registrasi gagal ${e.message}",
                         Toast.LENGTH_SHORT
                     ).show()
+
+                    startActivity(
+                        Intent(
+                            this@TouristRegisterActivity,
+                            FailedRegisterActivity::class.java
+                        )
+                    )
                 }
             }
         }

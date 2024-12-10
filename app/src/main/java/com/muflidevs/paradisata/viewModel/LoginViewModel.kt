@@ -27,15 +27,14 @@ class LoginViewModel(application: Application) : AndroidViewModel(application) {
 
     private val _userEmail = MutableLiveData<String>()
     val userEmail: LiveData<String> get() = _userEmail
-
-    private val _user = MutableLiveData<FirebaseUser?>()
-    val user: LiveData<FirebaseUser?> get() = _user
-
     private val _isLoading = MutableLiveData<Boolean>()
+
     val isLoading: LiveData<Boolean> get() = _isLoading
 
     private val _errorMessage = MutableLiveData<String>()
     val errorMessage: LiveData<String> get() = _errorMessage
+    private val _user = MutableLiveData<FirebaseUser?>()
+    val user: LiveData<FirebaseUser?> get() = _user
 
     private val sharedPrefs =
         application.getSharedPreferences("app_preferences", Context.MODE_PRIVATE)
@@ -113,3 +112,4 @@ class LoginViewModel(application: Application) : AndroidViewModel(application) {
         clearUserToken()
     }
 }
+

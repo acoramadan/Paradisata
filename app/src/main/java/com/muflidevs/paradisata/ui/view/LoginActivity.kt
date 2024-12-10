@@ -220,13 +220,8 @@ class LoginActivity : AppCompatActivity(), View.OnClickListener {
                         startActivity(intent)
                         finish()
                     }
-
-                    "none" -> {
-                        Toast.makeText(
-                            this@LoginActivity,
-                            "Akun anda belum terdaftar",
-                            Toast.LENGTH_LONG
-                        ).show()
+                    "None" -> {
+                        Toast.makeText(this, "Akun belum terdaftar", Toast.LENGTH_SHORT).show()
                     }
                 }
             }

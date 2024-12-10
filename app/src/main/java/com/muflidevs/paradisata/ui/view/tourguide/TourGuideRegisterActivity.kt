@@ -1,19 +1,27 @@
 package com.muflidevs.paradisata.ui.view.tourguide
 
+import android.content.Intent
 import android.os.Bundle
 import android.text.Editable
 import android.text.TextUtils
 import android.text.TextWatcher
+import android.util.Log
 import android.view.View
 import android.widget.Button
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.lifecycle.lifecycleScope
 import com.muflidevs.paradisata.R
+import com.muflidevs.paradisata.data.model.remote.registration.User
 import com.muflidevs.paradisata.databinding.ActivityTourGuideRegisterBinding
 import com.muflidevs.paradisata.ui.view.customView.CustomButton
 import com.muflidevs.paradisata.ui.view.customView.CustomEmailEditText
 import com.muflidevs.paradisata.ui.view.customView.CustomNoTelephoneEditText
 import com.muflidevs.paradisata.ui.view.customView.CustomUsernameEditText
 import com.muflidevs.paradisata.ui.view.customView.CustomPasswordEditText
+import com.muflidevs.paradisata.viewModel.RegistrationViewModel
+import kotlinx.coroutines.launch
+import java.util.UUID
 
 class TourGuideRegisterActivity : AppCompatActivity(),View.OnClickListener{
     private lateinit var binding: ActivityTourGuideRegisterBinding
@@ -23,6 +31,7 @@ class TourGuideRegisterActivity : AppCompatActivity(),View.OnClickListener{
     private lateinit var noTelpEdtTxt: CustomNoTelephoneEditText
     private lateinit var submitBtn: CustomButton
     private lateinit var backBtn: Button
+    private lateinit var viewModel: RegistrationViewModel
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -47,6 +56,7 @@ class TourGuideRegisterActivity : AppCompatActivity(),View.OnClickListener{
         when(view?.id) {
             R.id.btn_back -> finish()
             R.id.btn_submit -> {
+                register()
             }
         }
     }
@@ -111,5 +121,44 @@ class TourGuideRegisterActivity : AppCompatActivity(),View.OnClickListener{
             override fun afterTextChanged(p0: Editable?) {
             }
         })
+    }
+    private fun register() {
+        with(binding) {
+            val user = User(
+                id = UUID.randomUUID().toString(),
+                email = edtTxtEmail.text.toString(),
+                password = edtTxtPassword.text.toString(),
+                userName = edtTxtUsername.text.toString(),
+                phoneNumber = edtTxtNoTelp.text.toString()
+            )
+            lifecycleScope.launch {
+                viewModel = RegistrationViewModel(application)
+                try {
+                    viewModel.registerNewUser(user)
+                    Toast.makeText(
+                        this@TourGuideRegisterActivity,
+                        "Berhasil registrasi",
+                        Toast.LENGTH_SHORT
+                    ).show()
+                    startActivity(
+                        Intent(
+                            this@TourGuideRegisterActivity,
+                            TourGuideIdentityAuthActivity::class.java
+                        ).apply {
+                            putExtra("extra_uuid", user.id)
+                            Log.d("TourGuideRegister","Data UUID yang dikirim ${user.id}")
+                        }
+                    )
+                    finish()
+                } catch (e: Exception) {
+                    Toast.makeText(
+                        this@TourGuideRegisterActivity,
+                        "registrasi gagal ${e.message}",
+                        Toast.LENGTH_SHORT
+                    ).show()
+                    Log.d("TourGuideRegister", "error : ${e.message}")
+                }
+            }
+        }
     }
 }

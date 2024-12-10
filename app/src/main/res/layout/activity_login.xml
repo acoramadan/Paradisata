@@ -57,8 +57,10 @@
             android:layout_marginEnd="45dp"
             android:layout_marginBottom="10dp"
             android:drawableStart="@drawable/mail_icon"
+            android:drawablePadding="4dp"
             android:fontFamily="@font/poppins"
             android:hint="@string/email" />
+
 
         <com.muflidevs.paradisata.ui.view.customView.CustomPasswordEditText
             android:id="@+id/edtTxt_password"
@@ -68,7 +70,6 @@
             android:layout_marginTop="10dp"
             android:inputType="textPassword"
             android:layout_marginEnd="45dp"
-            android:hint="password"
             android:layout_marginBottom="25dp"
             android:drawableStart="@drawable/user_login_password_icon"
             android:fontFamily="@font/poppins" />
