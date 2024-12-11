@@ -34,6 +34,7 @@ class FragmentDetailTourGuide : Fragment() {
             Glide.with(requireActivity())
                 .load(tourGuide.transportationPicture)
                 .into(transportationPicture)
+
             populateDynamicList(tourGuide.facilities,tvFacilities)
         }
 

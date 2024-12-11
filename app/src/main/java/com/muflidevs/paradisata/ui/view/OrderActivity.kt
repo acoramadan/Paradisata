@@ -10,18 +10,34 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.bumptech.glide.Glide
 import com.muflidevs.paradisata.R
+import com.muflidevs.paradisata.data.model.remote.json.TourGuide
 import com.muflidevs.paradisata.databinding.ActivityOrderBinding
 import java.text.SimpleDateFormat
 import java.util.concurrent.TimeUnit
 
 class OrderActivity : AppCompatActivity() {
     private lateinit var binding: ActivityOrderBinding
+    private lateinit var tourGuide: TourGuide
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityOrderBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        tourGuide = intent.getParcelableExtra("tourguide")!!
+        with(binding) {
+            Glide.with(this@OrderActivity)
+                .load(tourGuide.homestay)
+                .placeholder(R.drawable.placeholder)
+                .into(imageBackground)
 
+            Glide.with(this@OrderActivity)
+                .load(tourGuide.profilePicture)
+                .placeholder(R.drawable.placeholder)
+                .into(profileImage)
+
+            tourGuideName.text = tourGuide.name
+        }
         binding.nextBtn.setOnClickListener {
             startActivity(Intent(this@OrderActivity, DestinationsOrderActivity::class.java).apply {
                 val date = getDateRange()

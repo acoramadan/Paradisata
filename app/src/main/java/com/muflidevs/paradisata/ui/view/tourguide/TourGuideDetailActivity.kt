@@ -1,6 +1,7 @@
 package com.muflidevs.paradisata.ui.view.tourguide
 
 import android.annotation.SuppressLint
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import androidx.activity.enableEdgeToEdge
@@ -11,6 +12,7 @@ import com.bumptech.glide.Glide
 import com.muflidevs.paradisata.R
 import com.muflidevs.paradisata.data.model.remote.json.TourGuide
 import com.muflidevs.paradisata.databinding.ActivityTourGuideDetailBinding
+import com.muflidevs.paradisata.ui.view.OrderActivity
 import com.muflidevs.paradisata.ui.view.fragments.FragmentDetailTourGuide
 import com.muflidevs.paradisata.ui.view.fragments.FragmentReview
 import com.muflidevs.paradisata.ui.view.fragments.TourGuideFragmentReview
@@ -48,6 +50,17 @@ class TourGuideDetailActivity : AppCompatActivity() {
                 .load(detailTourGuide.homestay)
                 .placeholder(R.drawable.placeholder)
                 .into(imageDetail)
+
+            btnSubmit.setOnClickListener {
+                startActivity(
+                    Intent(
+                        this@TourGuideDetailActivity,
+                        OrderActivity::class.java
+                    ).apply {
+                        putExtra("tourguide",detailTourGuide)
+                    }
+                )
+            }
         }
         setFragment(detailTourGuide)
     }

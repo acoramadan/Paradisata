@@ -124,20 +124,7 @@
                 android:fontFamily="@font/poppins"
                 tools:text="• 8 Guest"
                 android:textSize="14sp" />
-            <TextView
-                android:id="@+id/fasilitas2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/poppins"
-                tools:text="• 4 Bed Room"
-                android:textSize="14sp" />
-            <TextView
-                android:id="@+id/fasilitas3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/poppins"
-                tools:text="• 2 Private Bath"
-                android:textSize="14sp" />
+
         </LinearLayout>
         <TextView
             android:id="@+id/facilities"

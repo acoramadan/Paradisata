@@ -21,6 +21,7 @@ class UserViewModel(application: Application) : AndroidViewModel(application) {
 
     fun checkUserRole(userId: String) {
         val userDocRef = db.collection("user").document(userId)
+
         userDocRef.collection("tourGuide").get()
             .addOnSuccessListener { tourguideSnapshot ->
                 if (!tourguideSnapshot.isEmpty) {
@@ -36,7 +37,11 @@ class UserViewModel(application: Application) : AndroidViewModel(application) {
                         }
                 }
             }
+            .addOnFailureListener { exception ->
+                Log.e("SplashScreen", "Error getting user role", exception)
+            }
     }
+
     fun getUser(userId: String) {
         val userDocRef = db.collection("user").document(userId)
         userDocRef.get()
@@ -56,6 +61,7 @@ class UserViewModel(application: Application) : AndroidViewModel(application) {
                 Log.e("User", "Error getting user data", exception)
             }
     }
+
     fun getUserToken(): String {
         val sharedPref = getApplication<Application>().getSharedPreferences(
             "app_preferences",

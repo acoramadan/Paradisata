@@ -76,6 +76,7 @@ class HomeFragment : Fragment() {
         }
         touristModel.getTourist(userViewModel.getUserToken())
         touristModel.tourist.observe(viewLifecycleOwner) { tourist ->
+            Log.d("HomeFragment" , "Tourist : ${tourist?.photo}")
             Glide.with(requireActivity())
                 .load(tourist?.photo)
                 .placeholder(R.drawable.placeholder)
@@ -146,7 +147,6 @@ class HomeFragment : Fragment() {
             modelName = "recommendation_model.tflite",
             context = requireContext(),
             onResult = { result ->
-                Log.d("HomeFragment", result)
             },
             onError = { error ->
                 Log.d("HomeFragment", error)
@@ -188,7 +188,6 @@ class HomeFragment : Fragment() {
 
             listRecommendation =
                 model.predict(inputArray.toList(), data)
-            Log.d("HomeFragment", "Data Rekomendasi $listRecommendation")
 
         }
     }

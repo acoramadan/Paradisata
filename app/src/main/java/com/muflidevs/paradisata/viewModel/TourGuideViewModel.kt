@@ -6,11 +6,13 @@ import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.viewModelScope
+import com.google.firebase.firestore.FirebaseFirestore
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
 import com.muflidevs.paradisata.R
 import com.muflidevs.paradisata.data.model.remote.json.TourGuide
 import com.muflidevs.paradisata.data.model.remote.json.TouristRating
+import com.muflidevs.paradisata.data.model.remote.registration.Tourist
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
@@ -21,6 +23,11 @@ class TourGuideViewModel(application: Application) : AndroidViewModel(applicatio
 
     private val _tourGuides = MutableLiveData<List<TourGuide>>()
     var tourGuide: LiveData<List<TourGuide>> = _tourGuides
+
+    private val _tourGuide = MutableLiveData<com.muflidevs.paradisata.data.model.remote.registration.TourGuide>()
+    var aTourGuide: LiveData<com.muflidevs.paradisata.data.model.remote.registration.TourGuide> = _tourGuide
+    private val db = FirebaseFirestore.getInstance("db-user")
+
 
     private val _isLoading = MutableLiveData<Boolean>()
     var isLoading: LiveData<Boolean> = _isLoading
@@ -100,5 +107,28 @@ class TourGuideViewModel(application: Application) : AndroidViewModel(applicatio
             }
         }
     }
+    fun getTourGuide(userId: String) {
+        val touristDocRef = db.collection("user").document(userId)
+            .collection("tourGuide")
+        Log.d("TourGuide", "Token : $userId")
+        touristDocRef.get()
+            .addOnSuccessListener { documentSnapShot ->
+                if (!documentSnapShot.isEmpty) {
+                    for(document in documentSnapShot) {
+                        val tourGuide = document.toObject(com.muflidevs.paradisata.data.model.remote.registration.TourGuide::class.java)
+                        tourGuide.let {
+                            _tourGuide.postValue(tourGuide)
+                        }
+                    }
+                } else {
+                    Log.d("TourGuide", "No such TourGuide exists!")
+                }
+            }
+            .addOnFailureListener { exception ->
+                Log.e("TourGuide", "Error getting TourGuide data", exception)
+            }
+
+    }
+
 
 }

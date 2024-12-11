@@ -16,17 +16,16 @@ class TouristViewModel(application: Application) : AndroidViewModel(application)
 
     fun getTourist(userId: String) {
         val touristDocRef = db.collection("user").document(userId)
-            .collection("tourist").document()
-
+            .collection("tourist")
+        Log.d("Tourist", "Token : $userId")
         touristDocRef.get()
             .addOnSuccessListener { documentSnapShot ->
-                if (documentSnapShot.exists()) {
-                    val tourist = documentSnapShot.toObject(Tourist::class.java)
-
-                    tourist?.let {
-                        _tourist.postValue(tourist)
-                    } ?: run {
-                        Log.d("Tourist", "Tourist data is null")
+                if (!documentSnapShot.isEmpty) {
+                    for (document in documentSnapShot) {
+                        val tourist = document.toObject(Tourist::class.java)
+                        tourist.let {
+                            _tourist.postValue(tourist)
+                        }
                     }
                 } else {
                     Log.d("Tourist", "No such Tourist exists!")
