@@ -1,6 +1,7 @@
 package com.muflidevs.paradisata.ui.view.payments
 
 import android.os.Bundle
+import android.util.Log
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -17,6 +18,7 @@ import com.midtrans.sdk.uikit.SdkUIFlowBuilder
 import com.muflidevs.paradisata.R
 import com.muflidevs.paradisata.databinding.ActivityDestinationsOrderBinding
 import com.muflidevs.paradisata.ui.view.DestinationsOrderActivity
+import com.muflidevs.paradisata.viewModel.UserViewModel
 
 class PaymentsMidtransActivity : AppCompatActivity() {
 
@@ -37,7 +39,7 @@ class PaymentsMidtransActivity : AppCompatActivity() {
                     Toast.makeText(this, "Pembayaran Berhasil!", Toast.LENGTH_LONG).show()
                 }
             })
-            .setMerchantBaseUrl("http://localhost/bangkit/charge/index.php")
+            .setMerchantBaseUrl("https://2ad7-36-93-21-250.ngrok-free.app/bangkit/charge/")
             .enableLog(true)
             .setLanguage("en")
             .buildSDK()
@@ -46,7 +48,7 @@ class PaymentsMidtransActivity : AppCompatActivity() {
             val harga = prices
             val total = quantity
             val transactionRequest = TransactionRequest("paradisata"+System.currentTimeMillis().toShort()+ "",harga.toDouble())
-            val detail = ItemDetails("NamaItemId", quantity.toDouble(), harga,"Package Order")
+            val detail = ItemDetails("NamaItem", quantity.toDouble(), harga,"Package Order")
             val itemDetails = ArrayList<ItemDetails>()
 
             itemDetails.add(detail)
@@ -80,7 +82,5 @@ class PaymentsMidtransActivity : AppCompatActivity() {
         customerDetails.billingAddress = billingAddress
 
         transactionRequest.customerDetails = customerDetails
-
-
     }
 }

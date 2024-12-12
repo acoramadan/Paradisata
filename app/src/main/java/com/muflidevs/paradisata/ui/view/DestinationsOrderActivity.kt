@@ -8,6 +8,7 @@ import android.view.View
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.activity.result.contract.ActivityResultContracts
+import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.app.AppCompatDelegate
 import androidx.core.os.LocaleListCompat
@@ -29,26 +30,22 @@ import com.midtrans.sdk.uikit.internal.util.UiKitConstants
 import com.muflidevs.paradisata.R
 import com.muflidevs.paradisata.databinding.ActivityDestinationsOrderBinding
 import com.muflidevs.paradisata.ui.view.payments.PaymentsMidtransActivity
+import com.muflidevs.paradisata.viewModel.TouristViewModel
+import com.muflidevs.paradisata.viewModel.UserViewModel
 import java.util.UUID
 
 class DestinationsOrderActivity : AppCompatActivity() {
+    private val userViewModel: UserViewModel by viewModels()
+    private val touristViewModel: TouristViewModel by viewModels()
     private lateinit var binding: ActivityDestinationsOrderBinding
     private var count = 0
     private var dateRange = 0
     private val placesSelected = mutableListOf<String>()
     private var totalPrices = 0
-
-    private val launcher =
-        registerForActivityResult(ActivityResultContracts.StartActivityForResult()) { result ->
-            if (result.resultCode == RESULT_OK) {
-                result.data?.let {
-                    val transactionResult =
-                        it.getParcelableExtra<TransactionResult>(UiKitConstants.KEY_TRANSACTION_RESULT)
-                    Toast.makeText(this, "${transactionResult?.transactionId}", Toast.LENGTH_LONG)
-                        .show()
-                }
-            }
-        }
+    private var userName: String = ""
+    private var email: String = ""
+    private var phoneNumber: String = ""
+    private var address: String = ""
 
     private var customerDetails = com.midtrans.sdk.uikit.api.model.CustomerDetails(
         firstName = "user fullname",
@@ -58,7 +55,7 @@ class DestinationsOrderActivity : AppCompatActivity() {
     )
     private var itemDetails = listOf(ItemDetails("test-01", 36500.0, 1, "test01"))
 
-    private fun initTransactionDetails() : SnapTransactionDetail {
+    private fun initTransactionDetails(): SnapTransactionDetail {
         return SnapTransactionDetail(
             orderId = UUID.randomUUID().toString(),
             grossAmount = 36500.0
@@ -70,8 +67,20 @@ class DestinationsOrderActivity : AppCompatActivity() {
         enableEdgeToEdge()
         binding = ActivityDestinationsOrderBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
         dateRange = intent.getIntExtra(OrderActivity.EXTRA_DATE, 0)
+        SdkUIFlowBuilder.init()
+            .setClientKey("SB-Mid-client-xQa1PTlE7tnvF8pG")
+            .setContext(applicationContext)
+            .setTransactionFinishedCallback(TransactionFinishedCallback { results ->
+
+                if (results.status == "success") {
+                    Toast.makeText(this, "Pembayaran Berhasil!", Toast.LENGTH_LONG).show()
+                }
+            })
+            .setMerchantBaseUrl("https://5285-36-93-21-250.ngrok-free.app/bangkit/charge/index.php/")
+            .enableLog(true)
+            .setLanguage("id")
+            .buildSDK()
 
         binding.btnAdd.setOnClickListener {
             if (count < dateRange) {
@@ -82,6 +91,48 @@ class DestinationsOrderActivity : AppCompatActivity() {
                 binding.btnAdd.visibility = View.GONE
             }
         }
+        userViewModel.getUser(userViewModel.getUserToken())
+        userViewModel.user.observe(this@DestinationsOrderActivity) { user ->
+            userName = user?.userName!!
+            email = user.email
+            phoneNumber = user.phoneNumber
+        }
+        touristViewModel.getTourist(userViewModel.getUserToken())
+        touristViewModel.tourist.observe(this@DestinationsOrderActivity) { tourist ->
+            address = tourist?.address!!
+        }
+        binding.btnSubmit.setOnClickListener {
+            val transaction = initTransactionDetails()
+            Log.d(
+                "Payments : ",
+                "Data : $itemDetails, $customerDetails, ${transaction.orderId}, ${transaction.grossAmount}"
+            )
+            val transactionRequest = TransactionRequest(
+                "paradisata" + System.currentTimeMillis().toString() + "",
+                totalPrices.toDouble()
+            )
+            val detail = ItemDetails(
+                UUID.randomUUID().toString(),
+                totalPrices.toDouble(),
+                placesSelected.size,
+                binding.listOrder.text.toString()
+            )
+            Log.d("DestinationOrderActivity", "Price : ${detail.price}\n Name : ${detail.name},${detail.quantity}")
+            val itemDetails = ArrayList<ItemDetails>()
+            itemDetails.add(detail)
+            uiKitDetails(
+                transactionRequest = transactionRequest,
+                userName = userName,
+                email = email,
+                address = address,
+                phoneNumber = phoneNumber
+            )
+            transactionRequest.itemDetails = itemDetails
+            MidtransSDK.getInstance().transactionRequest = transactionRequest
+            MidtransSDK.getInstance().startPaymentUiFlow(this)
+
+        }
+
     }
 
     @Deprecated("This method has been deprecated in favor of using the Activity Result API\n      which brings increased type safety via an {@link ActivityResultContract} and the prebuilt\n      contracts for common intents available in\n      {@link androidx.activity.result.contract.ActivityResultContracts}, provides hooks for\n      testing, and allow receiving results in separate, testable classes independent from your\n      activity. Use\n      {@link #registerForActivityResult(ActivityResultContract, ActivityResultCallback)}\n      with the appropriate {@link ActivityResultContract} and handling the result in the\n      {@link ActivityResultCallback#onActivityResult(Object) callback}.")
@@ -107,62 +158,39 @@ class DestinationsOrderActivity : AppCompatActivity() {
                 }
             }
         }
-        
-        buildUiKit()
-        binding.btnSubmit.setOnClickListener {
-            UiKitApi.getDefaultInstance().startPaymentUiFlow(
-                activity = this@DestinationsOrderActivity,
-                launcher = launcher,
-                transactionDetails = initTransactionDetails(),
-                customerDetails = customerDetails,
-                itemDetails = itemDetails
-            )
-        }
     }
 
-    //    private fun uiKitDetails(transactionRequest: TransactionRequest) {
-//        val customerDetails = CustomerDetails()
-//        val shippingAddress = ShippingAddress()
-//        val billingAddress = BillingAddress()
-//        customerDetails.customerIdentifier = "Ahmad Mufli Ramadhan"
-//        customerDetails.phone = "089698100654"
-//        customerDetails.firstName = "Ahmad Mufli"
-//        customerDetails.lastName = "Ramadhan"
-//        customerDetails.email = "a272b4ky0215@bangkit.academy"
-//
-//        shippingAddress.address = "Rappocini, Tamalate"
-//        shippingAddress.city = "Makassar"
-//        shippingAddress.postalCode = "90225"
-//
-//        customerDetails.shippingAddress = shippingAddress
-//        billingAddress.address = "Rappocini, Tamalate"
-//        billingAddress.city = "Makassar"
-//        billingAddress.postalCode = "90225"
-//
-//        customerDetails.billingAddress = billingAddress
-//
-//        transactionRequest.customerDetails = customerDetails
-//
-//
-//    }
-//    private fun setLocaleNew(languageCode: String?) {
-//        val locales = LocaleListCompat.forLanguageTags(languageCode)
-//        AppCompatDelegate.setApplicationLocales(locales)
-//    }
-    private fun buildUiKit() {
-        UiKitApi.Builder()
-            .withContext(this.applicationContext)
-            .withMerchantUrl("http://localhost/bangkit/charge/")
-            .withMerchantClientKey("SB-Mid-client-xQa1PTlE7tnvF8pG")
-            .enableLog(true)
-            .withColorTheme(CustomColorTheme("#FFE51255", "#B61548", "#FFE51255"))
-            .build()
-        uiKitCustomSetting()
-    }
+    private fun uiKitDetails(
+        transactionRequest: TransactionRequest,
+        userName: String,
+        phoneNumber: String,
+        email: String,
+        address: String,
+    ) {
+        val customerDetails = CustomerDetails()
+        val shippingAddress = ShippingAddress()
+        val billingAddress = BillingAddress()
 
-    private fun uiKitCustomSetting() {
-        val uIKitCustomSetting = UiKitApi.getDefaultInstance().uiKitSetting
-        uIKitCustomSetting.saveCardChecked = true
+        Log.d(
+            "DestinationOrderActivity",
+            "Data yang dikirim email : $email \nUsername: $userName\nPhoneNumber $phoneNumber\naddress : $address"
+        )
+        customerDetails.firstName = userName
+        customerDetails.lastName = userName
+        customerDetails.customerIdentifier = userName
+        customerDetails.phone = phoneNumber
+        customerDetails.email = email
+        shippingAddress.address = address
+        shippingAddress.city = "Makassar"
+        shippingAddress.postalCode = "90557"
+
+        customerDetails.shippingAddress = shippingAddress
+        billingAddress.address = address
+        billingAddress.city = "Makassar"
+        billingAddress.postalCode = "90557"
+        customerDetails.billingAddress = billingAddress
+
+        transactionRequest.customerDetails = customerDetails
     }
 
     companion object {

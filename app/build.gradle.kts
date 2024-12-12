@@ -87,8 +87,9 @@ dependencies {
     implementation(libs.androidx.room.ktx)
 
     //paymentGateway midtrans
-    implementation(libs.uikit.v200)
     implementation (libs.uikit)
+    implementation(libs.okhttp)
+    testImplementation(libs.mockwebserver)
     //unitTest
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
