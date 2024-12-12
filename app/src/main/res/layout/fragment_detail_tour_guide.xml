@@ -75,23 +75,6 @@
 
             </LinearLayout>
         </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/linear5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:orientation="horizontal"
-            app:layout_constraintBottom_toBottomOf="@id/linear1">
-
-            <View
-                android:layout_width="wrap_content"
-                android:layout_height="1dp"
-                android:background="#000000"
-                android:layout_marginStart="20dp"
-                android:layout_marginEnd="20dp"/>
-        </LinearLayout>
-
         <TextView
             android:id="@+id/tv_home_stay"
             android:layout_width="wrap_content"
@@ -123,6 +106,20 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/poppins"
                 tools:text="• 8 Guest"
+                android:textSize="14sp" />
+            <TextView
+                android:id="@+id/fasilitas2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins"
+                tools:text="• 4 Beds"
+                android:textSize="14sp" />
+            <TextView
+                android:id="@+id/fasilitas3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins"
+                tools:text="• 2 Private Bath"
                 android:textSize="14sp" />
 
         </LinearLayout>
@@ -171,27 +168,36 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/linear3" />
 
+        <LinearLayout
+            android:id="@+id/linear4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@id/transportation">
+
         <TextView
             android:id="@+id/tv_detail_vehicle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="8dp"
-            android:textSize="15sp"
+            android:fontFamily="@font/poppins"
+            tools:text="• Bike\n• Motorcycle\n• Car\n• Traditional Transport"
             app:layout_constraintTop_toBottomOf="@id/transportation"/>
+        </LinearLayout>
 
         <ImageView
             android:id="@+id/transportation_picture"
             android:layout_width="match_parent"
-            android:layout_height="150dp"
+            android:layout_height="125dp"
             android:layout_margin="8dp"
             android:contentDescription="@string/transportation"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/transportation"
+            app:layout_constraintTop_toBottomOf="@+id/linear4"
             app:layout_constraintVertical_bias="0.455"
             tools:layout_editor_absoluteX="8dp"
+            android:background="@color/md_theme_secondary"
             tools:src="@drawable/dummy_sejarah2" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
