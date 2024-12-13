@@ -63,6 +63,11 @@ Bangkit Capstone Team ID : C242-PS227
 *Payments*
 - Midtrans SDK
 
+*Design and assets*
+- Figma
+- Dribble
+- android assets studio
+
 ## Results
 Design Link : https://www.figma.com/design/ZQmT3FCk4KdWuondnqjdO1/Paradisata?node-id=1-2&t=QH9OfAtpyjQk7pgj-1
 
