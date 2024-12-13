@@ -6,7 +6,7 @@ Bangkit Capstone Team ID : C242-PS227
 
 ## MOBILE DEVELOPMENT SCHEDULE
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-| Task                             | Week 1                        | Week 2                             | Week 3              |                              | Week 4                                        |
+| Task                             | Week 1                        | Week 2                             | Week 3                                             | Week 4                                        |
 |----------------------------------|-------------------------------|------------------------------------|---------------------|------------------------------|------------------------------------------------
 | **Task 1**                       | Design the app using figma    | Finishing the design               | Implements the data by using dummy                 | Implements midtrans and finishing the project |
 | **Task 2**                       | Looking for assets and theme  | Finishing the icon and app assets  | implements firebase for the apps auth and database | Creating Presentation                         |
