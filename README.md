@@ -29,11 +29,12 @@ We have our own dataset:
 Dataset: [Paradisata Dataset](https://github.com/acoramadan/Paradisata/tree/CC/Database)  
 
 ## Model 1: Recommendation System for Tour Guides
+
 ## Model 2: Recommendation System for Tourist Destinations
 This model uses an artificial neural network with a Fully Connected Neural Network architecture. The model input is tourist destination data, and the output is the probability score for each destination. The destination with the highest score will be recommended to users.
 ### Arsitektur Model
-![Model Architecture](https://github.com/acoramadan/Paradisata/blob/ML/Destinations/model_structure.png)
+<img src = "https://github.com/acoramadan/Paradisata/blob/ML/Destinations/model_structure.png" alt="Model Architecture" width="600"/>
 ### Loss and Accuracy
-![loss and accuracy](https://github.com/acoramadan/Paradisata/blob/ML/Destinations/training_loss_accuracy.png)
-
-Here is the link of [model 2] (https://github.com/acoramadan/Paradisata/tree/ML/Destinations)
+<img src = "https://github.com/acoramadan/Paradisata/blob/ML/Destinations/training_validation_loss.png" alt="Loss" width="600"/> 
+<img src ="https://github.com/acoramadan/Paradisata/blob/ML/Destinations/accuracy_plot.jpg" alt="Model Architecture" width="600"/>
+Here is the link of model 2: https://github.com/acoramadan/Paradisata/tree/ML/Destinations
