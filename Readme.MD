@@ -32,3 +32,9 @@ Paradisata using Firebase as an auth login and Firestore as a database. We deplo
 
 ## DEPLOY MODEL ML (TOUR GUIDE RECOMMENDATION)
 Link : https://deploy-sehat2-428329049233.asia-southeast2.run.app/recommend
+
+
+## DOCUMENTATION
+Here is some documentation from CC Team
+
+<img src ="<img src ="https://github.com/acoramadan/Paradisata/blob/CC/Documentation/SS Deploy Model ML (Rekomendasi TG).png" alt="Deploying Model ML (Recommendation Tour Guide)" width="600"/>
