@@ -1,0 +1,22 @@
+# Abaikan folder dan file IDE
+.vscode/
+.idea/
+*.swp
+
+# Abaikan file sementara atau build hasil lokal
+*.pyc
+__pycache__/
+*.log
+*.tmp
+
+# Abaikan file dataset besar yang tidak diperlukan
+data/
+datasets/
+
+# Abaikan file sensitif
+.env
+secrets.json
+
+# Abaikan file pengujian
+tests/
+*.test
