@@ -37,14 +37,14 @@ Link : https://deploy-sehat2-428329049233.asia-southeast2.run.app/recommend
 ## DOCUMENTATION
 
 ### Cloud Architecture
-<img src ="https://github.com/acoramadan/Paradisata/blob/CC/Documentation/Cloud Architecture.png" alt="Deploying Model ML (Recommendation Tour Guide)" width="600"/>
+<img src ="https://github.com/acoramadan/Paradisata/blob/CC/Documentation/cloud architecture.png" alt="Deploying Model ML (Recommendation Tour Guide)" width="600"/>
 
 ### Bucket
 <img src ="https://github.com/acoramadan/Paradisata/blob/CC/Documentation/Bucket.png" alt="Deploying Model ML (Recommendation Tour Guide)" width="600"/>
 
 ### Cost Estimate Summary
-<img src ="https://github.com/acoramadan/Paradisata/blob/CC/Documentation/Cost Estimate Cloud Build.png" alt="Deploying Model ML (Recommendation Tour Guide)" width="600"/>
 <img src ="https://github.com/acoramadan/Paradisata/blob/CC/Documentation/Cost Estimate Cloud Run.png" alt="Deploying Model ML (Recommendation Tour Guide)" width="600"/>
+<img src ="https://github.com/acoramadan/Paradisata/blob/CC/Documentation/Cost Estimate Cloud Build.png" alt="Deploying Model ML (Recommendation Tour Guide)" width="600"/>
 <img src ="https://github.com/acoramadan/Paradisata/blob/CC/Documentation/Cost Estimate Firestore.png" alt="Deploying Model ML (Recommendation Tour Guide)" width="600"/>
 <img src ="https://github.com/acoramadan/Paradisata/blob/CC/Documentation/Cost Estimate Cloud Storage + Total.png" alt="Deploying Model ML (Recommendation Tour Guide)" width="600"/>
 
