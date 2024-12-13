@@ -35,4 +35,5 @@ Link : https://deploy-sehat2-428329049233.asia-southeast2.run.app/recommend
 
 
 ## DOCUMENTATION
+### Testing Deploying Model ML on Postman (Recommendation Tour Guide)
 <img src ="https://github.com/acoramadan/Paradisata/blob/CC/Documentation/SS Deploy Model ML (Rekomendasi TG).png" alt="Deploying Model ML (Recommendation Tour Guide)" width="600"/>
